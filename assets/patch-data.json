@@ -1,0 +1,43 @@
+{
+    "defaults": {
+        "medusa": "nds"
+    },
+    "patches": {
+        "fma-ps2": {
+            "id": "fma",
+            "title": "fma-title",
+            "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
+            "color": "red",
+            "tags": ["PlayStation 2", "[genre-action]", "[status-translation]"]
+        },
+        "medusa-nds": {
+            "id": "medusa",
+            "title": "medusa-title",
+            "original": "Soul Eater: Medusa no Inbou",
+            "page": "/medusa",
+            "color": "red",
+            "tags": ["Nintendo DS", "[genre-action]"],
+            "repo": "MedusaTranslationData",
+            "patch_prefix": "MedusaPatch",
+            "sha_checks": "true",
+            "required_rom_sha": "480F343FEC65EA36C4B64B7F8F89C5740DA2E24B5BAA265EE32C042824C92027",
+            "bad_rom_sha": "A9F343FE7DDE1A20CBDCEEF03EE79FFDD1663A1A55961D9F99F7A402CAE93BE8",
+            "fix_bad_rom": "true",
+            "repair_patch": "/patches/medusa-repair.xdelta",
+            "available_patches": {
+                "en": [
+                    {
+                        "version": "1.1",
+                        "date": "May 28, 2020",
+                        "lang": "en"
+                    },
+                    {
+                        "version": "1.2",
+                        "date": "May 01, 2021",
+                        "lang": "en"
+                    }
+                ]
+            }
+        }
+    }
+}

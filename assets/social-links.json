@@ -1,0 +1,46 @@
+[
+    {
+        "locale": "discord-server",
+        "icon": "fa6-brands:discord",
+        "link": "https://discord.gg/UUF7Zbm",
+        "color": "#5865F2",
+        "display": {
+            "nav": true,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "youtube",
+        "icon": "fa6-brands:youtube",
+        "link": "https://www.youtube.com/channel/UC-F-lUuU7OXUURrPzhyFOOA",
+        "color": "#DD0000",
+        "display": {
+            "nav": true,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "tumblr",
+        "icon": "fa6-brands:tumblr-square",
+        "link": "https://agtteam.tumblr.com",
+        "color": "#000000",
+        "display": {
+            "nav": true,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "github",
+        "icon": "fa6-brands:github",
+        "link": "https://github.com/AGTTeam",
+        "color": "#222222",
+        "display": {
+            "nav": true,
+            "row": true,
+            "stack": true
+        }
+    }
+]
