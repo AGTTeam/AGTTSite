@@ -1,5 +1,5 @@
 # AGTT site
-The site for the [Anime Game Translations Team](https://agtteam.github.io), including the project pages & documentation. Built with vue via [Nuxt@v3](https://v3.nuxtjs.org) and hosted on GitHub pages.
+The site for the [Anime Game Translations Team](https://agtteam.net), including the project pages & documentation. Built with vue via [Nuxt@v3](https://v3.nuxtjs.org) and hosted on GitHub pages.
 
 Heavily based on the [Haroohie Translation Club website](https://github.com/haroohie-club/HaroohieSite).
 

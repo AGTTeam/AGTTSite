@@ -16,9 +16,9 @@ head:
   - property: 'og:description'
     content: *desc
   - property: 'og:image'
-    content: &img 'https://agtteam.github.io/images/blog/0001/00_thumbnail.png'
+    content: &img 'https://agtteam.net/images/blog/0001/00_thumbnail.png'
   - property: 'og:url'
-    content: 'https://agtteam.github.io/blog/2024-07-01-may-june-progress-report'
+    content: 'https://agtteam.net/blog/2024-07-01-may-june-progress-report'
   - property: 'og:type'
     content: 'article'
   - name: 'twitter:title'

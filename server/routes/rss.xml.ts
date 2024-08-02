@@ -6,9 +6,9 @@ export default defineEventHandler(async (event) => {
     const feed = new RSS({
         title: 'Anime Game Translations Team Blog',
         language: 'en',
-        site_url: 'https://agtteam.github.io/',
-        feed_url: 'https://agtteam.github.io/rss.xml',
-        image_url: 'https://agtteam.github.io/images/agtt-logo.png',
+        site_url: 'https://agtteam.net/',
+        feed_url: 'https://agtteam.net/rss.xml',
+        image_url: 'https://agtteam.net/images/agtt-logo.png',
     })
 
     const locale = 'en'
@@ -19,13 +19,13 @@ export default defineEventHandler(async (event) => {
     for (const doc of blogPosts) {
         feed.item({
             title: doc.title ?? '-',
-            url: `https://agtteam.github.io${doc._path?.substring(0, doc._path?.lastIndexOf('/'))}`,
+            url: `https://agtteam.net${doc._path?.substring(0, doc._path?.lastIndexOf('/'))}`,
             date: `${doc.navigation.year}-${doc.navigation.month}-${doc.navigation.day}`,
             description: doc.description,
             enclosure: {
-                url: `https://agtteam.github.io/images/blog/${doc.navigation.image}`,
+                url: `https://agtteam.net/images/blog/${doc.navigation.image}`,
                 type: 'image/png',
-                size: await ufs(`https://agtteam.github.io/images/blog/${doc.navigation.image}`)
+                size: await ufs(`https://agtteam.net/images/blog/${doc.navigation.image}`)
             }
         })
     }
