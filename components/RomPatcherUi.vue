@@ -329,6 +329,8 @@ export default {
 
             // Gets the file name
             parsePatchFile(getFileName(), version).then(arrayBuffer => {
+                if (arrayBuffer == null)
+                    return Promise.reject('');
                 return new MarcFile(arrayBuffer);
             }).then(parsedFile => {
                 patchFile = parsedFile;
@@ -397,7 +399,8 @@ export default {
             }).then(patchFile => {
                 saveRomFile(patchFile);
             }).catch((error) => {
-                showNotice('error', error);
+                if (error != '')
+                    showNotice('error', error);
             });
         },
         selectFile: async function (event) {
