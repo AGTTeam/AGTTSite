@@ -4,5 +4,5 @@ const route = useRoute()
 </script>
 
 <template>
-    <ContentDoc :path="`${route.params.game}/buy/${locale}`" />
+    <ContentDoc :path="`/game/${route.params.game}/buy/${locale}`" />
 </template>

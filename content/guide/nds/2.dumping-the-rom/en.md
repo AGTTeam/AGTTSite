@@ -42,7 +42,7 @@ The first method uses a Wi-Fi hack to dump over File Transfer Protocol (FTP). Th
 5. Exit the game and remove the cartridge. Now, insert your flash cartridge you just put wooddumper on and navigate to run it on your DS.
 6. Follow the on-screen instructions and insert your *:guide-data* cart when prompted. Proceed until you are presented with an IP address to connect to using an FTP client.
 7. Using an FTP client, such as [net2ftp](https://www.net2ftp.com/), a built-in browser one or another such as [FileZilla](https://filezilla-project.org/), enter the IP address into the relevant field. You do not need to specify a username or password.
-8. Copy the .nds ROM file and .txt file to your computer. You can proceed to [patching your ROM](/medusa/guide/patching-the-rom).
+8. Copy the .nds ROM file and .txt file to your computer. You can proceed to [patching your ROM](patching-the-rom).
 
 #### Dump using dual-slot flash cartridges
 **Requirements:**
@@ -60,7 +60,7 @@ The first method uses a Wi-Fi hack to dump over File Transfer Protocol (FTP). Th
 4. Open wooddumper via your flash cart.
 5. Follow the on-screen instructions and insert your *:guide-data* cart when prompted. Proceed until you see that the dump has completed.
 6. Remove your Slot-2 cart and insert the SD card from it into your PC (or in the case of some carts, connect it directly to your PC)
-7. Copy the .nds ROM file and .txt file to your computer. You can proceed to [patching your ROM](/medusa/guide/patching-the-rom).
+7. Copy the .nds ROM file and .txt file to your computer. You can proceed to [patching your ROM](patching-the-rom).
 
 </div>
 
