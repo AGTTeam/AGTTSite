@@ -7,8 +7,7 @@ export default {
         '@nuxt/icon',
         '@nuxt/content',
         '@nuxtjs/google-fonts',
-        '@nuxtjs/i18n',
-        "@nuxt/image"
+        '@nuxtjs/i18n'
     ],
 
     // Fonts
@@ -46,6 +45,12 @@ export default {
             { code: 'en', iso: 'en', file: 'locales/en.json', dir: 'ltr' },
         ],
         defaultLocale: 'en'
+    },
+
+    public: {
+        mdc: {
+            useNuxtImage: false,
+        },
     },
 
     compatibilityDate: '2024-08-03',
