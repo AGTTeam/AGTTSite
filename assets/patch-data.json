@@ -23,7 +23,7 @@
             "required_rom_sha": "480F343FEC65EA36C4B64B7F8F89C5740DA2E24B5BAA265EE32C042824C92027",
             "bad_rom_sha": "A9F343FE7DDE1A20CBDCEEF03EE79FFDD1663A1A55961D9F99F7A402CAE93BE8",
             "fix_bad_rom": "true",
-            "repair_patch": "/patches/medusa-repair.xdelta",
+            "repair_patch": "medusa-repair.xdelta",
             "available_patches": {
                 "en": [
                     {

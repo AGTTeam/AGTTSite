@@ -221,7 +221,7 @@ function parsePatchFile(fileName, version) {
 
 function parseRepairFile() {
     showNotice('info', 'rom-patcher-bad-rom');
-    return fetchFile(patchData.repair_patch);
+    return fetchFile('/patches/' + patchData.repair_patch);
 }
 
 function fetchFile(encodedUri) {
@@ -363,11 +363,13 @@ export default {
                                 throw ('rom-patcher-bad-rom-error');
                             } else {
                                 const REPAIR_ROM = parseRepairFile().then(repairArrayBuffer => {
+                                    if (repairArrayBuffer == null)
+                                        return Promise.reject('');
                                     return new MarcFile(repairArrayBuffer);
                                 }).then(parsedRepairPatch => {
                                     repairPatchFile = parsedRepairPatch;
                                     repairPatchFile.littleEndian = false;
-                                    repairPatchFile.fileName = 'repair-patch.xdelta';
+                                    repairPatchFile.fileName = patchData.repair_patch;
 
                                     let header = repairPatchFile.readString(6);
                                     if (header.startsWith(ZIP_MAGIC)) {
