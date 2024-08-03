@@ -1,16 +1,18 @@
 <template>
     <div class="gallery">
+        <div class="buttons">
+            <button @click="changeImage(-1)">
+                <Icon class="change-image" name="fa6-solid:chevron-left" />
+            </button>
+            <span>{{ currentImage + 1 }} / {{ images.length }}</span>
+            <button @click="changeImage(1)">
+                <Icon class="change-image" name="fa6-solid:chevron-right" />
+            </button>
+        </div>
         <div class="image">
             <img v-for="(image, index) in images" :key="index.alt" :alt="image.alt" :src="image.url" :style="{ display: index === currentImage ? 'block' : 'none' }" />
-        </div>
-        <div class="buttons">
-            <div @click="changeImage(-1)">
-                <Icon class="change-image" name="fa6-solid:chevron-left" />
-            </div>
-            <span>{{ currentImage + 1 }} / {{ images.length }}</span>
-            <div @click="changeImage(1)">
-                <Icon class="change-image" name="fa6-solid:chevron-right" />
-            </div>
+            <br />
+            <span v-for="(image, index) in images" :style="{ display: index === currentImage ? 'block' : 'none' }">{{ image.alt }}</span>
         </div>
     </div>
 </template>
@@ -38,6 +40,22 @@ const changeImage = (direction) => {
 img {
     padding: auto;
     height: auto;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gallery {

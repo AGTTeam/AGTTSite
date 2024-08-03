@@ -82,8 +82,12 @@
     "latest-posts-tagged-with": "Latest posts tagged with {tag}",
     "tags-header": "Tags:",
     "medusa-tag": "medusa",
+    "gurren-tag": "gurren",
+    "dgray-tag": "dgray",
     "general-tag": "general",
     "releases-tag": "releases",
+    "progress-report-tag": "progress report",
+    "behind-the-scenes-tag": "behind the scenes",
     "video-tag": "video",
 
     "setup-guide": "Setup Guide",
