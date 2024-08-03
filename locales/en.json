@@ -120,7 +120,6 @@
     "rom-patcher-patching-rom": "Patching ROM with {patch}...",
     "rom-patcher-invalid-rom-select": "Invalid ROM selected. Please select a valid <code>.nds</code> ROM file.",
     "rom-patcher-no-patches-available": "There are no patches available yet! Please come back soon!",
-    "rom-patcher-error": "Error: {error}",
     
     "click-to-filter": "Click to filter:"
 }

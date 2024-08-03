@@ -389,7 +389,7 @@ export default {
                                 await REPAIR_ROM;
                             }
                         } else {
-                            throw ('rom-patcher-invalid-rom');
+                            throw ('rom-patcher-invalid-rom-error');
                         }
                     }
                 }
@@ -400,7 +400,7 @@ export default {
                 saveRomFile(patchFile);
             }).catch((error) => {
                 if (error != '')
-                    showNotice('error', 'rom-patcher-error', { error: error });
+                    showNotice('error', error);
             });
         },
         selectFile: async function (event) {
