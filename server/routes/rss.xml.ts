@@ -24,8 +24,7 @@ export default defineEventHandler(async (event) => {
             description: doc.description,
             enclosure: {
                 url: `https://agtteam.net/images/blog/${doc.navigation.image}`,
-                type: 'image/png',
-                size: await ufs(`https://agtteam.net/images/blog/${doc.navigation.image}`)
+                type: 'image/png'
             }
         })
     }
