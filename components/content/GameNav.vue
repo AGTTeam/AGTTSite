@@ -25,7 +25,10 @@ const PATCH_DATA = ALL_PATCH_DATA.patches[route.params.game + "-" + defaultPlatf
                 {{ $t('download-patch') }}
             </ButtonLink>
             <div id="nav-or">&mdash;</div>
-            <ButtonLink :link="'http://github.com/AGTTeam/' + PATCH_DATA.tool_repo" fullwidth external type="top-piece" color="black" icon="fa6-brands:github">
+            <ButtonLink v-if="PATCH_DATA.walkthrough_link != ''" :link="PATCH_DATA.walkthrough_link" fullwidth external type="top-piece" rgbColor="maroon" icon="fa6-solid:circle-question">
+                {{ $t('walkthrough') }}
+            </ButtonLink>
+            <ButtonLink :link="'http://github.com/AGTTeam/' + PATCH_DATA.tool_repo" fullwidth external type="bottom-piece" color="black" icon="fa6-brands:github">
                 {{ $t('sources-tools') }}
             </ButtonLink>
         </div>
