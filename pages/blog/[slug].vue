@@ -76,14 +76,13 @@ useHead({
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
-</script>
-
-<script>
 definePageMeta({
     title: 'Anime Game Translations Team - Blog',
     layout: 'blog'
 })
+</script>
 
+<script>
 export default {
     methods: {
         publishedAt(year, month, day) {

@@ -1,7 +1,3 @@
-<script setup>
-const { locale } = useI18n()
-const localePath = useLocalePath()
-</script>
 <template>
     <div>
         <NuxtLayout>
@@ -16,7 +12,9 @@ const localePath = useLocalePath()
     </div>
 </template>
 
-<script>
+<script setup>
+const { locale } = useI18n()
+const localePath = useLocalePath()
 definePageMeta({
     title: 'Anime Game Translations Team - Tag',
     layout: 'blog'

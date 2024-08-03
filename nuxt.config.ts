@@ -4,10 +4,11 @@ import { readFileSync } from 'node:fs'
 export default {
     // Modules
     modules: [
-        'nuxt-icon',
+        '@nuxt/icon',
         '@nuxt/content',
         '@nuxtjs/google-fonts',
-        '@nuxtjs/i18n'
+        '@nuxtjs/i18n',
+        "@nuxt/image"
     ],
 
     // Fonts
@@ -45,5 +46,7 @@ export default {
             { code: 'en', iso: 'en', file: 'locales/en.json', dir: 'ltr' },
         ],
         defaultLocale: 'en'
-    }
+    },
+
+    compatibilityDate: '2024-08-03',
 }
