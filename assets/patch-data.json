@@ -17,13 +17,16 @@
             "page": "/medusa",
             "color": "red",
             "tags": ["Nintendo DS", "[genre-action]"],
-            "repo": "MedusaTranslationData",
+            "tool_repo": "MedusaTranslation",
+            "data_repo": "MedusaData",
             "patch_prefix": "MedusaPatch",
             "sha_checks": "true",
             "required_rom_sha": "480F343FEC65EA36C4B64B7F8F89C5740DA2E24B5BAA265EE32C042824C92027",
             "bad_rom_sha": "A9F343FE7DDE1A20CBDCEEF03EE79FFDD1663A1A55961D9F99F7A402CAE93BE8",
             "fix_bad_rom": "true",
             "repair_patch": "medusa-repair.xdelta",
+            "mega_link": "https://mega.nz/file/GJA2yRgB#jNJwGnNBCRS_qFG7lW4A8GgCxocLfCwT-PoD6uQbyRQ",
+            "drive_link": "https://drive.google.com/uc?export=download&id=17F0Ki79OH29AQW9fKDIAgkGBpHE75roT",
             "available_patches": {
                 "en": [
                     {

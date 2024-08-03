@@ -5,12 +5,6 @@ locale: "en"
 ---
 
 ::game-nav
----
-game: "medusa"
-platform: "nds"
-patchUrl: "https://github.com/AGTTeam/MedusaData/releases"
-repoUrl: "https://github.com/AGTTeam/MedusaTranslation"
----
 ## Get the translation
 ::
 

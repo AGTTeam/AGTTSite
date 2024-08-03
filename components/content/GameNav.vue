@@ -3,7 +3,10 @@ const { t } = useI18n({
   useScope: 'local'
 })
 const localePath = useLocalePath()
-defineProps(['game', 'platform', 'patchUrl', 'repoUrl'])
+const route = useRoute()
+import ALL_PATCH_DATA from '/assets/patch-data.json';
+const defaultPlatform = ALL_PATCH_DATA.defaults[route.params.game];
+const PATCH_DATA = ALL_PATCH_DATA.patches[route.params.game + "-" + defaultPlatform];
 </script>
 
 <template>
@@ -12,18 +15,17 @@ defineProps(['game', 'platform', 'patchUrl', 'repoUrl'])
             <slot />
         </div>
         <div class="nav-buttons">
-            <ButtonLink :link="localePath('/' + game + '/guide/' + platform)" fullwidth type="top-piece" color="red" icon="fa6-solid:book">
+            <ButtonLink :link="localePath('/' + route.params.game + '/guide/' + defaultPlatform)" fullwidth type="top-piece" color="red" icon="fa6-solid:book">
                 {{ $t('setup-guide') }}
             </ButtonLink>
-            <ButtonLink :link="localePath('/' + game + '/patch/' + platform)" fullwidth type="mid-piece" color="blue" icon="fa6-solid:file-import">
+            <ButtonLink :link="localePath('/' + route.params.game + '/patch/' + defaultPlatform)" fullwidth type="mid-piece" color="blue" icon="fa6-solid:file-import">
                 {{ $t('rom-patcher') }}
             </ButtonLink>
-            <ButtonLink :link="patchUrl"
-                fullwidth type="bottom-piece" color="sl-green" icon="fa6-solid:download">
+            <ButtonLink :link="PATCH_DATA.mega_link" fullwidth external type="bottom-piece" color="sl-green" icon="fa6-solid:download">
                 {{ $t('download-patch') }}
             </ButtonLink>
             <div id="nav-or">&mdash;</div>
-            <ButtonLink :link="repoUrl" fullwidth type="top-piece" color="black" icon="fa6-brands:github">
+            <ButtonLink :link="'http://github.com/AGTTeam/' + PATCH_DATA.tool_repo" fullwidth external type="top-piece" color="black" icon="fa6-brands:github">
                 {{ $t('sources-tools') }}
             </ButtonLink>
         </div>

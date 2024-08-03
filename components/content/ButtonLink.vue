@@ -1,5 +1,5 @@
 <template>
-    <a :href="`${link == 'current-game' ? ('/' + route.params.game) : link}`" :rel="rel">
+    <a :href="`${link == 'current-game' ? ('/' + route.params.game) : link}`" :rel="rel" :target="`${external ? '_blank' : '_self'}`">
         <div :class="`button ${fullwidth ? 'fullwidth' : ''} ${rgbColor ? '' : `${color}-color`} ${type ? type : ''}`" :style="`${rgbColor ? `background-color: ${rgbColor} !important` : ''}`">
             <span v-if="icon">
                 <IconifiedText :icon="icon">
@@ -43,6 +43,10 @@ const { link, color, icon, type, fullwidth, rel } = defineProps({
         required: false
     },
     fullwidth: {
+        type: Boolean,
+        required: false
+    },
+    external: {
         type: Boolean,
         required: false
     },

@@ -215,7 +215,7 @@ function parsePatchFile(fileName, version) {
     showNotice('info', 'rom-patcher-downloading-patch');
 
     // Download from GitHub
-    let encodedUri = (CORS_PROXY + 'https://github.com/' + REPO_ORG + '/' + patchData.repo + '/releases/download/' + version + '/' + fileName);
+    let encodedUri = (CORS_PROXY + 'https://github.com/' + REPO_ORG + '/' + patchData.data_repo + '/releases/download/' + version + '/' + fileName);
     return fetchFile(encodedUri);
 }
 

@@ -92,7 +92,7 @@
 
     "setup-guide": "Setup Guide",
     "rom-patcher": "ROM Patcher",
-    "download-patch": "Download .xdelta",
+    "download-patch": "Download patch",
     "sources-tools": "Sources & Tools",
     "guide-invalid-page": "Invalid guide page",
     "guide-invalid-page-p": "Could not find a guide page at this address.",
