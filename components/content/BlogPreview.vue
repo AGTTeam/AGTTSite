@@ -15,16 +15,13 @@ const localePath = useLocalePath()
             <div class="title">
                 <NuxtLink :to="localePath(blog._path.substring(0, blog._path.lastIndexOf('/')))">{{ blog.title }}</NuxtLink>
             </div>
-            <div class="data">
-                <span class="meta">{{ $t('byline-pre') }}<NuxtLink :to="localePath('/author/' + blog.navigation.author.toLowerCase())">{{ blog.navigation.author }}</NuxtLink>{{ $t('byline-post') }} {{ $t('parenthetical-date', { date: $t('date-short', { day: blog.navigation.day, month: $t(getMonth(blog.navigation.month)), year: blog.navigation.year } ) }) }}</span>
-                <div class="tags">
-                    <IconifiedText icon="fa6-solid:tag" />
-                    <span class="tag" v-for="tag of blog.navigation.tags"><NuxtLink :to="localePath('/tag/' + tag)">{{ $t(`${tag.replace(' ', '-')}-tag`) }}</NuxtLink></span>
-                </div>
-            </div>
+            <span class="meta">{{ $t('byline-pre') }}<NuxtLink :to="localePath('/author/' + blog.navigation.author.toLowerCase())">{{ blog.navigation.author }}</NuxtLink>{{ $t('byline-post') }} {{ $t('parenthetical-date', { date: $t('date-short', { day: blog.navigation.day, month: $t(getMonth(blog.navigation.month)), year: blog.navigation.year } ) }) }}</span>
             <div class="description">{{ ((blog.description.length > 330) ? blog.description.slice(0, 329) + '&hellip;' : blog.description) }}</div>
+            <div class="tags">
+                <IconifiedText icon="fa6-solid:tag" />
+                <span class="tag" v-for="tag of blog.navigation.tags"><NuxtLink :to="localePath('/tag/' + tag)">{{ $t(`${tag.replace(' ', '-')}-tag`) }}</NuxtLink></span>
+            </div>
         </div>
-
     </div>
 </template>
 
@@ -74,15 +71,11 @@ const localePath = useLocalePath()
     color: black;
 }
 
-.blog-body .data {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.tags {
+    margin-top: 0.5rem;
 }
 
-.blog-body .data .tags .tag {
+.blog-body .tags .data .tag {
     background-color: var(--main-light-gray);
     border-radius: 0.5rem;
     padding: 0.1rem 0.25rem;
