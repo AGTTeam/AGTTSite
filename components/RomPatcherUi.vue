@@ -153,7 +153,7 @@ function getLanguageName(loc, languageCode) {
 // Patcher settings
 const REPO_ORG = 'AGTTeam';
 const CORS_PROXY = 'https://cors-anywhere.illidan.workers.dev/?';
-import ALL_PATCH_DATA from '/assets/patch-data.json'
+import ALL_PATCH_DATA from '/assets/patch-data.json';
 
 var localeVal = ''
 const notice = ref('rom-patcher-get-started')
@@ -400,7 +400,7 @@ export default {
                 saveRomFile(patchFile);
             }).catch((error) => {
                 if (error != '')
-                    showNotice('error', error);
+                    showNotice('error', 'rom-patcher-error', { error: error });
             });
         },
         selectFile: async function (event) {
