@@ -9,7 +9,7 @@
             "title": "fma-title",
             "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
             "color": "red",
-            "tags": ["PlayStation 2", "[genre-action]", "[status-translation]"]
+            "tags": ["[platform-ps2]", "[genre-action]", "[status-translation]"]
         },
         "mamoru-nds": {
             "id": "mamoru",
@@ -17,7 +17,7 @@
             "original": "Ore ga Omae o Mamoru",
             "page": "/mamoru",
             "color": "red",
-            "tags": ["Nintendo DS", "[genre-metroidvania]", "[non-anime]"],
+            "tags": ["[platform-nds]", "[genre-metroidvania]", "[non-anime]"],
             "tool_repo": "MamoruHelper",
             "data_repo": "MamoruData",
             "patch_prefix": "MamoruPatch",
@@ -25,7 +25,7 @@
             "required_rom_sha": "9398B11FD7A70F6B82EBB7E8F78F7117178D81367BD5A83E33BA3C698FA5A904",
             "bad_rom_sha": "A1FBAE58A0B9074D4B23F290DA7379CF3769ADCCAF3CBC95C34993FA32297AB7",
             "fix_bad_rom": "true",
-            "repair_patch": "medusa-repair.xdelta",
+            "repair_patch": "mamoru-repair.xdelta",
             "mega_link": "https://mega.nz/file/SUpRka7T#H3IBPYibqBbBsno9tp4_u9c6RLrhduO6U4yXDtvlqh0",
             "available_patches": {
                 "en": [
@@ -48,7 +48,7 @@
             "original": "Soul Eater: Medusa no Inbou",
             "page": "/medusa",
             "color": "red",
-            "tags": ["Nintendo DS", "[genre-action]"],
+            "tags": ["[platform-nds]", "[genre-action]"],
             "tool_repo": "MedusaTranslation",
             "data_repo": "MedusaData",
             "patch_prefix": "MedusaPatch",
