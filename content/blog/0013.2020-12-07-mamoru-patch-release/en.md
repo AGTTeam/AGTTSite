@@ -39,11 +39,11 @@ Ore ga Omae o Mamoru is a metroidvania published by Otomate Forte, a sister bran
 
 The story focuses on the protagonist, Ren, an elite knight sent to explore recently-discovered ruins dated back to the ancient civilisation of Edenbar, known for its incredible alchemical technology, and mysterious disappearance.
 
-*   [Download the Patch](https://www.romhacking.net/translations/5796/) ([Mega backup](https://mega.nz/file/SUpRka7T#H3IBPYibqBbBsno9tp4_u9c6RLrhduO6U4yXDtvlqh0))
+*   [Download the Patch](/mamoru)
 *   [Translated Trailer](https://www.youtube.com/watch?v=cCfP-qiW1rs) 
 
 **Have any questions or issues?**  
-Please read the [Beginners Guide](https://phantom-patches.tumblr.com/beginnersguide) before asking!
+Please read the [Patch Guide](/mamoru/guide/nds) before asking!
 
 **Want to get in touch?**  
-Join our [discord server](https://discord.com/invite/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more games to the English-speaking fandom!
+Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more games to the English-speaking fandom!

@@ -43,19 +43,14 @@ Blast through enemies in a single strike using Soul Resonance!
 
 ## Medusa no Inbou (メデューサの陰謀) Patch by the Anime Game Translations Team
 
-[Download the Patch + Install Instructions](http://www.romhacking.net/translations/5558/)
-
-[Alternative Download](https://drive.google.com/uc?export=download&id=17F0Ki79OH29AQW9fKDIAgkGBpHE75roT) (GDrive)
-
-[Game Walkthrough](https://gamefaqs.gamespot.com/ds/947637-soul-eater-medusa-no-inbou/faqs/78360)
-
-[Cheat Codes](https://drive.google.com/uc?export=download&id=13Bm4UI2HFTFrvkujaDbxO1SizfRGUWbH) (GDrive)
-
-[Trailer](https://youtu.be/Ixe4DFcEH4k) & [First Five Minutes of Gameplay](https://youtu.be/c2ImN3k3Uak)
+*   [Download the Patch](/medusa)
+*   [Game Walkthrough](https://gamefaqs.gamespot.com/ds/947637-soul-eater-medusa-no-inbou/faqs/78360)
+*   [Cheat Codes](https://drive.google.com/uc?export=download&id=13Bm4UI2HFTFrvkujaDbxO1SizfRGUWbH) (GDrive)
+*   [Trailer](https://youtu.be/Ixe4DFcEH4k) & [First Five Minutes of Gameplay](https://youtu.be/c2ImN3k3Uak)
 
 **Any questions?**
 
-Please read the [Beginners Guide](https://phantom-patches.tumblr.com/beginnersguide) before asking!
+Please read the [Patch Guide](/medusa/guide/nds) before asking!
 
 **Want to get in touch?**
 

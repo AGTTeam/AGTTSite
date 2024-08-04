@@ -12,9 +12,9 @@
     "medusa-patch": "Medusa Patch",
     "view-all": "View All",
     "feed": "Feed",
-    "medusa-title": "Soul Eater: Medusa's Plot",
-    "fma-title": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
     "genre-action": "Action",
+    "genre-metroidvania": "Metroidvania",
+    "non-anime": "Non-anime",
     "get-patch": "Get Patch",
     "status-translation": "In translation",
     "status-proofreading": "Proofreading",
@@ -39,6 +39,10 @@
     "pinterest": "Pinterest",
     "bilibili": "bilibili",
     "tumblr": "Tumblr",
+
+    "medusa-title": "Soul Eater: Medusa's Plot",
+    "mamoru-title": "Ore ga Omae o Mamoru",
+    "fma-title": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
 
     "blogs": "Blogs",
     "back-to-blog": "Back to the Blog",
