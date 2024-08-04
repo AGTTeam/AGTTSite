@@ -1,5 +1,5 @@
 <template>
-    <h2>{{ $t('upcoming-translations') }}</h2>
+    <h2 class="top-title">{{ $t('upcoming-translations') }}</h2>
     <div id="translations-grid">
         <TranslationPoster v-for="translation of wip_translations" :key="translation.id" :translation="translation" />
     </div>
@@ -12,7 +12,7 @@
 <style scoped>
 #translations-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 0.5rem;
     justify-items: center;
 }
@@ -24,7 +24,7 @@
     }
 }
 
-h2 {
+h2.top-title {
     margin: 0;
     margin-bottom: 1.4rem;
     font-size: 1.5rem;

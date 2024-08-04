@@ -8,9 +8,11 @@ const localePath = useLocalePath()
 <template>
     <div class="translation">
         <div class="about">
-            <div :class="'title ' + translation.color">
-                <NuxtLink v-if="translation.page != null" :to="localePath(translation.page)">{{ $t(translation.title) }}</NuxtLink>
-                <span v-else>{{ $t(translation.title) }}</span>
+            <div v-if="translation.page != null" :class="'title ' + translation.color">
+                <NuxtLink :to="localePath(translation.page)">{{ $t(translation.title) }}</NuxtLink>
+            </div>
+            <div v-else class="title">
+                <span>{{ $t(translation.title) }}</span>
             </div>
             <div v-if="translation.tags" class="tags">
                 <span class="tag" v-for="tag of translation.tags">
@@ -34,16 +36,8 @@ const localePath = useLocalePath()
     flex-direction: column;
     justify-content: left;
     align-content: left;
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
     width: 100%;
-}
-
-.translation .status {
-    display: flex;
-    margin-right: 0.5rem;
-    justify-content: center;
-    align-content: center;
-    min-width: 180px;
 }
 
 .about .title {
@@ -66,15 +60,6 @@ const localePath = useLocalePath()
     margin: 0 0.2rem;
 }
 
-.about .tagline {
-    font-weight: bold;
-    margin: 0.5rem 0;
-}
-
-.about .description {
-    margin: 0.25rem 0;
-}
-
 .about .button {
     display: flex;
     justify-self: flex-end;
@@ -82,10 +67,6 @@ const localePath = useLocalePath()
     justify-content: flex-end;
     align-self: flex-end;
     margin-top: auto;
-}
-
-.about .coming-soon {
-    font-weight: bold;
 }
 
 .red a {

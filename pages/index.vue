@@ -13,7 +13,7 @@
                             <h2>{{ $t('about') }}</h2>
                             <ContentDoc :path="`/${locale}`" />
                             <h2>{{ $t('social-links') }}</h2>
-                            <SocialLinks type="stack" :stack-topper="{link:'https://agtteam.tumblr.com', locale: 'news-and-blog', icon: 'fa6-solid:paper-plane'}" />
+                            <SocialLinks type="stack" :stack-topper="{link:'https://agtteam.net/blog', locale: 'news-and-blog', icon: 'fa6-solid:paper-plane'}" />
                         </div>
                     </div>
                     <div class="blogs box">
@@ -83,12 +83,12 @@ definePageMeta({
     display: flex;
     flex-direction: column;
     height: fit-content;
-    max-width: 420px;
+    max-width: 300px;
 }
 
 #home-page .socials {
     height: fit-content;
-    max-width: 420px;
+    max-width: 300px;
 }
 
 #home-page .blogs {

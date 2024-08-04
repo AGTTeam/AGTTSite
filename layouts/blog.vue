@@ -56,14 +56,14 @@ onMounted(() => {
 .sidebar {
     display: flex;
     flex-direction: column;
-    max-width: 250px;
+    max-width: 300px;
     width: 26vw;
 }
 
 .blog {
     display: flex;
     flex-direction: column;
-    max-width: 935px !important;
+    max-width: 885px !important;
     width: 61.5vw;
 }
 
