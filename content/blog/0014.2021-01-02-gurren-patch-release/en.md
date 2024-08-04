@@ -1,5 +1,5 @@
 ---
-title: &title "Gurren Lagann Patch Release!"
+title: &title "Gurren Lagann Patch Released!"
 description: &desc "Tengen Toppa Gurren Lagann (天元突破グレンラガン) patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
@@ -46,7 +46,7 @@ Full of action-packed battles, mini-games, 3 exclusive characters and an alterna
 *   [Gameplay Preview Trailer](https://youtu.be/-zm5yUaUp4U)
 
 **Any questions?**
-Please read the [Beginners Guide](https://phantom-patches.tumblr.com/beginnersguide) before asking!
+Please read the [Beginners Guide](https://agtteam.tumblr.com/beginnersguide) before asking!
 
 **Want to get in touch?**
 Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

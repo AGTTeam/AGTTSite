@@ -1,5 +1,5 @@
 ---
-title: &title "D.Gray-man: The Apostles of God English Patch Release!"
+title: &title "D.Gray-man: The Apostles of God English Patch Released!"
 description: &desc "Kami no Shitotachi (神の使徒達) Patch v1.0 by Phantom & Supper"
 locale: 'en'
 navigation:

@@ -1,5 +1,5 @@
 ---
-title: &title "June Progress Report"
+title: &title "May - June Progress Report"
 description: &desc "I’m afraid that I have been going ghost on tumblr, more so than is acceptable even for a phantom. So from now on, I’ll try to post bi-monthly updates on projects!"
 locale: 'en'
 navigation:

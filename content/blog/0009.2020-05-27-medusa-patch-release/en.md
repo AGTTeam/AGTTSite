@@ -1,5 +1,5 @@
 ---
-title: &title "Soul Eater Medusa no Inbou English Patch release!"
+title: &title "Soul Eater Medusa no Inbou English Patch Released!"
 description: &desc "Medusa no Inbou (メデューサの陰謀) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:

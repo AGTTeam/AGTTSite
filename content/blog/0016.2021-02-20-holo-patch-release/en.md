@@ -1,5 +1,5 @@
 ---
-title: &title "My Year with Holo Patch Release!"
+title: &title "My Year with Holo Patch Released!"
 description: &desc "Spice and Wolf: My Year With Holo (狼と香辛料 ボクとホロの一年) patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
