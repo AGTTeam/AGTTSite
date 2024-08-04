@@ -7,7 +7,7 @@ navigation:
   year: 2024
   month: 07
   day: 01
-  tags: ['progress-report']
+  tags: ['progress-report', 'mushishi', 'fma', 'successors', 'naruto']
   image: '0999/00_thumbnail.png'
 head:
   meta:

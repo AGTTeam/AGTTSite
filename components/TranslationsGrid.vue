@@ -23,6 +23,13 @@
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
 }
+
+h2 {
+    margin: 0;
+    margin-bottom: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 </style>
 
 <script>

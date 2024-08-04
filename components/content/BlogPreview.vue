@@ -75,11 +75,15 @@ const localePath = useLocalePath()
     margin-top: 0.5rem;
 }
 
-.blog-body .tags .data .tag {
+.tagicon {
+    margin-top: 2rem;
+}
+
+.blog-body .tags .tag {
     background-color: var(--main-light-gray);
     border-radius: 0.5rem;
     padding: 0.1rem 0.25rem;
-    margin: 0 0.2rem;
+    margin: 0 0.1rem;
 }
 
 .blog-body .description {

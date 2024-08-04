@@ -7,7 +7,7 @@ navigation:
   year: 2019
   month: 09
   day: 01
-  tags: ['progress-report']
+  tags: ['progress-report', 'mamoru', 'mecha', 'gurren']
   image: '0004/00_thumbnail.png'
 head:
   meta:

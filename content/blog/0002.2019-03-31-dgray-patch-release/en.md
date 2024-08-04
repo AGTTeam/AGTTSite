@@ -7,7 +7,7 @@ navigation:
   year: 2019
   month: 03
   day: 31
-  tags: ['releases', 'dgray']
+  tags: ['affiliated', 'dgray']
   image: '0002/00_thumbnail.png'
 head:
   meta:

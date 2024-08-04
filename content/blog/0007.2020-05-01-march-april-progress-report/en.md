@@ -7,7 +7,7 @@ navigation:
   year: 2020
   month: 05
   day: 01
-  tags: ['progress-report']
+  tags: ['progress-report', 'gurren', 'medusa', 'vampire', 'mamoru', 'holo']
   image: '0007/00_thumbnail.png'
 head:
   meta:
@@ -48,7 +48,7 @@ I’ve mentioned this game in a previous ask but haven’t had the pleasure of o
 ## [NDS] Vampire Knight DS
 ![Vampire Knight DS screenshot](/images/blog/0007/616906319666020352_2.png)
 
-I won’t speak too much about this one having already made a post about it recently, but the short version is that Dariya is back in the lead, and looking for help from both translators and non-Japanese speakers to deal with the challenge of organizing this script! If you have the time to spare, please do consider getting in touch with one of us down at the [VK discord server!](https://t.umblr.com/redirect?z=https%3A%2F%2Fdiscord.gg%2FV28Dpx7&t=NDBkOGU5MWQ4OTY0MzNmNzE3NDNhYzJiMjc0OGY3ODA2ZTY4ODE5ZSw0OThhMThiZTlhZmJhMzg0OGI5ZmZmNjNjMmYzNDYzZDllNzZkOWUy)
+I won’t speak too much about this one having already made a post about it recently, but the short version is that Dariya is back in the lead, and looking for help from both translators and non-Japanese speakers to deal with the challenge of organizing this script! If you have the time to spare, please do consider getting in touch with one of us down at the [VK discord server!](https://discord.gg/V28Dpx7)
 
 
 ## [NDS] Ore ga Omae wo Mamoru (Non-Anime)

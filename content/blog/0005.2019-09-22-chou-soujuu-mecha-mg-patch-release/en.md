@@ -7,7 +7,7 @@ navigation:
   year: 2019
   month: 9
   day: 22
-  tags: ['releases']
+  tags: ['affiliated', 'mecha']
   image: '0005/00_thumbnail.png'
 head:
   meta:

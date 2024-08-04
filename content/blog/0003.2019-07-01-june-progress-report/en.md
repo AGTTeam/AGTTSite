@@ -7,7 +7,7 @@ navigation:
   year: 2019
   month: 07
   day: 01
-  tags: ['progress-report']
+  tags: ['progress-report', 'mecha', 'kiragame', 'gurren', 'vampire']
   image: '0003/00_thumbnail.png'
 head:
   meta:
