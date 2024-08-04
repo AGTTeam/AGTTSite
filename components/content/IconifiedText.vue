@@ -8,6 +8,7 @@
 
 <style scoped>
 .iconified-text-icon {
+    vertical-align: middle;
     font-size: 1.4rem;
     margin-right: 0.25rem;
     margin-bottom: 0.1rem;
