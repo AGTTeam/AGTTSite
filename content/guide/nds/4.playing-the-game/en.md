@@ -6,10 +6,6 @@ navigation:
 locale: 'en'
 ---
 
-::guide-notice
-Emulator users: DeSmuME is not recommended due to various emulation issues.
-::
-
 Now that you've got the patched ROM file, it's time to get ready to start playing!
 
 ---
@@ -135,7 +131,7 @@ With melonDS setup, all you need to do in order to play the game is select "File
 melonDS has a number of advanced features, such as configuring controllers and tweaking display settings. You can check out the [melonDS Website](https://melonds.kuribo64.net/) for more information.
 
 #### Other PC emulators
-* [DeSmuME](https://desmume.org/)－Not recommended due to detrimental graphical and sound emulation issues (the latter of which particularly affects cutscenes).
+* [DeSmuME](https://desmume.org/)－Another popular PC emulator, but may have performance issues with certain games.
 * [No$GBA](https://www.nogba.com/)－Not recommended due to severe general emulation accuracy issues. It's also infrequently updated and not very user-friendly.
 
 </div>
@@ -164,11 +160,11 @@ There are two methods for doing this. The first method is recommended and uses C
 2. Transfer the patched ROM over to your device using a third party tool such as iFunBox or iExplorer. If you're running on an Apple TV, you'll be given a Web URL you can access locally to transfer ROMs to the emulator directly.
 
 #### Emulate on Android
-The best DS emulator on Android is [DraStic](https://play.google.com/store/apps/details?id=com.dsemu.drastic), which has a great interface and is simple to install, but it costs $4.99. [RetroArch](https://play.google.com/store/apps/details?id=com.retroarch) is a free alternative, although it comes with the caveat of the DS emulation being based on DeSmuME, which has a number of emulation issues with this game.
+The best DS emulator on Android is [DraStic](https://play.google.com/store/apps/details?id=com.dsemu.drastic), which has a great interface and is simple to install. Another alternative is [RetroArch](https://play.google.com/store/apps/details?id=com.retroarch).
 
 **Requirements:**
 * Android Device with the Google Play store
-* Drastic ($4.99) or RetroArch (free)
+* Drastic or RetroArch
 
 **Play using DraStic Emulator**
 
