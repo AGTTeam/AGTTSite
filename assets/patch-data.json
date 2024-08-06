@@ -1,7 +1,8 @@
 {
-    "defaults": {
-        "mamoru": "nds",
-        "medusa": "nds"
+    "platforms": {
+        "gurren": ["nds"],
+        "mamoru": ["nds"],
+        "medusa": ["nds"]
     },
     "patches": {
         "fma-ps2": {
@@ -10,6 +11,30 @@
             "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
             "color": "red",
             "tags": ["[platform-ps2]", "[genre-action]", "[status-translation]"]
+        },
+        "gurren-nds": {
+            "id": "gurren",
+            "title": "gurren-title",
+            "original": "Tengen Toppa Gurren Lagann",
+            "page": "/gurren",
+            "color": "red",
+            "tags": ["[platform-nds]", "[genre-action]"],
+            "tool_repo": "GurrenTranslation",
+            "data_repo": "GurrenData",
+            "patch_prefix": "GurrenPatch",
+            "sha_checks": "true",
+            "required_rom_sha": "60EB41F523BE98E8F78CD914FF340A4FF7110FA304B7E3500EBB4CA8C059D445",
+            "mega_link": "https://mega.nz/file/rBBylBRK#rs9ffYpef5n8FQ4uFS_iUJBl1f7bjh0V2umBODB9jBI",
+            "walkthrough_link": "https://gamefaqs.gamespot.com/ds/941795-tengen-toppa-gurren-lagann/faqs/78894",
+            "available_patches": {
+                "en": [
+                    {
+                        "version": "1.0",
+                        "date": "Jan 02, 2021",
+                        "lang": "en"
+                    }
+                ]
+            }
         },
         "mamoru-nds": {
             "id": "mamoru",
