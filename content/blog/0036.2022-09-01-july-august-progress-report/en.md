@@ -33,7 +33,7 @@ head:
 
 With [Bakemonogatari Portable](https://agtteam.tumblr.com/post/693290598568968192/bakemonogatari-portable-english-patch-released) released, that brings us up to a total of four patches in the past year! Will we be able to make that five before the year is through? Here’s where things currently stand…
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0036/694181536064552960_0.png)
 
@@ -42,14 +42,14 @@ Hey all! Ligudink here, once again! I have little news to share on this one….e
 You guys would have seen more if this Dink didn’t have to get hospitalized, but he’s back now better than ever and is showing much progress on this one! I hope I can come back with more news next time! The finale of the OG Naruto is on its way to translation!!! See you guys next time!  
 
 
-## [NDS] L - the ProLogue to Death Note: Spiraling Trap
+## \[NDS\] L - the ProLogue to Death Note: Spiraling Trap
 
 ![L - the ProLogue to Death Note: Spiraling Trap screenshot](/images/blog/0036/694181536064552960_1.png)
 
 Translation of L - the ProLogue to Death Note is also progressing well, with the story being approximately 60% done. We say _approximately,_ as due to the nature of it being an exploration heavy game, there’s still a lot of text left to uncover. Fortunately though, we have the help of the world’s greatest detective on the case!
 
 
-## [NDS] Kimi no Yusha
+## \[NDS\] Kimi no Yusha
 
 ![Kimi no Yusha screenshot](/images/blog/0036/694181536064552960_2.png)
 

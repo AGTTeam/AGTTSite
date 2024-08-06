@@ -18,8 +18,8 @@ nav {
     margin: 0.5rem 0.75rem;
     border-radius: 0.5rem;
     width: 100%;
-    background-color: #cccccc55;
-    backdrop-filter: blur(0.5rem);
+    background-color: #00000000;
+    backdrop-filter: blur(0.8rem);
     filter: drop-shadow(0 0 0.5rem #00000055);
     max-width: 80vw;
 }

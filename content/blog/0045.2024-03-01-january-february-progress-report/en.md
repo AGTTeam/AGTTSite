@@ -33,14 +33,14 @@ head:
 
 And just like that, March is here! How has the new year been treating you? Here’s how we’ve been getting on…
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0045/743780393309913088_0.png)
 
 Hello there everybody! Things are going well with the extensive proofreading going on with the scripts of the game! The painfully long list of Onsen interactions are now \[almost\] complete! It’s in the polishing phase and I’m looking forward to reaching the day where I write the update detailing the release! Take care, people!!
 
 
-## [NDS] Mushishi: Amefuru Sato
+## \[NDS\] Mushishi: Amefuru Sato
 
 ![Mushishi: Amefuru Sato screenshot](/images/blog/0045/743780393309913088_1.png)
 

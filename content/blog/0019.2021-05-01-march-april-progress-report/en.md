@@ -33,7 +33,7 @@ head:
 
 Two months have flown by like the wind, but we’re excited to be back bringing you the latest news!
 
-## [NDS] Death Note: Kira Game
+## \[NDS\] Death Note: Kira Game
 
 ![Death Note: Kira Game screenshot](/images/blog/0019/649983305103671296_0.png)
 
@@ -44,7 +44,7 @@ The game includes a story mode which roughly follows the events of the manga/ani
 Already, translations have been completed for the tutorial and four story chapters.
 
 
-## [NDS] Vampire Knight DS
+## \[NDS\] Vampire Knight DS
 
 ![Vampire Knight DS screenshot](/images/blog/0019/649983305103671296_1.png)
 
@@ -53,7 +53,7 @@ Next is an oldie, but a goldie! Originally started in 2018 by Zorbnog, the AGT T
 Thanks to the work left behind by the old team, the project has been off to a roaring start, with translations already having reached the fourth chapter.
 
 
-## [PS2/PSP] Soul Eater: Battle Resonance
+## \[PS2/PSP\] Soul Eater: Battle Resonance
 
 ![Soul Eater: Battle Resonance screenshot](/images/blog/0019/649983305103671296_2.png)
 
@@ -62,14 +62,14 @@ The majority of Battle Resonance’s text comes from its Adventure Mode, and lot
 A fun bit of trivia for Soul Eater fans, the bloodthirsty killer, Sonson-J is briefly mentioned in Battle Resonance, making him the only minor villain from the series who shows up both in this game and Monotone Princess!
 
 
-## [Wii] Soul Eater: Monotone Princess
+## \[Wii\] Soul Eater: Monotone Princess
 
 ![Soul Eater: Monotone Princess screenshot](/images/blog/0019/649983305103671296_3.png)
 
 Speaking of Montone Princess, we’re pleased to annouce that it has now been through a total of two proofreading passes, and is awaiting one final review before it’ll be ready for release! Unfortunately, these last two months have been busy for the members of our graphics team and so not much progress has been able to be made on the remaining untranslated images, but with the bulk of the work finished now, we are determined to make sure this patch is released in a timely manner.
 
 
-## [NDS] Spice & Wolf: The Wind that Spans the Sea
+## \[NDS\] Spice & Wolf: The Wind that Spans the Sea
 
 ![Spice & Wolf: The Wind that Spans the Sea screenshot](/images/blog/0019/649983305103671296_4.png)
 

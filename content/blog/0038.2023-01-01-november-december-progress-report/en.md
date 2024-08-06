@@ -33,7 +33,7 @@ head:
 
 Wishing everyone a very Happy New Year from all of us here at the team! We’re sure you can probably guess what our New Year’s resolutions are…
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0038/705268001267761152_0.png)
 
@@ -42,7 +42,7 @@ Hey all! Ligudink here! So uh…remember the lackluster update from last time? W
 I will now focus on the NPC text, Onsen interactions, as well as the menus. I hope I can bring more updates to the table next time I write to you all. I wish you all an amazing new year! For all my fellow RHOK Watchers, a line happened to be very convenient for me to put a reference, so you’ll enjoy it for sure.
 
 
-## [NDS] L - the ProLogue to Death Note: Spiraling Trap
+## \[NDS\] L - the ProLogue to Death Note: Spiraling Trap
 
 ![L - the ProLogue to Death Note: Spiraling Trap screenshot](/images/blog/0038/705268001267761152_1.png)
 

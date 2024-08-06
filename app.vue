@@ -32,7 +32,7 @@ a {
 
 a:hover {
   filter: brightness(80%);
-  text-decoration: underline;
+  text-decoration: dashed underline;
 }
 
 h1 a,

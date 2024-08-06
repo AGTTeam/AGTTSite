@@ -33,7 +33,7 @@ head:
 
 \*Dusts away the cobwebs\* We hope everyone had a fun Halloween that was as spooky or unspooky as you like. Here’s what we’ve been up to lately!
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0037/699742781555523584_0.png)
 
@@ -42,7 +42,7 @@ Ligudink here! I would like to apologize for the lackluster update I have on thi
 I hope to bring more updates to you all by the end of this year, hopefully I would not be as busy as I am now with my senior year in college. Take care!  
 
 
-## [NDS] L - the ProLogue to Death Note: Spiraling Trap
+## \[NDS\] L - the ProLogue to Death Note: Spiraling Trap
 
 ![L - the ProLogue to Death Note: Spiraling Trap screenshot](/images/blog/0037/699742781555523584_1.png)
 

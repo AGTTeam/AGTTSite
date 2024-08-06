@@ -33,7 +33,7 @@ head:
 
 We're back! And as promised, this time around we're introducing two exciting new projects! But first...
 
-## [NDS] Mushishi: Amefuru Sato
+## \[NDS\] Mushishi: Amefuru Sato
 
 ![Mushishi: Amefuru Sato screenshot](/images/blog/0047/01_mushishi.jpg)
 
@@ -43,7 +43,7 @@ The translation phase is complete! Once again I'd like to extend a HUGE thank-yo
 
 The playtesting phase won't be opened just yet due to some issues with the game crashing, but once we get that sorted out it'll be good to go. Until then, anybody interested in playtesting/proofreading/copyediting is welcome to go ahead and [reach out](<https://discord.com/invite/UUF7Zbm>) so we can get you on board when the time comes!
 
-## [PS2] Fullmetal Alchemist 3: Kami wo Tsugu Shoujo
+## \[PS2\] Fullmetal Alchemist 3: Kami wo Tsugu Shoujo
 
 ![Fullmetal Alchemist 3: Kami wo Tsugu Shoujo screenshot](/images/blog/0047/02_fma.jpg)
 
@@ -57,7 +57,7 @@ Illidan is working on the hacking part; extraction and repacking of files is don
 
 If you're a fan of Fullmetal Alchemist, be sure to check on our progress!
 
-## [NDS] Death Note: Successors to L
+## \[NDS\] Death Note: Successors to L
 
 ![Death Note: Successors to L screenshot](/images/blog/0047/03_deathnote.jpg)
 
@@ -67,7 +67,7 @@ Successors to L features gameplay based on the board game "Scotland Yard". Avoid
 
 Thanks to the efforts of creeper and blueraspberrysundae, two new translators who've joined us for this project, the translation has already reached an impressive 38%!
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0047/04_naruto.jpg)
 

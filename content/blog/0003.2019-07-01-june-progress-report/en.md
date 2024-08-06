@@ -34,7 +34,7 @@ head:
 I’m afraid that I have been going ghost on tumblr, more so than is acceptable even for a _phantom_. So from now on, I’ll try to post bi-monthly updates on projects! (Long post incoming.)
 
 
-## [NDS] Chou Soujuu Mecha MG (Non-Anime)
+## \[NDS\] Chou Soujuu Mecha MG (Non-Anime)
 
 If you are a fan of Super Smash Bros. you may recognise the name from Brawl!  
 
@@ -47,7 +47,7 @@ I must admit that I am not normally the first to jump at the ‘mecha’ genre, 
 The translation is now at 100%, although proofreading is on hold for the moment.
 
 
-## [NDS] Death Note: Kira Game
+## \[NDS\] Death Note: Kira Game
 
 ![Death Note: Kira Game screenshot](/images/blog/0003/185975072687_1.png)
 
@@ -56,7 +56,7 @@ To the anon who asked about this game before, it turns out that the video of the
 That is a long time by anyone’s standards, so they have been digging through old folders to see what might be found.
 
 
-## [NDS] Tengen Toppa Gurren Lagann
+## \[NDS\] Tengen Toppa Gurren Lagann
 
 ![Tengen Toppa Gurren Lagann screenshot](/images/blog/0003/185975072687_2.png)
 
@@ -67,7 +67,7 @@ The game mostly follows the anime, with an alternative ending and three new char
 There is rather a large number of images to contend with, but the translation currently stands at around 75%! I am hoping to find a translation checker and hacker to help out with it soon.
 
 
-## [NDS] Vampire Knight DS
+## \[NDS\] Vampire Knight DS
 
 ![Vampire Knight DS screenshot](/images/blog/0003/185975072687_3.png)
 

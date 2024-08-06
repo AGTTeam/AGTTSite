@@ -33,7 +33,7 @@ head:
 
 A new month is here, and you know what that means… Time for a quick project round-up!
 
-## [NDS] Mushishi: Amefuru Sato
+## \[NDS\] Mushishi: Amefuru Sato
 
 ![Mushishi: Amefuru Sato screenshot](/images/blog/0041/721632392681537536_0.png)
 
@@ -46,14 +46,14 @@ And if anybody would like to help, don’t be shy! Please [feel free to reach ou
 That’s all for now. See ya next update!  
 
 
-## [NDS] L - the ProLogue to Death Note: Spiraling Trap
+## \[NDS\] L - the ProLogue to Death Note: Spiraling Trap
 
 ![L - the ProLogue to Death Note: Spiraling Trap screenshot](/images/blog/0041/721632392681537536_1.png)
 
 Hello, Phantom here! …And this is the face I make when I come across another baseball reference that needs checking. Fortunately, I’m pleased to say that the first proofreading pass is now (virtually) complete! Other than further proofreading, there are still a few minor bugs which we’re trying to stamp out, but the finish line is finally in sight!
 
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0041/721632392681537536_2.png)
 

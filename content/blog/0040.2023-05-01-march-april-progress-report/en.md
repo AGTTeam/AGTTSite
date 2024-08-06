@@ -33,7 +33,7 @@ head:
 
 Real life has hit our progress hard lately, but we remain as committed as ever to getting these translations out for all to enjoy!
 
-## [NDS] Mushishi: Amefuru Sato
+## \[NDS\] Mushishi: Amefuru Sato
 
 ![Mushishi: Amefuru Sato screenshot](/images/blog/0040/716135016436039680_0.png)
 
@@ -46,7 +46,7 @@ Mushishi: Amefuru Sato (roughly translates to “the village that fell from heav
 I’m sorry to reveal that there hasn’t been much progress since the last update. As of writing, only the introductory sequence and some UI elements have been translated, so there’s still a lot of work to be done, but I’m hoping to pick up the pace so we can get this bad boy out as soon as possible! If anyone is interested in helping, please feel free to [contact the team](https://discord.com/invite/UUF7Zbm)!  
 
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0040/716135016436039680_1.png)
 
@@ -55,7 +55,7 @@ Since our last update, we’ve made several more tweaks to the Naruto RPG2 tool 
 We’ve also implemented the ability to edit map tiles as seen on the left. Some of these will be ported from POTN1 & 2, but we’re also working on making new versions for things that weren’t translated/didn’t look great in the original. In short, there’s still a way to go, but we’re getting closer!
 
 
-## [NDS] L - the ProLogue to Death Note: Spiraling Trap
+## \[NDS\] L - the ProLogue to Death Note: Spiraling Trap
 
 ![L - the ProLogue to Death Note: Spiraling Trap screenshot](/images/blog/0040/716135016436039680_2.png)
 

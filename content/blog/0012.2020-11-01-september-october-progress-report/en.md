@@ -33,35 +33,35 @@ head:
 
 It’s been a busy few months, but we’ve had some exciting updates!
 
-## [NDS] Spice & Wolf: My One Year with Holo
+## \[NDS\] Spice & Wolf: My One Year with Holo
 
 ![Spice & Wolf: My One Year with Holo screenshot](/images/blog/0012/633617657361514496_0.png)
 
 In major news, Spice & Wolf has now been completely translated! The majority of the text hasn’t been tested in game yet, but we’ve been joined by some awesome new proofreaders who are simultaneously working on the first and second pass of proofreading, in an attempt to get this patch out there as soon as possible!
 
 
-## [NDS] Tengen Toppa Gurren Lagann
+## \[NDS\] Tengen Toppa Gurren Lagann
 
 ![Tengen Toppa Gurren Lagann screenshot](/images/blog/0012/633617657361514496_1.gif)
 
 Speaking of new arrivals, we were also recently joined by artist [megaaudino](https://megaaudino.tumblr.com/), who has been working on some amazing animations for the sprites which used to be static, making the game world come even more to life! Can you guess which animation is new?  
 
 
-## [NDS] Ore ga Omae o Mamoru (Non-Anime)
+## \[NDS\] Ore ga Omae o Mamoru (Non-Anime)
 
 ![Ore ga Omae o Mamoru screenshot](/images/blog/0012/633617657361514496_2.png)
 
 We’re down to one last bug before release with this game, but unfortunately it’s a tricky one to squash! Ilidan came up with a solution to make enemy name tags more legible by using a wider font, though in the process of tweaking other things, it’s now become off-center as seen on the right. Though we can make manual adjustments, it’s not quite ideal so we’re trying to exhaust all other options first. 
 
 
-## [Wii] Soul Eater: Monotone Princess
+## \[Wii\] Soul Eater: Monotone Princess
 
 ![Soul Eater: Monotone Princess screenshot](/images/blog/0012/633617657361514496_3.png)
 
 Getting close now, translation progress has hit 84%! It’s likely that we might start recruiting proofreaders for this too in the near future.
 
 
-## [GBA] Fullmetal Alchemist: Sonata of Memories
+## \[GBA\] Fullmetal Alchemist: Sonata of Memories
 
 ![Fullmetal Alchemist: Sonata of Memories screenshot](/images/blog/0012/633617657361514496_4.jpg)
 

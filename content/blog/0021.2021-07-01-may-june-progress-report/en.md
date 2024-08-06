@@ -33,7 +33,7 @@ head:
 
 It’s been a quiet two months down at the AGT Team, but a busy one in real life!
 
-## [NDS] Vampire Knight DS
+## \[NDS\] Vampire Knight DS
 
 ![Vampire Knight DS screenshot](/images/blog/0021/655517290846208000_0.png)
 
@@ -42,7 +42,7 @@ Excitingly, the translation has now reached Chapter 7, which is the final chapte
 Space limitations in the game mean that some of these are being cut off, and we still have the challenge of figuring out what to do with the player name input which is currently a pitiful 6 characters long, but our determination is as everlasting as a resin rose!
 
 
-## [NDS] Death Note: Kira Game
+## \[NDS\] Death Note: Kira Game
 
 ![Death Note: Kira Game screenshot](/images/blog/0021/655517290846208000_1.png)
 
@@ -51,7 +51,7 @@ As for Death Note: Kira Game, the translation has progressed up through chapter 
 One interesting thing to note is that the thief, Wedy, and the con-man, Aiber, are nowhere to be seen in this game despite Sayu Yagami even being made a playable character.  
 
 
-## [Wii] Soul Eater: Monotone Princess
+## \[Wii\] Soul Eater: Monotone Princess
 
 ![Soul Eater: Monotone Princess screenshot](/images/blog/0021/655517290846208000_2.png)
 

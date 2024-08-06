@@ -33,7 +33,7 @@ head:
 
 New year, new projects (and of course, ongoing ones too!) To kick off the year we’re starting with the translations that we expect will be the first upcoming releases.
 
-## [NDS] Death Note: Kira Game
+## \[NDS\] Death Note: Kira Game
 
 ![Death Note: Kira Game screenshot](/images/blog/0028/672173082539130880_0.png)
 
@@ -42,7 +42,7 @@ Death Note: Kira Game gets ever closer to completion. Work has begun on adding t
 Seeing everything come together is very motivating, and we hope you’re all as excited for the finished patch as we are!  
 
 
-## [PS2/PSP] Soul Eater: Battle Resonance
+## \[PS2/PSP\] Soul Eater: Battle Resonance
 
 ![Soul Eater: Battle Resonance screenshot](/images/blog/0028/672173082539130880_1.png)
 
@@ -51,14 +51,14 @@ As Battle Resonance turns over to the play testing phase, we’ve been making a 
 We are looking into a recently discovered bug with our code for swapping the X and O inputs (these are reversed in Japan). As well, an issue has been resolved with the game’s input-pulling method which caused certain actions to be difficult to perform.  
 
 
-## [NDS] Spice & Wolf: The Wind that Spans the Sea
+## \[NDS\] Spice & Wolf: The Wind that Spans the Sea
 
 ![Spice & Wolf: The Wind that Spans the Sea screenshot](/images/blog/0028/672173082539130880_2.png)
 
 Now, onto something new. Well, it’s not a _new_ project per se, but translation work on the second Spice & Wolf game is finally underway with thanks to newcomer shnurks! The translation is proceeding slow and steady, currently standing at 35% complete.
 
 
-## [PSP] Bakemonogatari Portable
+## \[PSP\] Bakemonogatari Portable
 
 ![Bakemonogatari Portable screenshot](/images/blog/0028/672173082539130880_3.png)
 

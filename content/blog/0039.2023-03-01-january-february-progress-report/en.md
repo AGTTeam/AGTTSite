@@ -33,7 +33,7 @@ head:
 
 Spring is finally on its way, bringing with it new beginnings (and hopefully some endings!)
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0039/710600238627422208_0.png)
 
@@ -44,7 +44,7 @@ Translation moved towards completing the menus as RPGs have a lot of those ya kn
 The shortcomings of the translation part of the update was made up for with the romhacking front of the project thanks to our one and only Illidan! The menus specifically were redone with the updated font (unlike POTN1’s messy looking font) as well as squishing bugs I had originally encountered when testing it myself. I hope you may all see the end of the path the ninja has walked (WAIT NO DON’T READ THE MANGA!)  
 
 
-## [NDS] L - the ProLogue to Death Note: Spiraling Trap
+## \[NDS\] L - the ProLogue to Death Note: Spiraling Trap
 
 ![L - the ProLogue to Death Note: Spiraling Trap screenshot](/images/blog/0039/710600238627422208_1.png)
 

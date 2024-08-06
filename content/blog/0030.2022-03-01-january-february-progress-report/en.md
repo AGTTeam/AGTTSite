@@ -33,21 +33,21 @@ head:
 
 With one patch already released this year (psst, it’s [here](/blog/2022-02-16-kiragame-patch-release)), you could say, we’ve started as we mean to go on!
 
-## [PS2/PSP] Soul Eater: Battle Resonance
+## \[PS2/PSP\] Soul Eater: Battle Resonance
 
 ![Soul Eater: Battle Resonance screenshot](/images/blog/0030/677516425822355456_0.png)
 
 …Which brings us neatly to Battle Resonance. Work on this patch began way back in January 2020, although it wasn’t officially picked up by a translator until the following year, either way you count it, it’s been a long time! Fortunately, that wait is nearly over. While we don’t have an idea of a date yet, you can expect it to be out before our next progress report in May. 
 
 
-## [NDS] Spice & Wolf: The Wind that Spans the Sea
+## \[NDS\] Spice & Wolf: The Wind that Spans the Sea
 
 ![Spice & Wolf: The Wind that Spans the Sea screenshot](/images/blog/0030/677516425822355456_1.png)
 
 In other exciting news, Spice & Wolf has now reached 100% translation! It has since moved into the proofreading phase, and good progress has already been made on the first pass.
 
 
-## [PSP] Bakemonogatari Portable
+## \[PSP\] Bakemonogatari Portable
 
 ![Bakemonogatari Portable screenshot](/images/blog/0030/677516425822355456_2.jpg)
 

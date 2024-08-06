@@ -33,7 +33,7 @@ head:
 
 We’re back with another project roundup, and this time, we are happy to announce three new projects being undertaken by the Anime Game Translations team!
 
-## [WonderSwan] Neon Genesis Evangelion - Shito Ikusei
+## \[WonderSwan\] Neon Genesis Evangelion - Shito Ikusei
 
 ![Neon Genesis Evangelion - Shito Ikusei screenshot](/images/blog/0017/644495593541074944_0.png)
 
@@ -42,7 +42,7 @@ First is a release for the WonderSwan from 1999, Neon Genesis Evangelion: Shito 
 Due to the nature of the game, the text was overall fairly short, and already we can announce that the game has been fully translated and is in the final stages of proofreading and playtesting!
 
 
-## [PS2/PSP] Soul Eater: Battle Resonance
+## \[PS2/PSP\] Soul Eater: Battle Resonance
 
 ![Soul Eater: Battle Resonance screenshot](/images/blog/0017/644495593541074944_1.jpg)
 
@@ -51,7 +51,7 @@ The second of our new projects to be announced is Soul Eater: Battle Resonance f
 The differences between the PS2 and PSP versions are minimal, so the team has decided to do the extra work necessary to bring them both to the English-speaking world. That being said, this project is still in its early stages. Translations have begun, but the bulk of the text is still waiting to be taken on.  
 
 
-## [NDS] Spice & Wolf: The Wind that Spans the Sea
+## \[NDS\] Spice & Wolf: The Wind that Spans the Sea
 
 ![Spice & Wolf: The Wind that Spans the Sea screenshot](/images/blog/0017/644495593541074944_2.png)
 
@@ -60,7 +60,7 @@ Thirdly, with the release of the patch for the first game, work has begun on the
 Like Battle Resonance, the project is still in it’s early stages, but while work continues on getting the tool up to speed, we’re currently recruiting translators! It’s not a direct sequel so having played My Year with Holo is not a requirement, and we’d be very grateful for any time you could spare. Interested parties, please [get in touch to find out more](https://discord.com/invite/UUF7Zbm)!
 
 
-## [Wii] Soul Eater: Monotone Princess
+## \[Wii\] Soul Eater: Monotone Princess
 
 ![Soul Eater: Monotone Princess screenshot](/images/blog/0017/644495593541074944_3.png)
 

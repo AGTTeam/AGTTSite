@@ -35,14 +35,14 @@ We’re proud to be able to say that with the release of the [Battle Resonance 
 
 So without any further ado, let’s jump straight in to what the team’s been up to lately. (Warning: this is going to be a long one!)  
 
-## [PSP] Bakemonogatari Portable
+## \[PSP\] Bakemonogatari Portable
 
 ![Bakemonogatari Portable screenshot](/images/blog/0032/683038801626644480_0.jpg)
 
 Bakemonogatari Portable is now 100% translated! This includes all the cutscene subtitles and signs which have been reinserted into the game, as shown above. Proofreading is also well underway, so it’ll be a toss up between this and Spice & Wolf as to what our next release will be.  
 
 
-## [NDS] Spice & Wolf: The Wind that Spans the Sea
+## \[NDS\] Spice & Wolf: The Wind that Spans the Sea
 
 ![Spice & Wolf: The Wind that Spans the Sea screenshot](/images/blog/0032/683038801626644480_1.png)
 
@@ -51,14 +51,14 @@ On that note, the first proofreading pass for Spice & Wolf has now been complete
 We’re also currently working on a fix for a rare bug which prevents the player from being able to complete a contract, present in the original game.
 
 
-## [NDS] Kimi no Yusha
+## \[NDS\] Kimi no Yusha
 
 ![Kimi no Yusha screenshot](/images/blog/0032/683038801626644480_2.png)
 
 As we briefly announced last time, we are actively working on Kimi no Yusha, a Nintendo DS JRPG designed to be easily digestible in short, bite-sized play sessions. Due to the game’s story-driven nature, there is a large amount of text to go through. We are, though, happy to say that the first two chapters of 25 have already been translated. We hope you look forward to seeing more of it in future updates.  
 
 
-## [NDS] L - the ProLogue to Death Note: Spiraling Trap
+## \[NDS\] L - the ProLogue to Death Note: Spiraling Trap
 
 ![L - the ProLogue to Death Note: Spiraling Trap screenshot](/images/blog/0032/683038801626644480_3.png)
 
@@ -67,7 +67,7 @@ Hot on the heels of [Death Note: Kira Game’s release](https://agtteam.tumblr.c
 (If you were instead hoping for news about the second Death Note DS game, Successors to L, don’t despair. We prioritized the third game as it has an original story, whereas Successors to L is a retelling of the manga like the Kira Game, but it is on our to-do list!)
 
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0032/683038801626644480_4.png)
 

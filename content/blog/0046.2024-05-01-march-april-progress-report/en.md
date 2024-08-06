@@ -31,7 +31,7 @@ head:
     value: 'summary_large_image'
 ---
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0046/749263994197573632_0.png)
 
@@ -42,7 +42,7 @@ POTN2 still follows the tale of Naruto Uzumaki and he walks it alone, and theref
 The game is in the final stages of proofreading to be done by yours truly, so get ready to finally experience the end of the Naruto RPG trilogy!!
 
 
-## [NDS] Mushishi: Amefuru Sato
+## \[NDS\] Mushishi: Amefuru Sato
 
 ![Mushishi: Amefuru Sato screenshot](/images/blog/0046/749263994197573632_1.png)
 

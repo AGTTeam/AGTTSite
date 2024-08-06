@@ -33,30 +33,30 @@ head:
 
 Where does the time go? This month we’re staring with something maybe a little unexpected…
 
-## [NDS] Ore ga Omae o Mamoru (Non-Anime)
+## \[NDS\] Ore ga Omae o Mamoru (Non-Anime)
 
 ![Ore ga Omae o Mamoru screenshot](/images/blog/0011/628045508832903169_0.png)
 
-You might remember me saying this project was on hold so I could focus on the others, but in the end it was bothering me that so much time had lapsed without anything being released that I just decided to buckle down on it, and it sure paid off! Translation is now at 100%! I also finished the images, so this (and Spice & Wolf), now have nice new title screen art on the [projects list](https://phantom-patches.tumblr.com/projects). 
+You might remember me saying this project was on hold so I could focus on the others, but in the end it was bothering me that so much time had lapsed without anything being released that I just decided to buckle down on it, and it sure paid off! Translation is now at 100%! I also finished the images, so this (and Spice & Wolf), now have nice new title screen art on the [projects list](https://agtteam.tumblr.com/projects). 
 
 There’s a still more that needs doing first, but it will hopefully be ready to pass over for playtesting soon.
 
 
-## [NDS] Tengen Toppa Gurren Lagann
+## \[NDS\] Tengen Toppa Gurren Lagann
 
 ![Tengen Toppa Gurren Lagann screenshot](/images/blog/0011/628045508832903169_1.png)
 
 Proofreading Gurren Lagann is at 37%, which also happens to be the chapter with one of the most heart-rending scenes of the series! After a few delays, we’ve set a goal to try and have the patch out by the end of the year.
 
 
-## [NDS] Spice & Wolf: My One Year with Holo
+## \[NDS\] Spice & Wolf: My One Year with Holo
 
 ![Spice & Wolf: My One Year with Holo screenshot](/images/blog/0011/628045508832903169_2.png)
 
 Translation on Spice & Wolf has reached a whopping 71%. This is the first time I’ve had such a precise way to measure progress while translating, and I’ve been absolutely astonished by the speed at which things have all being coming together! Of course, that’s also thanks to the legacy of hard work from previous translators that we have been able to build off, for which we’re eternally grateful :D
 
 
-## [Wii] Soul Eater: Monotone Princess
+## \[Wii\] Soul Eater: Monotone Princess
 
 ![Soul Eater: Monotone Princess screenshot](/images/blog/0011/628045508832903169_3.png)
 

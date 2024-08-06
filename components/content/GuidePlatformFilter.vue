@@ -104,7 +104,7 @@ export default {
 }
 
 .platform-filters .deselected {
-    filter: opacity(50%);
+    filter: opacity(60%);
 }
 </style>
 

@@ -33,7 +33,7 @@ head:
 
 Whew! It feels like two months have just flown by. This month, we’re starting with a new project…
 
-## [NDS] Ore ga Omae wo Mamoru (Non-Anime)
+## \[NDS\] Ore ga Omae wo Mamoru (Non-Anime)
 
 ![Ore ga Omae wo Mamoru screenshot](/images/blog/0004/187392247250_0.png)
 
@@ -42,14 +42,14 @@ A step away from my usual haunts, this is another game not based on an anime. De
 A patch covering the ‘essentials’ was reportedly scheduled for release by [Jei](https://t.umblr.com/redirect?z=https%3A%2F%2Fgbatemp.net%2Fthreads%2Fore-ga-omae-wo-mamoru.159429%2F&t=ZjNmZmUyNDAzNDlmNTIxNWNkNGZjYWVlZjAyNTM4NDMyZWMzZjMwMSxlM2ZiZDdkNDdmNTY2ZTllZjg4ODZmMDNlZmZjYWQyMDU1ZDhhNTg4), but having been unable to get in contact with them, I’ve restarted translations from scratch.
 
 
-## [NDS] Chou Soujuu Mecha MG (Non-Anime)
+## \[NDS\] Chou Soujuu Mecha MG (Non-Anime)
 
 ![Chou Soujuu Mecha MG screenshot](/images/blog/0004/187392247250_0.png)
 
 Continuing with non-anime games, I’m delighted to say that after 5 months of hiatus, work has begun on this project once again! Supper is bearing the brunt of proofreading, with 120 missions and a likely vast amount of typos to go through.
 
 
-## [NDS] Tengen Toppa Gurren Lagann
+## \[NDS\] Tengen Toppa Gurren Lagann
 
 ![Tengen Toppa Gurren Lagann screenshot](/images/blog/0004/187392247250_0.png)
 

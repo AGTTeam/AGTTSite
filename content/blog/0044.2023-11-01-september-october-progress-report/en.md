@@ -33,7 +33,7 @@ head:
 
 The season for spooks has come and gone, and the sound of sleigh bells fast approaches. Read on to find out whether our projects will be on the “naughty” or “nice” list this year…
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0044/732803256809619456_0.png)
 
@@ -42,7 +42,7 @@ So uhhh the last update was kind of a heart attack for you all. But I managed to
 The heavy lifting of the NPC text is almost done, BUT there’s something YOU guys can do! The game features messages from Japanese Contest winners scattered around the Ninja Academy, so we decided to let YOU people change that and enter in your messages instead. The message should be related to Naruto and be of 20 words max. Feel free to submit your message through [this link](https://forms.gle/1iSWicweQH2BtZCXA).
 
 
-## [NDS] Mushishi: Amefuru Sato
+## \[NDS\] Mushishi: Amefuru Sato
 
 ![Mushishi: Amefuru Sato screenshot](/images/blog/0044/732803256809619456_1.png)
 

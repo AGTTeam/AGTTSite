@@ -33,7 +33,7 @@ head:
 
 After our last jam-packed progress report things have been a little quieter these past two months, but we’re working on a lot of things behind the scenes. There’s also been patch updates for [Death Note: Kira Game](https://www.romhacking.net/translations/6452/) and [Ore ga Omae o Mamoru](https://www.romhacking.net/translations/5796/) with various typo fixes, so if you haven’t checked those games out yet, now is the time!  
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0034/688575334237470720_0.png)
 
@@ -46,7 +46,7 @@ I hope you can feel the excitement just as much as I can!!
 Till next time!
 
 
-## [PSP] Bakemonogatari Portable
+## \[PSP\] Bakemonogatari Portable
 
 ![Bakemonogatari Portable screenshot](/images/blog/0034/688575334237470720_1.jpg)
 
@@ -55,7 +55,7 @@ Onto Bakemonogatari Portable, the translation has now been through two proofread
 Only time will tell whether it is possible to find a solution, or whether we’ll release a (still fully playable!) patch without.
 
 
-## [NDS] L - the ProLogue to Death Note: Spiraling Trap
+## \[NDS\] L - the ProLogue to Death Note: Spiraling Trap
 
 ![L - the ProLogue to Death Note: Spiraling Trap screenshot](/images/blog/0034/688575334237470720_2.png)
 
@@ -64,7 +64,7 @@ Translations for the L Communicator are now complete! This is an additional mode
 Unfortunately, the space in that section of the game is very limited, so we’re having to do our own detective work to see if there are ways to make it all fit without crashing the game.
 
 
-## [NDS] Kimi no Yusha
+## \[NDS\] Kimi no Yusha
 
 ![Kimi no Yusha screenshot](/images/blog/0034/688575334237470720_3.png)
 

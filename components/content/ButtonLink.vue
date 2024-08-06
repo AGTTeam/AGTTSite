@@ -60,15 +60,15 @@ const { link, color, icon, type, fullwidth, rel } = defineProps({
 <style scoped>
 .button {
     display: inline-block;
-    padding: 0.5em 1em;
+    padding: 0.4em 1em;
     border-radius: 5px;
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     box-sizing: border-box;
 
     /* Shading effects */
-    box-shadow: inset 0.5vh 0.5vh 0.7vh rgb(0 0 0 / 20%);
+    /* box-shadow: inset 0.5vh 0.5vh 0.7vh rgb(0 0 0 / 20%); */
 }
 
 .top-piece {
@@ -108,7 +108,7 @@ const { link, color, icon, type, fullwidth, rel } = defineProps({
 }
 
 .sl-green-color {
-    background: #416dcd;
+    background: #5ebe57;
 }
 
 .sl-blue-color {

@@ -6,4 +6,4 @@ locale: en
 
 We're the Anime Game Translations Team! Here, you can find information about all of our past and present translations. 
 
-We hope you'll enjoy our works!
+We hope you enjoy our works!

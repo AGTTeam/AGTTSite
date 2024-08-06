@@ -33,7 +33,7 @@ head:
 
 As the summer draws to a close, let’s take a look back at what we’ve been up to…
 
-## [NDS] Naruto RPG 2: Chidori Vs Rasengan
+## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
 ![Naruto RPG 2: Chidori Vs Rasengan screenshot](/images/blog/0043/727251438117535744_0.png)
 
@@ -44,7 +44,7 @@ Despite his busy schedule, we’re pleased that he will be staying on as a proof
 Both the menus and storyline have been translated, adding up to roughly 73% completion, with only the NPC dialogue and hot springs conversations to go. If think you might be able to lend a hand and help us cross the finish line, please get in touch with myself or Ligudink over at our [Discord server](https://discord.com/invite/UUF7Zbm)!
 
 
-## [NDS] Mushishi: Amefuru Sato
+## \[NDS\] Mushishi: Amefuru Sato
 
 ![Mushishi: Amefuru Sato screenshot](/images/blog/0043/727251438117535744_1.png)
 
