@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(180deg, rgba(54, 143, 254, 1) 0%, rgba(255, 255, 255, 0.01) 15em);
+    background: linear-gradient(180deg, rgba(180, 213, 191, 1) 0%, rgba(255, 255, 255, 0.01) 20em);
     justify-content: center;
     align-items: flex-start;
 }

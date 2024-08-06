@@ -1,7 +1,7 @@
 {
     "index-title": "Anime Game Translations Team",
-    "index-description": "Welcome to the Anime Game Translations Team webiste!",
-    "our-translations": "Our Translations",
+    "index-description": "Welcome to the Anime Game Translations Team website!",
+    "our-translations": "Released Translations",
     "upcoming-translations": "Upcoming Translations",
     "about": "About",
     "social-links": "Links",
@@ -49,7 +49,7 @@
     "mamoru-title": "Ore ga Omae o Mamoru",
     "fma-title": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
 
-    "blogs": "Blogs",
+    "blogs": "Archives",
     "back-to-blog": "Back to the Blog",
     "byline-pre": "By ",
     "byline-post": "",
@@ -119,8 +119,8 @@
     "vampire-tag": "vampire",
 
     "setup-guide": "Setup Guide",
-    "rom-patcher": "ROM Patcher",
-    "download-patch": "Download patch",
+    "rom-patcher": "Patch Online",
+    "download-patch": "Download Patch",
     "walkthrough": "Walkthrough",
     "sources-tools": "Sources & Tools",
     "guide-invalid-page": "Invalid guide page",
@@ -143,7 +143,7 @@
     "rom-patcher-patch-error": "Error applying patch: {error}",
     "rom-patcher-patch-failed-retrieve": "Failed to retrieve the patch file.",
     "rom-patcher-choose-rom-first": "Please choose a ROM first",
-    "rom-patcher-bad-rom-warn": "<b>\"You're using a bad ROM! A bad ROM! Penalty!\"\n</b><br/>The SHA-256 checksum of the ROM you selected matches that of a known bad ROM that contains corrupt header data and graphics. A repair was performed on your ROM before English patches were applied.",
+    "rom-patcher-bad-rom-warn": "<b>\"Oops, you're using a bad ROM!\"\n</b><br/>The SHA-256 checksum of the ROM you selected matches that of a known bad ROM that contains corrupt header data. A repair was performed on your ROM before English patches were applied.",
     "rom-patcher-success": "<b>Patch applied successfully!</b><br/>Enjoy the game!",
     "rom-patcher-bad-rom-error": "The SHA-256 hash of the ROM you have selected matches that of a known bad ROM circulated on the internet that contains corrupt graphics and invalid header data. This ROM is unable to be patched.",
     "rom-patcher-repairing": "Repairing bad ROM...",

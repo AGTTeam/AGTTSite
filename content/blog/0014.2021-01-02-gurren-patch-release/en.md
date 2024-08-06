@@ -1,5 +1,5 @@
 ---
-title: &title "Gurren Lagann Patch Release!"
+title: &title "Gurren Lagann Patch Released!"
 description: &desc "Tengen Toppa Gurren Lagann (天元突破グレンラガン) patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:

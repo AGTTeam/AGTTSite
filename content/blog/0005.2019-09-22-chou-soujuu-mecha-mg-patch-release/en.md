@@ -1,5 +1,5 @@
 ---
-title: &title "Chou Soujuu Mecha MG Patch Release!"
+title: &title "Chou Soujuu Mecha MG Patch Released!"
 description: &desc "Chou Soujuu Mecha MG (超操縦メカMG) Patch v1.0 by Supper & Phantom"
 locale: 'en'
 navigation:
