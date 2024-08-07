@@ -58,14 +58,6 @@ definePageMeta({
     box-shadow: var(--main-shadow);
 }
 
-#home-page .translations {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
 #home-page .top {
     display: flex;
     flex-direction: row;
@@ -83,7 +75,6 @@ definePageMeta({
     display: flex;
     flex-direction: column;
     height: fit-content;
-    max-width: 300px;
 }
 
 #home-page .socials {
