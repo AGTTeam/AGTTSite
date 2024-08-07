@@ -39,7 +39,7 @@ Life can be tough for a novice merchant, but when an offer too good to refuse fi
 
 A non-linear story with 12 possible endings, it’s time to take the reins and explore the charms of a pseudo-Medieval world, with Wisewolf Holo as your travel guide!
 
-*   [Download the Patch](https://www.romhacking.net/translations/5967/) ([Mega backup](https://mega.nz/file/KQBAHDSB#OcJzz6jWusA5M4tp5F9QP4ngfgCnRTvA2dcuhkhLdzU))
+*   [Download the Patch](/holo)
 *   [Hidden Debug Scene](https://youtu.be/YXoCM4xRvaA)
 *   [Beginner’s Guide to NDS Patching](https://agtteam.tumblr.com/beginnersguide)
 

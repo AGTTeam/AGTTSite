@@ -6,7 +6,7 @@
 - **Hacking**: Illidan
 - **Translation**: Phantom
 - **Graphics**: Phantom
-- **New Sprites**: frogatr
+- **New Sprites**: Frogatr
 - **Editing**: TheSeventhCrusader
 ::
 

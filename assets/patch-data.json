@@ -1,18 +1,90 @@
 {
     "platforms": {
+        "mushishi": ["nds"],
+        "successors": ["nds"],
         "fma": ["ps2"],
+        "shito": ["ws"],
+        "holo": ["nds"],
         "gurren": ["nds"],
         "mamoru": ["nds"],
         "medusa": ["nds"]
     },
     "patches": {
+        "naruto-nds": {
+            "id": "naruto",
+            "title": "naruto-title",
+            "original": "Naruto RPG 2: Chidori vs. Rasengan",
+            "year": "2005",
+            "tags": ["[platform-nds]", "[genre-rpg]", "[status-proofreading]"]
+        },
+        "mushishi-nds": {
+            "id": "mushishi",
+            "title": "mushishi-title",
+            "original": "Mushishi: Amefuru Sato",
+            "year": "2008",
+            "tags": ["[platform-nds]", "[genre-vn]", "[status-proofreading]"]
+        },
+        "successors-nds": {
+            "id": "successors",
+            "title": "successors-title",
+            "original": "Death Note: L wo Tsugumono",
+            "year": "2007",
+            "tags": ["[platform-nds]", "[genre-vn]", "[status-translation]"]
+        },
         "fma-ps2": {
             "id": "fma",
             "title": "fma-title",
             "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
             "year": "2005",
-            "color": "red",
             "tags": ["[platform-ps2]", "[genre-action]", "[status-translation]"]
+        },
+        "shito-ws": {
+            "id": "shito",
+            "title": "shito-title",
+            "original": "Shin Seiki Evangelion: Shito Ikusei",
+            "year": "1999",
+            "page": "/shito",
+            "tags": ["[platform-ws]"],
+            "tool_repo": "ShitoTranslation",
+            "data_repo": "ShitoData",
+            "patch_prefix": "ShitoPatch",
+            "sha_checks": "true",
+            "required_rom_sha": "F638C48C81400A067697B6E21DFDB4551D2E68EC8A9C0E8D185BB15B024CC892",
+            "mega_link": "https://mega.nz/file/jVAURZSR#5TRQo-H0Rjw-0M9VuqoujEKbdUt7kda-f_Jm0yVsYck",
+            "walkthrough_link": "https://gamefaqs.gamespot.com/wonderswan/575905-neon-genesis-evangelion-shito-ikusei/faqs/79162",
+            "available_patches": {
+                "en": [
+                    {
+                        "version": "1.0",
+                        "date": "Mar 29, 2021",
+                        "lang": "en"
+                    }
+                ]
+            }
+        },
+        "holo-nds": {
+            "id": "holo",
+            "title": "holo-title",
+            "original": "Ookami to Koushinryou: Boku to Holo no Ichinen",
+            "year": "2008",
+            "page": "/holo",
+            "tags": ["[platform-nds]", "[genre-vn]", "[genre-dating-sim]"],
+            "tool_repo": "OokamiTranslation",
+            "data_repo": "OokamiData",
+            "patch_prefix": "HoloPatch",
+            "sha_checks": "true",
+            "required_rom_sha": "367D4CBA3CA4DA5FAAE132F31BB1ACB729B9E8910033799D77673A13D31CE2E7",
+            "cheats": "holo.dct",
+            "mega_link": "https://mega.nz/file/KQBAHDSB#OcJzz6jWusA5M4tp5F9QP4ngfgCnRTvA2dcuhkhLdzU",
+            "available_patches": {
+                "en": [
+                    {
+                        "version": "1.3",
+                        "date": "Mar 30, 2021",
+                        "lang": "en"
+                    }
+                ]
+            }
         },
         "gurren-nds": {
             "id": "gurren",
@@ -20,7 +92,6 @@
             "original": "Tengen Toppa Gurren Lagann",
             "year": "2007",
             "page": "/gurren",
-            "color": "red",
             "tags": ["[platform-nds]", "[genre-action]"],
             "tool_repo": "GurrenTranslation",
             "data_repo": "GurrenData",
@@ -53,7 +124,6 @@
             "original": "Ore ga Omae o Mamoru",
             "year": "2009",
             "page": "/mamoru",
-            "color": "red",
             "tags": ["[platform-nds]", "[genre-metroidvania]", "[non-anime]"],
             "tool_repo": "MamoruHelper",
             "data_repo": "MamoruData",
@@ -85,7 +155,6 @@
             "original": "Soul Eater: Medusa no Inbou",
             "year": "2009",
             "page": "/medusa",
-            "color": "red",
             "tags": ["[platform-nds]", "[genre-action]"],
             "tool_repo": "MedusaTranslation",
             "data_repo": "MedusaData",

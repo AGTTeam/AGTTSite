@@ -1,6 +1,6 @@
 <template>
     <div class="gallery">
-        <div class="buttons">
+        <div class="buttons" v-if="!navbottom">
             <button @click="changeImage(-1)">
                 <Icon class="change-image" name="fa6-solid:chevron-left" />
             </button>
@@ -11,8 +11,19 @@
         </div>
         <div class="image">
             <img v-for="(image, index) in images" :key="index.alt" :alt="image.alt" :src="image.url" :style="{ display: index === currentImage ? 'block' : 'none' }" />
-            <br />
-            <span v-for="(image, index) in images" :style="{ display: index === currentImage ? 'block' : 'none' }">{{ image.alt }}</span>
+            <div v-if="images[0].alt != undefined">
+                <br />
+                <span v-for="(image, index) in images" :style="{ display: index === currentImage ? 'block' : 'none' }">{{ image.alt }}</span>
+            </div>
+        </div>
+        <div class="buttons" v-if="navbottom">
+            <button @click="changeImage(-1)">
+                <Icon class="change-image" name="fa6-solid:chevron-left" />
+            </button>
+            <span>{{ currentImage + 1 }} / {{ images.length }}</span>
+            <button @click="changeImage(1)">
+                <Icon class="change-image" name="fa6-solid:chevron-right" />
+            </button>
         </div>
     </div>
 </template>
@@ -22,6 +33,10 @@ const { images } = defineProps({
     images: {
         type: Array,
         required: true
+    },
+    navbottom: {
+        type: Boolean,
+        required: false
     }
 })
 const currentImage = ref(0);

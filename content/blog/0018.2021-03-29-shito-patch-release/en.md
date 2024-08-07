@@ -41,8 +41,7 @@ Raise up your angel like a digital pet and explore NERV headquarters. Talk to ch
 
 Once you’ve helped your angel reach maturity and leveled up its stats, you can battle it against other angels from the main menu. Battles play out like a card game and can be played in both single-player and multiplayer modes.
 
-*   [Download the Patch](https://www.romhacking.net/translations/6024/) ([Mega](https://mega.nz/file/jVAURZSR#5TRQo-H0Rjw-0M9VuqoujEKbdUt7kda-f_Jm0yVsYck) [Backup](https://mega.nz/file/jVAURZSR#5TRQo-H0Rjw-0M9VuqoujEKbdUt7kda-f_Jm0yVsYck))
-*   [Walkthrough](https://gamefaqs.gamespot.com/wonderswan/575905-neon-genesis-evangelion-shito-ikusei/faqs/79162)
+*   [Download the Patch](/shito)
 *   [First Five Minutes of Gameplay Preview](https://youtu.be/_GebMy8luys)
 
 **Want to get in touch?**
