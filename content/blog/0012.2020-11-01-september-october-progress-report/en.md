@@ -7,7 +7,7 @@ navigation:
   year: 2020
   month: 11
   day: 01
-  tags: ['progress-report', 'holo', 'gurren', 'mamoru', 'monotone', 'sonata']
+  tags: ['progress-report', 'holo', 'gurren', 'mamoru', 'monopri', 'sonata']
   image: '0012/00_thumbnail.png'
 head:
   meta:

@@ -7,7 +7,7 @@ navigation:
   year: 2020
   month: 07
   day: 01
-  tags: ['progress-report', 'gurren', 'holo', 'vampire', 'monotone']
+  tags: ['progress-report', 'gurren', 'holo', 'vampire', 'monopri']
   image: '0010/00_thumbnail.png'
 head:
   meta:

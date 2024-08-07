@@ -3,6 +3,7 @@
         "mushishi": ["nds"],
         "successors": ["nds"],
         "fma": ["ps2"],
+        "monopri": ["wii"],
         "shito": ["ws"],
         "holo": ["nds"],
         "gurren": ["nds"],
@@ -37,6 +38,28 @@
             "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
             "year": "2005",
             "tags": ["[platform-ps2]", "[genre-action]", "[status-translation]"]
+        },
+        "monopri-wii": {
+            "id": "monopri",
+            "title": "monopri-title",
+            "original": "Soul Eater: Monotone Princess",
+            "year": "2008",
+            "page": "/monopri",
+            "tags": ["[platform-wii]"],
+            "tool_repo": "MonoPriTranslation",
+            "mega_links": [
+                {
+                    "name": "Lite (No videos, ~10mb)",
+                    "link": "https://mega.nz/file/mVRWVLiR#Q2guIqO0HJNnm-lSdVITrOwD0Iiubp8RYlcVg1xtF9s",
+                    "color": "blue"
+                },
+                {
+                    "name": "Full (~450mb)",
+                    "link": "https://mega.nz/file/KEB0iLTC#00tN7s266MhUyNqcBH-2JI-KT-bapvm-shElltXIens",
+                    "color": "sl-green"
+                }
+            ],
+            "walkthrough_link": "https://gamefaqs.gamespot.com/wii/945685-soul-eater/faqs/79600"
         },
         "shito-ws": {
             "id": "shito",

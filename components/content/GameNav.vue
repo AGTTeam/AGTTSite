@@ -18,11 +18,14 @@ const PATCH_DATA = ALL_PATCH_DATA.patches[route.params.game + "-" + defaultPlatf
             <ButtonLink v-if="defaultPlatform == 'nds'" :link="localePath('/' + route.params.game + '/guide/' + defaultPlatform)" fullwidth type="top-piece" color="red" icon="fa6-solid:book">
                 {{ $t('setup-guide') }}
             </ButtonLink>
-            <ButtonLink :link="localePath('/' + route.params.game + '/patch/' + defaultPlatform)" fullwidth :type="defaultPlatform == 'nds'? 'mid-piece' : 'top-piece'" color="blue" icon="fa6-solid:file-import">
+            <ButtonLink v-if="PATCH_DATA.available_patches != undefined" :link="localePath('/' + route.params.game + '/patch/' + defaultPlatform)" fullwidth :type="defaultPlatform == 'nds'? 'mid-piece' : 'top-piece'" color="blue" icon="fa6-solid:file-import">
                 {{ $t('rom-patcher') }}
             </ButtonLink>
-            <ButtonLink :link="PATCH_DATA.mega_link" fullwidth external type="bottom-piece" color="sl-green" icon="fa6-solid:download">
+            <ButtonLink v-if="PATCH_DATA.mega_link != undefined" :link="PATCH_DATA.mega_link" fullwidth external type="bottom-piece" color="sl-green" icon="fa6-solid:download">
                 {{ $t('download-patch') }}
+            </ButtonLink>
+            <ButtonLink v-for="(link, index) in PATCH_DATA.mega_links" :link="link.link" fullwidth external :type="index == PATCH_DATA.mega_links.length - 1 ? 'bottom-piece' : 'top-piece'" :color="link.color" icon="fa6-solid:download">
+                {{ $t('download-patch') }}: {{ link.name }}
             </ButtonLink>
             <div id="nav-or">&mdash;</div>
             <ButtonLink v-if="PATCH_DATA.walkthrough_link != undefined" :link="PATCH_DATA.walkthrough_link" fullwidth external rgbColor="#416dcd" icon="fa6-solid:circle-question" type="top-piece">

@@ -7,7 +7,7 @@ navigation:
   year: 2021
   month: 09
   day: 01
-  tags: ['progress-report', 'vampire', 'monotone', 'resonance', 'kiragame']
+  tags: ['progress-report', 'vampire', 'monopri', 'resonance', 'kiragame']
   image: '0023/00_thumbnail.png'
 head:
   meta:

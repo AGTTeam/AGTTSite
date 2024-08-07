@@ -7,7 +7,7 @@ navigation:
   year: 2021
   month: 03
   day: 01
-  tags: ['progress-report', 'shito', 'resonance', 'holo2', 'monotone']
+  tags: ['progress-report', 'shito', 'resonance', 'holo2', 'monopri']
   image: '0017/00_thumbnail.png'
 head:
   meta:
