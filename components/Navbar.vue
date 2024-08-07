@@ -20,7 +20,7 @@ nav {
     width: 100%;
     background-color: #00000000;
     backdrop-filter: blur(0.8rem);
-    filter: drop-shadow(0 0 0.5rem #00000055);
+    filter: drop-shadow(2.4px 0 0 white) drop-shadow(0 2px 0 white) drop-shadow(-2.4px 0 0 white) drop-shadow(0 -2px 0 white) drop-shadow(0 0 0.05rem white);
     max-width: 80vw;
 }
 
@@ -37,7 +37,7 @@ nav .content {
 }
 
 .content .logo:hover {
-    filter: drop-shadow(0 0 0.5rem #00000055);
+    filter: drop-shadow(0 0 0.18rem white);
 }
 
 .content .menu {

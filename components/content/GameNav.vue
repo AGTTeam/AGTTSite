@@ -31,10 +31,10 @@ const PATCH_DATA = ALL_PATCH_DATA.patches[route.params.game + "-" + defaultPlatf
             <ButtonLink v-if="PATCH_DATA.walkthrough_link != undefined" :link="PATCH_DATA.walkthrough_link" fullwidth external rgbColor="#416dcd" icon="fa6-solid:circle-question" type="top-piece">
                 {{ $t('walkthrough') }}
             </ButtonLink>
-            <ButtonLink v-if="PATCH_DATA.cheats != undefined" :link="'cheats/' + PATCH_DATA.cheats" fullwidth rgbColor="#416dcd" icon="fa6-solid:infinity" :type="PATCH_DATA.walkthrough_link != undefined ? 'mid-piece' : 'top-piece'">
+            <ButtonLink v-if="PATCH_DATA.cheats != undefined" :link="'cheats/' + PATCH_DATA.cheats" fullwidth rgbColor="#69a6ce" icon="fa6-solid:infinity" :type="PATCH_DATA.walkthrough_link != undefined ? 'mid-piece' : 'top-piece'">
                 {{ $t('cheats') }}
             </ButtonLink>
-            <ButtonLink v-for="extra in PATCH_DATA.extras" :link="extra.external ? extra.link : ('extras/' + extra.link)" fullwidth :external="extra.external" rgbColor="#416dcd" icon="fa6-solid:circle-info" :type="PATCH_DATA.walkthrough_link != undefined || PATCH_DATA.cheats != undefined ? 'mid-piece' : 'top-piece'">
+            <ButtonLink v-for="extra in PATCH_DATA.extras" :link="extra.external ? extra.link : ('extras/' + extra.link)" fullwidth :external="extra.external" rgbColor="#7f5dc4" icon="fa6-solid:circle-info" :type="PATCH_DATA.walkthrough_link != undefined || PATCH_DATA.cheats != undefined ? 'mid-piece' : 'top-piece'">
                 {{ extra.name }}
             </ButtonLink>
             <ButtonLink :link="'http://github.com/AGTTeam/' + PATCH_DATA.tool_repo" fullwidth external type="bottom-piece" color="black" icon="fa6-brands:github">

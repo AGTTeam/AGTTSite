@@ -13,10 +13,10 @@ footer {
     flex-direction: column;
     color: var(--main-dark-gray);
     padding: 0.4rem 0;
-    padding-top: 1.2rem;
+    padding-top: 0.8rem;
     text-align: center;
     justify-self: flex-end;
-    margin-top: auto;
+    margin: auto;
     background-color: #00000000;
     backdrop-filter: blur(0.8rem);
     filter: drop-shadow(0 0 0.5rem #00000055);

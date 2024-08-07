@@ -23,7 +23,7 @@
     },
     {
         "locale": "tumblr",
-        "icon": "fa6-brands:tumblr-square",
+        "icon": "fa6-brands:tumblr",
         "link": "https://agtteam.tumblr.com",
         "color": "#32456d",
         "display": {

@@ -15,7 +15,7 @@ const localePath = useLocalePath()
 
 <style scoped>
 .title-graphic {
-    filter: drop-shadow(0.12em 0.12rem 0.12rem rgba(0, 0, 0, 0.4));
+    /* filter: drop-shadow(0.12em 0.12rem 0.12rem rgba(0, 0, 0, 0.4)); */
     height: auto;
     max-width: 45em;
     display: flex;

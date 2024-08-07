@@ -108,7 +108,7 @@ const { link, color, icon, type, fullwidth, rel } = defineProps({
 }
 
 .sl-green-color {
-    background: #5ebe57;
+    background: #89c34a;
 }
 
 .sl-blue-color {
@@ -116,6 +116,6 @@ const { link, color, icon, type, fullwidth, rel } = defineProps({
 }
 
 .rss-color {
-    background: #3ba379;
+    background: var(--main-blue);
 }
 </style>

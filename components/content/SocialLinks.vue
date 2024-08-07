@@ -51,9 +51,13 @@ const { type, stackTopper } = defineProps({
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 0.5rem;
-    font-size: 2rem;
-    filter: drop-shadow(0.4vh 0.4vh 0.2vh rgba(0, 0, 0, 0.3));
+    gap: 0.7rem;
+    font-size: 2.3rem;
+    /* filter: drop-shadow(0.4vh 0.4vh 0.2vh rgba(0, 0, 0, 0.3)); */
+}
+
+.nav a:hover {
+    filter: drop-shadow(0 0 0.18rem white);
 }
 
 .stack {

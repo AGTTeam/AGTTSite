@@ -20,7 +20,7 @@
                         <h2>{{ $t('blog') }}</h2>
                         <BlogPreviewStack :limit="4" />
                         <ButtonRow class="view-more">
-                            <ButtonLink :link="localePath('/blog')" color="blue" icon="fa6-solid:paper-plane">{{ $t('view-all') }}</ButtonLink>
+                            <ButtonLink :link="localePath('/blog')" rgbcolor="#3ba379" icon="fa6-solid:paper-plane">{{ $t('view-all') }}</ButtonLink>
                             <ButtonLink :link="`${locale == 'en' ? '/' : `/${locale}/`}rss.xml`" color="rss" icon="fa6-solid:rss">{{ $t('feed') }}</ButtonLink>
                         </ButtonRow>
                     </div>
