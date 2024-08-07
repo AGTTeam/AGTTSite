@@ -204,9 +204,9 @@ To do this, you'll need to homebrew your Wii U, use UWUVCI to convert the ROM in
     - Click the "Enter CKey" button. Click "Read from otp.bin" and select the otp.bin file on your SD card that you created earlier when installing the Custom Firmware as part of the NAND Dump process. If you don't have this for whatever reason, you'll need to find the Wii U common key and write it in manually instead.
     - Click on the "Enter TKey" button. You will now need to insert the title key for Mario Kart DS for the region you selected. There's no easy way of getting this other than by looking it up online. Make sure you enter the key for the Mario Kart DS region you selected.
     - Click "Choose File" next to "ROM PATH" and choose the patched *:guide-data* ROM file
-    - On the "Icon Image" box, click "Create File". Download [this image](/images/medusa/virtual-console-icon.png) (or use your own) and choose it under "Select File". Feel free to customise the appearance, this is the icon that will appear on your Wii U system menu. Then, click "Finish"
-    - On the "TV Image" box, click "Create File", enter the name of the game on the two lines ("Soul Eater", "Medusa's Plot"), the release year (2008) and the number of players (1). Then select the same file for the icon image (or choose your own!). Then, click "Finish".
-    - Enter in the "Game Name" box: `Soul Eater|Medusa's Plot`
+    - On the "Icon Image" box, click "Create File". Download *:guide-data{data="vc-image"}* (or use your own) and choose it under "Select File". Feel free to customise the appearance, this is the icon that will appear on your Wii U system menu. Then, click "Finish"
+    - On the "TV Image" box, click "Create File", enter the name of the game on the two lines (*:guide-data{data="split-title"}*), the release year (*:guide-data{data="year"}*) and the number of players (1). Then select the same file for the icon image (or choose your own!). Then, click "Finish".
+    - Enter in the "Game Name" box: *:guide-data{data="split-line1"}*\|*:guide-data{data="split-line2"}*
     - You can also optionally choose some other pieces of art that will appear on your Wii U menu when launching the game, such as a splash image and boot sound.
 5. When you're done, click "Inject". Your ROM will be injected into a Wii U WUP title.
 6. Once done, click "WUP Installable". Wait for it to pack the WUP into the format, then click "Copy to SD". Your WUP file will be copied to the correct directory on your Wii U, so you can add it to your system using WUP Installer GX2.

@@ -1,5 +1,6 @@
 {
     "platforms": {
+        "fma": ["ps2"],
         "gurren": ["nds"],
         "mamoru": ["nds"],
         "medusa": ["nds"]
@@ -9,6 +10,7 @@
             "id": "fma",
             "title": "fma-title",
             "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
+            "year": "2005",
             "color": "red",
             "tags": ["[platform-ps2]", "[genre-action]", "[status-translation]"]
         },
@@ -16,6 +18,7 @@
             "id": "gurren",
             "title": "gurren-title",
             "original": "Tengen Toppa Gurren Lagann",
+            "year": "2007",
             "page": "/gurren",
             "color": "red",
             "tags": ["[platform-nds]", "[genre-action]"],
@@ -48,6 +51,7 @@
             "id": "mamoru",
             "title": "mamoru-title",
             "original": "Ore ga Omae o Mamoru",
+            "year": "2009",
             "page": "/mamoru",
             "color": "red",
             "tags": ["[platform-nds]", "[genre-metroidvania]", "[non-anime]"],
@@ -79,6 +83,7 @@
             "id": "medusa",
             "title": "medusa-title",
             "original": "Soul Eater: Medusa no Inbou",
+            "year": "2009",
             "page": "/medusa",
             "color": "red",
             "tags": ["[platform-nds]", "[genre-action]"],
