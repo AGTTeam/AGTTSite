@@ -15,10 +15,10 @@ const PATCH_DATA = ALL_PATCH_DATA.patches[route.params.game + "-" + defaultPlatf
             <slot />
         </div>
         <div class="nav-buttons">
-            <ButtonLink :link="localePath('/' + route.params.game + '/guide/' + defaultPlatform)" fullwidth type="top-piece" color="red" icon="fa6-solid:book">
+            <ButtonLink v-if="defaultPlatform == 'nds'" :link="localePath('/' + route.params.game + '/guide/' + defaultPlatform)" fullwidth type="top-piece" color="red" icon="fa6-solid:book">
                 {{ $t('setup-guide') }}
             </ButtonLink>
-            <ButtonLink :link="localePath('/' + route.params.game + '/patch/' + defaultPlatform)" fullwidth type="mid-piece" color="blue" icon="fa6-solid:file-import">
+            <ButtonLink :link="localePath('/' + route.params.game + '/patch/' + defaultPlatform)" fullwidth :type="defaultPlatform == 'nds'? 'mid-piece' : 'top-piece'" color="blue" icon="fa6-solid:file-import">
                 {{ $t('rom-patcher') }}
             </ButtonLink>
             <ButtonLink :link="PATCH_DATA.mega_link" fullwidth external type="bottom-piece" color="sl-green" icon="fa6-solid:download">
