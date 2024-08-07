@@ -37,7 +37,7 @@ We’re here with another status report, and this one’s all treats and no tric
 
 ![Soul Eater: Battle Resonance screenshot](/images/blog/0025/666644697716064256_0.png)
 
-As if the [release of the Monotone Princess patch](/blog/2021-10-31-monotone-patch-release) yesterday wasn’t exciting enough, Soul Eater fans should also be pleased to note that the translation of Battle Resonance has now reached 100%! Playtesting has also begun, although there are still a few ongoing technical issues which we’re working through.
+As if the [release of the Monotone Princess patch](/blog/2021-10-31-monopri-patch-release) yesterday wasn’t exciting enough, Soul Eater fans should also be pleased to note that the translation of Battle Resonance has now reached 100%! Playtesting has also begun, although there are still a few ongoing technical issues which we’re working through.
 
 
 ## \[NDS\] Death Note: Kira Game
