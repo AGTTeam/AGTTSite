@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div id="copyright">
-            <div>{{ $t('website') }} &copy; {{ current_year }}, <NuxtLink :to="localePath('/')">Anime Game Translations Team</NuxtLink></div>
+            <div>{{ $t('website') }} &copy; {{ current_year }}, <NuxtLink :to="localePath('/')" style="color:black">Anime Game Translations Team</NuxtLink></div>
             <div>{{ $t('original-copyright') }}</div>
         </div>
     </footer>
@@ -12,12 +12,16 @@ footer {
     display: flex;
     flex-direction: column;
     color: var(--main-dark-gray);
-    width: 100vw;
     padding: 0.4rem 0;
     padding-top: 1.2rem;
     text-align: center;
     justify-self: flex-end;
     margin-top: auto;
+    background-color: #00000000;
+    backdrop-filter: blur(0.8rem);
+    filter: drop-shadow(0 0 0.5rem #00000055);
+    max-width: 40vw;
+    min-width: 40vw;
 }
 </style>
 
