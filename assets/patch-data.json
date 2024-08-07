@@ -24,8 +24,16 @@
             "patch_prefix": "GurrenPatch",
             "sha_checks": "true",
             "required_rom_sha": "60EB41F523BE98E8F78CD914FF340A4FF7110FA304B7E3500EBB4CA8C059D445",
+            "cheats": "gurren.dct",
             "mega_link": "https://mega.nz/file/rBBylBRK#rs9ffYpef5n8FQ4uFS_iUJBl1f7bjh0V2umBODB9jBI",
             "walkthrough_link": "https://gamefaqs.gamespot.com/ds/941795-tengen-toppa-gurren-lagann/faqs/78894",
+            "extras": [
+                {
+                    "name": "OVA / Ep 5.5 Remastered Subtitles",
+                    "link": "[AGT Team] Tengen Toppa Gurren Lagann 05.5 OVA [8bit][1280x720].ass",
+                    "external": false
+                }
+            ],
             "available_patches": {
                 "en": [
                     {
@@ -81,6 +89,7 @@
             "required_rom_sha": "480F343FEC65EA36C4B64B7F8F89C5740DA2E24B5BAA265EE32C042824C92027",
             "bad_rom_sha": "A9F343FE7DDE1A20CBDCEEF03EE79FFDD1663A1A55961D9F99F7A402CAE93BE8",
             "fix_bad_rom": "true",
+            "cheats": "medusa.dct",
             "repair_patch": "medusa-repair.xdelta",
             "mega_link": "https://mega.nz/file/GJA2yRgB#jNJwGnNBCRS_qFG7lW4A8GgCxocLfCwT-PoD6uQbyRQ",
             "drive_link": "https://drive.google.com/uc?export=download&id=17F0Ki79OH29AQW9fKDIAgkGBpHE75roT",

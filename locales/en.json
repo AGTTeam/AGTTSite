@@ -47,6 +47,7 @@
 
     "medusa-title": "Soul Eater: Medusa's Plot",
     "mamoru-title": "Ore ga Omae o Mamoru",
+    "gurren-title": "Tengen Toppa Gurren Lagann",
     "fma-title": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
 
     "blogs": "Archives",
@@ -122,6 +123,7 @@
     "rom-patcher": "Patch Online",
     "download-patch": "Download Patch",
     "walkthrough": "Walkthrough",
+    "cheats": "Cheats",
     "sources-tools": "Sources & Tools",
     "guide-invalid-page": "Invalid guide page",
     "guide-invalid-page-p": "Could not find a guide page at this address.",
@@ -131,7 +133,7 @@
     "rom-patcher-options": "Options",
     "rom-patcher-option-recommended": "(Recommended)",
     "rom-patcher-select-rom": "Select ROM",
-    "rom-patcher-version-select": "Select version & apply",
+    "rom-patcher-version-select": "Apply patch",
     "rom-patcher-language": "Language:",
     "rom-patcher-version": "Version:",
     "rom-patcher-patch-rom": "Patch ROM",

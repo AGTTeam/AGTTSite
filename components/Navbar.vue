@@ -4,7 +4,7 @@
             <TitleGraphic class="logo" graphic="top-logo" to="/" />
             <div class="menu">
                 <SocialLinks type="nav" />
-                <LanguageSwitcher />
+                <!--LanguageSwitcher /-->
             </div>
         </div>
     </nav>
@@ -28,7 +28,8 @@ nav .content {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0.75rem 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 }
 
 .content .logo {
@@ -44,6 +45,7 @@ nav .content {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    margin-top: 0.6rem
 }
 
 /* Tablet navbar */

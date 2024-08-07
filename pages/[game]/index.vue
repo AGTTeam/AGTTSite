@@ -5,7 +5,7 @@ definePageMeta({
     layout: "game"
 })
 import ALL_PATCH_DATA from '/assets/patch-data.json';
-if (!(route.params.game in ALL_PATCH_DATA.defaults)) {
+if (!(route.params.game in ALL_PATCH_DATA.platforms)) {
     throw createError({
         statusCode: 404,
         statusMessage: 'Page Not Found'

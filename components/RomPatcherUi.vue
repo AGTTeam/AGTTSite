@@ -171,7 +171,7 @@ function AVAILABLE_PATCHES(locale) {
     localeVal = locale
     if (!(locale in patchData.available_patches))
         return [];
-    return patchData.available_patches[locale].reverse();
+    return [ patchData.available_patches[locale].reverse()[0] ];
 }
 
 // Parse the ROM zip and header data

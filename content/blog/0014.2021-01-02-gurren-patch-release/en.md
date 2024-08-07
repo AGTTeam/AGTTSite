@@ -40,8 +40,6 @@ _This is the tale of a man who has yet to realize his destiny…_
 Full of action-packed battles, mini-games, 3 exclusive characters and an alternative ending, follow Gurren Lagann on a journey that will change the fate of the universe.
 
 *   [Download the Patch](/gurren)
-*   [Cheat Codes](https://drive.google.com/uc?export=download&id=15Xh2vi7YZbmcSjcwsQaWsKwc5PetMwZq) (GDrive) 
-*   [OVA / Ep 5.5 Remastered Subtitles](https://drive.google.com/uc?export=download&id=1UOFwWm7mFs9LGvQY2wW2Ny2EW6ThBXW8) (GDrive)
 *   [Gameplay Preview Trailer](https://youtu.be/-zm5yUaUp4U)
 
 **Any questions?**
