@@ -4,7 +4,7 @@ description: "Online ROM patcher for applying the translation patches of Ore ga 
 locale: en
 ---
 
-## Patch ROM
+## Rom Patcher
 
 Please select your dumped _Ore ga Omae o Mamoru_ `.nds` ROM file (see the [setup guide](/mamoru/guide/nds) for how to get this), choose the options you'd like to use, then click "Patch ROM" to apply the patch.
 

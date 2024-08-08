@@ -12,7 +12,7 @@ Patch Home
 
 ::button-link
 ---
-rgb-color: '#7289DA'
+rgb-color: '#5865f2'
 icon: 'fa6-brands:discord'
 link: 'https://discord.gg/UUF7Zbm'
 fullwidth: true

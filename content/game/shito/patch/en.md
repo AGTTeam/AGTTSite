@@ -4,6 +4,6 @@ description: "Online ROM patcher for applying the translation patches of Neon Ge
 locale: en
 ---
 
-## Patch ROM
+## Rom Patcher
 
 Please select your dumped _Neon Genesis Evangelion: Angel Raising Project_ `.ws` ROM file, choose the options you'd like to use, then click "Patch ROM" to apply the patch.
