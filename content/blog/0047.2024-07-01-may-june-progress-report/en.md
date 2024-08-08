@@ -61,7 +61,7 @@ If you're a fan of Fullmetal Alchemist, be sure to check on our progress!
 
 ![Death Note: Successors to L screenshot](/images/blog/0047/03_deathnote.jpg)
 
-That leaves me, Phantom, to introduce the other of our two new projects, the long-awaited second Death Note DS game! Many of you may be aware that we've released English patches for the [first](<https://agtteam.tumblr.com/post/676282663687028736/>) and [third](<https://agtteam.tumblr.com/post/724456101462032384>) Death Note games, so it was high time the second got the same treatment.
+That leaves me, Phantom, to introduce the other of our two new projects, the long-awaited second Death Note DS game! Many of you may be aware that we've released English patches for the [first](/kiragame) and [third](/prologue) Death Note games, so it was high time the second got the same treatment.
 
 Successors to L features gameplay based on the board game "Scotland Yard". Avoid traps and the FBI on Kira's side, or hunt down and arrest Kira on the Investigator's side as you complete plot-relevant missions. Fans of less-major characters should be pleased by the game's impressive roster, with a story that spans the entire original series timeline.
 

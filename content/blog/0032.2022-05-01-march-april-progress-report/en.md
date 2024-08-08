@@ -31,7 +31,7 @@ head:
     value: 'summary_large_image'
 ---
 
-We’re proud to be able to say that with the release of the [Battle Resonance patch](https://agtteam.tumblr.com/post/681343377005068288/soul-eater-battle-resonance-english-patch) in April, all three Japan-only Soul Eater console games are now available in English (and there’s even one in [Spanish](http://www.romhacking.net/translations/6149/)!) Who knows, maybe it’ll be your favorite series getting the same treatment next? 😉
+We’re proud to be able to say that with the release of the [Battle Resonance patch](/resonance) in April, all three Japan-only Soul Eater console games are now available in English (and there’s even one in [Spanish](http://www.romhacking.net/translations/6149/)!) Who knows, maybe it’ll be your favorite series getting the same treatment next? 😉
 
 So without any further ado, let’s jump straight in to what the team’s been up to lately. (Warning: this is going to be a long one!)  
 
@@ -62,7 +62,7 @@ As we briefly announced last time, we are actively working on Kimi no Yusha, a N
 
 ![L - the ProLogue to Death Note: Spiraling Trap screenshot](/images/blog/0032/683038801626644480_3.png)
 
-Hot on the heels of [Death Note: Kira Game’s release](https://agtteam.tumblr.com/post/676282663687028736/death-note-kira-game-english-patch-released) in February of this year, work has already begun on the next game in the series, L - The ProLogue to Death Note: Spiraling Trap. The game takes place before the events of the manga and features the player character as they are caught in a web of mystery that they must escape. We’ve only just begun the translation and still have a long way to go, but we hope to see its completion before the whole project spirals out of control.  
+Hot on the heels of [Death Note: Kira Game’s release](/kiragame) in February of this year, work has already begun on the next game in the series, L - The ProLogue to Death Note: Spiraling Trap. The game takes place before the events of the manga and features the player character as they are caught in a web of mystery that they must escape. We’ve only just begun the translation and still have a long way to go, but we hope to see its completion before the whole project spirals out of control.  
 
 (If you were instead hoping for news about the second Death Note DS game, Successors to L, don’t despair. We prioritized the third game as it has an original story, whereas Successors to L is a retelling of the manga like the Kira Game, but it is on our to-do list!)
 

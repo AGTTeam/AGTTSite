@@ -31,7 +31,7 @@ head:
     value: 'summary_large_image'
 ---
 
-With [Bakemonogatari Portable](https://agtteam.tumblr.com/post/693290598568968192/bakemonogatari-portable-english-patch-released) released, that brings us up to a total of four patches in the past year! Will we be able to make that five before the year is through? Here’s where things currently stand…
+With [Bakemonogatari Portable](/bake) released, that brings us up to a total of four patches in the past year! Will we be able to make that five before the year is through? Here’s where things currently stand…
 
 ## \[NDS\] Naruto RPG 2: Chidori Vs Rasengan
 
