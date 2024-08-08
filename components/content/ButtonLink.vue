@@ -96,7 +96,7 @@ const { link, color, icon, type, fullwidth, rel } = defineProps({
 }
 
 .red-color {
-    background: var(--main-red);
+    background: var(--main-green);
 }
 
 .blue-color {

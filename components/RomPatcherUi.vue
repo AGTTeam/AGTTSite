@@ -4,7 +4,7 @@
         <div class="patcher-left">
             <div>
                 <h3 class="patcher-header">{{ $t('rom-patcher-select-rom') }}</h3>
-                <input id="input-file-rom" @change="selectFile" class="input-file enabled" type="file" accept=".nds"
+                <input id="input-file-rom" @change="selectFile" class="input-file enabled" type="file" :accept="platformData.extension"
                     ondragenter="this.classList.add('patcher-file-dragging');"
                     ondragleave="this.classList.remove('patcher-file-dragging');" />
             </div>
@@ -154,16 +154,18 @@ function getLanguageName(loc, languageCode) {
 const REPO_ORG = 'AGTTeam';
 const CORS_PROXY = 'https://cors-anywhere.illidan.workers.dev/?';
 import ALL_PATCH_DATA from '/assets/patch-data.json';
+import ALL_PLATFORM_DATA from '/assets/platform-data.json';
 
 var localeVal = ''
 const notice = ref('rom-patcher-get-started')
 const noticeDict = {}
 
 // RomPatcher data variables
-let romFile, patchFile, patch, headerSize, romSha, isBadRom, repairPatchFile, repairPatch, patchData;
+let romFile, patchFile, patch, headerSize, romSha, isBadRom, repairPatchFile, repairPatch, patchData, platformData;
 
 function setup(game, platform) {
     patchData = ALL_PATCH_DATA[game].platforms[platform];
+    platformData = ALL_PLATFORM_DATA[platform];
 }
 
 // Available patches
@@ -409,7 +411,7 @@ export default {
             try {
                 romFile = new MarcFile(event.target, _parseROM);
             } catch (error) {
-                showNotice('error', 'rom-patcher-invalid-rom-select')
+                showNotice('error', 'rom-patcher-invalid-rom-select', { platform: platformData.extension })
                 return;
             }
         }

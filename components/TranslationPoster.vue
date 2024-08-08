@@ -70,11 +70,11 @@ const localePath = useLocalePath()
 }
 
 .red a {
-    color: var(--main-red) !important;
+    color: var(--main-green) !important;
 }
 
 .red {
-    color: var(--main-red) !important;
+    color: var(--main-green) !important;
 }
 
 .blue a {

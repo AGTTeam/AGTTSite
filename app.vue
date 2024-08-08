@@ -5,7 +5,8 @@
 <style>
 /* Colors */
 :root {
-  --main-red: #3ba379;
+  --main-red: #c02020;
+  --main-green: #3ba379;
   --main-blue: #3790ff;
   --main-grey: #898989;
   --main-light-gray: #eeeeee;
@@ -52,7 +53,7 @@ h4,
 h5 {
   /* Red underline effect */
   text-decoration: dashed underline;
-  text-decoration-color: var(--main-red) !important;
+  text-decoration-color: var(--main-green) !important;
   text-underline-offset: 0.6rem;
 }
 

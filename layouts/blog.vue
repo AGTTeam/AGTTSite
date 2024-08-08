@@ -210,7 +210,7 @@ article table th {
 /* Center table headings */
 article table th {
     text-align: center;
-    background-color: var(--main-red);
+    background-color: var(--main-green);
     color: white;
 }
 

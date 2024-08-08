@@ -48,7 +48,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    background-color: var(--main-red);
+    background-color: var(--main-green);
 }
 </style>
 

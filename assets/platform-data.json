@@ -1,0 +1,22 @@
+{
+    "nds": {
+        "name": "NDS",
+        "full_name": "Nintendo DS",
+        "extension": ".nds"
+    },
+    "psp": {
+        "name": "PSP",
+        "full_name": "Sony PlayStation Portable",
+        "extension": ".iso"
+    },
+    "ps2": {
+        "name": "PS2",
+        "full_name": "Sony PlayStation 2",
+        "extension": ".iso"
+    },
+    "ws": {
+        "name": "WonderSwan",
+        "full_name": "WonderSwan",
+        "extension": ".ws"
+    }
+}
