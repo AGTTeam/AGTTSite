@@ -39,13 +39,14 @@ The first of three Death Note games for the Nintendo DS, the Kira Game sees the 
 
 Calculate your way through 11 story chapters, and be sure to stock up on those apples to unlock all 19 playable characters, as well as the alternative bonus chapter.
 
-*   [Download the Patch](http://www.romhacking.net/translations/6452/) ([Mega Backup](https://mega.nz/file/mchGCZBA#-dLaRZwejRy_LhEcMzUlvoSVHgau5HlZ380v5Hl7ktE))
+*   [Download the Patch](/kiragame)
 *   [Gameplay Demo](https://youtu.be/7sQBvrVN7Pk)
-*   [Beginner’s Guide to NDS Patching](https://agtteam.tumblr.com/beginnersguide)  
 
+**Love Death Note?**
+Why not also check out our English patch for the third DS game, [Spiraling Trap](/prologue)? Or, if you’re a Japanese translator, please consider [getting in touch with us](https://discord.gg/UUF7Zbm) to help bring a patch for the second game, Successors to L, to reality!
+
+**Have any questions or issues?**  
+Please read the [Patch Guide](/kiragame/guide/nds) before asking!
 
 **Want to get in touch?**  
 Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!
-
-**Love Death Note?**  
-Why not also check out our English patch for the third DS game, [Spiraling Trap](https://agtteam.tumblr.com/post/724456101462032384)? Or, if you’re a Japanese translator, please consider [getting in touch with us](https://discord.gg/UUF7Zbm) to help bring a patch for the second game, Successors to L, to reality!

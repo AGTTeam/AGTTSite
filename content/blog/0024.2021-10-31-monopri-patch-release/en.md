@@ -43,7 +43,7 @@ Play as Maka Albarn, Black☆Star, and Death the Kid in this 3D action game for 
 *   [Game Trailer](https://youtu.be/NWseRuFc6TI)
 
 **Love Soul Eater games?**
-Why not also check out our English patches for [Medusa’s Plot](https://agtteam.tumblr.com/post/619289551323725824/) (NDS) and [Battle Resonance](https://agtteam.tumblr.com/post/681343377005068288/) (PS2/PSP)?
+Why not also check out our English patches for [Medusa’s Plot](/medusa) (NDS) and [Battle Resonance](/resonance) (PS2/PSP)?
 
 **Want to get in touch?**
 Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

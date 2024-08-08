@@ -18,7 +18,7 @@
                     </div>
                     <div class="blogs box">
                         <h2>{{ $t('blog') }}</h2>
-                        <BlogPreviewStack :limit="4" />
+                        <BlogPreviewStack :limit="9" />
                         <ButtonRow class="view-more">
                             <ButtonLink :link="localePath('/blog')" rgbcolor="#3ba379" icon="fa6-solid:paper-plane">{{ $t('view-all') }}</ButtonLink>
                             <ButtonLink :link="`${locale == 'en' ? '/' : `/${locale}/`}rss.xml`" color="rss" icon="fa6-solid:rss">{{ $t('feed') }}</ButtonLink>
@@ -106,7 +106,7 @@ h2 {
 /* Less than 850px */
 @media screen and (max-width: 940px) {
     #home-page .newsfeed {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .socials {

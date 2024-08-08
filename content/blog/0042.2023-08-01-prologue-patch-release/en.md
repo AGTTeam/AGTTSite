@@ -41,13 +41,14 @@ Team up with the world’s greatest detective, L, to solve traps and puzzles whi
 
 It’s only your life on the line…
 
-*   [Download the Patch](https://www.romhacking.net/translations/7012/) ([Mega Backup](https://mega.nz/file/fJgnGABR#gPlWLaVvL1PfjcIEzD4OUAfT7KSD0cIXlndBFYQNCoY))
-*   [Gameplay Demo](https://youtu.be/L-JQmL0Bi1s) 
-*   [Walkthrough](https://gamefaqs.gamespot.com/ds/944066-l-the-prologue-to-death-note-rasen-no-wana/faqs/80712)
-*   [Beginner’s Guide to NDS Patching](https://agtteam.tumblr.com/beginnersguide)
+*   [Download the Patch](/prologue)
+*   [Gameplay Demo](https://youtu.be/L-JQmL0Bi1s)
 
 **Love Death Note?**  
-Why not also check out our English patch for the first DS game, the [Kira Game](https://agtteam.tumblr.com/post/676282663687028736/death-note-kira-game-english-patch-released)? Or, if you’re a Japanese translator, please consider [getting in touch with us](https://discord.gg/UUF7Zbm) to help bring a patch for the second game, Successors to L, to reality!
+Why not also check out our English patch for the first DS game, the [Kira Game](/kiragame)? Or, if you’re a Japanese translator, please consider [getting in touch with us](https://discord.gg/UUF7Zbm) to help bring a patch for the second game, Successors to L, to reality!
+
+**Have any questions or issues?**  
+Please read the [Patch Guide](/prologue/guide/nds) before asking!
 
 **Want to get in touch?**  
 Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

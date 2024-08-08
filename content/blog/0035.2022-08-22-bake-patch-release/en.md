@@ -41,10 +41,8 @@ Stand your ground in dialogue battles which impressively capture the unique feel
 
 A new monstory awaits…
 
-*   [Download the Patch](https://mega.nz/file/nEwBEQYT#x0kRi6x6e0YH7l8MYsrrvzfalEsCw4XdeED_VGlxJ1s) ([GDrive Backup](https://drive.google.com/uc?export=download&id=18E6zlqWvzEPxkFARfDU9e5hQJ_Egjyjz))
-*   [HD Remastered Opening Movie](https://youtu.be/saorMOb-S7M) 
-*   [RHDN Release Page](https://www.romhacking.net/translations/6638/)  
-    
+*   [Download the Patch](/bake)
+*   [HD Remastered Opening Movie](https://youtu.be/saorMOb-S7M)
 
 **Want to get in touch?**
 Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

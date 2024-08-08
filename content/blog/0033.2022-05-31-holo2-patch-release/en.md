@@ -39,13 +39,14 @@ Part business simulator, part dating game, get ready to step into the shoes of K
 
 Having secured a contract to collect some money from a town on the other shore, everything should be plain sailing ahead for the duo, but of course, the best laid plans of mice and wolves often go awry…
 
-*   [Download the Patch](https://www.romhacking.net/translations/6567/) ([Mega Backup](https://mega.nz/file/WAYijDyD#FOfbix-6X5Uwan_DiVNHkRh4IpNBm6EuSoh_DY8vEnY))
+*   [Download the Patch](/holo)
 *   [Game Trailer](https://youtu.be/kWs-X5wr_2U)
-*   [Beginner’s Guide to NDS Patching](https://agtteam.tumblr.com/beginnersguide)  
     
-
 **Haven’t played the first game yet?**  
-The Wind that Spans the Sea is the second Spice and Wolf game to be released for the Nintendo DS, with the first being My Year with Holo! While you don’t have to have played it to enjoy this one, we recommend that anyone thinking of playing both starts there. You can find the English patch for it [here](https://agtteam.tumblr.com/post/643670722020032512/my-year-with-holo-patch-release)!  
+The Wind that Spans the Sea is the second Spice and Wolf game to be released for the Nintendo DS, with the first being My Year with Holo! While you don’t have to have played it to enjoy this one, we recommend that anyone thinking of playing both starts there. You can find the English patch for it [here](/holo)!
+
+**Have any questions or issues?**  
+Please read the [Patch Guide](/holo2/guide/nds) before asking!
 
 **Want to get in touch?**
 Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

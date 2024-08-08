@@ -42,7 +42,7 @@ Full of action-packed battles, mini-games, 3 exclusive characters and an alterna
 *   [Download the Patch](/gurren)
 *   [Gameplay Preview Trailer](https://youtu.be/-zm5yUaUp4U)
 
-**Any questions?**
+**Have any questions or issues?**  
 Please read the [Patch Guide](/gurren/guide/nds) before asking!
 
 **Want to get in touch?**

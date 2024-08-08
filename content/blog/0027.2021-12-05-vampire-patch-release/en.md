@@ -41,10 +41,11 @@ At the prestigious Cross Academy exists a dark secret. A secret which is up to y
 
 With fully-voiced main characters, a gallery of lush CGs, and 21 endings to unlock, what adventures await you under the gentle twilight sky…?
 
-*   [Download the Patch](https://www.romhacking.net/translations/6369/) ([Mega Backup](https://mega.nz/file/fJQ2xRJY#X0qyMPGLT2Ur8YGtjeqerkEJKAmPrAhkv7mty84AZt4))
+*   [Download the Patch](/vampire)
 *   [Game Trailer](https://youtu.be/xfFIVHyiEfs)
-*   [Beginner’s Guide to NDS Patching](https://agtteam.tumblr.com/beginnersguide)  
-    
+
+**Have any questions or issues?**  
+Please read the [Patch Guide](/vampire/guide/nds) before asking!
 
 **Want to get in touch?**
 Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!
