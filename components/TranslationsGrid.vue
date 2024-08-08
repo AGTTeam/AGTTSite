@@ -36,7 +36,7 @@ h2.top-title {
 import ALL_PATCH_DATA from '/assets/patch-data.json';
 let wip_translations = [];
 let translations = [];
-for (const [key, value] of Object.entries(ALL_PATCH_DATA.patches)) {
+for (const [key, value] of Object.entries(ALL_PATCH_DATA)) {
     if (value.page == null) {
         wip_translations.push(value);
     } else {

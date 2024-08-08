@@ -5,8 +5,7 @@ const { t } = useI18n({
 const route = useRoute()
 defineProps(['data'])
 import ALL_PATCH_DATA from '/assets/patch-data.json';
-const defaultPlatform = ALL_PATCH_DATA.platforms[route.params.game][0];
-const PATCH_DATA = ALL_PATCH_DATA.patches[route.params.game + "-" + defaultPlatform];
+const PATCH_DATA = ALL_PATCH_DATA[route.params.game];
 </script>
 
 <template>

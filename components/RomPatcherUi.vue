@@ -163,7 +163,7 @@ const noticeDict = {}
 let romFile, patchFile, patch, headerSize, romSha, isBadRom, repairPatchFile, repairPatch, patchData;
 
 function setup(game, platform) {
-    patchData = ALL_PATCH_DATA.patches[game + '-' + platform];
+    patchData = ALL_PATCH_DATA[game].platforms[platform];
 }
 
 // Available patches

@@ -1,373 +1,434 @@
 {
-    "platforms": {
-        "naruto": ["nds"],
-        "mushishi": ["nds"],
-        "successors": ["nds"],
-        "fma": ["ps2"],
-        "prologue": ["nds"],
-        "resonance": ["psp"],
-        "bake": ["psp"],
-        "holo2": ["nds"],
-        "kiragame": ["nds"],
-        "vampire": ["nds"],
-        "monopri": ["wii"],
-        "shito": ["ws"],
-        "holo": ["nds"],
-        "gurren": ["nds"],
-        "mamoru": ["nds"],
-        "medusa": ["nds"]
+    "naruto": {
+        "id": "naruto",
+        "title": "naruto-title",
+        "original": "Naruto RPG 2: Chidori vs. Rasengan",
+        "year": "2005",
+        "tags": ["[platform-nds]", "[genre-rpg]", "[status-proofreading]"],
+        "platforms": {
+            "nds": {}
+        }
     },
-    "patches": {
-        "naruto-nds": {
-            "id": "naruto",
-            "title": "naruto-title",
-            "original": "Naruto RPG 2: Chidori vs. Rasengan",
-            "year": "2005",
-            "tags": ["[platform-nds]", "[genre-rpg]", "[status-proofreading]"]
-        },
-        "mushishi-nds": {
-            "id": "mushishi",
-            "title": "mushishi-title",
-            "original": "Mushishi: Amefuru Sato",
-            "year": "2008",
-            "tags": ["[platform-nds]", "[genre-vn]", "[status-proofreading]"]
-        },
-        "successors-nds": {
-            "id": "successors",
-            "title": "successors-title",
-            "original": "Death Note: L wo Tsugumono",
-            "year": "2007",
-            "tags": ["[platform-nds]", "[genre-vn]", "[status-translation]"]
-        },
-        "fma-ps2": {
-            "id": "fma",
-            "title": "fma-title",
-            "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
-            "year": "2005",
-            "tags": ["[platform-ps2]", "[genre-action]", "[status-translation]"]
-        },
-        "prologue-nds": {
-            "id": "prologue",
-            "title": "prologue-title",
-            "original": "L the proLogue to DEATH NOTE -Rasen no Trap-",
-            "year": "2008",
-            "page": "/prologue",
-            "tags": ["[platform-nds]"],
-            "tool_repo": "ProLogueTranslation",
-            "data_repo": "ProLogueData",
-            "patch_prefix": "ProLoguePatch",
-            "sha_checks": "true",
-            "required_rom_sha": "470EC1A1954AD1518F5C6AB4616BDA9E4CCC1D90F06AD9F9BEF83E6A49EBC8F6",
-            "cheats": "prologue.dct",
-            "mega_link": "https://mega.nz/file/WAYijDyD#FOfbix-6X5Uwan_DiVNHkRh4IpNBm6EuSoh_DY8vEnY",
-            "walkthrough_link": "https://gamefaqs.gamespot.com/ds/944066-l-the-prologue-to-death-note-rasen-no-wana/faqs/80712",
-            "available_patches": {
-                "en": [
-                    {
-                        "version": "1.0",
-                        "date": "Aug 01, 2023",
-                        "lang": "en"
-                    }
-                ]
-            }
-        },
-        "bake-psp": {
-            "id": "bake",
-            "title": "bake-title",
-            "original": "Bakemonogatari Portable",
-            "year": "2012",
-            "page": "/bake",
-            "tags": ["[platform-psp]"],
-            "tool_repo": "BakeTranslation",
-            "data_repo": "BakeData",
-            "patch_prefix": "BakePatch",
-            "sha_checks": "true",
-            "required_rom_sha": "F76E16111785383F17CF3103C4BE45950557E44A00BAB68D546730C5E6CDFF9E",
-            "mega_link": "https://mega.nz/file/nEwBEQYT#x0kRi6x6e0YH7l8MYsrrvzfalEsCw4XdeED_VGlxJ1s",
-            "available_patches": {
-                "en": [
-                    {
-                        "version": "1.0",
-                        "date": "May 31, 2022",
-                        "lang": "en"
-                    }
-                ]
-            }
-        },
-        "holo2-nds": {
-            "id": "holo2",
-            "title": "holo2-title",
-            "original": "Ookami to Koushinryou: Umi wo Wataru Kaze",
-            "year": "2009",
-            "page": "/holo2",
-            "tags": ["[platform-nds]", "[genre-vn]"],
-            "tool_repo": "OokamiTranslation",
-            "data_repo": "Ookami2Data",
-            "patch_prefix": "Holo2Patch",
-            "sha_checks": "true",
-            "required_rom_sha": "ED5575BDD52ADFE5C515562AD45989FD58A5F1529A59F0D8953B3F6E30ACB466",
-            "bad_rom_sha": "3FA3D213BAC8D1CD10E2DCE034DACE807D8B62EABECBC8CAAC75B6A41DD3D95A",
-            "fix_bad_rom": "true",
-            "repair_patch": "holo2-repair.xdelta",
-            "cheats": "holo2.dct",
-            "mega_link": "https://mega.nz/file/WAYijDyD#FOfbix-6X5Uwan_DiVNHkRh4IpNBm6EuSoh_DY8vEnY",
-            "available_patches": {
-                "en": [
-                    {
-                        "version": "1.0",
-                        "date": "May 31, 2022",
-                        "lang": "en"
-                    }
-                ]
-            }
-        },
-        "resonance-psp": {
-            "id": "resonance",
-            "title": "resonance-title",
-            "original": "Soul Eater: Battle Resonance",
-            "year": "2009",
-            "page": "/resonance",
-            "tags": ["[platform-psp]", "[platform-ps2]"],
-            "tool_repo": "ResonanceTranslation",
-            "data_repo": "ResonanceData",
-            "patch_prefix": "ResonancePatch-psp",
-            "sha_checks": "true",
-            "required_rom_sha": "57F5D015505984265230F52F4BFAD481B76CB089BE82E7034878C692FA7AA0EF",
-            "mega_link": "https://mega.nz/file/bR4UGbyb#wKGVf_wUMBojcAbIoJSeRvYCitsUA8VUJAPnPQ3eYWI",
-            "available_patches": {
-                "en": [
-                    {
-                        "version": "1.0",
-                        "date": "Apr 12, 2022",
-                        "lang": "en"
-                    }
-                ]
-            }
-        },
-        "kiragame-nds": {
-            "id": "kiragame",
-            "title": "kiragame-title",
-            "original": "Death Note: Kira Game",
-            "year": "2009",
-            "page": "/kiragame",
-            "tags": ["[platform-nds]", "[genre-vn]"],
-            "tool_repo": "KiraGameTranslation",
-            "data_repo": "KiraGameData",
-            "patch_prefix": "KiraGamePatch",
-            "sha_checks": "true",
-            "required_rom_sha": "EF1C0BCD8DA25379EB46888959849C2011622F969E9B3967E6489E6838B8F88F",
-            "mega_link": "https://mega.nz/file/mchGCZBA#-dLaRZwejRy_LhEcMzUlvoSVHgau5HlZ380v5Hl7ktE",
-            "available_patches": {
-                "en": [
-                    {
-                        "version": "1.0",
-                        "date": "Feb 16, 2022",
-                        "lang": "en"
-                    },
-                    {
-                        "version": "1.1",
-                        "date": "Jun 11, 2022",
-                        "lang": "en"
-                    },
-                    {
-                        "version": "1.2",
-                        "date": "Jul 29, 2022",
-                        "lang": "en"
-                    }
-                ]
-            }
-        },
-        "vampire-nds": {
-            "id": "vampire",
-            "title": "vampire-title",
-            "original": "Vampire Knight DS",
-            "year": "2009",
-            "page": "/vampire",
-            "tags": ["[platform-nds]", "[genre-vn]"],
-            "tool_repo": "VampireTranslation",
-            "data_repo": "VampireData",
-            "patch_prefix": "VampirePatch",
-            "sha_checks": "true",
-            "required_rom_sha": "68F5D6B2B0BADBFD64FEBF97D50AB73E22D54AE0A55BA4EC2EA724B5FF877578",
-            "bad_rom_sha": "",
-            "fix_bad_rom": "true",
-            "repair_patch": "vampire-repair.xdelta",
-            "mega_link": "https://mega.nz/file/fJQ2xRJY#X0qyMPGLT2Ur8YGtjeqerkEJKAmPrAhkv7mty84AZt4",
-            "available_patches": {
-                "en": [
-                    {
-                        "version": "1.0",
-                        "date": "Dec 05, 2021",
-                        "lang": "en"
-                    }
-                ]
-            }
-        },
-        "monopri-wii": {
-            "id": "monopri",
-            "title": "monopri-title",
-            "original": "Soul Eater: Monotone Princess",
-            "year": "2008",
-            "page": "/monopri",
-            "tags": ["[platform-wii]"],
-            "tool_repo": "MonoPriTranslation",
-            "mega_links": [
-                {
-                    "name": "Lite (No videos, ~10mb)",
-                    "link": "https://mega.nz/file/mVRWVLiR#Q2guIqO0HJNnm-lSdVITrOwD0Iiubp8RYlcVg1xtF9s",
-                    "color": "blue"
-                },
-                {
-                    "name": "Full (~450mb)",
-                    "link": "https://mega.nz/file/KEB0iLTC#00tN7s266MhUyNqcBH-2JI-KT-bapvm-shElltXIens",
-                    "color": "sl-green"
+    "mushishi": {
+        "id": "mushishi",
+        "title": "mushishi-title",
+        "original": "Mushishi: Amefuru Sato",
+        "year": "2008",
+        "tags": ["[platform-nds]", "[genre-vn]", "[status-proofreading]"],
+        "platforms": {
+            "nds": {}
+        }
+    },
+    "successors": {
+        "id": "successors",
+        "title": "successors-title",
+        "original": "Death Note: L wo Tsugumono",
+        "year": "2007",
+        "tags": ["[platform-nds]", "[genre-vn]", "[status-translation]"],
+        "platforms": {
+            "nds": {}
+        }
+    },
+    "fma": {
+        "id": "fma",
+        "title": "fma-title",
+        "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
+        "year": "2005",
+        "tags": ["[platform-ps2]", "[genre-action]", "[status-translation]"],
+        "platforms": {
+            "ps2": {}
+        }
+    },
+    "prologue": {
+        "id": "prologue",
+        "title": "prologue-title",
+        "original": "L the proLogue to DEATH NOTE -Rasen no Trap-",
+        "year": "2008",
+        "page": "/prologue",
+        "tags": ["[platform-nds]"],
+        "tool_repo": "ProLogueTranslation",
+        "walkthrough_link": "https://gamefaqs.gamespot.com/ds/944066-l-the-prologue-to-death-note-rasen-no-wana/faqs/80712",
+        "platforms": {
+            "nds": {
+                "data_repo": "ProLogueData",
+                "patch_prefix": "ProLoguePatch",
+                "sha_checks": "true",
+                "required_rom_sha": "470EC1A1954AD1518F5C6AB4616BDA9E4CCC1D90F06AD9F9BEF83E6A49EBC8F6",
+                "cheats": "prologue.dct",
+                "mega_link": "https://mega.nz/file/WAYijDyD#FOfbix-6X5Uwan_DiVNHkRh4IpNBm6EuSoh_DY8vEnY",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Aug 01, 2023",
+                            "lang": "en"
+                        }
+                    ]
                 }
-            ],
-            "walkthrough_link": "https://gamefaqs.gamespot.com/wii/945685-soul-eater/faqs/79600"
-        },
-        "shito-ws": {
-            "id": "shito",
-            "title": "shito-title",
-            "original": "Shin Seiki Evangelion: Shito Ikusei",
-            "year": "1999",
-            "page": "/shito",
-            "tags": ["[platform-ws]"],
-            "tool_repo": "ShitoTranslation",
-            "data_repo": "ShitoData",
-            "patch_prefix": "ShitoPatch",
-            "sha_checks": "true",
-            "required_rom_sha": "F638C48C81400A067697B6E21DFDB4551D2E68EC8A9C0E8D185BB15B024CC892",
-            "mega_link": "https://mega.nz/file/jVAURZSR#5TRQo-H0Rjw-0M9VuqoujEKbdUt7kda-f_Jm0yVsYck",
-            "walkthrough_link": "https://gamefaqs.gamespot.com/wonderswan/575905-neon-genesis-evangelion-shito-ikusei/faqs/79162",
-            "available_patches": {
-                "en": [
-                    {
-                        "version": "1.0",
-                        "date": "Mar 29, 2021",
-                        "lang": "en"
-                    }
-                ]
             }
-        },
-        "holo-nds": {
-            "id": "holo",
-            "title": "holo-title",
-            "original": "Ookami to Koushinryou: Boku to Holo no Ichinen",
-            "year": "2008",
-            "page": "/holo",
-            "tags": ["[platform-nds]", "[genre-vn]", "[genre-dating-sim]"],
-            "tool_repo": "OokamiTranslation",
-            "data_repo": "OokamiData",
-            "patch_prefix": "HoloPatch",
-            "sha_checks": "true",
-            "required_rom_sha": "367D4CBA3CA4DA5FAAE132F31BB1ACB729B9E8910033799D77673A13D31CE2E7",
-            "cheats": "holo.dct",
-            "mega_link": "https://mega.nz/file/KQBAHDSB#OcJzz6jWusA5M4tp5F9QP4ngfgCnRTvA2dcuhkhLdzU",
-            "available_patches": {
-                "en": [
-                    {
-                        "version": "1.3",
-                        "date": "Mar 30, 2021",
-                        "lang": "en"
-                    }
-                ]
-            }
-        },
-        "gurren-nds": {
-            "id": "gurren",
-            "title": "gurren-title",
-            "original": "Tengen Toppa Gurren Lagann",
-            "year": "2007",
-            "page": "/gurren",
-            "tags": ["[platform-nds]", "[genre-action]"],
-            "tool_repo": "GurrenTranslation",
-            "data_repo": "GurrenData",
-            "patch_prefix": "GurrenPatch",
-            "sha_checks": "true",
-            "required_rom_sha": "60EB41F523BE98E8F78CD914FF340A4FF7110FA304B7E3500EBB4CA8C059D445",
-            "cheats": "gurren.dct",
-            "mega_link": "https://mega.nz/file/rBBylBRK#rs9ffYpef5n8FQ4uFS_iUJBl1f7bjh0V2umBODB9jBI",
-            "walkthrough_link": "https://gamefaqs.gamespot.com/ds/941795-tengen-toppa-gurren-lagann/faqs/78894",
-            "extras": [
-                {
-                    "name": "OVA / Ep 5.5 Remastered Subtitles",
-                    "link": "[AGT Team] Tengen Toppa Gurren Lagann 05.5 OVA [8bit][1280x720].ass",
-                    "external": false
+        }
+    },
+    "bake": {
+        "id": "bake",
+        "title": "bake-title",
+        "original": "Bakemonogatari Portable",
+        "year": "2012",
+        "page": "/bake",
+        "tags": ["[platform-psp]"],
+        "tool_repo": "BakeTranslation",
+        "platforms": {
+            "psp": {
+                "data_repo": "BakeData",
+                "patch_prefix": "BakePatch",
+                "sha_checks": "true",
+                "required_rom_sha": "F76E16111785383F17CF3103C4BE45950557E44A00BAB68D546730C5E6CDFF9E",
+                "mega_link": "https://mega.nz/file/nEwBEQYT#x0kRi6x6e0YH7l8MYsrrvzfalEsCw4XdeED_VGlxJ1s",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "May 31, 2022",
+                            "lang": "en"
+                        }
+                    ]
                 }
-            ],
-            "available_patches": {
-                "en": [
+            }
+        }
+    },
+    "holo2": {
+        "id": "holo2",
+        "title": "holo2-title",
+        "original": "Ookami to Koushinryou: Umi wo Wataru Kaze",
+        "year": "2009",
+        "page": "/holo2",
+        "tags": ["[platform-nds]", "[genre-vn]"],
+        "tool_repo": "OokamiTranslation",
+        "platforms": {
+            "nds": {
+                "data_repo": "Ookami2Data",
+                "patch_prefix": "Holo2Patch",
+                "sha_checks": "true",
+                "required_rom_sha": "ED5575BDD52ADFE5C515562AD45989FD58A5F1529A59F0D8953B3F6E30ACB466",
+                "bad_rom_sha": "3FA3D213BAC8D1CD10E2DCE034DACE807D8B62EABECBC8CAAC75B6A41DD3D95A",
+                "fix_bad_rom": "true",
+                "repair_patch": "holo2-repair.xdelta",
+                "cheats": "holo2.dct",
+                "mega_link": "https://mega.nz/file/WAYijDyD#FOfbix-6X5Uwan_DiVNHkRh4IpNBm6EuSoh_DY8vEnY",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "May 31, 2022",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "resonance": {
+        "id": "resonance",
+        "title": "resonance-title",
+        "original": "Soul Eater: Battle Resonance",
+        "year": "2009",
+        "page": "/resonance",
+        "tags": ["[platform-psp]", "[platform-ps2]"],
+        "tool_repo": "ResonanceTranslation",
+        "platforms": {
+            "psp": {
+                "data_repo": "ResonanceData",
+                "patch_prefix": "ResonancePatch-psp",
+                "sha_checks": "true",
+                "required_rom_sha": "57F5D015505984265230F52F4BFAD481B76CB089BE82E7034878C692FA7AA0EF",
+                "mega_link": "https://mega.nz/file/bR4UGbyb#wKGVf_wUMBojcAbIoJSeRvYCitsUA8VUJAPnPQ3eYWI",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Apr 12, 2022",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            },
+            "ps2": {
+                "data_repo": "ResonanceData",
+                "patch_prefix": "ResonancePatch-ps2",
+                "sha_checks": "true",
+                "required_rom_sha": "D52CE66B38C68ED6C00E29D890177CB66640F33334C54AB8D8D722542BDF39C8",
+                "mega_link": "https://mega.nz/file/icAhmRSD#KE6mBAWQpbUTRkhCB5uxl6u0aVXxOGoSuX6l71KM9CQ",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Apr 12, 2022",
+                            "lang": "en"
+                        },
+                        {
+                            "version": "1.1",
+                            "date": "Apr 16, 2022",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "kiragame": {
+        "id": "kiragame",
+        "title": "kiragame-title",
+        "original": "Death Note: Kira Game",
+        "year": "2009",
+        "page": "/kiragame",
+        "tags": ["[platform-nds]", "[genre-vn]"],
+        "tool_repo": "KiraGameTranslation",
+        "platforms": {
+            "nds": {
+                "data_repo": "KiraGameData",
+                "patch_prefix": "KiraGamePatch",
+                "sha_checks": "true",
+                "required_rom_sha": "EF1C0BCD8DA25379EB46888959849C2011622F969E9B3967E6489E6838B8F88F",
+                "mega_link": "https://mega.nz/file/mchGCZBA#-dLaRZwejRy_LhEcMzUlvoSVHgau5HlZ380v5Hl7ktE",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Feb 16, 2022",
+                            "lang": "en"
+                        },
+                        {
+                            "version": "1.1",
+                            "date": "Jun 11, 2022",
+                            "lang": "en"
+                        },
+                        {
+                            "version": "1.2",
+                            "date": "Jul 29, 2022",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "vampire": {
+        "id": "vampire",
+        "title": "vampire-title",
+        "original": "Vampire Knight DS",
+        "year": "2009",
+        "page": "/vampire",
+        "tags": ["[platform-nds]", "[genre-vn]"],
+        "tool_repo": "VampireTranslation",
+        "platforms": {
+            "nds": {
+                "data_repo": "VampireData",
+                "patch_prefix": "VampirePatch",
+                "sha_checks": "true",
+                "required_rom_sha": "6D3BA3D1E143122E8CE058DE15BF112D8F7048735ABFF9F531F877942C2500CE",
+                "bad_rom_sha": "68F5D6B2B0BADBFD64FEBF97D50AB73E22D54AE0A55BA4EC2EA724B5FF877578",
+                "fix_bad_rom": "true",
+                "repair_patch": "vampire-repair.xdelta",
+                "mega_link": "https://mega.nz/file/fJQ2xRJY#X0qyMPGLT2Ur8YGtjeqerkEJKAmPrAhkv7mty84AZt4",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Dec 05, 2021",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "monopri": {
+        "id": "monopri",
+        "title": "monopri-title",
+        "original": "Soul Eater: Monotone Princess",
+        "year": "2008",
+        "page": "/monopri",
+        "tags": ["[platform-wii]"],
+        "tool_repo": "MonoPriTranslation",
+        "walkthrough_link": "https://gamefaqs.gamespot.com/wii/945685-soul-eater/faqs/79600",
+        "platforms": {
+            "wii": {
+                "mega_links": [
                     {
-                        "version": "1.0",
-                        "date": "Jan 02, 2021",
-                        "lang": "en"
+                        "name": "Lite (No videos, ~10mb)",
+                        "link": "https://mega.nz/file/mVRWVLiR#Q2guIqO0HJNnm-lSdVITrOwD0Iiubp8RYlcVg1xtF9s",
+                        "color": "blue"
+                    },
+                    {
+                        "name": "Full (~450mb)",
+                        "link": "https://mega.nz/file/KEB0iLTC#00tN7s266MhUyNqcBH-2JI-KT-bapvm-shElltXIens",
+                        "color": "sl-green"
                     }
                 ]
             }
-        },
-        "mamoru-nds": {
-            "id": "mamoru",
-            "title": "mamoru-title",
-            "original": "Ore ga Omae o Mamoru",
-            "year": "2009",
-            "page": "/mamoru",
-            "tags": ["[platform-nds]", "[genre-metroidvania]", "[non-anime]"],
-            "tool_repo": "MamoruHelper",
-            "data_repo": "MamoruData",
-            "patch_prefix": "MamoruPatch",
-            "sha_checks": "true",
-            "required_rom_sha": "9398B11FD7A70F6B82EBB7E8F78F7117178D81367BD5A83E33BA3C698FA5A904",
-            "bad_rom_sha": "A1FBAE58A0B9074D4B23F290DA7379CF3769ADCCAF3CBC95C34993FA32297AB7",
-            "fix_bad_rom": "true",
-            "repair_patch": "mamoru-repair.xdelta",
-            "mega_link": "https://mega.nz/file/SUpRka7T#H3IBPYibqBbBsno9tp4_u9c6RLrhduO6U4yXDtvlqh0",
-            "available_patches": {
-                "en": [
-                    {
-                        "version": "1.1",
-                        "date": "Dec 07, 2020",
-                        "lang": "en"
-                    },
-                    {
-                        "version": "1.2",
-                        "date": "June 11, 2022",
-                        "lang": "en"
-                    }
-                ]
+        }
+    },
+    "shito": {
+        "id": "shito",
+        "title": "shito-title",
+        "original": "Shin Seiki Evangelion: Shito Ikusei",
+        "year": "1999",
+        "page": "/shito",
+        "tags": ["[platform-ws]"],
+        "tool_repo": "ShitoTranslation",
+        "walkthrough_link": "https://gamefaqs.gamespot.com/wonderswan/575905-neon-genesis-evangelion-shito-ikusei/faqs/79162",
+        "platforms": {
+            "ws": {
+                "data_repo": "ShitoData",
+                "patch_prefix": "ShitoPatch",
+                "sha_checks": "true",
+                "required_rom_sha": "F638C48C81400A067697B6E21DFDB4551D2E68EC8A9C0E8D185BB15B024CC892",
+                "mega_link": "https://mega.nz/file/jVAURZSR#5TRQo-H0Rjw-0M9VuqoujEKbdUt7kda-f_Jm0yVsYck",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Mar 29, 2021",
+                            "lang": "en"
+                        }
+                    ]
+                }
             }
-        },
-        "medusa-nds": {
-            "id": "medusa",
-            "title": "medusa-title",
-            "original": "Soul Eater: Medusa no Inbou",
-            "year": "2009",
-            "page": "/medusa",
-            "tags": ["[platform-nds]", "[genre-action]"],
-            "tool_repo": "MedusaTranslation",
-            "data_repo": "MedusaData",
-            "patch_prefix": "MedusaPatch",
-            "sha_checks": "true",
-            "required_rom_sha": "480F343FEC65EA36C4B64B7F8F89C5740DA2E24B5BAA265EE32C042824C92027",
-            "bad_rom_sha": "A9F343FE7DDE1A20CBDCEEF03EE79FFDD1663A1A55961D9F99F7A402CAE93BE8",
-            "fix_bad_rom": "true",
-            "repair_patch": "medusa-repair.xdelta",
-            "cheats": "medusa.dct",
-            "mega_link": "https://mega.nz/file/GJA2yRgB#jNJwGnNBCRS_qFG7lW4A8GgCxocLfCwT-PoD6uQbyRQ",
-            "drive_link": "https://drive.google.com/uc?export=download&id=17F0Ki79OH29AQW9fKDIAgkGBpHE75roT",
-            "walkthrough_link": "https://gamefaqs.gamespot.com/ds/947637-soul-eater-medusa-no-inbou/faqs/78360",
-            "available_patches": {
-                "en": [
-                    {
-                        "version": "1.1",
-                        "date": "May 28, 2020",
-                        "lang": "en"
-                    },
-                    {
-                        "version": "1.2",
-                        "date": "May 01, 2021",
-                        "lang": "en"
-                    }
-                ]
+        }
+    },
+    "holo": {
+        "id": "holo",
+        "title": "holo-title",
+        "original": "Ookami to Koushinryou: Boku to Holo no Ichinen",
+        "year": "2008",
+        "page": "/holo",
+        "tags": ["[platform-nds]", "[genre-vn]", "[genre-dating-sim]"],
+        "tool_repo": "OokamiTranslation",
+        "platforms": {
+            "nds": {
+                "data_repo": "OokamiData",
+                "patch_prefix": "HoloPatch",
+                "sha_checks": "true",
+                "required_rom_sha": "367D4CBA3CA4DA5FAAE132F31BB1ACB729B9E8910033799D77673A13D31CE2E7",
+                "cheats": "holo.dct",
+                "mega_link": "https://mega.nz/file/KQBAHDSB#OcJzz6jWusA5M4tp5F9QP4ngfgCnRTvA2dcuhkhLdzU",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.3",
+                            "date": "Mar 30, 2021",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "gurren": {
+        "id": "gurren",
+        "title": "gurren-title",
+        "original": "Tengen Toppa Gurren Lagann",
+        "year": "2007",
+        "page": "/gurren",
+        "tags": ["[platform-nds]", "[genre-action]"],
+        "tool_repo": "GurrenTranslation",
+        "walkthrough_link": "https://gamefaqs.gamespot.com/ds/941795-tengen-toppa-gurren-lagann/faqs/78894",
+        "extras": [
+            {
+                "name": "OVA / Ep 5.5 Remastered Subtitles",
+                "link": "[AGT Team] Tengen Toppa Gurren Lagann 05.5 OVA [8bit][1280x720].ass",
+                "external": false
+            }
+        ],
+        "platforms": {
+            "nds": {
+                "data_repo": "GurrenData",
+                "patch_prefix": "GurrenPatch",
+                "sha_checks": "true",
+                "required_rom_sha": "60EB41F523BE98E8F78CD914FF340A4FF7110FA304B7E3500EBB4CA8C059D445",
+                "cheats": "gurren.dct",
+                "mega_link": "https://mega.nz/file/rBBylBRK#rs9ffYpef5n8FQ4uFS_iUJBl1f7bjh0V2umBODB9jBI",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Jan 02, 2021",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "mamoru": {
+        "id": "mamoru",
+        "title": "mamoru-title",
+        "original": "Ore ga Omae o Mamoru",
+        "year": "2009",
+        "page": "/mamoru",
+        "tags": ["[platform-nds]", "[genre-metroidvania]", "[non-anime]"],
+        "tool_repo": "MamoruHelper",
+        "platforms": {
+            "nds": {
+                "data_repo": "MamoruData",
+                "patch_prefix": "MamoruPatch",
+                "sha_checks": "true",
+                "required_rom_sha": "9398B11FD7A70F6B82EBB7E8F78F7117178D81367BD5A83E33BA3C698FA5A904",
+                "bad_rom_sha": "A1FBAE58A0B9074D4B23F290DA7379CF3769ADCCAF3CBC95C34993FA32297AB7",
+                "fix_bad_rom": "true",
+                "repair_patch": "mamoru-repair.xdelta",
+                "mega_link": "https://mega.nz/file/SUpRka7T#H3IBPYibqBbBsno9tp4_u9c6RLrhduO6U4yXDtvlqh0",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.1",
+                            "date": "Dec 07, 2020",
+                            "lang": "en"
+                        },
+                        {
+                            "version": "1.2",
+                            "date": "June 11, 2022",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "medusa": {
+        "id": "medusa",
+        "title": "medusa-title",
+        "original": "Soul Eater: Medusa no Inbou",
+        "year": "2009",
+        "page": "/medusa",
+        "tags": ["[platform-nds]", "[genre-action]"],
+        "tool_repo": "MedusaTranslation",
+        "walkthrough_link": "https://gamefaqs.gamespot.com/ds/947637-soul-eater-medusa-no-inbou/faqs/78360",
+        "platforms": {
+            "nds": {
+                "data_repo": "MedusaData",
+                "patch_prefix": "MedusaPatch",
+                "sha_checks": "true",
+                "required_rom_sha": "480F343FEC65EA36C4B64B7F8F89C5740DA2E24B5BAA265EE32C042824C92027",
+                "bad_rom_sha": "A9F343FE7DDE1A20CBDCEEF03EE79FFDD1663A1A55961D9F99F7A402CAE93BE8",
+                "fix_bad_rom": "true",
+                "repair_patch": "medusa-repair.xdelta",
+                "cheats": "medusa.dct",
+                "mega_link": "https://mega.nz/file/GJA2yRgB#jNJwGnNBCRS_qFG7lW4A8GgCxocLfCwT-PoD6uQbyRQ",
+                "drive_link": "https://drive.google.com/uc?export=download&id=17F0Ki79OH29AQW9fKDIAgkGBpHE75roT",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.1",
+                            "date": "May 28, 2020",
+                            "lang": "en"
+                        },
+                        {
+                            "version": "1.2",
+                            "date": "May 01, 2021",
+                            "lang": "en"
+                        }
+                    ]
+                }
             }
         }
     }
