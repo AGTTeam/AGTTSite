@@ -13,11 +13,13 @@
                                 <div class="date">
                                     <IconifiedText icon="fa6-solid:newspaper">
                                         {{ $t('byline-pre') }}<NuxtLink :to="localePath('/author/' + doc.navigation.author.replace(' ', '-').toLowerCase())">{{
-                                            doc.navigation.author }}</NuxtLink>{{ $t('byline-post') }}{{ $t('on-date', { date: $t('date-short', { year: doc.navigation.year, month: $t(getMonth(doc.navigation.month)),
-            day: doc.navigation.day }) }) }}
+                                            doc.navigation.author }}</NuxtLink>{{ $t('byline-post') }}
+                                            <span v-if="doc.navigation.year > 0">
+                                                {{ $t('on-date', { date: $t('date-short', { year: doc.navigation.year, month: $t(getMonth(doc.navigation.month)), day: doc.navigation.day }) }) }}
+                                            </span>
                                     </IconifiedText>
                                 </div>
-                                <div class="tags">
+                                <div class="tags" v-if="doc.navigation.tags.length > 0">
                                     <IconifiedText icon="fa6-solid:tags">{{ $t('tags-header') }}</IconifiedText>
                                     <span class="tag" v-for="tag of doc.navigation.tags">
                                         <NuxtLink :to="localePath('/tag/' + tag)">{{ $t(`${tag.replace(' ', '-')}-tag`) }}</NuxtLink>

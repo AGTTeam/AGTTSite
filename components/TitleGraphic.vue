@@ -1,6 +1,6 @@
 <template>
     <NuxtLink :to="localePath(to)" class="title-graphic">
-        <img class="graphic-image" :src="`/images/${graphic}.png`" alt="Title graphic" />
+        <img class="graphic-image modal-exclude" :src="`/images/${graphic}.png`" alt="Title graphic" />
     </NuxtLink>
 </template>
 
