@@ -23,7 +23,9 @@ if (!(route.params.game in ALL_PATCH_DATA)) {
                     </div>
                 </div>
                 <div class="column">
-                    <img :src="`/images/${route.params.game}/game-logo.png`" />
+                    <div class="title-graphic">
+                        <img class="graphic-image" :src="`/images/${route.params.game}/game-logo.png`" />
+                    </div>
                     <div id="project-info">
                         <ContentDoc :path="`/game/${route.params.game}/${locale}`" />
                     </div>
@@ -48,6 +50,19 @@ if (!(route.params.game in ALL_PATCH_DATA)) {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+}
+.title-graphic {
+    /* filter: drop-shadow(0.12em 0.12rem 0.12rem rgba(0, 0, 0, 0.4)); */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphic-image {
+    height: auto;
+    max-width: 40em;
 }
 
 /* Less than 1200px */

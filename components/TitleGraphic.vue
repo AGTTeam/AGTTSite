@@ -1,8 +1,6 @@
 <template>
     <NuxtLink :to="localePath(to)" class="title-graphic">
-        <object class="graphic-vector" :data="`/images/${graphic}.svg`">
-            <img class="graphic-image" :src="`/images/${graphic}.png`" alt="Title graphic" />
-        </object>
+        <img class="graphic-image" :src="`/images/${graphic}.png`" alt="Title graphic" />
     </NuxtLink>
 </template>
 
@@ -23,7 +21,7 @@ const localePath = useLocalePath()
     align-items: center;
 }
 
-.graphic-vector, .graphic-image {
+.graphic-image {
     width: 100%;
     height: auto;
 }

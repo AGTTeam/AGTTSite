@@ -44,6 +44,7 @@ nav .content {
     max-width: 30em;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 2rem;
     margin-top: 0.6rem
 }

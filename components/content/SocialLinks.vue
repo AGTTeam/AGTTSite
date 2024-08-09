@@ -1,8 +1,7 @@
 <template>
     <div v-if="type == 'nav'" class="nav">
-        <NuxtLink v-for="social in socials.filter(s => s.display.nav)" :href="social.link" rel="me"
-            :style="`color: ${social.color}`">
-            <Icon :name="social.icon" />
+        <NuxtLink v-for="social in socials.filter(s => s.display.nav)" :href="social.link" rel="me" :style="`color: ${social.color}`">
+            <Icon :name="social.icon" class="nav-icon" />
         </NuxtLink>
     </div>
     <div v-else-if="type == 'stack'" class="stack">
@@ -51,6 +50,7 @@ const { type, stackTopper } = defineProps({
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     gap: 0.7rem;
     font-size: 2.3rem;
     /* filter: drop-shadow(0.4vh 0.4vh 0.2vh rgba(0, 0, 0, 0.3)); */
@@ -58,6 +58,10 @@ const { type, stackTopper } = defineProps({
 
 .nav a:hover {
     filter: drop-shadow(0 0 0.18rem white);
+}
+
+.nav a {
+    max-height: 46px;
 }
 
 .stack {
