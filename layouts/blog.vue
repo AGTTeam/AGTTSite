@@ -125,6 +125,10 @@ onMounted(() => {
     border-radius: 0.5rem;
 }
 
+.tag {
+    white-space: nowrap;
+}
+
 .agtt-logo img {
     width: 100px !important;
     height: auto !important;
