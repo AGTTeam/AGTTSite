@@ -63,6 +63,7 @@ if (!(route.params.game in ALL_PATCH_DATA)) {
 .graphic-image {
     height: auto;
     max-width: 40em;
+    overflow: hidden;
 }
 
 /* Less than 1200px */
