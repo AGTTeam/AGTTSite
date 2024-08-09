@@ -6,7 +6,7 @@ const { locale } = useI18n({
 <template>
     <ContentList path="/blog" v-slot="{ list }">
         <div v-for="blog in list.filter(b => b.navigation).filter(b => b.locale == locale).reverse().slice(0, Math.min(list.length, limit))">
-            <BlogPreview :key="blog.title" :blog="blog" />
+            <BlogPreview v-if="blog.navigation.year > 0 || sticky" :key="blog.title" :blog="blog" />
         </div>
     </ContentList>
 </template>
@@ -18,6 +18,10 @@ export default {
             type: Number,
             required: false,
             default: 3
+        },
+        sticky: {
+            type: Boolean,
+            required: false
         }
     }
 }

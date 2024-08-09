@@ -17,6 +17,7 @@
                         </div>
                     </div>
                     <div class="blogs box">
+                        <BlogPreviewStack :limit="1" :sticky="true" />
                         <h2>{{ $t('blog') }}</h2>
                         <BlogPreviewStack :limit="9" />
                         <ButtonRow class="view-more">

@@ -20,7 +20,7 @@ footer {
     background-color: #00000000;
     backdrop-filter: blur(0.8rem);
     filter: drop-shadow(0 0 0.5rem #00000055);
-    width: 575px;
+    max-width: 95vw;
 }
 </style>
 

@@ -17,6 +17,8 @@ export default defineEventHandler(async (event) => {
         .sort().reverse();
 
     for (const doc of blogPosts) {
+        if (doc.navigation.year <= 0)
+            continue;
         feed.item({
             title: doc.title ?? '-',
             url: `https://agtteam.net${doc._path?.substring(0, doc._path?.lastIndexOf('/'))}`,
