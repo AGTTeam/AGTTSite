@@ -8,6 +8,11 @@ locale: "en"
 ## Get the translation
 ::
 
+## About the game
+Based on the hit light novel/anime series of the same name, Bakemonogatari Portable is a game so true to its unique source material, the developers had to invent a new genre. In this “crazy mad delusional drama”, words become weapons in fast-paced dialogue battles.
+
+The story mode follows the ordeals of Koyomi Araragi, a high school boy turned vampire and back again. Trouble soon gets a taste for him, as he encounters a cast of quirky characters with mysterious disorders that blur the lines between the supernatural and psychological.
+
 ## Notes
 **Slow Text Load:**
 The text may sometimes take a while to render for the first time, leading to empty menus/missing choices. This is an issue present in the original game, and is more apparent on hardware.
@@ -23,8 +28,3 @@ It is not explained in the game controls, but pressing the up/down buttons on th
 
 **Reminiscence/Delusion Subtitles:**
 Despite our best efforts, we were unable to find a way to successfully add subtitles to the Reminiscence and Delusion modes. Unless someone else is able to make a breakthrough, this will not be updated in future versions.
-
-## About the game
-Based on the hit light novel/anime series of the same name, Bakemonogatari Portable is a game so true to its unique source material, the developers had to invent a new genre. In this “crazy mad delusional drama”, words become weapons in fast-paced dialogue battles.
-
-The story mode follows the ordeals of Koyomi Araragi, a high school boy turned vampire and back again. Trouble soon gets a taste for him, as he encounters a cast of quirky characters with mysterious disorders that blur the lines between the supernatural and psychological.
