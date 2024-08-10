@@ -5,15 +5,15 @@
 ::two-column-list
 - **Project Lead**: Soul Reaper
 - **Hacking**: Illidan
-- **Translation**: a witch did it, BeansproutMonozu, Haribeau, mimshipio, Richard Diu (Laphi)
+- **Translation**: Haribeau, a witch did it, BeansproutMonozu, mimshipio, Richard Diu (Laphi)
 - **Graphics**: Frogatr, Shammy, Syko, Zaygh
 - **Editing**: Phantom, SpatialKnights
 ::
 
 ## Changes to the game
-* Subtitles were retimed and centered. (Originally left-aligned)
-* Added subtitles to the closing credits
-* Generic Mini-Boss dialogue was rewritten to reference their designs.
+* Subtitles were retimed and centered.
+* Subtitles were added to the closing credits.
+* Generic Mini-Boss dialogue was rewritten to reference their designs:
   - Jack the Ripper: historical figure of the same name
   - Sonson-J: Jason Voorhees from Friday the 13th
   - Rasputin: historical figure of the same name

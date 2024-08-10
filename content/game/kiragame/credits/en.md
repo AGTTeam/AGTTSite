@@ -5,9 +5,10 @@
 ::two-column-list
 - **Hacking**: Illidan
 - **Translation**: Haribeau
-- **Graphics**: frogatr
+- **Graphics**: Frogatr, Phantom
 - **Proofreading**: Phantom, Corp
-- **Special Thanks**: Syko, Ryusui
+- **Font Identification**: Syko
+- **Logo Design**: Ryusui
 ::
 
 ## Keep in touch

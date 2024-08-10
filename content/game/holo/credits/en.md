@@ -1,32 +1,20 @@
-## Screenshots
-::image-gallery
-----
-navbottom: true
-images: [
-    {url: '/images/holo/screenshots/screen1.png'},
-    {url: '/images/holo/screenshots/screen2.png'},
-    {url: '/images/holo/screenshots/screen3.png'},
-    {url: '/images/holo/screenshots/screen4.png'},
-    {url: '/images/holo/screenshots/screen5.png'},
-]
-----
-::
+## Gameplay Video
+:YoutubeVideo{video="YXoCM4xRvaA"}
 
 ## Anime Game Translations Team
 ::two-column-list
 - **Hacking**: Illidan
 - **Translation**: Phantom, jbondsr, Morgas, StargazerOntan, casadillaa, Moaku, nanjigen
 - **Graphics**: Illidan, Phantom
-- **Editing**: emcintosh, NowlasWolf, PockyChan, GanjiMex
-- **Logo**: Suruz
-- **Original Translation**: rottenpantsu, Remilia, Masa
+- **Proofreading**: Emcintosh, NowlasWolf, PockyChan, GanjiMex
+- **Logo Design**: Suruz
+- **Original Translation**: Rottenpantsu, Remilia, Masa
 ::
 
 ## Changes to the game
-A list of bug fixes/tweaks that were made to the original ROM.
 
 * Added subtitles to the opening movie & special message
-* Adjusted line spacing for white speech bubble messages (rumors, tips, etc.), to allow for six lines to be used instead of 5.
+* Adjusted line spacing for white speech bubble messages (rumors, tips, etc.), to allow for six lines to be used instead of five.
 * Fixed a mistake during the “Confectionary Contest” consultation in which the Grocer's nametag is shown for two of Holo's lines.
 
 ## Keep in touch

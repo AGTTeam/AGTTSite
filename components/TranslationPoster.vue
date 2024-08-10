@@ -100,6 +100,7 @@ const localePath = useLocalePath()
 
     .translation .title {
         justify-content: center;
+        margin-bottom: 0.5rem;
     }
 
     .translation .about {

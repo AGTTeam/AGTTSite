@@ -27,4 +27,4 @@ The game contains an ad hoc mode allowing two local players to go head-to-head. 
 It is not explained in the game controls, but pressing the up/down buttons on the D-Pad toggles the display for the battle gauges and subtitles respectively.
 
 **Reminiscence/Delusion Subtitles:**
-Despite our best efforts, we were unable to find a way to successfully add subtitles to the Reminiscence and Delusion modes. Unless someone else is able to make a breakthrough, this will not be updated in future versions.
+Despite our best efforts, we were unable to add subtitles to the Reminiscence and Delusion modes. Unless someone else is able to make a breakthrough, this will not be updated in future versions.
