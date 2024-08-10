@@ -57,6 +57,9 @@
                             </template>
                         </ContentDoc>
                     </div>
+                    <div id="giscus-comments">
+                        <GiscusComments :slug="route.params.slug" :lang="locale" />
+                    </div>
                 </template>
                 <template #not-found>
                     <h1>{{ $t('post-not-found') }}</h1>

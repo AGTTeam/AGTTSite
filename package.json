@@ -20,6 +20,7 @@
     "sitemap": "^7.1.1"
   },
   "dependencies": {
+    "@giscus/vue": "^3.0.0",
     "@nuxt/icon": "^1.4.5",
     "url-file-size": "^1.0.5-1",
     "vue-carousel": "^0.18.0"
