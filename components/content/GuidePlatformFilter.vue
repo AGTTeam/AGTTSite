@@ -45,7 +45,6 @@ export default {
                 }
             }
             else {
-                console.log
                 selectedFilters.forEach(f => {
                     if (document.getElementById('filter-' + f.toLowerCase().replace(/ /g, '_')).classList.contains('filter-' + suffix)) {
                         this.clickFilter(f);
@@ -70,7 +69,7 @@ export default {
 <style scoped>
 .filter-buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 1.1rem;
     margin-bottom: 1rem;
     user-select: none;
@@ -79,7 +78,7 @@ export default {
 .filter-buttons .platforms-label {
     display: flex;
     margin-right: 0.5rem;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 

@@ -22,9 +22,8 @@ const localePath = useLocalePath()
             </span>
             <div class="description">{{ ((blog.description.length > 330) ? blog.description.slice(0, 329) + '&hellip;' : blog.description) }}</div>
             <div class="tags" v-if="blog.navigation.tags.length > 0">
-                <IconifiedText icon="fa6-solid:tag">
-                    <span class="tag" v-for="tag of blog.navigation.tags"><NuxtLink :to="localePath('/tag/' + tag)">{{ $t(`${tag.replace(' ', '-')}-tag`) }}</NuxtLink></span>
-                </IconifiedText>
+                <IconifiedText icon="fa6-solid:tag" />
+                <span class="tag" v-for="tag of blog.navigation.tags"><NuxtLink :to="localePath('/tag/' + tag)">{{ $t(`${tag.replace(' ', '-')}-tag`) }}</NuxtLink></span>
             </div>
         </div>
     </div>
@@ -78,6 +77,9 @@ const localePath = useLocalePath()
 
 .tags {
     margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .tagicon {
