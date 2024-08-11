@@ -129,6 +129,12 @@ onMounted(() => {
     white-space: nowrap;
 }
 
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .agtt-logo img {
     width: 100px !important;
     height: auto !important;
