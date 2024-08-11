@@ -107,7 +107,7 @@ Playing on a (New) Nintendo 3DS or 2DS can either be done simply through the use
 **Select the type of emulator you wish to use:**
 ::guide-platform-filter
 ---
-filters: ['PC Emulator', 'Mobile Emulator', 'Wii U Virtual Console']
+filters: ['PC Emulator', 'Android', 'iOS', 'Wii U Virtual Console']
 filterSuffix: 'emulator'
 ---
 
@@ -136,43 +136,70 @@ melonDS has a number of advanced features, such as configuring controllers and t
 
 </div>
 
-<div class="platform-filtered platform-mobile_emulator">
+<div class="platform-filtered platform-android">
 
-### Emulate on mobile devices
+### Emulate on Android
 
-#### Emulate on iOS / iPadOS / tvOS
-*Note: You may experience issues with sound emulation on iOS as RetroArch primarily supports DeSmuME for DS emulation and the MelonDS core is not yet stable enough to use.*
-
-The best option for emulating on iOS and Apple TV devices is using RetroArch using the DeSmuME emulation core. You don't need a jailbroken device to run RetroArch (although it is easier if you have one)
-
-There are two methods for doing this. The first method is recommended and uses Cydia Impactor to transfer the RetroArch IPA to your macOS device. For users who have a modern Mac handy that is capable of running XCode, there's also an alternative method involving building RetroArch with XCode and loading it onto your device, though it's a bit more complicated.
-
-**Requirements:**
-* iOS / iPadOS Device (iPhone, iPad, iPod Touch)
-* iTunes installed on a PC/Mac OR A Mac capable of running XCode
-
-**Recommended method: Install RetroArch through Cydia Impactor**
-1. Follow the steps listed in [this guide](https://docs.libretro.com/guides/install-ios/) to install the RetroArch on your non-Jailbreak iOS device through Cydia Impactor.
-2. Follow the guide's instructions on performing a ["Content transfer via iTunes"](https://docs.libretro.com/guides/install-ios/?device=emu#content-transfer-via-itunes) to transfer your patched ROM to the RetroArch content folder
-
-**Mac Only Method: Install RetroArch by compiling it with XCode**
-1. Follow the steps listed in [this guide](https://docs.libretro.com/guides/build-ios/) to install XCode on your Mac, clone RetroArch from source and build it, then transfer it to your device.
-2. Transfer the patched ROM over to your device using a third party tool such as iFunBox or iExplorer. If you're running on an Apple TV, you'll be given a Web URL you can access locally to transfer ROMs to the emulator directly.
-
-#### Emulate on Android
-The best DS emulator on Android is [DraStic](https://play.google.com/store/apps/details?id=com.dsemu.drastic), which has a great interface and is simple to install. Another alternative is [RetroArch](https://play.google.com/store/apps/details?id=com.retroarch).
+The best DS emulator on Android is [DraStic](https://play.google.com/store/apps/details?id=com.dsemu.drastic), which has a great interface and is simple to install. Another alternative is [RetroArch](https://play.google.com/store/apps/details?id=com.retroarch) using the MelonDS emulation core.
 
 **Requirements:**
 * Android Device with the Google Play store
 * Drastic or RetroArch
 
-**Play using DraStic Emulator**
+#### Play using DraStic Emulator
 
-Download [DraStic](https://play.google.com/store/apps/details?id=com.dsemu.drastic) off the Google Play Store and transfer the patched ROM file over to it via the Android file picker.
+1. Transfer the patched ROM file onto your device. We recommend creating a specific 'nds' folder to keep things organized.
+2. Download [DraStic](https://play.google.com/store/apps/details?id=com.dsemu.drastic) off the Google Play Store.
+3. Open the app, and select "load new game". 
+4. Navigate to the patched *:guide-data* ROM file, press "Start Game", and enjoy!
 
-**Play using RetroArch Emulator**
+#### Play using RetroArch Emulator
 
-Download [RetroArch](https://play.google.com/store/apps/details?id=com.retroarch) off the Google Play Store and transfer the patched ROM file over to it via the Android file picker.
+1. Transfer the patched ROM file onto your device. We recommend creating a specific 'nds' folder to keep things organized.
+2. Download [RetroArch](https://play.google.com/store/apps/details?id=com.retroarch) off the Google Play Store.
+3. Open the app, tap "Online Updater", scroll down and download all of the updates.
+4. Scroll back to the top of the Online Updater menu, and go to "Core Downloader". Scroll down to the Nintendo DS Cores, and download the *Nintendo - DS (melonDS)*  and *Nintendo - DS (DeSmuME)* cores.
+5. From the Navigation Bar, select the Hamburger Menu (the three lines <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/bars.svg" width="10" height="10">), which will take you to the Playlists Menu. 
+6. Press "Import Content", then press "Scan Directory", navigate to the folder where your ROMs are, and tap "\<Scan This Directory\>".
+7. Once that's finished, return to the Playlist Menu and scroll down. A Nintendo DS playlist containing all of your transferred .nds ROMs should have been created.
+8. Open the playlist, select the patched *:guide-data* ROM file, and press "Run". Select the MelonDS core, and enjoy!
+
+If you run into any emulation issues, exit the game and try launching it again with the DeSmuME core.
+
+</div>
+
+<div class="platform-filtered platform-ios">
+
+### Emulate on iOS / iPadOS / tvOS
+The most user-friendly option for emulating on iOS is Delta Emulator. However, while it is easy to obtain from the App Store in non-EU contries, those in the EU have to take a few extra steps to obtain it.
+
+RetroArch is another alternative, which also has a native Apple TV app, although it can be confusing to setup.
+
+**Requirements:**
+* iOS / iPadOS Device (iPhone, iPad, iPod Touch)
+* Mac or Windows computer (to install Altstore if you live in an EU country)
+* Delta or RetroArch
+
+#### Play using Delta Emulator
+
+1. Transfer the patched ROM file onto your device. We recommend creating a specific 'nds' folder to keep things organized.
+2. Download [Delta](https://apps.apple.com/us/app/delta-game-emulator/id1048524688) off the App Store (non-EU countries), or the follow [these steps](https://www.reddit.com/r/Delta_Emulator/wiki/guide/#wiki_altstore) to install Delta using Altstore (EU countries).
+3. Open the app, and add your ROMs to your library by tapping "+" in the top right corner of the screen. 
+4. Launch the patched *:guide-data* ROM file by tapping on it, and enjoy!
+
+#### Play using RetroArch
+
+
+1. Transfer the patched ROM file onto your device. We recommend creating a specific 'nds' folder to keep things organized.
+2. Download [RetroArch](https://apps.apple.com/gb/app/retroarch/id6499539433) off the App Store.
+3. Open the app, tap "Online Updater", scroll down and download all of the updates.
+4. Scroll back to the top of the Online Updater menu, and go to "Core Downloader". Scroll down to the Nintendo DS Cores, and download the *Nintendo - DS (melonDS)*  and *Nintendo - DS (DeSmuME)* cores.
+5. From the Navigation Bar, select the Hamburger Menu (the three lines <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/bars.svg" width="10" height="10">), which will take you to the Playlists Menu. 
+6. Press "Import Content", then press "Scan Directory", navigate to the folder where your ROMs are, and tap "\<Scan This Directory\>".
+7. Once that's finished, return to the Playlist Menu and scroll down. A Nintendo DS playlist containing all of your transferred .nds ROMs should have been created.
+8. Open the playlist, select the patched *:guide-data* ROM file, and press "Run". Select the MelonDS core, and enjoy!
+
+If you run into any emulation issues, exit the game and try launching it again with the DeSmuME core.
 
 </div>
 

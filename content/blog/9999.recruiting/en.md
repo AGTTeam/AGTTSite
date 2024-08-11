@@ -46,8 +46,8 @@ All of our projects have different demands, but these are the roles we most comm
 
 ### Future Translations
 We're currently looking for a lead translator for the following:
-* \[NDS\] Kimi no Yusha
-* \[PSP\] Nendoroid Generation
+* **\[NDS\] Kimi no Yusha**
+* **\[PSP\] Nendoroid Generation**
 
 Or, if you are a Japanese translator looking to start a project but need some support, please message us to discuss!
 
@@ -57,4 +57,4 @@ If you're interested in proofreading a project which is still being translated, 
 * **\[NDS\] Naruto RPG 2: Chidori Vs Rasengan:** End stages, no longer recruiting.
 * **\[NDS\] Mushishi: Amefuru Sato:** Proofreaders wanted, please message Phantom, Illidan or Ithyrial!
 * **\[NDS\] Death Note: Successors to L:** Applications for proofreading are welcome.
-* **\[PS2\] Fullmetal Alchemist 3: Kami wo Tsugu Shoujo:** Applications for proofreading are welcome. 
+* **\[PS2\] Fullmetal Alchemist 3: The Girl Who Succeeds God:** Applications for proofreading are welcome. 

@@ -3,9 +3,9 @@
 
 ## Anime Game Translations Team
 ::two-column-list
+- **Hacking**: Illidan
 - **Translation**: Phantom
 - **Graphics**: Phantom
-- **Hacking**: Illidan
 - **Original Hacking**: DarthNemesis
 ::
 

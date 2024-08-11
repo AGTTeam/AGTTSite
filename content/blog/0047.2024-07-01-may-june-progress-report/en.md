@@ -43,11 +43,11 @@ The translation phase is complete! Once again I'd like to extend a HUGE thank-yo
 
 The playtesting phase won't be opened just yet due to some issues with the game crashing, but once we get that sorted out it'll be good to go. Until then, anybody interested in playtesting/proofreading/copyediting is welcome to go ahead and [reach out](<https://discord.com/invite/UUF7Zbm>) so we can get you on board when the time comes!
 
-## \[PS2\] Fullmetal Alchemist 3: Kami wo Tsugu Shoujo
+## \[PS2\] Fullmetal Alchemist 3: The Girl Who Succeeds God
 
-![Fullmetal Alchemist 3: Kami wo Tsugu Shoujo screenshot](/images/blog/0047/02_fma.jpg)
+![Fullmetal Alchemist 3: The Girl Who Succeeds God screenshot](/images/blog/0047/02_fma.jpg)
 
-Iredc from the AGT discord talking here! I'm proud to introduce a new project: "Fullmetal Alchemist 3: Kami wo tsugu shoujo".
+Iredc from the AGT discord talking here! I'm proud to introduce a new project: "Fullmetal Alchemist 3: The Girl Who Succeeds God".
 
 Released in 2005, it's the third FMA game for the Playstation 2, and like the previous entries, a blend of action and RPG. However, unlike the other titles, it was never released in English, something that we're working to fix now.
 

@@ -9,8 +9,6 @@
 ::
 
 ## Changes to the game
-A compiled list of bug fixes/tweaks that were made to the original ROM.
-
 * Created custom font
 * Removed hiragana and katakana from the angel-naming screen and added custom glyphs and graphics
 * Changed the default angel name from "シト" (angel) to "Adam".

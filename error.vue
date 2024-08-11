@@ -1,8 +1,10 @@
 <template>
     <div class="error" v-if="error.statusCode == 404">
         <h2>Error {{ error.statusCode }} - Not Found</h2>
-        <p>Click below to return to a more familiar space!</p>
+		<img src="/images/404.png"/>
+        <p>This was not according to according to keikaku! Click below to return to a more familiar space!</p>
         <ButtonLink link="/" color="red" icon="fa6-solid:house">Back to Home</ButtonLink>
+		<p><small>(Translator's note: Keikaku means plan)</small></p>
     </div>
     <div class="error" v-else-if="error.statusCode == 500">
         <h2>Error {{ error.statusCode }} - Internal Error</h2>
@@ -24,14 +26,13 @@
     height: 100%;
     width: 100%;
     text-align: center;
+    background: linear-gradient(180deg, rgba(180, 213, 191, 1) 0%, rgba(255, 255, 255, 0.01) 20em);
 }
 
 .error img {
     max-width: 450px;
     height: auto;
-    margin: 1rem;
     border-radius: 0.5rem;
-    box-shadow: var(--main-shadow);
 }
 
 /* Content display */
@@ -40,7 +41,7 @@
     flex-direction: column;
     min-height: 100vh;
     background-attachment: fixed;
-    background-image: url('/images/background.png');
+    /* background-image: url('/images/background.png'); */
     background-size: cover;
     justify-content: center;
 }

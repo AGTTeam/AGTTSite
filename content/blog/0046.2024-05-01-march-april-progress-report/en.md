@@ -55,6 +55,6 @@ Of course, we won’t turn down any extra help, so if you or somebody you know i
 
 ## Other Projects
 
-Those of you who are in our [Discord Server](https://discord.com/invite/UUF7Zbm) or keep a close eye on our [project list](https://agtteam.tumblr.com/projects) may have noticed we’ve added two new projects; Death Note: Successors to L for NDS and Fullmetal Alchemist 3: Kami wo Tsugu Shoujo for PS2!
+Those of you who are in our [Discord Server](https://discord.com/invite/UUF7Zbm) or keep a close eye on our [project list](https://agtteam.tumblr.com/projects) may have noticed we’ve added two new projects; Death Note: Successors to L for NDS and Fullmetal Alchemist 3: The Girl Who Succeeds God for PS2!
 
 Both are still in the early stages having only started recently, but we look forward to bringing you more information about them next time!
