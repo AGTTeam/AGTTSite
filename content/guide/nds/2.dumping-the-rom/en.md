@@ -68,7 +68,7 @@ The first method uses a Wi-Fi hack to dump over File Transfer Protocol (FTP). Th
 
 ### Dumping with a Nintendo DSi
 
-To dump using a Nintendo DSi, we will need to install a Custom Firmware (CFW) onto the system known as Twilight Menu++ and Unlaunch to let us run Godmode9i, which lets us dump the cartridge to an `.nds` file.
+To dump using a Nintendo DSi, you will need to install a Custom Firmware (CFW) onto the system known as Twilight Menu++ and Unlaunch to enable you to run Godmode9i, which lets you dump a cartridge to an `.nds` file.
 
 **Requirements:**
 * Nintendo DSi or Nintendo DSi XL console
@@ -99,7 +99,7 @@ Please take caution following these steps to avoid bricking your system.
 
 ### Dumping with a Nintendo 3DS
 
-To dump using a Nintendo 3DS or 2DS console, we will need to install a Custom Firmware (CFW) onto the system known as Luma3DS and bootstrap9 to let us run Godmode9, which lets us dump the cartridge to an .nds file.
+To dump using a Nintendo 3DS or 2DS console, you will need to install a Custom Firmware (CFW) onto the system known as Luma3DS and bootstrap9 to enable you to run Godmode9, which lets you dump a cartridge to an .nds file.
 
 **Requirements:**
 * Nintendo 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL or New 2DS XL console

@@ -159,7 +159,7 @@ The best DS emulator on Android is [DraStic](https://play.google.com/store/apps/
 2. Download [RetroArch](https://play.google.com/store/apps/details?id=com.retroarch) off the Google Play Store.
 3. Open the app, tap "Online Updater", scroll down and download all of the updates.
 4. Scroll back to the top of the Online Updater menu, and go to "Core Downloader". Scroll down to the Nintendo DS Cores, and download the *Nintendo - DS (melonDS)*  and *Nintendo - DS (DeSmuME)* cores.
-5. From the Navigation Bar, select the Hamburger Menu (the three lines <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/bars.svg" width="10" height="10">), which will take you to the Playlists Menu. 
+5. From the Navigation Bar, select the <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/list.svg" alt="three lines" width="11" height="11"> icon which will take you to the Playlists Menu. 
 6. Press "Import Content", then press "Scan Directory", navigate to the folder where your ROMs are, and tap "\<Scan This Directory\>".
 7. Once that's finished, return to the Playlist Menu and scroll down. A Nintendo DS playlist containing all of your transferred .nds ROMs should have been created.
 8. Open the playlist, select the patched *:guide-data* ROM file, and press "Run". Select the MelonDS core, and enjoy!
@@ -194,7 +194,7 @@ RetroArch is another alternative, which also has a native Apple TV app, although
 2. Download [RetroArch](https://apps.apple.com/gb/app/retroarch/id6499539433) off the App Store.
 3. Open the app, tap "Online Updater", scroll down and download all of the updates.
 4. Scroll back to the top of the Online Updater menu, and go to "Core Downloader". Scroll down to the Nintendo DS Cores, and download the *Nintendo - DS (melonDS)*  and *Nintendo - DS (DeSmuME)* cores.
-5. From the Navigation Bar, select the Hamburger Menu (the three lines <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/bars.svg" width="10" height="10">), which will take you to the Playlists Menu. 
+5. From the Navigation Bar, select the <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/list.svg" alt="three lines" width="11" height="11"> icon which will take you to the Playlists Menu.
 6. Press "Import Content", then press "Scan Directory", navigate to the folder where your ROMs are, and tap "\<Scan This Directory\>".
 7. Once that's finished, return to the Playlist Menu and scroll down. A Nintendo DS playlist containing all of your transferred .nds ROMs should have been created.
 8. Open the playlist, select the patched *:guide-data* ROM file, and press "Run". Select the MelonDS core, and enjoy!
