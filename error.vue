@@ -2,7 +2,7 @@
     <div class="error" v-if="error.statusCode == 404">
         <h2>Error {{ error.statusCode }} - Not Found</h2>
 		<img src="/images/404.png"/>
-        <p>This was not according to according to keikaku! Click below to return to a more familiar space!</p>
+        <p>This was not according to keikaku! Click below to return to a more familiar space!</p>
         <ButtonLink link="/" color="red" icon="fa6-solid:house">Back to Home</ButtonLink>
 		<p><small>(Translator's note: Keikaku means plan)</small></p>
     </div>

@@ -43,10 +43,9 @@ images: [
     {url: '/images/blog/0006/188854380932_2.png', alt: 'A dummy image that was used as a placeholder for backgrounds, from the NDS game ‘Cinnamoroll: Ohanashi shiyo!’ by Namco Bandai.'},
     {url: '/images/blog/0006/188854380932_3.png', alt: 'A set of speech bubbles containing text from the game’s intro as images rather than text, suggesting that it may have been planned to be more cinematic at one point.'},
     {url: '/images/blog/0006/188854380932_4.png', alt: 'The hidden debug map, where you can speak to different characters to jump to content. (Battle debugger pictured.)'},
-    {url: '/images/blog/0006/188854380932_5.png', alt: 'Unused idle animation for Boota.'},
     {url: '/images/blog/0006/188854380932_6.png', alt: 'Post time-skip sprite of Kiyal.'},
     {url: '/images/blog/0006/188854380932_7.png', alt: '(Left) A previous version of the armour chip menu slots. (Right) The final version as it appears in game.'},
-    {url: '/images/blog/0006/188854380932_8.png', alt: '‘Fire A’, one of many unused automatic skill images, some contain completely original names, others divide skills into classes ‘A-C’ and ‘S’.'},
+    {url: '/images/blog/0006/188854380932_8.png', alt: '‘Fire A’, one of many unused automatic skill images, some contain completely original names, others divide the skills into classes ‘A-C’ and ‘S’.'},
 ]
 ----
 ::

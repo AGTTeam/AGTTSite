@@ -39,13 +39,14 @@ filters: ['PSP', 'PS Vita', 'Emulator']
 <div class="platform-filtered platform-ps_vita">
 
 ## Play on PS Vita
-Playing on the PS Vita requires you to have custom firmware installed on your console, as well as the homebrew app Adrenaline which is used for playing PSP games.
+Playing on the PS Vita requires you to have Custom Firmware installed on your console, as well as the homebrew app Adrenaline, which is used for playing PSP games.
 
 **Requirements:**
 * Sony PS Vita console 
-* PS Vita Memory Card with at least 8GB capacity, or a MicroSD card and SD2Vita Adapter
-* Micro USB cable, or an internet connection on your PS Vita
-* A Windows, macOS, or Linux computer
+* PS Vita Memory Card with at least 8GB capacity
+* Windows, macOS, or Linux computer
+* Micro USB cable - OR - an internet connection on your PS Vita
+
 
 ::guide-notice
 Please take caution following these steps to avoid bricking your system.
@@ -54,30 +55,30 @@ Please take caution following these steps to avoid bricking your system.
 **First-Time Setup:**
 1. Follow [the steps on vita.hacks](https://vita.hacks.guide/) to install custom firmware onto your PS Vita.
 2. Next, follow [these steps](https://vita.hacks.guide/adrenaline.html) to install Adrenaline.
-3. *OPTIONAL:* If you wish to use an SD2Vita adapter in order to expand your storage options, you will also need to install a plugin to redirect your PS Vita's main storage location. We recommend using [YAMT](https://vita.hacks.guide/yamt.html).
 
-### Transferring the patched ISO file to your PS Vita
+### Transferring the patched .iso file to your PS Vita
 
 **Transferring files via Cable:**
-1. Open VitaShell. (If the WiFi on the Vita is turned off, it will ask if you want to enable it - this is only necessary of you plan to use the wireless file transfer feature, otherwise it doesn't matter if off or on).
-2. Once VitaShell loads, press START. A menu will appear.
-3. If you are using an SD2Vita, make sure the USB device option in the menu is set to SD2Vita. If not, select your primary storage device (Memory Card, if you only have an official Vita Memory Card for storage).
-4. Next, under SELECT button, choose USB.
+1. Open VitaShell. (If the WiFi on your Vita is turned off, it will ask if you want to enable it - this is only necessary of you plan to use the wireless file transfer feature, otherwise it doesn't matter if off or on).
+2. Once VitaShell loads, press START to bring up the main settings.
+3. If you are using an SD2Vita, make sure the USB device option in the menu is set to SD2Vita. If not, select your primary storage device (e.g. the Memory Card, if you only have an official Vita Memory Card for storage).
+4. Change the "SELECT button" option to "USB".
 5. Press START again to close the menu.
-6. Press SELECT. You will now see a prompt on screen to connect via USB. Leave that prompt open, and do so.
-7. Now when you connect your Vita to PC via cable, it will show you all of your storage locations.
+6. Press SELECT. You will now see a prompt on screen to connect your Vita to a computer via USB. Leave that prompt open, and do so.
+7. Once connected, you should now be able to browse your Vita's files on your computer.
 8. Navigate to the ux0:/pspemu/ISO/ folder and copy the patched .iso you previously created to this folder. 
 9. Be sure to Safely Remove Device from your computer before unplugging the USB cable, then press CIRCLE to leave the USB mode.
 
 **Transferring files via WiFi FTP:**
-1. Turn on WiFi on your PS Vita, and make sure that Airplane Mode is turned off. Your vita and computer should both be connected to the same WiFi network.
+1. Turn on WiFi on your PS Vita, and make sure that Airplane Mode is turned off. Your Vita and computer should both be connected to the same WiFi network.
 2. Open VitaShell, then press START to bring up the main settings. 
 3. Change the "SELECT button" option to "FTP", then press START to exit out of the main settings. Now, press SELECT. You should see a message with an FTP address, like this:
 `ftp://192.168.86.XX:1337`
 <br />The "XX" in the address above will be unique to the IP address your Vita is currently using.
-4. On your preferred FTP client (such as [WinSCP](https://winscp.net/eng/index.php) or [FileZilla](https://filezilla-project.org/) for Windows), start a new FTP connection. For the address, type in 192.168.86.XX (with "XX" being whatever is displayed on your Vita), and change the port to "1337". 
-5. Press the connect button on your client, and when it asks you for a username and password, don't type anything and just press OK instead. You should now be connected, with access to all of your file system on the device.
-6. Navigate to the ux0:/pspemu/ISO/ folder and copy the patched .iso you previously created to this folder. It may take some time to complete. Ensure that your vita doesn't go to sleep during this process.
+4. On your preferred FTP client (such as [WinSCP](https://winscp.net/eng/index.php) or [CyberDuck](https://cyberduck.io/)), start a new FTP connection. For the address, type in 192.168.86.XX (with "XX" being whatever is displayed on your Vita), and change the port to "1337". 
+5. Press the connect button on your client. Use "guest" as the username and leave the  password field blank. You should now be connected and have access to all of your file system on the device.
+6. Navigate to the ux0:/pspemu/ISO/ folder and copy the patched .iso you previously created to this folder. It may take some time to complete. Ensure that your Vita doesn't go to sleep during this process.
+7. Once the transfer is complete, press CIRCLE to close the FTP connection.
 
 ### Playing the game on Adrenaline:
 1. Open Adrenaline.
@@ -88,9 +89,11 @@ Please take caution following these steps to avoid bricking your system.
 
 <div class="platform-filtered platform-emulator">
 
-## Play on Emulators - TODO
+## Play on Emulators
 
-**Select the type of emulator you wish to use:**
+The recommended emulator for PSP games is [PPSSPP](https://www.ppsspp.org/), which is available on both PC and Mobile. PPSSPP can also be installed as a core for [RetroArch](https://www.retroarch.com/), however at the time of writing, the standalone version offers a more stable performance and so is what we recommend.
+
+**Select the platform you wish to use:**
 ::guide-platform-filter
 ---
 filters: ['PC Emulator', 'Android', 'iOS']
@@ -100,25 +103,15 @@ filterSuffix: 'emulator'
 <div class="platform-filtered platform-pc_emulator">
 
 ### Emulate on Windows, macOS, or Linux
-There are a few options for PC DS emulators, but the one we recommend is melonDS for its emulation accuracy and performance.
 
-#### melonDS setup
 **Requirements:**
 * Windows, macOS or Linux computer
 
 **Setup:**
-
-Simply [download melonDS](https://melonds.kuribo64.net/downloads.php) (**v0.9.4+**) from the project website for your platform (Windows, macOS, Linux) and save it somewhere easily accessible to your computer.
+Simply [download PPSSPP](https://www.ppsspp.org/download/) from the project website for your platform (Windows, macOS, Linux) and save it somewhere easily accessible to your computer.
 
 **Playing the game:**
-
-With melonDS setup, all you need to do in order to play the game is select "File"  "Open ROM" in the top menu bar and choose the ROM file you patched earlier.
-
-melonDS has a number of advanced features, such as configuring controllers and tweaking display settings. You can check out the [melonDS Website](https://melonds.kuribo64.net/) for more information.
-
-#### Other PC emulators
-* [DeSmuME](https://desmume.org/)-çAnother popular PC emulator, but may have performance issues with certain games.
-* [No$GBA](https://www.nogba.com/)-çNot recommended due to severe general emulation accuracy issues. It's also infrequently updated and not very user-friendly.
+Once PPSSPP is installed, press "Browse" under the Games Menu and navigate to the folder where you saved the patched .iso. Any games you have in that folder will now appear in PPSPP's library. Click on *:guide-data*, and enjoy!
 
 </div>
 
@@ -126,67 +119,48 @@ melonDS has a number of advanced features, such as configuring controllers and t
 
 ### Emulate on Android
 
-The best DS emulator on Android is [DraStic](https://play.google.com/store/apps/details?id=com.dsemu.drastic), which has a great interface and is simple to install. Another alternative is [RetroArch](https://play.google.com/store/apps/details?id=com.retroarch) using the MelonDS emulation core.
-
 **Requirements:**
 * Android Device with the Google Play store
-* Drastic or RetroArch
+* Windows, macOS, or Linux computer
+* PPSSPP
 
-#### Play using DraStic Emulator
+**Playing the game:**
+1. Download [PPSSPP](https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp) off the Google Play Store.
+2. Connect your Android device (phone, tablet, etc) to your PC using a USB cable. 
+3. On your device, pull down the top bar and click the circled arrow:<br /><img src="https://www.ppsspp.org/static/img/guide_files/step1.png" alt="Android System Settings: Charging this device via USB" width="40%" height="40%"><br />
+4. Press "Tap for more options". This will take you to the USB Preferences screen, where you can enable file sharing.<br />
+<img src="https://www.ppsspp.org/static/img/guide_files/step3.png" alt="Android USB Preferences Menu. The File transfer / Android Auto setting has been enabled." width="40%" height="40%">
+5. On your PC, you'll now be able to see your device's storage in the Explorer:<br />
+<img src="https://www.ppsspp.org/static/img/guide_files/step4.png" alt="A Navigation Pane showing a connected Android device.">
+6. Copy over the patched .iso file you created earlier to somewhere easy to remember - for example, create a folder called "PSP ISO" and copy the .iso file there.
+7. Start PPSSPP, navigate to your patched *:guide-data* on the Games tab, then tap the game and enjoy!
 
-1. Transfer the patched ROM file onto your device. We recommend creating a specific 'nds' folder to keep things organized.
-2. Download [DraStic](https://play.google.com/store/apps/details?id=com.dsemu.drastic) off the Google Play Store.
-3. Open the app, and select "load new game". 
-4. Navigate to the patched *:guide-data* ROM file, press "Start Game", and enjoy!
+You may also wish to connect a game controller to your Android device to improve your gameplay experience. You can configure your controller in PPSSPP by going to Settings > Controls > Control Mapping.
+ 
 
-#### Play using RetroArch Emulator
-
-1. Transfer the patched ROM file onto your device. We recommend creating a specific 'nds' folder to keep things organized.
-2. Download [RetroArch](https://play.google.com/store/apps/details?id=com.retroarch) off the Google Play Store.
-3. Open the app, tap "Online Updater", scroll down and download all of the updates.
-4. Scroll back to the top of the Online Updater menu, and go to "Core Downloader". Scroll down to the Nintendo DS Cores, and download the *Nintendo - DS (melonDS)*  and *Nintendo - DS (DeSmuME)* cores.
-5. From the Navigation Bar, select the <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/list.svg" alt="three lines" width="11" height="11"> icon which will take you to the Playlists Menu. 
-6. Press "Import Content", then press "Scan Directory", navigate to the folder where your ROMs are, and tap "\<Scan This Directory\>".
-7. Once that's finished, return to the Playlist Menu and scroll down. A Nintendo DS playlist containing all of your transferred .nds ROMs should have been created.
-8. Open the playlist, select the patched *:guide-data* ROM file, and press "Run". Select the MelonDS core, and enjoy!
-
-If you run into any emulation issues, exit the game and try launching it again with the DeSmuME core.
+*Guide and images courtesy of [ppsspp.org/docs](https://www.ppsspp.org/docs/getting-started/installing-games-android/) contributors.*
 
 </div>
 
 <div class="platform-filtered platform-ios">
+Note that the standalone version of PPSSPP is currently only available for iPhone and iPad.
 
-### Emulate on iOS / iPadOS / tvOS
-The most user-friendly option for emulating on iOS is Delta Emulator. However, while it is easy to obtain from the App Store in non-EU contries, those in the EU have to take a few extra steps to obtain it.
-
-RetroArch is another alternative, which also has a native Apple TV app, although it can be confusing to setup.
+### Emulate on iOS / iPadOS
 
 **Requirements:**
 * iOS / iPadOS Device (iPhone, iPad, iPod Touch)
-* Mac or Windows computer (to install Altstore if you live in an EU country)
-* Delta or RetroArch
+* Mac or Windows computer
+* PPSSPP
 
-#### Play using Delta Emulator
+**Playing the game:**
+1. Download [PPSSPP](https://apps.apple.com/us/app/ppsspp-psp-emulator/id6496972903) off the App Store.
+2. Connect your iOS device (iPhone or iPad) via USB to your PC.
+3. Open the device in Finder. Click the Files tab, then you should see PPSSPP and/or PPSSPP Gold listed.
+4. Drag the patched .iso you created earlier into the app.
+5. After this, the .iso files will be located on the virtual "memory stick". Just pick the the patched *:guide-data* from the Games tab (click Home if you can't find the files), and enjoy!
 
-1. Transfer the patched ROM file onto your device. We recommend creating a specific 'nds' folder to keep things organized.
-2. Download [Delta](https://apps.apple.com/us/app/delta-game-emulator/id1048524688) off the App Store (non-EU countries), or the follow [these steps](https://www.reddit.com/r/Delta_Emulator/wiki/guide/#wiki_altstore) to install Delta using Altstore (EU countries).
-3. Open the app, and add your ROMs to your library by tapping "+" in the top right corner of the screen. 
-4. Launch the patched *:guide-data* ROM file by tapping on it, and enjoy!
-
-#### Play using RetroArch
-
-
-1. Transfer the patched ROM file onto your device. We recommend creating a specific 'nds' folder to keep things organized.
-2. Download [RetroArch](https://apps.apple.com/gb/app/retroarch/id6499539433) off the App Store.
-3. Open the app, tap "Online Updater", scroll down and download all of the updates.
-4. Scroll back to the top of the Online Updater menu, and go to "Core Downloader". Scroll down to the Nintendo DS Cores, and download the *Nintendo - DS (melonDS)*  and *Nintendo - DS (DeSmuME)* cores.
-5. From the Navigation Bar, select the <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/list.svg" alt="three lines" width="11" height="11"> icon which will take you to the Playlists Menu.
-6. Press "Import Content", then press "Scan Directory", navigate to the folder where your ROMs are, and tap "\<Scan This Directory\>".
-7. Once that's finished, return to the Playlist Menu and scroll down. A Nintendo DS playlist containing all of your transferred .nds ROMs should have been created.
-8. Open the playlist, select the patched *:guide-data* ROM file, and press "Run". Select the MelonDS core, and enjoy!
-
-If you run into any emulation issues, exit the game and try launching it again with the DeSmuME core.
-
+You may also wish to [connect a game controller to your iPhone](https://support.apple.com/en-gb/guide/iphone/iph9d38dd45f/ios) to improve your gameplay experience. You can then configure your controller in PPSSPP by going to Settings > Controls > Control Mapping.
+ 
 </div>
 
 ::
