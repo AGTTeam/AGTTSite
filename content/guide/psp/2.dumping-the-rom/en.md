@@ -21,13 +21,13 @@ Please take caution following these steps to avoid bricking your system.
 * Mini USB Cable
 * Windows, macOS, or Linux computer
 
-**First-Time Setup**
+**First-Time Setup:**
 1. Follow [these steps](https://www.pspunk.com/psp-cfw/) to install ARK-4 on your PSP. If you already have different CFW installed on your PSP, you can skip this.
 2. Download [PSP Filer v6.6](https://archive.org/download/filer6.6/filer6.6.zip) - OR - [UMD Image Creator](https://github.com/saramibreak/UmdImageCreator/releases/) (dumps some UMDs that PSP Filer won't).
 
 #### PSP Filer Method
 
-**Installing PSP Filer onto your PSP**
+**Installing PSP Filer onto your PSP:**
 
 1. Extract the PSP Filer .zip file.
 2. Open the 'release\GAME' folder, select the 'Filer' folder and 'copy' it.
@@ -36,7 +36,7 @@ Please take caution following these steps to avoid bricking your system.
 5. Disconnect the PSP from the computer.
 
 
-**Dumping a UMD using PSP Filer**
+**Dumping a UMD using PSP Filer:**
 
 1. Enable your PSP to run homebrew / start your Custom Firmware.
 2. Insert the UMD you want to dump into your PSP.
@@ -50,14 +50,14 @@ Please take caution following these steps to avoid bricking your system.
 
 #### UMD Image Creator Method
 
-**Installing UMD Image Creator onto your PSP**
+**Installing UMD Image Creator onto your PSP:**
 
 1. Download the latest release of UMD Image Creator and extract the .zip file.
 2. Connect the PSP to the computer using a USB Cable.
 3. Copy 'PSP\GAME\UmdImageCreator' and 'seplugins' into the mounted drive.
 4. Disconnect the PSP from the computer.
 
-**Dumping a UMD using UMD Image Creator**
+**Dumping a UMD using UMD Image Creator:**
 
 1. Start either the UmdImageCreator application, or press the Note button if you're using the PRX module variant.
 2. Insert the UMD you want to dump into your PSP.
@@ -78,4 +78,4 @@ Please take caution following these steps to avoid bricking your system.
 ## Before you proceed
 You should now have dumped your game to a `.iso` ROM file that you can patch. Move this to somewhere easily accessible.
 
-*ROM dumping information courtesy of [dumping.guide](http://wiki.redump.org/index.php?title=PlayStation_Portable_Dumping_Guide) contributors.*
+*ROM dumping information courtesy of [redump.org](http://wiki.redump.org/index.php?title=PlayStation_Portable_Dumping_Guide) contributors.*
