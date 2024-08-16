@@ -108,9 +108,11 @@ filterSuffix: 'emulator'
 * Windows, macOS or Linux computer
 
 **Setup:**
+
 Simply [download PPSSPP](https://www.ppsspp.org/download/) from the project website for your platform (Windows, macOS, Linux) and save it somewhere easily accessible to your computer.
 
 **Playing the game:**
+
 Once PPSSPP is installed, press "Browse" under the Games Menu and navigate to the folder where you saved the patched .iso. Any games you have in that folder will now appear in PPSPP's library. Click on *:guide-data*, and enjoy!
 
 </div>
@@ -137,8 +139,9 @@ Once PPSSPP is installed, press "Browse" under the Games Menu and navigate to th
 
 You may also wish to connect a game controller to your Android device to improve your gameplay experience. You can configure your controller in PPSSPP by going to Settings > Controls > Control Mapping.
  
+---
 
-*Guide and images courtesy of [ppsspp.org/docs](https://www.ppsspp.org/docs/getting-started/installing-games-android/) contributors.*
+*Guide and images courtesy of [PPSSPP documentation](https://www.ppsspp.org/docs/getting-started/installing-games-android/) contributors.*
 
 </div>
 

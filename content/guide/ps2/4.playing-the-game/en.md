@@ -9,8 +9,6 @@ locale: 'en'
 Now that you've got the patched ROM file, it's time to get ready to start playing!
 
 ---
-
-**Select the platform you want to play on:**
 ::guide-platform-filter
 ---
 filters: ['PS2', 'Emulator']
@@ -28,23 +26,30 @@ Thanks to an exploit found by CTurt in 2020 (FreeDVDBoot), it is now possible to
 * A PlayStation 2 console [compatible with FreeDVDBoot](https://www.psdevwiki.com/ps2/FreeDVDBoot_Compatibility_List)
 * A DVD (not a CD), preferably a DVD-R as other types such as DVD+RW put more strain on the PS2 laser
 * A Windows, macOS, or Linux computer with a built-in disc burner/external USB disc burner
+* [FreeDVDBoot ESR Patcher](https://www.ps2-home.com/forum/viewtopic.php?t=9778)
 
 **Method:**
 1. (Important!) Set your console language to English. To do this, boot without a disc inserted, press CIRCLE to enter System Configuration and set your system language to English.
-
-TODO
+2. Download the latest version of [FreeDVDBoot ESR Patcher GUI](https://www.ps2-home.com/forum/viewtopic.php?t=9778) from the ps2-home thread.
+3. Use [7-Zip](https://www.7-zip.org/download.html) to extract the .7z archive.
+4. Run FDVDB_ESR_Patcher.exe. (The GUI uses uses the Windows .NET library. Linux and Mac users will need to run it with [Wine Mono](https://wiki.winehq.org/Mono)).
+5. Select the patched .iso you created earlier via the OpenFileDialog, or just drag and drop the .iso onto the GUI.
+6. Select the payload (only one is included for now).
+7. Press "Path!"
+8. If you get a "can't access file" error, restart FDVDB_ESR_Patcher.exe with admin privileges.
+9. Burn your patched .iso to a DVD-R (see below).
+10. Place the burned disc into a compatible PS2, and enjoy!
 
 See the [FreeDVDBoot Troubleshooting Guide](https://github.com/CTurt/FreeDVDBoot?tab=readme-ov-file#troubleshooting---please-read-if-the-above-didnt-work) if you run into any issues.
 
 **Burning discs:**
 
-You can burn the patched .iso you previously created to a DVD using most DVD burning software. We recommend:
+You can burn the English-patched, ESR-patched .iso you've created to a DVD using most DVD burning software. We recommend:
+* Windows: [ImgBurn](https://ninite.com/imgburn) or [Alcohol 120%](https://www.alcohol-soft.com/designzoo/downloada120fe.html)<br />
+* Mac: [Disk Utility](https://support.apple.com/en-gb/guide/mac-help/mchl8addfd95/mac) (free) or [Toast](https://apps.apple.com/us/app/toast-dvd/id829469267?mt=12) ($19.99)<br />
+* Linux: [K3b](https://apps.kde.org/k3b/) or [Brasero](https://wiki.gnome.org/Apps/Brasero)
 
-Windows: [ImgBurn](https://ninite.com/imgburn) or [Alcohol 120%](https://www.alcohol-soft.com/designzoo/downloada120fe.html)<br />
-Mac: [Disk Utility](https://support.apple.com/en-gb/guide/mac-help/mchl8addfd95/mac) (free) or [Toast](https://apps.apple.com/us/app/toast-dvd/id829469267?mt=12) ($19.99)<br />
-Linux: [K3b](https://apps.kde.org/k3b/) or [Brasero](https://wiki.gnome.org/Apps/Brasero)
-
-To ensure the best compatibility for your disk, be sure to clean off any dust from the disc before starting and select lowest burning speed option.
+To ensure the best compatibility for your disk, be sure to clean off any dust from the disc before starting and select the lowest burning speed option.
 
 ### Open PS2 Loader
 
@@ -53,17 +58,17 @@ Using Open PS2 Loader you can play games from a USB mass storage device. Unlike 
 
 **Requirements:**
 * A PlayStation 2 capable of running homebrew (through [FreeMCBoot](https://consolemods.org/wiki/PS2:FMCB)/[FreeHDBoot](https://consolemods.org/wiki/PS2:FHDB) or another exploit)
-* [wLaunchELF](https://github.com/ps2homebrew/wLaunchELF)
+* [wLaunchELF](https://github.com/ps2homebrew/wLaunchELF) (formerly known as uLaunchELF)
 * A Memory Card with minimal 3.5MB free
-* A USB storage device (8GB or more)
+* A USB storage device of 8GB or more
 * A Windows, macOS, or Linux computer
 
 **Installing OPL:**
 
-1. Download the latest version of OPL from the [official GitHub page](https://github.com/ps2homebrew/Open-PS2-Loader/releases/) (thoroughly read the repo's README first and do not download the pre-release).
+1. Download the latest version of OPL from the [official GitHub page](https://github.com/ps2homebrew/Open-PS2-Loader/releases/). (Be sure to read the repo's README first and do not download the pre-release).
 2. Extract OPNPS2LD.elf from the archive and transfer the file to a USB storage device.
 3. Plug the USB into your PS2 and open wLaunchELF.
-4. Navigate to "mass:" and highlight the file from earlier.
+4. Navigate to `mass:` and highlight the file from earlier.
 5. Open the context menu (R1 by default) and select "Copy".
 6. Navigate to the memory card where FMCB is installed and go to the BOOT folder.
 7. Open the context menu again and select "Paste" (any older version of OPL will be overwritten).
@@ -82,136 +87,127 @@ Transfer your .iso images into either the CD or DVD folder, depending on your ga
 
 Be warned that because of the PS2's extremely slow USB read speeds, you will experience issues such as choppy FMVs, long loading times, or some games not working at all.
 
-
+---
 *Modding information courtesy of [ConsoleMods](https://consolemods.org/wiki/PS2:Playing_Game_Backups) contributors.*
 
 
 </div>
 
-<div class="platform-filtered platform-ps_vita">
-
-## Play on PS Vita
-Playing on the PS Vita requires you to have Custom Firmware installed on your console, as well as the homebrew app Adrenaline, which is used for playing PSP games.
-
-**Requirements:**
-* Sony PS Vita console 
-* PS Vita Memory Card with at least 8GB capacity
-* Windows, macOS, or Linux computer
-* Micro USB cable - OR - an internet connection on your PS Vita
-
-
-::guide-notice
-Please take caution following these steps to avoid bricking your system.
-::
-
-**First-Time Setup:**
-1. Follow [the steps on vita.hacks](https://vita.hacks.guide/) to install custom firmware onto your PS Vita.
-2. Next, follow [these steps](https://vita.hacks.guide/adrenaline.html) to install Adrenaline.
-
-### Transferring the patched .iso file to your PS Vita
-
-**Transferring files via Cable:**
-1. Open VitaShell. (If the WiFi on your Vita is turned off, it will ask if you want to enable it - this is only necessary of you plan to use the wireless file transfer feature, otherwise it doesn't matter if off or on).
-2. Once VitaShell loads, press START to bring up the main settings.
-3. If you are using an SD2Vita, make sure the USB device option in the menu is set to SD2Vita. If not, select your primary storage device (e.g. the Memory Card, if you only have an official Vita Memory Card for storage).
-4. Change the "SELECT button" option to "USB".
-5. Press START again to close the menu.
-6. Press SELECT. You will now see a prompt on screen to connect your Vita to a computer via USB. Leave that prompt open, and do so.
-7. Once connected, you should now be able to browse your Vita's files on your computer.
-8. Navigate to the ux0:/pspemu/ISO/ folder and copy the patched .iso you previously created to this folder. 
-9. Be sure to Safely Remove Device from your computer before unplugging the USB cable, then press CIRCLE to leave the USB mode.
-
-**Transferring files via WiFi FTP:**
-1. Turn on WiFi on your PS Vita, and make sure that Airplane Mode is turned off. Your Vita and computer should both be connected to the same WiFi network.
-2. Open VitaShell, then press START to bring up the main settings. 
-3. Change the "SELECT button" option to "FTP", then press START to exit out of the main settings. Now, press SELECT. You should see a message with an FTP address, like this:
-`ftp://192.168.86.XX:1337`
-<br />The "XX" in the address above will be unique to the IP address your Vita is currently using.
-4. On your preferred FTP client (such as [WinSCP](https://winscp.net/eng/index.php) or [CyberDuck](https://cyberduck.io/)), start a new FTP connection. For the address, type in 192.168.86.XX (with "XX" being whatever is displayed on your Vita), and change the port to "1337". 
-5. Press the connect button on your client. Use "guest" as the username and leave the  password field blank. You should now be connected and have access to all of your file system on the device.
-6. Navigate to the ux0:/pspemu/ISO/ folder and copy the patched .iso you previously created to this folder. It may take some time to complete. Ensure that your Vita doesn't go to sleep during this process.
-7. Once the transfer is complete, press CIRCLE to close the FTP connection.
-
-### Playing the game on Adrenaline:
-1. Open Adrenaline.
-2. Navigate to the patched *:guide-data* file under Game > Memory Stick.
-3. Launch the game and enjoy! 
-
-</div>
-
 <div class="platform-filtered platform-emulator">
 
-## Play on Emulators
+## Play on Emulator
 
-The recommended emulator for PSP games is [PPSSPP](https://www.ppsspp.org/), which is available on both PC and Mobile. PPSSPP can also be installed as a core for [RetroArch](https://www.retroarch.com/), however at the time of writing, the standalone version offers a more stable performance and so is what we recommend.
+The recommended emulator for PS2 games is [PCSX2](https://pcsx2.net/), which is available for Windows, macOS, and Linux. A fork of PCSX2, [AetherSX2](https://aethersx2.gitlab.io/), is also available for Android and iOS, however at the time of writing, most mobile devices are not powerful enough to support playing PS2 games smoothly, so we do not recommend it.
+
+### Dumping BIOS
+
+Regardless of the platform you intend to play on, PCSX2 requires you to provide your own PS2 BIOS files in order to run. For more information on how to do this, please see the [PCSX2 Dumping BIOS guide](https://pcsx2.net/docs/setup/bios).
+
+Note that this guide refers to using "uLaunchELF", this is the old name of "wLaunchELF".
+
+---
+
+Once you have your PS2 BIOS files dumped, you can move onto to setting up PCSX2! 
 
 **Select the platform you wish to use:**
 ::guide-platform-filter
 ---
-filters: ['PC Emulator', 'Android', 'iOS']
+filters: ['Windows', 'macOS', 'Linux']
 filterSuffix: 'emulator'
 ---
 
-<div class="platform-filtered platform-pc_emulator">
+<div class="platform-filtered platform-windows">
 
-### Emulate on Windows, macOS, or Linux
+### Emulate on Windows
 
 **Requirements:**
-* Windows, macOS or Linux computer
+* Windows computer
+* PCSX2
+* [Visual C++ 2019 x86 Redistributables](https://support.microsoft.com/en-us/help/2977003/)
+    * 64-bit version (x64) is required for 1.7.0 and higher (though early 1.7 builds still require 32-bit versions)
+	
+**Setup:**
+1. Download the [latest Nightly build of PCSX2](https://pcsx2.net/downloads) for Windows
+2. Use [7-Zip](https://www.7-zip.org/download.html) to extract the .7z archive.
+    * Install 7-Zip.
+	* Right click on the archive.
+	* Find the entry for 7-Zip.
+	* Click on "Extract to [folder name]" option.
+	* This will extract PCSX2 to the same directory where you put the .7z file. 
+
+**Launching PCSX2:**
+1. Run the pcsx2-qt.exe.
+2. Follow the setup wizard, and add the folder where you saved your patched *:guide-data.iso* to the Game Directories.
+3. Once the setup is complete, you should see *:guide-data* in your game library. Simply double click on it, and enjoy!
+
+PCSX2 has a number of advanced features, such as configuring controllers and tweaking display settings. You can check out the [PCSX2 Website](https://pcsx2.net/docs/category/post-installation) for more information.
+
+---
+*Guide courtesy of [PCSX2 documentation](https://pcsx2.net/docs/category/setup) contributors.*
+
+</div>
+
+<div class="platform-filtered platform-macos">
+
+### Emulate on macOS
+
+**Requirements:**
+* Mac computer
+* PCSX2
 
 **Setup:**
-Simply [download PPSSPP](https://www.ppsspp.org/download/) from the project website for your platform (Windows, macOS, Linux) and save it somewhere easily accessible to your computer.
+1. Download the [latest Nightly build of PCSX2](https://pcsx2.net/downloads) for MacOS
+2. Double click the .tar.xz archive to extract it.
 
-**Playing the game:**
-Once PPSSPP is installed, press "Browse" under the Games Menu and navigate to the folder where you saved the patched .iso. Any games you have in that folder will now appear in PPSPP's library. Click on *:guide-data*, and enjoy!
+**Launching PCSX2:**
+1. Run PCSX2. If you get an error message that the file cannot be opened "because the developer can't be verified", follow these steps:
+	* Click on the Apple logo in the top left of your screen and go to "System Settings...".
+	* Navigate to "Privacy & Security" and scroll down.
+	* Under "Security", find PCSX2 and press "Open Anyway", then follow the steps to open the app.
+2. Follow the setup wizard, and add the folder where you saved your patched *:guide-data.iso* to the Game Directories.
+3. Once the setup is complete, you should see *:guide-data* in your game library. Simply double click on it, and enjoy!
 
-</div>
-
-<div class="platform-filtered platform-android">
-
-### Emulate on Android
-
-**Requirements:**
-* Android Device with the Google Play store
-* Windows, macOS, or Linux computer
-* PPSSPP
-
-**Playing the game:**
-1. Download [PPSSPP](https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp) off the Google Play Store.
-2. Connect your Android device (phone, tablet, etc) to your PC using a USB cable. 
-3. On your device, pull down the top bar and click the circled arrow:<br /><img src="https://www.ppsspp.org/static/img/guide_files/step1.png" alt="Android System Settings: Charging this device via USB" width="40%" height="40%"><br />
-4. Press "Tap for more options". This will take you to the USB Preferences screen, where you can enable file sharing.<br />
-<img src="https://www.ppsspp.org/static/img/guide_files/step3.png" alt="Android USB Preferences Menu. The File transfer / Android Auto setting has been enabled." width="40%" height="40%">
-5. On your PC, you'll now be able to see your device's storage in the Explorer:<br />
-<img src="https://www.ppsspp.org/static/img/guide_files/step4.png" alt="A Navigation Pane showing a connected Android device.">
-6. Copy over the patched .iso file you created earlier to somewhere easy to remember - for example, create a folder called "PSP ISO" and copy the .iso file there.
-7. Start PPSSPP, navigate to your patched *:guide-data* on the Games tab, then tap the game and enjoy!
-
-You may also wish to connect a game controller to your Android device to improve your gameplay experience. You can configure your controller in PPSSPP by going to Settings > Controls > Control Mapping.
- 
-
-*Guide and images courtesy of [ppsspp.org/docs](https://www.ppsspp.org/docs/getting-started/installing-games-android/) contributors.*
+PCSX2 has a number of advanced features, such as configuring controllers and tweaking display settings. You can check out the [PCSX2 Website](https://pcsx2.net/docs/category/post-installation) for more information.
 
 </div>
 
-<div class="platform-filtered platform-ios">
-Note that the standalone version of PPSSPP is currently only available for iPhone and iPad.
+<div class="platform-filtered platform-linux">
 
-### Emulate on iOS / iPadOS
+### Emulate on Linux
 
 **Requirements:**
-* iOS / iPadOS Device (iPhone, iPad, iPod Touch)
-* Mac or Windows computer
-* PPSSPP
+* Linux computer
+* PCSX2
 
-**Playing the game:**
-1. Download [PPSSPP](https://apps.apple.com/us/app/ppsspp-psp-emulator/id6496972903) off the App Store.
-2. Connect your iOS device (iPhone or iPad) via USB to your PC.
-3. Open the device in Finder. Click the Files tab, then you should see PPSSPP and/or PPSSPP Gold listed.
-4. Drag the patched .iso you created earlier into the app.
-5. After this, the .iso files will be located on the virtual "memory stick". Just pick the the patched *:guide-data* from the Games tab (click Home if you can't find the files), and enjoy!
+**AppImage:**
+1. Download the [latest Nightly AppImage build of PCSX2](https://pcsx2.net/downloads) for Linux.
+2. You will likely have to make the AppImage file executable. There are a few ways to do this:
+    * Right-click on the AppImage, choose properties, then find the option to mark as executable. (This will vary from distros to distros).
+	* Or in a terminal, run `chmod +x <path-to-AppImage-file>`
+	
+You should be able to open the file by double-clicking it or by running it through terminal.
 
-You may also wish to [connect a game controller to your iPhone](https://support.apple.com/en-gb/guide/iphone/iph9d38dd45f/ios) to improve your gameplay experience. You can then configure your controller in PPSSPP by going to Settings > Controls > Control Mapping.
+**Flatpak:**
+1. In order to install PCSX2 from Flatpak using the command line, open the terminal and type `flatpak install net.pcsx2.PCSX2`
+    * Typing `flatpak install pcsx2` should find this same reference.
+2. When asked if you want to proceed, type "Y" and press "Enter".
+3. PCSX2 is now installed on your machine!
+
+Some distributions and desktop environments have a visual software manager which can also install Flatpak applications. These include:
+* KDE Plasma's Discover
+* GNOME Software
+* Linux Mint's Software Manager
+* Manjaro's pamac
+* Pop!_OS' Repoman
+
+In order to update PCSX2 in the future, you can type `flatpak update`, which will update all of your out-of-date Flatpak applications.
+* If you want to exclusively update PCSX2, you can type `flatpak update net.pcsx2.PCSX2`.
+* You will be asked if you would like to proceed. Type "Y" and press "Enter".
+
+PCSX2 has a number of advanced features, such as configuring controllers and tweaking display settings. You can check out the [PCSX2 Website](https://pcsx2.net/docs/category/post-installation) for more information.
+
+---
+*Guide courtesy of [PCSX2 documentation](https://pcsx2.net/docs/category/setup) contributors.*
  
 </div>
 
