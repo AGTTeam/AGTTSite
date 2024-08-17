@@ -21,6 +21,8 @@ Thanks to an exploit found by CTurt in 2020 (FreeDVDBoot), it is now possible to
 
 ### FreeDVDBoot-ESR patching
 
+Before starting, we recommend creating a backup of the English-patched .iso you have created, as using the FreeDVDBoot ESR Patcher will overwrite the file you choose.
+
 **Requirements:**
  
 * A PlayStation 2 console [compatible with FreeDVDBoot](https://www.psdevwiki.com/ps2/FreeDVDBoot_Compatibility_List)
@@ -29,16 +31,16 @@ Thanks to an exploit found by CTurt in 2020 (FreeDVDBoot), it is now possible to
 * [FreeDVDBoot ESR Patcher](https://www.ps2-home.com/forum/viewtopic.php?t=9778)
 
 **Method:**
-1. (Important!) Set your console language to English. To do this, boot without a disc inserted, press CIRCLE to enter System Configuration and set your system language to English.
+1. (Important!) Set your PS2 language to English. To do this, boot without a disc inserted, press CIRCLE to enter System Configuration and set your system language to English.
 2. Download the latest version of [FreeDVDBoot ESR Patcher GUI](https://www.ps2-home.com/forum/viewtopic.php?t=9778) from the ps2-home thread.
 3. Use [7-Zip](https://www.7-zip.org/download.html) to extract the .7z archive.
 4. Run FDVDB_ESR_Patcher.exe. (The GUI uses uses the Windows .NET library. Linux and Mac users will need to run it with [Wine Mono](https://wiki.winehq.org/Mono)).
-5. Select the patched .iso you created earlier via the OpenFileDialog, or just drag and drop the .iso onto the GUI.
+5. Select the English-patched .iso you created earlier via the OpenFileDialog, or just drag and drop the .iso onto the GUI.
 6. Select the payload (only one is included for now).
-7. Press "Path!"
-8. If you get a "can't access file" error, restart FDVDB_ESR_Patcher.exe with admin privileges.
-9. Burn your patched .iso to a DVD-R (see below).
-10. Place the burned disc into a compatible PS2, and enjoy!
+7. Press "Patch!", and it will show in the log if the patch was successful.
+    * If you get a "can't access file" error, restart FDVDB_ESR_Patcher.exe with admin privileges.
+8. Burn your FreeDVDBoot-ESR patched .iso to a DVD-R (see below).
+9. Place the burned disc into a compatible PS2, and enjoy!
 
 See the [FreeDVDBoot Troubleshooting Guide](https://github.com/CTurt/FreeDVDBoot?tab=readme-ov-file#troubleshooting---please-read-if-the-above-didnt-work) if you run into any issues.
 
@@ -57,7 +59,7 @@ Using Open PS2 Loader you can play games from a USB mass storage device. Unlike 
 
 
 **Requirements:**
-* A PlayStation 2 capable of running homebrew (through [FreeMCBoot](https://consolemods.org/wiki/PS2:FMCB)/[FreeHDBoot](https://consolemods.org/wiki/PS2:FHDB) or another exploit)
+* A PlayStation 2 capable of running homebrew
 * [wLaunchELF](https://github.com/ps2homebrew/wLaunchELF) (formerly known as uLaunchELF)
 * A Memory Card with minimal 3.5MB free
 * A USB storage device of 8GB or more

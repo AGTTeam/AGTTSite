@@ -17,7 +17,7 @@ PlayStation 2 game discs are unencrypted DVDs and CDs. This means they can be du
 If your PlayStation 2 format disc is dirty or scratched, it may not copy correctly. PC disc drives are more likely to be able to read the disc than an aging original PlayStation 2 drive, but you may still encounter errors.
 
 1. Before attempting to back up your disc, check the underside to look for dirt, fingerprints or scratches.
-2. If the disc is dirty blow off any dust or grit, and wipe from the centre outwards to the edge, with a clean lint free cloth (such as microfibre). if you don't blow off any grit you may scratch the disc by wiping.
+2. If the disc is dirty blow off any dust or grit, and wipe from the centre outwards with a clean lint free cloth (such as microfibre). If you don't blow off any grit before wiping, you may accidentally scratch the disc.
 3. If more cleaning is needed, spray Isopropanol (Isopropyl Alcohol) onto the cloth before wiping. The Isopropanol should evaporate quickly so drying time should not be an issue.
 4. If your disc has scratches causing it to fail to read, you can have it resurfaced. Resurfacing is the process of a machine removing a very fine layer of the bottom plastic by polishing, in order to remove or reduce scratches. You may find a local game shop or library that offers to resurface discs for a nominal fee.
 
@@ -25,7 +25,7 @@ If your PlayStation 2 format disc is dirty or scratched, it may not copy correct
 
 #### Dumping PS2 disc using ImgBurn
 
-We recommend getting ImgBurn via [Ninite](https://ninite.com/imgburn) because the download from the official site comes with adware in the installer that must be manually unchecked during the install.
+We recommend getting [ImgBurn via Ninite](https://ninite.com/imgburn) because the download from the official site comes with adware in the installer that must be manually unchecked during the install.
 
 **Method:**
 1. Install and run ImgBurn.
@@ -54,12 +54,12 @@ Media Preservation Frontend (MPF) is a GUI for several applications aimed at pre
 3. In terminal, type in the following:
 `diskutil unmountDisk disk1`
 4. Press enter, then type:
-`dd if=/dev/disk1 of=\[/path/to/dump/enter_game_name_here\].iso`
+`dd if=/dev/disk1 of=[/path/to/dump/enter_game_name_here].iso`
 
 <div style="display: block; padding: 9.5px; background-color: var(--main-light-gray);">
 WHERE:<br />
-/path/to/dump/ = the destination where you'd like to save the game, e.g. /Users/\[type your username here\]/Desktop<br />
-enter_game_name_here = the name for the ISO.
+/path/to/dump/ = The destination where you'd like to save the game.<br />
+enter_game_name_here = The name for the ISO.
 </div>
 
 For example: `dd if=/dev/disk1 of=/Users/Phantom/Desktop/My_Game_Patched.iso`
@@ -99,16 +99,16 @@ You will need to figure out the location of your DVD drive first. We will use `l
 **Dumping the disc:**
 
 1. Run dd with the following Syntax:
-`dd if=\[DRIVE_NAME\] of=./\[IMAGE_NAME\].iso status=progress`
+`dd if=[DRIVE_NAME] of=./[IMAGE_NAME].iso status=progress`
 
 <div style="display: block; padding: 9.5px; background-color: var(--main-light-gray);">
 WHERE:<br />
-\[DRIVE_NAME\] = DVD Drive location.<br />
-\[IMAGE_NAME\] = The name for the ISO.<br /><br />
+[DRIVE_NAME] = DVD Drive location.<br />
+[IMAGE_NAME] = The name for the ISO.<br /><br />
 NOTE: DO NOT include the brackets
 </div>
 
-For example: `dd if=/dev/sr0 of=./GT3.iso status=progress`<br />
+For example: `dd if=/dev/sr0 of=./My_Game_Patched.iso status=progress`<br />
 This will dump the disc into the current directory.
 
 Run the command, then wait until the dumping process is completed.
