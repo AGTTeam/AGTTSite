@@ -93,7 +93,7 @@ Please take caution following these steps to avoid bricking your system.
 
 The recommended emulator for PSP games is [PPSSPP](https://www.ppsspp.org/), which is available on both PC and Mobile. PPSSPP can also be installed as a core for [RetroArch](https://www.retroarch.com/), however at the time of writing, the standalone version offers a more stable performance and so is what we recommend.
 
-**Select the platform you wish to use:**
+**Select the type of emulator you wish to use:**
 ::guide-platform-filter
 ---
 filters: ['PC Emulator', 'Android', 'iOS']

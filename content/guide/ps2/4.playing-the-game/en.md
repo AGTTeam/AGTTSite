@@ -9,6 +9,7 @@ locale: 'en'
 Now that you've got the patched ROM file, it's time to get ready to start playing!
 
 ---
+**Select the platform you wish to use:**
 ::guide-platform-filter
 ---
 filters: ['PS2', 'Emulator']
@@ -31,7 +32,7 @@ Before starting, we recommend creating a backup of the English-patched .iso you 
 * [FreeDVDBoot ESR Patcher](https://www.ps2-home.com/forum/viewtopic.php?t=9778)
 
 **Method:**
-1. (Important!) Set your PS2 language to English. To do this, boot without a disc inserted, press CIRCLE to enter System Configuration and set your system language to English.
+1. \*Important!\* Set your PS2 language to English. To do this, boot without a disc inserted, press CIRCLE to enter System Configuration and set your system language to English.
 2. Download the latest version of [FreeDVDBoot ESR Patcher GUI](https://www.ps2-home.com/forum/viewtopic.php?t=9778) from the ps2-home thread.
 3. Use [7-Zip](https://www.7-zip.org/download.html) to extract the .7z archive.
 4. Run FDVDB_ESR_Patcher.exe. (The GUI uses uses the Windows .NET library. Linux and Mac users will need to run it with [Wine Mono](https://wiki.winehq.org/Mono)).
@@ -111,7 +112,7 @@ Note that this guide refers to using "uLaunchELF", this is the old name of "wLau
 
 Once you have your PS2 BIOS files dumped, you can move onto to setting up PCSX2! 
 
-**Select the platform you wish to use:**
+**Select the type of emulator you wish to use::**
 ::guide-platform-filter
 ---
 filters: ['Windows', 'macOS', 'Linux']

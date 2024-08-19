@@ -10,6 +10,11 @@
 - **Editing**: Phantom, SpatialKnights
 ::
 
+## Notes
+Please note this game cannot be patched online.
+
+Both the Lite and Full version of this patch contain English subtitles, however the full version includes translations for the credits, and uses the English logo in the opening movie.
+
 ## Changes to the game
 * Subtitles were retimed and centered.
 * Subtitles were added to the closing credits.

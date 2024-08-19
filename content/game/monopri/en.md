@@ -15,11 +15,6 @@ Large groups of people have begun disappearing around the world, and it is up to
 
 Take control of Maka Albarn, Black☆Star, and Death the Kid, each with their own unique side missions, and see an all new side of the Soul Eater universe.
 
-## Notes
-Please note this game cannot be patched online.
-
-Both the Lite and Full version of this patch contain English subtitles, however the full version includes translations for the credits, and uses the English logo in the opening movie.
-
 ## Known Issues
 While the patch has been extensively tested and has no known gameplay bugs, there are some minor issues retained from the original version of the game.
 

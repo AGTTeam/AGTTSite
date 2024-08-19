@@ -8,7 +8,7 @@ import ALL_PATCH_DATA from '/assets/patch-data.json';
 const PATCH_DATA = ALL_PATCH_DATA[route.params.game];
 const platformNum = Object.keys(PATCH_DATA.platforms).length;
 const defaultPlatform = Object.keys(PATCH_DATA.platforms)[0];
-const platformGuides = ['nds', 'psp', 'ps2'];
+const platformGuides = ['nds', 'psp', 'ps2', 'ws'];
 </script>
 
 <template>
