@@ -7,7 +7,7 @@ navigation:
 locale: 'en'
 ---
 ::guide-notice
-If you wish to play the game on your Wii using the original retail disc (using on-the-fly patching via Riivolution), you can skip this section and head straight to [Playing the Game](playing-the-game).<br />(If you want to use Riivolution with the emulator Dolphin, you will still need to dump the ROM first.)
+If you wish to play the game on your Wii using the original retail disc (using on-the-fly patching via Riivolution), you can skip this section and head straight to [Playing on Wii](playing-on-wii).<br />(If you want to use Riivolution with the emulator Dolphin, you will still need to dump the ROM first.)
 ::
 
 In order to dump the game's disc to an `.iso` file, you will need to install Custom Firmware (CFW) onto your Wii. There are several exploits you can use, depending on what hardware you have available.

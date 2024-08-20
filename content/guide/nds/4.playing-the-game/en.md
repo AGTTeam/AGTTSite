@@ -85,7 +85,7 @@ Playing on a (New) Nintendo 3DS or 2DS can either be done simply through the use
 
 **Setup:**
 1. Insert your SD card from your 3DS (hacked with Luma3DS) into your computer
-2. Follow this guide to install TWiLightMenu on your 3DS using FBI. During the part where it asks you to drag over your .nds ROMS, drag your patched ROM .nds file you made earlier into the /roms/ folder.
+2. Follow [this guide](https://www.cfwaifu.com/twilight-menu-3ds/) to install TWiLightMenu on your 3DS using FBI. During the part where it asks you to add your .nds ROMS, drag your patched ROM .nds file you made earlier into the /roms/ folder.
 3. Continue following the instructions through to launching the game. Enjoy!
 
 ### Using a flash cartridge
@@ -231,7 +231,7 @@ To do this, you'll need to homebrew your Wii U, use UWUVCI to convert the ROM in
     - Click the "Enter CKey" button. Click "Read from otp.bin" and select the otp.bin file on your SD card that you created earlier when installing the Custom Firmware as part of the NAND Dump process. If you don't have this for whatever reason, you'll need to find the Wii U common key and write it in manually instead.
     - Click on the "Enter TKey" button. You will now need to insert the title key for Mario Kart DS for the region you selected. There's no easy way of getting this other than by looking it up online. Make sure you enter the key for the Mario Kart DS region you selected.
     - Click "Choose File" next to "ROM PATH" and choose the patched *:guide-data* ROM file
-    - On the "Icon Image" box, click "Create File". Download *:guide-data{data="vc-image"}* (or use your own) and choose it under "Select File". Feel free to customise the appearance, this is the icon that will appear on your Wii U system menu. Then, click "Finish"
+    - On the "Icon Image" box, click "Create File". Download *:guide-data{data="vc-image"}* (or use your own) and choose it under "Select File". Feel free to customize the appearance, this is the icon that will appear on your Wii U system menu. Then, click "Finish"
     - On the "TV Image" box, click "Create File", enter the name of the game on the two lines (*:guide-data{data="split-title"}*), the release year (*:guide-data{data="year"}*) and the number of players (1). Then select the same file for the icon image (or choose your own!). Then, click "Finish".
     - Enter in the "Game Name" box: *:guide-data{data="split-line1"}*\|*:guide-data{data="split-line2"}*
     - You can also optionally choose some other pieces of art that will appear on your Wii U menu when launching the game, such as a splash image and boot sound.
