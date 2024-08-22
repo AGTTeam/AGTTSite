@@ -7,7 +7,7 @@ navigation:
 locale: 'en'
 ---
 
-Once you've dumped your UMD to an `.iso` file, patching it with the English Translation can be done easily through the :guide-link{url="/patch/ps2" text="ROM Patcher"} tool we provide, or by manually downloading the patch `.xdelta` file and using patching software, such as [XDeltaUI](https://www.romhacking.net/utilities/598/?device=emu) to patch your ROM file.
+Once you've dumped your disc to an `.iso` file, patching it with the English Translation can be done easily through the :guide-link{url="/patch/ps2" text="ROM Patcher"} tool we provide, or by manually downloading the patch `.xdelta` file and using patching software, such as [XDeltaUI](https://www.romhacking.net/utilities/598/?device=emu) to patch your ROM file.
 
 ## Online patcher
 ::guide-notice

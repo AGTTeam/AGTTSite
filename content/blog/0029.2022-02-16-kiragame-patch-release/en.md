@@ -42,11 +42,11 @@ Calculate your way through 11 story chapters, and be sure to stock up on those a
 *   [Download the Patch](/kiragame)
 *   [Gameplay Demo](https://youtu.be/7sQBvrVN7Pk)
 
-**Love Death Note?**
+**Love Death Note?**  
 Why not also check out our English patch for the third DS game, [Spiraling Trap](/prologue)? Or, if you’re a Japanese translator, please consider [getting in touch with us](https://discord.gg/UUF7Zbm) to help bring a patch for the second game, Successors to L, to reality!
 
 **Have any questions or issues?**  
 Please read the [Patch Guide](/kiragame/guide/nds) before asking!
 
 **Want to get in touch?**  
-Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!
+Join our [Discord Server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

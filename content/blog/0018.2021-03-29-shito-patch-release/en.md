@@ -44,5 +44,8 @@ Once you’ve helped your angel reach maturity and leveled up its stats, you can
 *   [Download the Patch](/shito)
 *   [First Five Minutes of Gameplay Preview](https://youtu.be/_GebMy8luys)
 
-**Want to get in touch?**
-Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!
+**Have any questions or issues?**  
+Please read the [Patch Guide](/shito/guide/ws) before asking!
+
+**Want to get in touch?**  
+Join our [Discord Server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

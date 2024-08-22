@@ -42,8 +42,11 @@ Play as Maka Albarn, Black☆Star, and Death the Kid in this 3D action game for 
 *   [Download the Patch](/monopri)
 *   [Game Trailer](https://youtu.be/NWseRuFc6TI)
 
-**Love Soul Eater games?**
+**Love Soul Eater games?**  
 Why not also check out our English patches for [Medusa’s Plot](/medusa) (NDS) and [Battle Resonance](/resonance) (PS2/PSP)?
 
-**Want to get in touch?**
-Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!
+**Have any questions or issues?**  
+Please read the [Patch Guide](/monopri/guide/wii) before asking!
+
+**Want to get in touch?**  
+Join our [Discord Server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

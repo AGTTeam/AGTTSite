@@ -42,11 +42,11 @@ A non-linear story with 12 possible endings, it’s time to take the reins and e
 *   [Download the Patch](/holo)
 *   [Hidden Debug Scene](https://youtu.be/YXoCM4xRvaA)
 
-**Looking for more?**
+**Looking for more?**  
 Did you know this game had a spiritual successor called The Wind that Spans the Sea? While the story is unrelated, the second DS game expands on many of the mechanics, even adding the possibility of a new second companion. Check out the patch [here](/holo2)!
 
 **Have any questions or issues?**  
 Please read the [Patch Guide](/holo/guide/nds) before asking!
 
-**Want to get in touch?**
-Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!
+**Want to get in touch?**  
+Join our [Discord Server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

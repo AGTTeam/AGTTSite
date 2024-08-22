@@ -51,4 +51,4 @@ Why not also check out our English patch for the first DS game, the [Kira Game](
 Please read the [Patch Guide](/prologue/guide/nds) before asking!
 
 **Want to get in touch?**  
-Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!
+Join our [Discord Server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

@@ -44,8 +44,8 @@ In addition to an adventure mode which follows the original story, there are ver
 
 Play the version of your choice - unique to the PS2 version is the Soul Theater, an additional mode for viewing screenshots from the anime, as well as additional costumes for Maka, Black☆Star and Kid. Or take advantage of the PSP’s Ad Hoc mode to take on your friends in multiplayer with your own dedicated battle camera.  
 
-**Love Soul Eater games?**
+**Love Soul Eater games?**  
 Why not also check out our English patches for [Medusa’s Plot](/medusa) (NDS) and [Monotone Princess](/monopri) (Wii)?
 
-**Want to get in touch?**
-Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!
+**Want to get in touch?**  
+Join our [Discord Server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

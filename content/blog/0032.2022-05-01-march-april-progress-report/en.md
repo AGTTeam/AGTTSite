@@ -77,4 +77,4 @@ As the translation for Naruto RPG 2 progresses, we’ve been working on implemen
 
 And that’s everything from this update. Phew! You might need to excuse us while we catch our breath.
 
-As always, if you’re interested in learning more about any of these projects or fancy getting involved with some, you can also find us down at our [discord server](https://discord.gg/UUF7Zbm).
+As always, if you’re interested in learning more about any of these projects or fancy getting involved with some, you can also find us down at our [Discord Server](https://discord.gg/UUF7Zbm).

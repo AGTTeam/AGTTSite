@@ -44,8 +44,8 @@ With fully-voiced main characters, a gallery of lush CGs, and 21 endings to unlo
 *   [Download the Patch](/vampire)
 *   [Game Trailer](https://youtu.be/xfFIVHyiEfs)
 
-**Have any questions or issues?**  
+**Have any questions or issues?**   
 Please read the [Patch Guide](/vampire/guide/nds) before asking!
 
-**Want to get in touch?**
-Join our [discord server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!
+**Want to get in touch?**  
+Join our [Discord Server](https://discord.gg/UUF7Zbm) to send us your questions, check out our other projects or even lend a hand in our mission to bring more anime games to the English-speaking fandom!

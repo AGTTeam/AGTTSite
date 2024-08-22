@@ -33,11 +33,14 @@ head:
 
 **Chou Soujuu Mecha MG (超操縦メカMG) Patch v1.0 by Supper & Phantom**
 -----------------------------------------------------------------
+In a world where giant robots known as Marionation Gear, or "Puppets", are artisanally handcrafted in workshops, a certain boy serves as an apprentice at the Galouye Workshop, dreaming of becoming a "Puppeteer" (mecha pilot) and opening his own workshop with best friend and fellow apprentice Kay.
 
-[Download the Patch + Install Instructions](http://stargood.org/trans/csmmg.php)  
-[Alternative Download](https://www.romhacking.net/translations/5025/) (ROMhacking.net)  
-[Translation Trailer](https://www.youtube.com/watch?v=rVnk6APqeNY)  
-[Bonus Manga Scanlation](http://stargood.org/trans/csmmg_manga.php)
+But their peaceful daily life is shattered when the autonomous Puppets known as the Automen begin going on berserk rampages around the world. Together with new apprentice Anne-Marie, the hero and Kay are pulled into a conflict that could change the course of Puppet history...
+
+* [Download the Patch + Install Instructions](http://stargood.org/trans/csmmg.php)  
+* [Alternative Download](https://www.romhacking.net/translations/5025/) (ROMhacking.net)  
+* [Translation Trailer](https://www.youtube.com/watch?v=rVnk6APqeNY)  
+* [Bonus Manga Scanlation](http://stargood.org/trans/csmmg_manga.php)
 
 **Have any questions or issues?**  
 Please read the [Beginners Guide](https://agtteam.tumblr.com/beginnersguide) before asking!

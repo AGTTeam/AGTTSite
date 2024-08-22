@@ -33,11 +33,14 @@ head:
 
 **Kami no Shitotachi (神の使徒達) Patch v1.0 by Phantom & Supper**
 ------------------------------------------------------------------
+Released in 2007, the NDS game spin-off of D.Gray-man retells Allen’s first missions after joining the Black Order.
 
-[Download the Patch + Install Instructions](https://www.romhacking.net/translations/4352/)  
-[Alternative Download](https://drive.google.com/uc?export=download&id=138L1LvKxXy_0OZj3Jes8GEUyrACGvzm5) (GDrive)  
-[Game Walkthrough](https://gamefaqs.gamespot.com/ds/936103-dgray-man-kami-no-shitotachi/faqs/76929) ([Alternative Mirror](https://www.neoseeker.com/d-gray-man-kami-no-shitotachi/faqs/3063705-dgray-man-kami-no-shitotachi.html))  
-[First Five Minutes of Gameplay](https://youtu.be/FTDllSK3HqQ)
+Anti-Akuma weapon (the DS Stylus) in-hand, control Allen and your choice of partner through a series of puzzles and battles, following from Mater to Krory’s Castle. The final chapter of the game features a non-canonical story set in Cagliostro, with three possible endings.
 
-**Have any questions or issues?**  
+* [Download the Patch + Install Instructions](https://www.romhacking.net/translations/4352/)  
+* [Alternative Download](https://drive.google.com/uc?export=download&id=138L1LvKxXy_0OZj3Jes8GEUyrACGvzm5) (GDrive)  
+* [Game Walkthrough](https://gamefaqs.gamespot.com/ds/936103-dgray-man-kami-no-shitotachi/faqs/76929) ([Alternative Mirror](https://www.neoseeker.com/d-gray-man-kami-no-shitotachi/faqs/3063705-dgray-man-kami-no-shitotachi.html))  
+* [First Five Minutes of Gameplay](https://youtu.be/FTDllSK3HqQ)
+
+**Have any questions or issues?**   
 Please read the [Beginners Guide](https://agtteam.tumblr.com/beginnersguide) before asking!
