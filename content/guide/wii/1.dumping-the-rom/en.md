@@ -2,7 +2,7 @@
 title: 'Dumping the ROM'
 navigation:
   current: '/dumping-the-rom'
-  previous: '/buying-the-game'
+  previous: '/'
   next: '/patching-the-rom'
 locale: 'en'
 ---
