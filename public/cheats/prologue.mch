@@ -16,7 +16,7 @@ D2000000 00000000
 CODE 0 Disarming Success Rate 100%
 2208ABC8 00000064
 
-CODE 0 HP does not reduce
+CODE 0 HP does not decrease
 2208AFA4 00000064
 
 CODE 0 Intimacy increase when giving L a snack x16
