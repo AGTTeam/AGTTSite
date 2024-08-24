@@ -8,6 +8,11 @@ const props = defineProps({
         required: false,
         default: ""
     },
+    game: {
+        type: String,
+        required: false,
+        default: ""
+    },
     cheats: {
         type: Boolean,
         required: false,
@@ -18,6 +23,9 @@ const props = defineProps({
 
 <template>
     <div v-if="platform != '' && route.params.platform == platform">
+        <slot />
+    </div>
+    <div v-if="game != '' && route.params.game == game">
         <slot />
     </div>
     <div v-if="cheats && PATCH_DATA.platforms[route.params.platform].cheats != undefined">
