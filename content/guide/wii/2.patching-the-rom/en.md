@@ -18,7 +18,7 @@ For instructions on using the Riivolution patch, please skip to [using Riivoluti
 
 Using a computer, you can patch the .iso file you dumped earlier. This is a "hard patching" method, meaning that the translation will be baked into the .iso file and cannot be turned on and off. This method can be used to burn the translated game to a disc, or for use with Backup Loaders on the Wii. The patched .iso can also be used with the emulator Dolphin.
 
-For instructions on patching the .iso, please see below. Once patched, you can then continue to [using Backup Loaders on a Wii](playing-on-wii#patched-iso-method-using-a-backup-loader) or [Playing on Dolphin](playing-on-dolphin#patched-iso-method).
+For instructions on patching the .iso, please see below. Once patched, you can then continue to [using Backup Loaders on a Wii](playing-on-wii#patched-iso-method-using-a-backup-loader) or [using the patched .iso on Dolphin](playing-on-dolphin#patched-iso-method).
 
 ### Hard Patching the .iso
 This method will allow you to generate a English-translated .iso file.

@@ -3,6 +3,7 @@ title: 'Playing the game'
 navigation:
   current: '/playing-the-game'
   previous: '/patching-the-rom'
+  next: '/using-cheats'
 locale: 'en'
 ---
 
