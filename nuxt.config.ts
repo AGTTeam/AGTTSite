@@ -7,7 +7,8 @@ export default {
         '@nuxt/icon',
         '@nuxt/content',
         '@nuxtjs/google-fonts',
-        '@nuxtjs/i18n'
+        '@nuxtjs/i18n',
+        'nuxt-anchorscroll'
     ],
 
     // Fonts

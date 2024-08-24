@@ -16,6 +16,7 @@
     "@nuxtjs/i18n": "^8.0.1",
     "@nuxtjs/sitemap": "^5.1.0",
     "nuxt": "^3.10.3",
+    "nuxt-anchorscroll": "^1.0.3",
     "rss": "^1.2.2",
     "sitemap": "^7.1.1"
   },
