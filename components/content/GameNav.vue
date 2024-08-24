@@ -27,7 +27,7 @@ const platformGuides = ['nds', 'psp', 'ps2', 'ws', 'wii'];
                 <ButtonLink v-if="data.mega_link != undefined" :link="data.mega_link" fullwidth external type="bottom-piece" color="sl-green" icon="fa6-solid:download">
                     {{ $t('download-patch') }} <span v-if="platformNum > 1">({{ $t('platform-' + platform) }})</span>
                 </ButtonLink>
-                <ButtonLink v-for="(link, index) in data.mega_links" :link="link.link" fullwidth external :type="index == data.mega_links.length - 1 ? 'bottom-piece' : 'top-piece'" :color="link.color" icon="fa6-solid:download">
+                <ButtonLink v-for="(link, index) in data.mega_links" :link="link.link" fullwidth external :type="index == data.mega_links.length - 1 ? 'bottom-piece' : 'mid-piece'" :color="link.color" icon="fa6-solid:download">
                     {{ $t('download-patch') }}: {{ link.name }}
                 </ButtonLink>
                 <div id="nav-or">&mdash;</div>
