@@ -37,9 +37,9 @@
 .patcher-menu {
     display: grid;
     grid-gap: 1em;
-    grid-template-columns: repeat(auto-fill, 48.5%);
+    grid-template-columns: none;
     text-align: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .patcher-header {
