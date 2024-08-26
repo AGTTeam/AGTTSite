@@ -53,6 +53,7 @@
                 "patch_prefix": "KiraGamePatch",
                 "sha_checks": "true",
                 "required_rom_sha": "EF1C0BCD8DA25379EB46888959849C2011622F969E9B3967E6489E6838B8F88F",
+                "cheats": "yes",				
                 "mega_link": "https://mega.nz/file/mchGCZBA#-dLaRZwejRy_LhEcMzUlvoSVHgau5HlZ380v5Hl7ktE",
                 "available_patches": {
                     "en": [
@@ -91,7 +92,7 @@
                 "patch_prefix": "ProLoguePatch",
                 "sha_checks": "true",
                 "required_rom_sha": "470EC1A1954AD1518F5C6AB4616BDA9E4CCC1D90F06AD9F9BEF83E6A49EBC8F6",
-                "cheats": "prologue.dct",
+                "cheats": "yes",
                 "mega_link": "https://mega.nz/file/WAYijDyD#FOfbix-6X5Uwan_DiVNHkRh4IpNBm6EuSoh_DY8vEnY",
                 "available_patches": {
                     "en": [
@@ -313,7 +314,7 @@
                 "bad_rom_sha": "A9F343FE7DDE1A20CBDCEEF03EE79FFDD1663A1A55961D9F99F7A402CAE93BE8",
                 "fix_bad_rom": "true",
                 "repair_patch": "medusa-repair.xdelta",
-                "cheats": "medusa.dct",
+                "cheats": "true",
                 "mega_link": "https://mega.nz/file/GJA2yRgB#jNJwGnNBCRS_qFG7lW4A8GgCxocLfCwT-PoD6uQbyRQ",
                 "drive_link": "https://drive.google.com/uc?export=download&id=17F0Ki79OH29AQW9fKDIAgkGBpHE75roT",
                 "available_patches": {
@@ -355,7 +356,7 @@
                 "patch_prefix": "GurrenPatch",
                 "sha_checks": "true",
                 "required_rom_sha": "60EB41F523BE98E8F78CD914FF340A4FF7110FA304B7E3500EBB4CA8C059D445",
-                "cheats": "gurren.dct",
+                "cheats": "true",
                 "mega_link": "https://mega.nz/file/rBBylBRK#rs9ffYpef5n8FQ4uFS_iUJBl1f7bjh0V2umBODB9jBI",
                 "available_patches": {
                     "en": [
@@ -414,6 +415,7 @@
                 "bad_rom_sha": "A1FBAE58A0B9074D4B23F290DA7379CF3769ADCCAF3CBC95C34993FA32297AB7",
                 "fix_bad_rom": "true",
                 "repair_patch": "mamoru-repair.xdelta",
+                "cheats": "true",				
                 "mega_link": "https://mega.nz/file/SUpRka7T#H3IBPYibqBbBsno9tp4_u9c6RLrhduO6U4yXDtvlqh0",
                 "available_patches": {
                     "en": [
