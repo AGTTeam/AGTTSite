@@ -39,22 +39,28 @@ if (!(route.params.game in ALL_PATCH_DATA) || ALL_PATCH_DATA[route.params.game].
 
 <style>
 table {
-    border: solid 1px #DDEEEE;
+    border: solid 1px #3ba379;
     border-collapse: collapse;
     border-spacing: 0;
 }
 thead th {
-    background-color: #DDEFEF;
-    border: solid 1px #DDEEEE;
-    color: #336B6B;
+    background-color: #b6dece;
+    border: solid 1px #3ba379;
+    color: #1a6144;
     padding: 10px;
-    text-align: left;
+    text-align: l;
+	font-size: 1.2em;
     text-shadow: 1px 1px 1px #fff;
 }
 tbody td {
-    border: solid 1px #DDEEEE;
+    border: solid 1px #3ba379;
     color: #333;
     padding: 10px;
     text-shadow: 1px 1px 1px #fff;
+}
+
+td:first-child {
+    text-align: center;
+    font-weight: bold;
 }
 </style>
