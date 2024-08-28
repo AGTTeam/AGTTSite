@@ -41,7 +41,7 @@ const platformGuides = ['nds', 'psp', 'ps2', 'ws', 'wii'];
             <ButtonLink v-for="extra in PATCH_DATA.extras" :link="extra.external ? extra.link : ('extras/' + extra.link)" fullwidth :external="extra.external" rgbColor="#7f5dc4" icon="fa6-solid:circle-info" :type="PATCH_DATA.walkthrough_link != undefined || PATCH_DATA.cheats != undefined ? 'mid-piece' : 'top-piece'">
                 {{ extra.name }}
             </ButtonLink>
-            <ButtonLink :link="'http://github.com/AGTTeam/' + PATCH_DATA.tool_repo" fullwidth external type="bottom-piece" color="black" icon="fa6-brands:github">
+            <ButtonLink :link="'http://github.com/AGTTeam/' + PATCH_DATA.tool_repo" fullwidth external :type="PATCH_DATA.walkthrough_link != undefined || PATCH_DATA.platforms[defaultPlatform].cheats != undefined || PATCH_DATA.extras != undefined ? 'bottom-piece' : ''" color="black" icon="fa6-brands:github">
                 {{ $t('sources-tools') }}
             </ButtonLink>
         </div>

@@ -36,3 +36,25 @@ if (!(route.params.game in ALL_PATCH_DATA) || ALL_PATCH_DATA[route.params.game].
         </NuxtLayout>
     </div>
 </template>
+
+<style>
+table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+</style>
