@@ -53,36 +53,146 @@ filters: ['Nintendo DS/DSi/3DS', 'Emulator', 'Manual']
     * Cheats without button requirements will be automatically activated. For button-activated cheats, simply press the button(s) specified in the cheat description when you'd like to activate it. 
 	
 ## Using a Flash Cartridge
-The flash cartridge you are using will determine which cheat file you'll need, as well as where to place it. See below for more:
+The flash cartridge you are using will determine which cheat file you'll need, as well as where to place it. See the chart for more:
 
-| **Kernels**                    | **Cheat File**           | **File Location**                          |
-|--------------------------------|----------------|-------------------------------|
-| **AceKard 2 Menu**             | cheat.dat      | SD:/__ak2/cheats/cheat.dat    |
-| ****                           | cheats.dat     | SD:/__ak2/cheats/cheats.dat   |
-| ****                           | cheats.xml     | SD:/__ak2/cheats/cheats.xml   |
-| ****                           | usrcheat.dat   | SD:/__ak2/cheats/usrcheat.dat |
-| **AKAIO**                      | cheat.dat      | SD:/__aio/cheats/cheat.dat    |
-| ****                           | cheats.dat     | SD:/__aio/cheats/cheats.dat   |
-| ****                           | cheats.xml     | SD:/__aio/cheats/cheats.xml   |
-| ****                           | usrcheat.dat   | SD:/__aio/cheats/usrcheat.dat |
-| **CycloDS Menu**               | user.evoCheats | SD:/CycloDS/user.evoCheats    |
-| **DSTT Menu**                  | usrcheat.dat   | SD:/TTMenu/usrcheat.dat       |
-| **EDGE Menu**                  | cheats.dat     | SD:/EDGE/cheats.dat           |
-| **EZ-Flash V Menu**            | usrcheat.dat   | SD:/EZ5Shell/usrcheat.dat     |
-| **EZ-Flash V Menu (Original)** | ezarcode.dat   | SD:/CHT/ezarcode.dat          |
-| **EZ-Flash Vi Menu**           | usrcheat.dat   | SD:/EZ5Shell/usrcheat.dat     |
-| **M3 Menu**                    | cheat.dat      | SD:/_system_/cheat.dat        |
-| **M3 Sakura**                  | cheat.db       | SD:/SYSTEM/cheat.db           |
-| ****                           | cheat_EN.db    | SD:/SYSTEM/cheat_EN.db        |
-| **R4 Menu**                    | cheat.dat      | SD:/_system_/cheat.dat        |
-| **R4i Menu**                   | usrcheat.dat   | SD:/R4iMenu/usrcheat.dat      |
-| **SuperCard DSONE EOS**        | usrcheat.dat   | SD:/_dsone/usrcheat.dat       |
-| **SuperCard DSONE OS**         | SCC Cheats     | SD:/scshell/cheat/SCC Cheats  |
-| **SuperCard DSTWO EOS**        | usrcheat.dat   | SD:/_dstwo/usrcheat.dat       |
-| **Wood R4**                    | usrcheat.dat   | SD:/__rpg/cheats/usrcheat.dat |
-| **Wood RPG**                   | usrcheat.dat   | SD:/__rpg/cheats/usrcheat.dat |
-| **YSMenu**                     | usrcheat.dat   | SD:/TTMenu/usrcheat.dat       |
-
+<div style="overflow-x:auto;">
+<table>
+    <thead>
+        <tr>
+            <th>Kernels</th>
+            <th>Cheat File</th>
+            <th>File Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="4">AceKard 2 Menu</td>
+            <td>cheat.dat</td>
+            <td>SD:/__ak2/cheats/cheat.dat</td>
+        </tr>
+        <tr>
+            <td style="display:none"></td>
+            <td>cheats.dat</td>
+            <td>SD:/__ak2/cheats/cheats.dat</td>
+        </tr>
+        <tr>
+            <td style="display:none"></td>		
+            <td>cheats.xml</td>
+            <td>SD:/__ak2/cheats/cheats.xml</td>
+        </tr>
+        <tr>
+            <td style="display:none"></td>
+            <td>usrcheat.dat</td>
+            <td>SD:/__ak2/cheats/usrcheat.dat</td>
+        </tr>
+        <tr>
+            <td rowspan="4">AKAIO</td>
+            <td>cheat.dat</td>
+            <td>SD:/__aio/cheats/cheat.dat</td>
+        </tr>
+        <tr>
+            <td style="display:none"></td>
+            <td>cheats.dat</td>
+            <td>SD:/__aio/cheats/cheats.dat</td>
+        </tr>
+        <tr>
+            <td style="display:none"></td>
+            <td>cheats.xml</td>
+            <td>SD:/__aio/cheats/cheats.xml</td>
+        </tr>
+        <tr>
+            <td style="display:none"></td>
+            <td>usrcheat.dat</td>
+            <td>SD:/__aio/cheats/usrcheat.dat</td>
+        </tr>
+        <tr>
+            <td>CycloDS Menu</td>
+            <td>user.evoCheats</td>
+            <td>SD:/CycloDS/user.evoCheats</td>
+        </tr>
+        <tr>
+            <td>DSTT Menu</td>
+            <td>usrcheat.dat</td>
+            <td>SD:/TTMenu/usrcheat.dat</td>
+        </tr>
+        <tr>
+            <td>EDGE Menu</td>
+            <td>cheats.dat</td>
+            <td>SD:/EDGE/cheats.dat</td>
+        </tr>
+        <tr>
+            <td>EZ-Flash V Menu</td>
+            <td>usrcheat.dat</td>
+            <td>SD:/EZ5Shell/usrcheat.dat</td>
+        </tr>
+        <tr>
+            <td>EZ-Flash V Menu (Original)</td>
+            <td>ezarcode.dat</td>
+            <td>SD:/CHT/ezarcode.dat</td>
+        </tr>
+        <tr>
+            <td>EZ-Flash Vi Menu</td>
+            <td>usrcheat.dat</td>
+            <td>SD:/EZ5Shell/usrcheat.dat</td>
+        </tr>
+        <tr>
+            <td>M3 Menu</td>
+            <td>cheat.dat</td>
+            <td>SD:/_system_/cheat.dat</td>
+        </tr>
+        <tr>
+            <td rowspan="2">M3 Sakura</td>
+            <td>cheat.db</td>
+            <td>SD:/SYSTEM/cheat.db</td>
+        </tr>
+        <tr>
+            <td style="display:none"></td>
+            <td>cheat_EN.db</td>
+            <td>SD:/SYSTEM/cheat_EN.db</td>
+        </tr>
+        <tr>
+            <td>R4 Menu</td>
+            <td>cheat.dat</td>
+            <td>SD:/_system_/cheat.dat</td>
+        </tr>
+        <tr>
+            <td>R4i Menu</td>
+            <td>usrcheat.dat</td>
+            <td>SD:/R4iMenu/usrcheat.dat</td>
+        </tr>
+        <tr>
+            <td>SuperCard DSONE EOS</td>
+            <td>usrcheat.dat</td>
+            <td>SD:/_dsone/usrcheat.dat</td>
+        </tr>
+        <tr>
+            <td>SuperCard DSONE OS</td>
+            <td>SCC Cheats</td>
+            <td>SD:/scshell/cheat/SCC Cheats</td>
+        </tr>
+        <tr>
+            <td>SuperCard DSTWO EOS</td>
+            <td>usrcheat.dat</td>
+            <td>SD:/_dstwo/usrcheat.dat</td>
+        </tr>
+        <tr>
+            <td>Wood R4</td>
+            <td>usrcheat.dat</td>
+            <td>SD:/__rpg/cheats/usrcheat.dat</td>
+        </tr>
+        <tr>
+            <td>Wood RPG</td>
+            <td>usrcheat.dat</td>
+            <td>SD:/__rpg/cheats/usrcheat.dat</td>
+        </tr>
+        <tr>
+            <td>YSMenu</td>
+            <td>usrcheat.dat</td>
+            <td>SD:/TTMenu/usrcheat.dat</td>
+        </tr>
+    </tbody>
+</table>
+</div>
 
 At present, we are unable to support cheat formats for all Flash Cartridges. If your cartridge format is missing, please feel free to get in touch or try [DeadSkullzJr's NDS(i) Cheat Databases](https://mega.nz/folder/UNwxET6K#s__L5mln48N5gUJsWwsMZQ).
 
@@ -107,7 +217,7 @@ filterSuffix: 'emulator'
 2. Rename the .mch file to have the same name as your patched ROM.
     * For example, if your game is *:guide-data(patched).nds*, your cheats should be *:guide-data(patched).mch*
 3. Open melonDS and load the game.
-4. Go to "System" in the top bar, and make sure that "Enable Cheats" is ticked. Then, click on "Setup Cheat Codes".
+4. Go to "System" in the top bar and make sure that "Enable Cheats" is ticked. Then, click on "Setup Cheat Codes".
 5.  In the window that pops up, tick the check boxes for any cheats that you wish to use.
     * If the list is empty, make sure that you have completed steps 1-3 correctly. You can also customize the folder which MelonDS will look for cheat files in by going to "Config" > "Path Settings" and changing the "Cheat files path".
 6. Take note of any cheats which tell you to press a button, or combination of buttons to use, and press "OK". 
@@ -117,9 +227,9 @@ filterSuffix: 'emulator'
 
 1. Download the "Cheat.dat" file and move it to your "DeSmuME\Cheats" folder.
 2. Open DeSmuME and load *:guide-data*.
-3. Go to "Tools" in the top bar, and make sure that "Disable Cheats" is NOT ticked. Then, click on "Cheats List".
+3. Go to "Tools" in the top bar and make sure that "Disable Cheats" is NOT ticked. Then, click on "Cheats List".
 4.  In the window that pops up, press the "Cheats Base" button near the bottom.
-5. Tick the check boxes to import all the available cheats, then press "Add". (If there are Backlight Codes, you can ignore these.)
+5. Tick the check boxes to import all the available cheats, then press "Add". (You can ignore any Backlight Codes.)
     * If the list is empty, make sure that you have completed steps 1-4 correctly. You can also customize the folder which DeSmuME will look for cheat files in by going to "Config" > "Path Settings" and changing the Cheats path.
 6.  Back in the original window, tick the check boxes for any of the imported cheats you wish to use. Take note of any cheats which tell you to press a button, or combination of buttons to use.
 7. \*IMPORTANT* Press "Save" before closing the window.
@@ -157,7 +267,7 @@ filterSuffix: 'emulator'
 ### Using Cheats on Delta Emulator
 At the time of writing, Delta Emulator does not support importing cheats from a database. You will therefore have to add the cheats you wish to use manually.
 
-You can find cheat codes online, or download our *:guide-data \[MelonDS Cheats\].mch* cheat file to copy and paste from (open the files with a text editor).
+You can find cheat codes online, or download our *:guide-data \[MelonDS Cheats\].mch* file to copy and paste from (open the .mch file with a text editor).
 
 1. Open Delta and load *:guide-data*.
 2. Press "Menu" to open the pause menu, then press the "Cheat Codes" button.
@@ -199,7 +309,7 @@ This guide will walk you through manually editing your Cheat Database. You don't
     * If the download does not work, try using a different browser.
 2. Run r4cce and open the cheat database you wish to edit.
 3. Enter the game's name in the search bar at the bottom and press "Find" to check if an entry already exists.
-    * If not, click "Add Game", then enter the game's title on the left. Then, press the <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/ellipsis.svg" alt="three dots" width="11" height="11"> button next to the "Dup?" button, and navigate to the ROM. The Game ID should automatically update.
+    * If not, click "Add Game", then enter the game's title on the left. Then, press the "<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/ellipsis.svg" alt="three dots" width="11" height="11">" button next to the "Dup?" button, and navigate to the ROM. The Game ID should automatically update.
 4. With the game you want to edit highlighted, press "Add Code". You can find codes online, or for our patches, download the "\[MelonDS Cheats\].mch" file for your game and open it with a text editor.
 5. Type the name of the cheat into the "Code Title", then copy and paste the cheat code into the "Code List" box. 
  <img src="https://i.imgur.com/vPGnI7Z.png" width=80% height=80%> <br/> Ensure that your code is formatted correctly, with new lines and spaces, as demonstrated above.
