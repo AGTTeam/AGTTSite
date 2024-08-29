@@ -55,6 +55,7 @@ filters: ['Nintendo DS/DSi/3DS', 'Emulator', 'Manual']
 ## Using a Flash Cartridge
 The flash cartridge you are using will determine which cheat file you'll need, as well as where to place it. See the chart for more:
 
+<div style="overflow-x:auto;">
 <table>
     <thead>
         <tr>
@@ -191,7 +192,7 @@ The flash cartridge you are using will determine which cheat file you'll need, a
         </tr>
     </tbody>
 </table>
-
+</div>
 
 At present, we are unable to support cheat formats for all Flash Cartridges. If your cartridge format is missing, please feel free to get in touch or try [DeadSkullzJr's NDS(i) Cheat Databases](https://mega.nz/folder/UNwxET6K#s__L5mln48N5gUJsWwsMZQ).
 
