@@ -8,13 +8,27 @@
                     ondragenter="this.classList.add('patcher-file-dragging');"
                     ondragleave="this.classList.remove('patcher-file-dragging');" />
             </div>
+            <div v-if="patchData['options'] != undefined">
+                <h3 class="patcher-header">{{ $t('rom-patcher-options') }}</h3>
+                <table v-for="option in patchData.options" class="patcher-options">
+                    <tbody>
+                        <RomPatcherOptionDescription :title="$t('rom-patcher-option-' + option.name + '-title')">
+                            {{ $t('rom-patcher-option-' + option.name + '-desc') }}
+                        </RomPatcherOptionDescription>
+                        <RomPatcherOption :optionName="option.name"
+                            :option1="$t('rom-patcher-option-' + option.name + '-' + option.option1)" :option1value="option.option1"
+                            :option2="$t('rom-patcher-option-' + option.name + '-' + option.option2)" :option2value="option.option2" />
+                    </tbody>
+                </table>
+            </div>
             <div>
                 <h3 class="patcher-header">{{ $t('rom-patcher-version-select') }}</h3>
                 <div class="patcher-version-options">
                     <label>
                         <b>{{ $t('rom-patcher-language') }}</b>
                         <select id="patcher-locale-dropdown" v-model="patchLocale">
-                            <option v-for="pl in AVAILABLE_PATCH_LOCALES" :value="pl">{{ getLanguageName(locale, pl) }}</option>
+                            <option v-if="route.params.platform == 'ndsjp'" value="en">Japanese</option>
+                            <option v-else v-for="pl in AVAILABLE_PATCH_LOCALES" :value="pl">{{ getLanguageName(locale, pl) }}</option>
                         </select>
                     </label>
                     <label>
@@ -46,7 +60,7 @@
     text-align: left;
 }
 
-#patcher-options {
+.patcher-options {
     text-align: left;
 }
 
@@ -207,8 +221,11 @@ function getRomSha(romFile) {
 function getFileName() {
     let options = '';
     let version = getSelectedVersion();
-    //let opEdSubsConfig = document.querySelector('input[name="op-ed-subtitling"]:checked').value;
-    //let voicedLineConfig = document.querySelector('input[name="voice-lines-subtitling"]:checked').value;
+    if (patchData.options != undefined) {
+        patchData.options.forEach((option) => {
+            options += '-' + document.querySelector('input[name="' + option.name + '"]:checked').value;
+        });
+    }
     return patchData.patch_prefix + '-v' + version + options + '.xdelta';
 }
 

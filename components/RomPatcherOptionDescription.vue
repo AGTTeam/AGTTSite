@@ -1,7 +1,7 @@
 <template>
     <tr>
         <td colspan="2">
-            <img class="patcher-option-image" :src="img" :alt="alt"/>
+            <img v-if="img != ''" class="patcher-option-image" :src="img" :alt="alt"/>
             <b>{{ title }}</b>
             <br/>
             <slot />
@@ -28,11 +28,13 @@ export default {
         },
         img: {
             type: String,
-            required: true,
+            required: false,
+            default: ""
         },
         alt: {
             type: String,
-            required: true,
+            required: false,
+            default: ""
         }
     }
 }

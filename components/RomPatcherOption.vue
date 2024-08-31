@@ -23,11 +23,11 @@ const { locale } = useI18n({
             </div>
         </td>
     </tr>
-    <tr>
+    <!--tr>
         <td style="text-align: center">
             <small>{{ $t('rom-patcher-option-recommended') }}</small>
         </td>
-    </tr>
+    </tr-->
 </template>
 
 <style scoped>

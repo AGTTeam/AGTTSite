@@ -8,7 +8,7 @@ const localePath = useLocalePath()
 <template>
     <div class="translation">
         <div class="about">
-            <div v-if="translation.page != null" :class="'title red'">
+            <div v-if="translation.page != null && !translation.tags.includes('[status-coming-soon]')" :class="'title red'">
                 <NuxtLink :to="localePath(translation.page)">{{ $t(translation.title) }}</NuxtLink>
             </div>
             <div v-else class="title">

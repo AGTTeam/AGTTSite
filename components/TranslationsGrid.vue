@@ -37,7 +37,7 @@ import ALL_PATCH_DATA from '/assets/patch-data.json';
 let wip_translations = [];
 let translations = [];
 for (const [key, value] of Object.entries(ALL_PATCH_DATA)) {
-    if (value.page == null) {
+    if (value.page == null || value.tags.includes("[status-coming-soon]")) {
         wip_translations.push(value);
     } else {
         translations.push(value);

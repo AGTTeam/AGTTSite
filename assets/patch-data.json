@@ -1,14 +1,4 @@
 {
-    "naruto": {
-        "id": "naruto",
-        "title": "naruto-title",
-        "original": "Naruto RPG 2: Chidori vs. Rasengan",
-        "year": "2005",
-        "tags": ["[platform-nds]", "[genre-rpg]", "[status-proofreading]"],
-        "platforms": {
-            "nds": {}
-        }
-    },
     "mushishi": {
         "id": "mushishi",
         "title": "mushishi-title",
@@ -39,6 +29,56 @@
             "ps2": {}
         }
     },
+    "naruto": {
+        "id": "naruto",
+        "title": "naruto-title",
+        "original": "Naruto RPG 2: Chidori vs. Rasengan",
+        "year": "2005",
+        "page": "/naruto",
+        "tags": ["[platform-nds]", "[genre-rpg]", "[status-coming-soon]"],
+        "tool_repo": "NarutoRPG2Translation",
+        "platforms": {
+            "nds": {
+                "data_repo": "NarutoRPG2Data",
+                "patch_prefix": "NarutoRPG2Patch",
+                "sha_checks": "true",
+                "required_rom_sha": "2AC129A624B282294A1BAF07EB27C46DF6BFC0BFE3DD400CF9D610A840F3A9B3",
+                "mega_link": "https://mega.nz/file/",
+                "options": [
+                    {
+                        "name": "naruto-audio",
+                        "option1": "en",
+                        "option2": "jp"
+                    }
+                ],
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Sep 01, 2024",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            },
+            "ndsjp": {
+                "data_repo": "NarutoRPG2Data",
+                "patch_prefix": "NarutoRPG2Hack",
+                "sha_checks": "true",
+                "required_rom_sha": "2AC129A624B282294A1BAF07EB27C46DF6BFC0BFE3DD400CF9D610A840F3A9B3",
+                "mega_link": "https://mega.nz/file/",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Sep 01, 2024",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },
     "kiragame": {
         "id": "kiragame",
         "title": "kiragame-title",
@@ -53,7 +93,7 @@
                 "patch_prefix": "KiraGamePatch",
                 "sha_checks": "true",
                 "required_rom_sha": "EF1C0BCD8DA25379EB46888959849C2011622F969E9B3967E6489E6838B8F88F",
-                "cheats": "true",				
+                "cheats": "true",
                 "mega_link": "https://mega.nz/file/mchGCZBA#-dLaRZwejRy_LhEcMzUlvoSVHgau5HlZ380v5Hl7ktE",
                 "available_patches": {
                     "en": [
@@ -209,7 +249,7 @@
                 "bad_rom_sha": "68F5D6B2B0BADBFD64FEBF97D50AB73E22D54AE0A55BA4EC2EA724B5FF877578",
                 "fix_bad_rom": "true",
                 "repair_patch": "vampire-repair.xdelta",
-                "cheats": "true",				
+                "cheats": "true",
                 "mega_link": "https://mega.nz/file/fJQ2xRJY#X0qyMPGLT2Ur8YGtjeqerkEJKAmPrAhkv7mty84AZt4",
                 "available_patches": {
                     "en": [
@@ -416,7 +456,7 @@
                 "bad_rom_sha": "A1FBAE58A0B9074D4B23F290DA7379CF3769ADCCAF3CBC95C34993FA32297AB7",
                 "fix_bad_rom": "true",
                 "repair_patch": "mamoru-repair.xdelta",
-                "cheats": "true",				
+                "cheats": "true",
                 "mega_link": "https://mega.nz/file/SUpRka7T#H3IBPYibqBbBsno9tp4_u9c6RLrhduO6U4yXDtvlqh0",
                 "available_patches": {
                     "en": [

@@ -9,6 +9,7 @@ const PATCH_DATA = ALL_PATCH_DATA[route.params.game];
 const platformNum = Object.keys(PATCH_DATA.platforms).length;
 const defaultPlatform = Object.keys(PATCH_DATA.platforms)[0];
 const platformGuides = ['nds', 'psp', 'ps2', 'ws', 'wii'];
+const writePlatformName = platformNum > 1 && route.params.game != 'naruto';
 </script>
 
 <template>
@@ -19,13 +20,15 @@ const platformGuides = ['nds', 'psp', 'ps2', 'ws', 'wii'];
         <div class="nav-buttons">
             <div v-for="[platform, data] of Object.entries(PATCH_DATA.platforms)">
                 <ButtonLink v-if="platformGuides.includes(platform)" :link="localePath('/' + route.params.game + '/guide/' + platform)" fullwidth type="top-piece" color="red" icon="fa6-solid:book">
-                    {{ $t('setup-guide') }} <span v-if="platformNum > 1">({{ $t('platform-' + platform) }})</span>
+                    {{ $t('setup-guide') }} <span v-if="writePlatformName">({{ $t('platform-' + platform) }})</span>
                 </ButtonLink>
                 <ButtonLink v-if="data.available_patches != undefined" :link="localePath('/' + route.params.game + '/patch/' + platform)" fullwidth :type="platformGuides.includes(platform) ? 'mid-piece' : 'top-piece'" color="blue" icon="fa6-solid:file-import">
-                    {{ $t('rom-patcher') }} <span v-if="platformNum > 1">({{ $t('platform-' + platform) }})</span>
+                    <span v-if="platform == 'ndsjp'">{{ $t(route.params.game + '-hack-rom-patcher') }}</span>
+                    <span v-else>{{ $t('rom-patcher') }} <span v-if="writePlatformName">({{ $t('platform-' + platform) }})</span></span>
                 </ButtonLink>
                 <ButtonLink v-if="data.mega_link != undefined" :link="data.mega_link" fullwidth external type="bottom-piece" color="sl-green" icon="fa6-solid:download">
-                    {{ $t('download-patch') }} <span v-if="platformNum > 1">({{ $t('platform-' + platform) }})</span>
+                    <span v-if="platform == 'ndsjp'">{{ $t(route.params.game + '-hack-download-patch') }}</span>
+                    <span v-else>{{ $t('download-patch') }} <span v-if="writePlatformName">({{ $t('platform-' + platform) }})</span></span>
                 </ButtonLink>
                 <ButtonLink v-for="(link, index) in data.mega_links" :link="link.link" fullwidth external :type="index == data.mega_links.length - 1 ? 'bottom-piece' : 'mid-piece'" :color="link.color" icon="fa6-solid:download">
                     {{ $t('download-patch') }}: {{ link.name }}

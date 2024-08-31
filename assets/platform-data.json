@@ -4,6 +4,11 @@
         "full_name": "Nintendo DS",
         "extension": ".nds"
     },
+    "ndsjp": {
+        "name": "NDS",
+        "full_name": "Nintendo DS",
+        "extension": ".nds"
+    },
     "psp": {
         "name": "PSP",
         "full_name": "Sony PlayStation Portable",
