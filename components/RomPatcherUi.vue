@@ -428,7 +428,7 @@ export default {
             try {
                 romFile = new MarcFile(event.target, _parseROM);
             } catch (error) {
-                showNotice('error', 'rom-patcher-invalid-rom-select', { platform: platformData.extension })
+                showNotice('error', 'rom-patcher-invalid-rom-select', { extension: platformData.extension })
                 return;
             }
         }
