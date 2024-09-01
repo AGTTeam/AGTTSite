@@ -374,12 +374,12 @@ export default {
 
                     if (romSha !== patchData.required_rom_sha) {
                         if (romSha === '') {
-                            throw ('rom-patcher-sha-calc-failed');
+                            throw ('err-rom-patcher-sha-calc-failed');
                         }
                         if (romSha === patchData.bad_rom_sha) {
                             isBadRom = true;
                             if (!patchData.fix_bad_rom) {
-                                throw ('rom-patcher-bad-rom-error');
+                                throw ('err-rom-patcher-bad-rom-error');
                             } else {
                                 const REPAIR_ROM = parseRepairFile().then(repairArrayBuffer => {
                                     if (repairArrayBuffer == null)
@@ -410,7 +410,7 @@ export default {
                                 await REPAIR_ROM;
                             }
                         } else {
-                            throw ('rom-patcher-invalid-rom-error');
+                            throw ('err-rom-patcher-invalid-rom-error');
                         }
                     }
                 }
@@ -420,8 +420,10 @@ export default {
             }).then(patchFile => {
                 saveRomFile(patchFile);
             }).catch((error) => {
-                if (error != '')
-                    showNotice('error', error);
+                if (error.startsWith('err-'))
+                    showNotice('error', error.substring(4));
+                else if (error != '')
+                    showNotice('error', 'rom-patcher-generic-error', { error: error });
             });
         },
         selectFile: async function (event) {

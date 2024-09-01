@@ -215,6 +215,7 @@
     "rom-patcher-repair-error": "Error repairing ROM: {error}",
     "rom-patcher-invalid-rom-error": "Invalid ROM. Please make sure you selected the ROM for the right game and that you carefully followed the correct dumping instructions.",
     "rom-patcher-patching-rom": "Patching ROM with {patch}...",
+    "rom-patcher-generic-error": "Error: {error}",
     "rom-patcher-invalid-rom-select": "Invalid ROM selected. Please select a valid <code>{extension}</code> ROM file.",
     "rom-patcher-no-patches-available": "There are no patches available yet! Please come back soon!",
     
