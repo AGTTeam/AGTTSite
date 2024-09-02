@@ -16,7 +16,7 @@ head:
   - property: 'og:description'
     content: *desc
   - property: 'og:image'
-    content: &img 'https://agtteam.net/images/blog/0042/00_thumbnail.png'
+    content: &img 'https://agtteam.net/images/blog/0049/00_thumbnail.png'
   - property: 'og:url'
     content: 'https://agtteam.net/blog/2024-09-02-naruto-patch-release'
   - property: 'og:type'
