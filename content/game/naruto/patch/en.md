@@ -15,6 +15,6 @@ Please select your dumped _Naruto RPG 2: Chidori vs. Rasengan_ `.nds` ROM file (
 icon: fa6-solid:triangle-exclamation
 unwrap: true
 ---
-This hack is for the *Original Japanese ROM* and doesn't translate the game to English. If you're looking for the actual English patch, check [this page](/naruto/patch/nds) instead.
+This hack is for the *Original Japanese ROM* and doesn't translate the game to English. If you're looking for the actual English patch, check [this page](/naruto/patch/nds) instead. If you have already applied the English translation patch, you do not need to use this hack.
 ::
 ::
