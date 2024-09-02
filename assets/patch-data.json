@@ -35,7 +35,7 @@
         "original": "Naruto RPG 2: Chidori vs. Rasengan",
         "year": "2005",
         "page": "/naruto",
-        "tags": ["[platform-nds]", "[genre-rpg]", "[status-coming-soon]"],
+        "tags": ["[platform-nds]", "[genre-rpg]"],
         "tool_repo": "NarutoRPG2Translation",
         "platforms": {
             "nds": {
@@ -43,7 +43,8 @@
                 "patch_prefix": "NarutoRPG2Patch",
                 "sha_checks": "true",
                 "required_rom_sha": "2AC129A624B282294A1BAF07EB27C46DF6BFC0BFE3DD400CF9D610A840F3A9B3",
-                "mega_link": "https://mega.nz/file/",
+                "cheats": "true",				
+                "mega_link": "https://drive.google.com/drive/folders/1dSK9lvNMYSPMlzHkenwHHXu9UDoidmKn?usp=sharing",
                 "options": [
                     {
                         "name": "naruto-audio",
@@ -66,7 +67,7 @@
                 "patch_prefix": "NarutoRPG2Hack",
                 "sha_checks": "true",
                 "required_rom_sha": "2AC129A624B282294A1BAF07EB27C46DF6BFC0BFE3DD400CF9D610A840F3A9B3",
-                "mega_link": "https://mega.nz/file/",
+                "mega_link": "https://drive.google.com/drive/folders/1dSK9lvNMYSPMlzHkenwHHXu9UDoidmKn?usp=sharing",
                 "available_patches": {
                     "en": [
                         {
