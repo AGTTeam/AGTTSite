@@ -16,8 +16,8 @@
                             {{ $t('rom-patcher-option-' + option.name + '-desc') }}
                         </RomPatcherOptionDescription>
                         <RomPatcherOption :optionName="option.name"
-                            :option1="$t('rom-patcher-option-' + option.name + '-' + option.option1)" :option1value="option.option1"
-                            :option2="$t('rom-patcher-option-' + option.name + '-' + option.option2)" :option2value="option.option2" />
+                            :option1="$t('rom-patcher-option-' + option.name + '-' + option.option1)" :option1value="option.option1" :option1data="option.data1"
+                            :option2="$t('rom-patcher-option-' + option.name + '-' + option.option2)" :option2value="option.option2" :option2data="option.data2" />
                     </tbody>
                 </table>
             </div>
@@ -143,7 +143,7 @@ setup(route.params.game, route.params.platform);
 const { availableLocales } = useI18n()
 const AVAILABLE_PATCH_LOCALES = availableLocales.filter(locale => AVAILABLE_PATCHES(locale).length > 0);
 if (AVAILABLE_PATCHES(patchLocale.value).length === 0) {
-    notice.value = 'rom-patcher-no-patches-available'
+    notice.value = 'rom-patcher-no-patches-available';
 }
 
 // Resolve libraries
@@ -170,9 +170,10 @@ const CORS_PROXY = 'https://cors-anywhere.illidan.workers.dev/?';
 import ALL_PATCH_DATA from '/assets/patch-data.json';
 import ALL_PLATFORM_DATA from '/assets/platform-data.json';
 
-var localeVal = ''
-const notice = ref('rom-patcher-get-started')
-const noticeDict = {}
+var localeVal = '';
+var optionVal = '';
+const notice = ref('rom-patcher-get-started');
+const noticeDict = {};
 
 // RomPatcher data variables
 let romFile, patchFile, patch, headerSize, romSha, isBadRom, repairPatchFile, repairPatch, patchData, platformData;
@@ -219,11 +220,14 @@ function getRomSha(romFile) {
 
 // Gets the name of the file needed to be fetched to patch
 function getFileName() {
+    optionVal = '';
     let options = '';
     let version = getSelectedVersion();
     if (patchData.options != undefined) {
         patchData.options.forEach((option) => {
-            options += '-' + document.querySelector('input[name="' + option.name + '"]:checked').value;
+            const optionElement = document.querySelector('input[name="' + option.name + '"]:checked');
+            options += '-' + optionElement.value;
+            optionVal += '-' + optionElement.dataset.val;
         });
     }
     return patchData.patch_prefix + '-v' + version + options + '.xdelta';
@@ -235,6 +239,7 @@ function parsePatchFile(fileName, version) {
 
     // Download from GitHub
     let encodedUri = (CORS_PROXY + 'https://github.com/' + REPO_ORG + '/' + patchData.data_repo + '/releases/download/' + version + '/' + fileName);
+    //encodedUri = '/patches/' + fileName;
     return fetchFile(encodedUri);
 }
 
@@ -281,14 +286,18 @@ function applyPatch(patch, rom, validateChecksums, name) {
 // Prepare the final patched ROM
 function preparePatchedRom(originalRom, patchedRom, name) {
     patchedRom.fileName = originalRom.fileName.replace(/\.([^\\.]*?)$/, ' (' + name + ').$1');
-    patchedRom.fileType = originalRom.fileType;
+    // Change the mime type to avoid issues on mobile adding a .txt to the file extension
+    patchedRom.fileType = "data:attachment/plain";
     return patchedRom;
 }
 
 // Prompt the user to save the patched ROM file
 function saveRomFile(patchedRom) {
     if (isBadRom) {
-        showNotice('info', 'rom-patcher-bad-rom-warn')
+        if (patchData.bad_rom_string != undefined)
+            showNotice('info', patchData.bad_rom_string)
+        else
+            showNotice('info', 'rom-patcher-bad-rom-warn')
     } else {
         showNotice('info', 'rom-patcher-success')
     }
@@ -326,7 +335,7 @@ function showNotice(noticeType, noticeMessage, noticeVals = {}) {
     let patcherElement = document.getElementById('patcher-notice');
     notice.value = noticeMessage;
     noticeDict.value = noticeVals;
-    console.log(noticeDict)
+    console.log(noticeMessage + ":" + JSON.stringify(noticeDict));
     patcherElement.classList = noticeType + '-notice';
 }
 
@@ -416,11 +425,11 @@ export default {
                 }
             }).then(() => {
                 showNotice('info', 'rom-patcher-patching-rom', { patch: getFileName() })
-                return applyPatch(patch, romFile, false, localeVal + '-v' + version);
+                return applyPatch(patch, romFile, false, localeVal + optionVal + '-v' + version);
             }).then(patchFile => {
                 saveRomFile(patchFile);
             }).catch((error) => {
-                if (error.startsWith('err-'))
+                if (typeof error === 'string' && error.startsWith('err-'))
                     showNotice('error', error.substring(4));
                 else if (error != '')
                     showNotice('error', 'rom-patcher-generic-error', { error: error });
@@ -430,7 +439,8 @@ export default {
             try {
                 romFile = new MarcFile(event.target, _parseROM);
             } catch (error) {
-                showNotice('error', 'rom-patcher-invalid-rom-select', { extension: platformData.extension })
+                showNotice('error', 'rom-patcher-invalid-rom-select', { extension: platformData.extension });
+                romFile = null;
                 return;
             }
         }

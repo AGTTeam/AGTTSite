@@ -43,20 +43,37 @@
                 "patch_prefix": "NarutoRPG2Patch",
                 "sha_checks": "true",
                 "required_rom_sha": "2AC129A624B282294A1BAF07EB27C46DF6BFC0BFE3DD400CF9D610A840F3A9B3",
-                "cheats": "true",				
-                "mega_link": "https://drive.google.com/drive/folders/1dSK9lvNMYSPMlzHkenwHHXu9UDoidmKn?usp=sharing",
+                "bad_rom_sha": "A83A6A1C8AC867072E09B4ED7D9695A706D9DF6D5FA4F2719E80200037847782",
+                "fix_bad_rom": "true",
+                "repair_patch": "naruto-rev1-to-rev0.xdelta",
+                "bad_rom_string": "rom-patcher-naruto-rev1-warn",
+                "cheats": "true",
+                "mega_links": [
+                    {
+                        "name": "English Dubbed",
+                        "link": "https://mega.nz/file/vMhxnYRJ#jhL69qbHti7_NFse8zaLGEQsNYgvb2S2zWx6MdlvLSU",
+                        "color": "sl-blue"
+                    },
+                    {
+                        "name": "Original Japanese",
+                        "link": "https://mega.nz/file/nNBRxIoS#i4p0nzTc_5pXeAeY5tgw9NJOpYer-T3KDzCQgKK10-Q",
+                        "color": "sl-green"
+                    }
+                ],
                 "options": [
                     {
                         "name": "naruto-audio",
                         "option1": "en",
-                        "option2": "jp"
+                        "data1": "dubaudio",
+                        "option2": "jp",
+                        "data2": "jpaudio"
                     }
                 ],
                 "available_patches": {
                     "en": [
                         {
                             "version": "1.0",
-                            "date": "Sep 01, 2024",
+                            "date": "Sep 02, 2024",
                             "lang": "en"
                         }
                     ]
@@ -67,12 +84,16 @@
                 "patch_prefix": "NarutoRPG2Hack",
                 "sha_checks": "true",
                 "required_rom_sha": "2AC129A624B282294A1BAF07EB27C46DF6BFC0BFE3DD400CF9D610A840F3A9B3",
-                "mega_link": "https://drive.google.com/drive/folders/1dSK9lvNMYSPMlzHkenwHHXu9UDoidmKn?usp=sharing",
+                "bad_rom_sha": "A83A6A1C8AC867072E09B4ED7D9695A706D9DF6D5FA4F2719E80200037847782",
+                "fix_bad_rom": "true",
+                "repair_patch": "naruto-rev1-to-rev0.xdelta",
+                "bad_rom_string": "rom-patcher-naruto-rev1-warn",
+                "mega_link": "https://mega.nz/file/yQxUSTxL#OsGPAD34S304SFZnhOi7GoxQkAVLfdZW4UTZunXM4uc",
                 "available_patches": {
                     "en": [
                         {
                             "version": "1.0",
-                            "date": "Sep 01, 2024",
+                            "date": "Sep 02, 2024",
                             "lang": "en"
                         }
                     ]

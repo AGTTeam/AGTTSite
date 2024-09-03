@@ -9,7 +9,7 @@ const { locale } = useI18n({
         <td class="patcher-option-radio">
             <div>
                 <label>
-                    <input type="radio" :name="optionName" :value="option1value" checked="" />
+                    <input type="radio" :name="optionName" :value="option1value" :data-val="option1data" checked="" />
                     {{ option1 }}
                 </label>
             </div>
@@ -17,7 +17,7 @@ const { locale } = useI18n({
         <td class="patcher-option-radio">
             <div>
                 <label>
-                    <input type="radio" :name="optionName" :value="option2value" />
+                    <input type="radio" :name="optionName" :value="option2value" :data-val="option2data" />
                     {{ option2 }}
                 </label>
             </div>
@@ -68,11 +68,19 @@ export default {
             type: String,
             required: true,
         },
+        option1data: {
+            type: String,
+            required: true,
+        },
         option2: {
             type: String,
             required: true,
         },
         option2value: {
+            type: String,
+            required: true,
+        },
+        option2data: {
             type: String,
             required: true,
         },
