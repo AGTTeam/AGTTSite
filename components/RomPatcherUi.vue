@@ -176,11 +176,12 @@ const notice = ref('rom-patcher-get-started');
 const noticeDict = {};
 
 // RomPatcher data variables
-let romFile, patchFile, patch, headerSize, romSha, isBadRom, repairPatchFile, repairPatch, patchData, platformData;
+let romFile, patchFile, patch, headerSize, romSha, isBadRom, repairPatchFile, repairPatch, patchData, platformData, platformName;
 
 function setup(game, platform) {
     patchData = ALL_PATCH_DATA[game].platforms[platform];
     platformData = ALL_PLATFORM_DATA[platform];
+    platformName = platform;
 }
 
 // Available patches
@@ -239,7 +240,9 @@ function parsePatchFile(fileName, version) {
 
     // Download from GitHub
     let encodedUri = (CORS_PROXY + 'https://github.com/' + REPO_ORG + '/' + patchData.data_repo + '/releases/download/' + version + '/' + fileName);
-    //encodedUri = '/patches/' + fileName;
+    if (import.meta.dev) {
+        encodedUri = '/patches/' + fileName;
+    }
     return fetchFile(encodedUri);
 }
 
@@ -425,7 +428,12 @@ export default {
                 }
             }).then(() => {
                 showNotice('info', 'rom-patcher-patching-rom', { patch: getFileName() })
-                return applyPatch(patch, romFile, false, localeVal + optionVal + '-v' + version);
+                let patchName = localeVal + optionVal + '-v' + version;
+                // This probably shouldn't be hardcoded
+                if (platformName == 'ndsjp') {
+                    patchName = 'jp-hack-v' + version;
+                }
+                return applyPatch(patch, romFile, false, patchName);
             }).then(patchFile => {
                 saveRomFile(patchFile);
             }).catch((error) => {
