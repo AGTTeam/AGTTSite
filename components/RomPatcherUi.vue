@@ -40,7 +40,7 @@
                     </label>
                 </div>
                 <div class="patcher-submit">
-                    <ButtonLink link="#" color="red" icon="fa6-solid:file-import" @click="patchRom">{{ $t('rom-patcher-patch-rom') }}</ButtonLink>
+                    <ButtonLink link="javascript:void(0)" color="red" icon="fa6-solid:file-import" @click="patchRom">{{ $t('rom-patcher-patch-rom') }}</ButtonLink>
                 </div>
             </div>
         </div>
@@ -442,6 +442,7 @@ export default {
                 else if (error != '')
                     showNotice('error', 'rom-patcher-generic-error', { error: error });
             });
+            return;
         },
         selectFile: async function (event) {
             try {
