@@ -1,6 +1,6 @@
 <template>
     <div id="content-body">
-        <Navbar />
+        <Navbar :showHome=true />
         <div id="guide-body">
             <div class="content">
                 <div id="guide-content">
