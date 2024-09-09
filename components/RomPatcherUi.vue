@@ -220,10 +220,9 @@ function getRomSha(romFile) {
 }
 
 // Gets the name of the file needed to be fetched to patch
-function getFileName() {
+function getFileName(version) {
     optionVal = '';
     let options = '';
-    let version = getSelectedVersion();
     if (patchData.options != undefined) {
         patchData.options.forEach((option) => {
             const optionElement = document.querySelector('input[name="' + option.name + '"]:checked');
@@ -411,14 +410,14 @@ export default {
                     }
                 }
             }
-            parsePatchFile(getFileName(), version).then(arrayBuffer => {
+            parsePatchFile(getFileName(version), version).then(arrayBuffer => {
                 if (arrayBuffer == null)
                     return Promise.reject('');
                 return new MarcFile(arrayBuffer);
             }).then(parsedFile => {
                 patchFile = parsedFile;
                 patchFile.littleEndian = false;
-                patchFile.fileName = getFileName();
+                patchFile.fileName = getFileName(version);
 
                 let header = patchFile.readString(6);
                 if (header.startsWith(ZIP_MAGIC)) {
@@ -428,7 +427,7 @@ export default {
                     patch = parseVCDIFF(patchFile);
                 }
             }).then(() => {
-                showNotice('info', 'rom-patcher-patching-rom', { patch: getFileName() })
+                showNotice('info', 'rom-patcher-patching-rom', { patch: getFileName(version) })
                 let patchName = localeVal + optionVal + '-v' + version;
                 // This probably shouldn't be hardcoded
                 if (platformName == 'ndsjp') {
