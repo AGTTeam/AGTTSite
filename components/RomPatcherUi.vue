@@ -349,7 +349,7 @@ function getSelectedVersion() {
 
 export default {
     methods: {
-        patchRom: function () {
+        patchRom: async function () {
             let version = getSelectedVersion();
             
             // if a rom file has not been selected, return with an error
@@ -358,7 +358,59 @@ export default {
                 return;
             }
 
-            // Gets the file name
+            isBadRom = false;
+            if (patchData.sha_checks) {
+                const SHA_CHECK_PROMISE = getRomSha(romFile).then(sha => {
+                    romSha = sha.toUpperCase();
+                });
+
+                await SHA_CHECK_PROMISE;
+
+                if (romSha !== patchData.required_rom_sha) {
+                    if (romSha === '') {
+                        showNotice('error', 'rom-patcher-sha-calc-failed');
+                        return;
+                    }
+                    if (romSha === patchData.bad_rom_sha) {
+                        isBadRom = true;
+                        if (!patchData.fix_bad_rom) {
+                            showNotice('error', 'rom-patcher-bad-rom-error');
+                            return;
+                        } else {
+                            const REPAIR_ROM = parseRepairFile().then(repairArrayBuffer => {
+                                if (repairArrayBuffer == null)
+                                    return Promise.reject('');
+                                return new MarcFile(repairArrayBuffer);
+                            }).then(parsedRepairPatch => {
+                                repairPatchFile = parsedRepairPatch;
+                                repairPatchFile.littleEndian = false;
+                                repairPatchFile.fileName = patchData.repair_patch;
+
+                                let header = repairPatchFile.readString(6);
+                                if (header.startsWith(ZIP_MAGIC)) {
+                                    repairPatch = false;
+                                    ZIPManager.parseFile(repairPatchFile);
+                                } else {
+                                    repairPatch = parseVCDIFF(repairPatchFile);
+                                }
+                            }).then(() => {
+                                showNotice('info', 'rom-patcher-repair');
+                                return applyPatch(repairPatch, romFile, false, 'repaired');
+                            }).then(repairedRom => {
+                                romFile = repairedRom;
+                                showNotice('info', 'rom-patcher-repair-applied')
+                            }).catch((error) => {
+                                showNotice('error', 'rom-patcher-repair-error', { error: error });
+                            });
+
+                            await REPAIR_ROM;
+                        }
+                    } else {
+                        showNotice('error', 'rom-patcher-invalid-rom-error');
+                        return;
+                    }
+                }
+            }
             parsePatchFile(getFileName(), version).then(arrayBuffer => {
                 if (arrayBuffer == null)
                     return Promise.reject('');
@@ -374,57 +426,6 @@ export default {
                     ZIPManager.parseFile(patchFile);
                 } else {
                     patch = parseVCDIFF(patchFile);
-                }
-            }).then(async () => {
-                isBadRom = false;
-                if (patchData.sha_checks) {
-                    const SHA_CHECK_PROMISE = getRomSha(romFile).then(sha => {
-                        romSha = sha.toUpperCase();
-                    });
-
-                    await SHA_CHECK_PROMISE;
-
-                    if (romSha !== patchData.required_rom_sha) {
-                        if (romSha === '') {
-                            throw ('err-rom-patcher-sha-calc-failed');
-                        }
-                        if (romSha === patchData.bad_rom_sha) {
-                            isBadRom = true;
-                            if (!patchData.fix_bad_rom) {
-                                throw ('err-rom-patcher-bad-rom-error');
-                            } else {
-                                const REPAIR_ROM = parseRepairFile().then(repairArrayBuffer => {
-                                    if (repairArrayBuffer == null)
-                                        return Promise.reject('');
-                                    return new MarcFile(repairArrayBuffer);
-                                }).then(parsedRepairPatch => {
-                                    repairPatchFile = parsedRepairPatch;
-                                    repairPatchFile.littleEndian = false;
-                                    repairPatchFile.fileName = patchData.repair_patch;
-
-                                    let header = repairPatchFile.readString(6);
-                                    if (header.startsWith(ZIP_MAGIC)) {
-                                        repairPatch = false;
-                                        ZIPManager.parseFile(repairPatchFile);
-                                    } else {
-                                        repairPatch = parseVCDIFF(repairPatchFile);
-                                    }
-                                }).then(() => {
-                                    showNotice('info', 'rom-patcher-repair');
-                                    return applyPatch(repairPatch, romFile, false, 'repaired');
-                                }).then(repairedRom => {
-                                    romFile = repairedRom;
-                                    showNotice('info', 'rom-patcher-repair-applied')
-                                }).catch((error) => {
-                                    showNotice('error', 'rom-patcher-repair-error', { error: error });
-                                });
-
-                                await REPAIR_ROM;
-                            }
-                        } else {
-                            throw ('err-rom-patcher-invalid-rom-error');
-                        }
-                    }
                 }
             }).then(() => {
                 showNotice('info', 'rom-patcher-patching-rom', { patch: getFileName() })
