@@ -1,12 +1,11 @@
 <!-- A basic page template with no default content margins -->
 <template>
     <div class="page">
-        <div class="content">
-            <Navbar />
-		<div class="body-bg">
-		</div>	
-            <slot />
-        </div>
+        <div class="bg"></div>
+            <div class="content">
+                <Navbar />
+                <slot />	
+            </div>
         <Footer />
     </div>
 </template>
@@ -19,6 +18,7 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    position: absolute;
 }
 
 .page .content {
@@ -29,19 +29,14 @@
     width: 90vw;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.body-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/images/background.png');
+.bg {
+  background: url('/images/background.png');
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
   z-index: -1; /* Make sure the background stays behind other content */
 }
 </style>
