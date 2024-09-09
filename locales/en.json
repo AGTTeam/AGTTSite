@@ -217,6 +217,8 @@
     "rom-patcher-generic-error": "Error: {error}",
     "rom-patcher-invalid-rom-select": "Invalid ROM selected. Please select a valid <code>{extension}</code> ROM file.",
     "rom-patcher-no-patches-available": "There are no patches available yet! Please come back soon!",
+    "rom-patcher-loading-file": "Loading ROM file... Please wait.",
+    "rom-patcher-file-loaded": "ROM file has been loaded. Please click the \"Patch ROM\" button to proceed.",
     
     "click-to-filter": "Click to filter:"
 }

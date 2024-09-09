@@ -153,6 +153,7 @@ for (let i = 0; i < LIBRARIES.length; i++) {
     let script = document.createElement('script');
     script.src = LIBRARIES[i];
     script.type = 'text/javascript';
+    script.async = false;
     document.head.appendChild(script);
 }
 
@@ -176,7 +177,7 @@ const notice = ref('rom-patcher-get-started');
 const noticeDict = {};
 
 // RomPatcher data variables
-let romFile, patchFile, patch, headerSize, romSha, isBadRom, repairPatchFile, repairPatch, patchData, platformData, platformName;
+let romFile, patchFile, patch, headerSize, romSha, isBadRom, repairPatchFile, repairPatch, patchData, platformData, platformName, loadingFile;
 
 function setup(game, platform) {
     patchData = ALL_PATCH_DATA[game].platforms[platform];
@@ -349,6 +350,8 @@ function getSelectedVersion() {
 export default {
     methods: {
         patchRom: async function () {
+            if (loadingFile)
+                return;
             let version = getSelectedVersion();
             
             // if a rom file has not been selected, return with an error
@@ -446,10 +449,15 @@ export default {
         },
         selectFile: async function (event) {
             try {
+                loadingFile = true;
+                showNotice('info', 'rom-patcher-loading-file');
                 romFile = new MarcFile(event.target, _parseROM);
+                showNotice('info', 'rom-patcher-file-loaded');
+                loadingFile = false;
             } catch (error) {
                 showNotice('error', 'rom-patcher-invalid-rom-select', { extension: platformData.extension });
                 romFile = null;
+                loadingFile = false;
                 return;
             }
         }
