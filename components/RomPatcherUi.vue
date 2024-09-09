@@ -166,7 +166,7 @@ function getLanguageName(loc, languageCode) {
 <script>
 // Patcher settings
 const REPO_ORG = 'AGTTeam';
-const CORS_PROXY = 'https://cors-anywhere.illidan.workers.dev/?';
+const CORS_PROXY = 'https://cors.agtteam.net/';
 import ALL_PATCH_DATA from '/assets/patch-data.json';
 import ALL_PLATFORM_DATA from '/assets/platform-data.json';
 
