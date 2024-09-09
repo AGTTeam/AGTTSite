@@ -120,16 +120,6 @@
                 "available_patches": {
                     "en": [
                         {
-                            "version": "1.0",
-                            "date": "Feb 16, 2022",
-                            "lang": "en"
-                        },
-                        {
-                            "version": "1.1",
-                            "date": "Jun 11, 2022",
-                            "lang": "en"
-                        },
-                        {
                             "version": "1.2",
                             "date": "Jul 29, 2022",
                             "lang": "en"
@@ -319,11 +309,6 @@
                 "available_patches": {
                     "en": [
                         {
-                            "version": "1.0",
-                            "date": "Apr 12, 2022",
-                            "lang": "en"
-                        },
-                        {
                             "version": "1.1",
                             "date": "Apr 16, 2022",
                             "lang": "en"
@@ -382,11 +367,6 @@
                 "drive_link": "https://drive.google.com/uc?export=download&id=17F0Ki79OH29AQW9fKDIAgkGBpHE75roT",
                 "available_patches": {
                     "en": [
-                        {
-                            "version": "1.1",
-                            "date": "May 28, 2020",
-                            "lang": "en"
-                        },
                         {
                             "version": "1.2",
                             "date": "May 01, 2021",
@@ -482,11 +462,6 @@
                 "mega_link": "https://mega.nz/file/SUpRka7T#H3IBPYibqBbBsno9tp4_u9c6RLrhduO6U4yXDtvlqh0",
                 "available_patches": {
                     "en": [
-                        {
-                            "version": "1.1",
-                            "date": "Dec 07, 2020",
-                            "lang": "en"
-                        },
                         {
                             "version": "1.2",
                             "date": "June 11, 2022",
