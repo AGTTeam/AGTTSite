@@ -202,6 +202,8 @@ function _parseROM() {
         } else if ((headerSize = hasHeader(romFile))) {
         }
     }
+    showNotice('info', 'rom-patcher-file-loaded');
+    loadingFile = false;
 }
 
 function getRomSha(romFile) {
@@ -452,8 +454,6 @@ export default {
                 loadingFile = true;
                 showNotice('info', 'rom-patcher-loading-file');
                 romFile = new MarcFile(event.target, _parseROM);
-                showNotice('info', 'rom-patcher-file-loaded');
-                loadingFile = false;
             } catch (error) {
                 showNotice('error', 'rom-patcher-invalid-rom-select', { extension: platformData.extension });
                 romFile = null;

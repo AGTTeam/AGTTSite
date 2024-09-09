@@ -1,5 +1,8 @@
 <template>
     <div v-if="type == 'nav'" class="nav">
+        <NuxtLink v-if="showHome == true" href="/" rel="me" style="color:var(--main-green)">
+            <Icon name="fa6-solid:house" class="nav-icon" />
+        </NuxtLink>
         <NuxtLink v-for="social in socials.filter(s => s.display.nav)" :href="social.link" rel="me" :style="`color: ${social.color}`">
             <Icon :name="social.icon" class="nav-icon" />
         </NuxtLink>
@@ -41,6 +44,11 @@ const { type, stackTopper } = defineProps({
             icon: 'fa6-solid:house',
             locale: 'home'
         }
+    },
+    showHome: {
+        type: Boolean,
+        required: false,
+        default: false
     }
 })
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div id="content-body">
-        <Navbar />
+        <Navbar :showHome=true />
         <slot />
         <Footer />
     </div>

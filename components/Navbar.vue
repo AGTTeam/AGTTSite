@@ -3,12 +3,22 @@
         <div class="content">
             <TitleGraphic class="logo" graphic="top-logo" to="/" />
             <div class="menu">
-                <SocialLinks type="nav" />
+                <SocialLinks type="nav" :showHome=showHome />
                 <!--LanguageSwitcher /-->
             </div>
         </div>
     </nav>
 </template>
+
+<script setup>
+const props = defineProps({
+    showHome: {
+        type: Boolean,
+        required: false,
+        default: false
+    }
+})
+</script>
 
 <style scoped>
 nav {
