@@ -215,7 +215,7 @@ filterSuffix: 'emulator'
 
 1. Download the *:guide-data \[MelonDS Cheats\].mch* file and move it to the same folder as your patched ROM.
 2. Rename the .mch file to have the same name as your patched ROM.
-    * For example, if your game is *:guide-data(patched).nds*, your cheats should be *:guide-data(patched).mch*
+    * For example, if your game is *:guide-data(en-v1.X).nds*, your cheats should be *:guide-data(en-v1.X).mch*
 3. Open melonDS and load the game.
 4. Go to "System" in the top bar and make sure that "Enable Cheats" is ticked. Then, click on "Setup Cheat Codes".
 5.  In the window that pops up, tick the check boxes for any cheats that you wish to use.

@@ -123,7 +123,7 @@ There are a few options for PC DS emulators, but the one we recommend is melonDS
 
 **Setup:**
 
-Simply [download melonDS](https://melonds.kuribo64.net/downloads.php) (**v0.9.4+**) from the project website for your platform (Windows, macOS, Linux) and save it somewhere easily accessible to your computer.
+Simply [download melonDS](https://melonds.kuribo64.net/downloads.php) (**v0.9.5+**) from the project website for your platform (Windows, macOS, Linux) and save it somewhere easily accessible to your computer.
 
 **Playing the game:**
 

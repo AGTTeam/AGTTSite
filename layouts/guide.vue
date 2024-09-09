@@ -1,6 +1,8 @@
 <template>
     <div id="content-body">
-        <Navbar :showHome=true />
+        <div id="top-navbar">
+            <Navbar :showHome=true />
+		</div>	
         <div id="guide-body">
             <div class="content">
                 <div id="guide-content">
@@ -23,7 +25,7 @@
     min-height: 100vh;
     background: linear-gradient(180deg, rgba(180, 213, 191, 1) 0%, rgba(255, 255, 255, 0.01) 9em);
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 #guide-body {
@@ -37,12 +39,16 @@
 
 #guide-body .content {
     width: 70%;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 #guide-body .sidebar {
     width: 20%;
-    padding: 1rem;
+    padding: 0.5rem;
+}
+
+#top-navbar {
+    width: 90vw;
 }
 
 @media screen and (max-width: 750px) {

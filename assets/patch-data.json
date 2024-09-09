@@ -50,12 +50,12 @@
                 "cheats": "true",
                 "mega_links": [
                     {
-                        "name": "English Dubbed",
+                        "name": "English Dubbed Audio",
                         "link": "https://mega.nz/file/vMhxnYRJ#jhL69qbHti7_NFse8zaLGEQsNYgvb2S2zWx6MdlvLSU",
                         "color": "sl-blue"
                     },
                     {
-                        "name": "Original Japanese",
+                        "name": "Original Japanese Audio",
                         "link": "https://mega.nz/file/nNBRxIoS#i4p0nzTc_5pXeAeY5tgw9NJOpYer-T3KDzCQgKK10-Q",
                         "color": "sl-green"
                     }

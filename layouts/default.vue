@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100lvh;
     background-attachment: fixed;
     background-image: url('/images/background.png');
     background-size: cover;

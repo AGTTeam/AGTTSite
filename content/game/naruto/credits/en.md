@@ -15,7 +15,7 @@
 **RetroAchievements:** A [set of RetroAchievements](https://retroachievements.org/game/15481) for the game has been created by team member LaytonLoztew. For a list of compatible emulators, please visit [RetroAchievements.org](https://retroachievements.org/download.php
 ). 
 
-**Unlock All Characters:** Some characters in the game require Wireless Communications (local play using two DS consoles) to unlock. One workaround is to use the "Unlock all characters" cheat code provided in the translated cheat files. Due to the potential for bugs/crashes, we do not advise using it before clearing the game.
+**Unlock All Characters:** Some characters in the game require Wireless Communications (local play using two DS consoles) to unlock. One workaround is to use the "Unlock all characters" cheat code provided in the translated cheat files. Due to the potential for bugs, we do not recommend using it before clearing the game.
 
 For those who want to unlock all characters manually/without cheats, a second workaround has been created:
 
