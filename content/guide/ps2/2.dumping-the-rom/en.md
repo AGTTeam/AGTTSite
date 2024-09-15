@@ -17,7 +17,7 @@ PlayStation 2 game discs are unencrypted DVDs and CDs. This means they can be du
 If your PlayStation 2 format disc is dirty or scratched, it may not copy correctly. PC disc drives are more likely to be able to read the disc than an aging original PlayStation 2 drive, but you may still encounter errors.
 
 1. Before attempting to back up your disc, check the underside to look for dirt, fingerprints or scratches.
-2. If the disc is dirty blow off any dust or grit, and wipe from the centre outwards with a clean lint free cloth (such as microfibre). If you don't blow off any grit before wiping, you may accidentally scratch the disc.
+2. If the disc is dirty blow off any dust or grit, and wipe from the center outwards with a clean lint free cloth (such as microfibre). If you don't blow off any grit before wiping, you may accidentally scratch the disc.
 3. If more cleaning is needed, spray Isopropanol (Isopropyl Alcohol) onto the cloth before wiping. The Isopropanol should evaporate quickly so drying time should not be an issue.
 4. If your disc has scratches causing it to fail to read, you can have it resurfaced. Resurfacing is the process of a machine removing a very fine layer of the bottom plastic by polishing, in order to remove or reduce scratches. You may find a local game shop or library that offers to resurface discs for a nominal fee.
 
@@ -62,7 +62,7 @@ WHERE:<br />
 enter_game_name_here = The name for the ISO.
 </div>
 
-For example: `dd if=/dev/disk1 of=/Users/Phantom/Desktop/My_Game_Patched.iso`
+For example: `dd if=/dev/disk1 of=/Users/Phantom/Desktop/My_Game_Dumped.iso`
 
 Wait for the dumping process to be completed. Depending on the game size, this will take some time.
 
@@ -108,7 +108,7 @@ WHERE:<br />
 NOTE: DO NOT include the brackets
 </div>
 
-For example: `dd if=/dev/sr0 of=./My_Game_Patched.iso status=progress`<br />
+For example: `dd if=/dev/sr0 of=./My_Game_Dumped.iso status=progress`<br />
 This will dump the disc into the current directory.
 
 Run the command, then wait until the dumping process is completed.

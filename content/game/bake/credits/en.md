@@ -1,4 +1,4 @@
-## Gameplay Video
+## Opening Video
 :YoutubeVideo{video="saorMOb-S7M"}
 
 ## Anime Game Translations Team

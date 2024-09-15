@@ -91,7 +91,7 @@ if (!(route.params.game in ALL_PATCH_DATA)) {
 /* Less than 580px */
 @media screen and (max-width: 580px) {
     .column {
-        width: 85vw;
+        width: 90vw;
     }
 }
 </style>
