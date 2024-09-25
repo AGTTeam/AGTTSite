@@ -8,6 +8,17 @@ locale: en
 
 Please select your dumped _Naruto RPG 2: Chidori vs. Rasengan_ `.nds` ROM file (see the [setup guide](/naruto/guide/nds) for how to get this), choose the options you'd like to use, then click "Patch ROM" to apply the patch.
 
+::guide-conditional{platform="nds"}
+### Compatibility Notes
+::iconified-text
+---
+icon: fa6-solid:triangle-exclamation
+unwrap: true
+---
+If emulating the game using an older build of DeSmuME, please ensure that "Enable Advanced Bus-Level Timing" under 'Config > Emulation Settings' is turned OFF to prevent screen glitches. To avoid this issue, we recommend updating to the [latest build of DeSmuME](https://github.com/TASEmulators/desmume/releases), or switching to [MelonDS](https://melonds.kuribo64.net/downloads.php).
+::
+::
+
 ::guide-conditional{platform="ndsjp"}
 ### Important Note
 ::iconified-text
