@@ -34,6 +34,7 @@ const localePath = useLocalePath()
 const route = useRoute()
 
 definePageMeta({
+    title: 'Anime Game Translations Team - Blog',
     layout: 'blog'
 })
 </script>
