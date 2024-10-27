@@ -2,7 +2,7 @@
     <div>
         <NuxtLayout>
             <div id="author-container">
-                <ContentDoc :path="`/author/${route.params.author}/${locale}`">
+                <ContentDoc :path="`/author/${route.params.author}/${locale}`" :head="false">
                     <template v-slot="{ doc }">
                         <div v-if="doc.author">
                             <Head>
