@@ -36,20 +36,12 @@ Playing on the Nintendo DS is as simple as placing the patched ROM onto a flash 
 <div class="platform-filtered platform-nintendo_dsi">
 
 ## Play on Nintendo DSi
-Playing on the Nintendo DSi can either be done simply through the use of a flash cartridge, or putting the patched rom onto a SD card and making use of Twilight Menu++ on your system
+Playing on the Nintendo DSi can either be done simply through the use of a flash cartridge, or putting the patched ROM onto a SD card and making use of TWiLight Menu++ on your system.
 
 ### Using TWiLightMenu (nds-bootstrap)
-::iconified-text
----
-icon: fa6-solid:circle-info
-unwrap: true
----
-If you're using **TWiLightMenu** (aka nds-bootstrap), please be sure to launch the game in DSi Mode.
-::
-
 **Requirements:**
 * Nintendo DSi or DSi XL console
-* TwilightMenu++ custom firmware [setup on your system](https://dsi.cfw.guide/). If you followed the guide to dumping your ROM on Nintendo DSi earlier, you've probably already done this!
+* TWiLight Menu++ custom firmware [setup on your system](https://dsi.cfw.guide/). If you followed the guide to dumping your ROM on Nintendo DSi earlier, you've probably already done this!
 * SD card with at least 2GB capacity
 * Computer with an SD card reader/USB SD card reader peripheral
 
@@ -57,7 +49,7 @@ If you're using **TWiLightMenu** (aka nds-bootstrap), please be sure to launch t
 1. Insert your SD card from your DSi into your computer
 2. Drag over the patched .nds ROM file you previously created into anywhere on the SD card.
 3. Remove your SD card and insert it back into your DSi.
-4. Power on your DSi and launch Twilight Menu++.
+4. Power on your DSi and launch TWiLight Menu++.
 5. Navigate to and run the patched ROM .nds you copied into your SD card and start the game. Enjoy!
 
 ### Using a flash cartridge
@@ -75,9 +67,9 @@ If you're using **TWiLightMenu** (aka nds-bootstrap), please be sure to launch t
 <div class="platform-filtered platform-nintendo_3ds">
 
 ## Play on (New) Nintendo 3DS or 2DS
-Playing on a (New) Nintendo 3DS or 2DS can either be done simply through the use of a flash cartridge, or putting the patched rom onto a SD card and making use of Luma3DS on your system
+Playing on a (New) Nintendo 3DS or 2DS can either be done simply through the use of a flash cartridge, or putting the patched ROM onto a SD card and making use of Luma3DS on your system.
 
-### Using TwilightMenu++
+### Using TWiLight Menu++
 **Requirements:**
 * Nintendo 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL or New 2DS XL console
 * Luma3DS custom firmware setup on your system and FBI. If you followed the guide to dumping your ROM on Nintendo 3DS earlier, you've probably already done this!
@@ -86,8 +78,18 @@ Playing on a (New) Nintendo 3DS or 2DS can either be done simply through the use
 
 **Setup:**
 1. Insert your SD card from your 3DS (hacked with Luma3DS) into your computer
-2. Follow [this guide](https://www.cfwaifu.com/twilight-menu-3ds/) to install TWiLightMenu on your 3DS using FBI. During the part where it asks you to add your .nds ROMS, drag your patched ROM .nds file you made earlier into the /roms/ folder.
+2. Follow [this guide](https://www.cfwaifu.com/twilight-menu-3ds/) to install TWiLight Menu on your 3DS using FBI. During the part where it asks you to add your .nds ROMS, drag your patched ROM .nds file you made earlier into the /roms/ folder.
 3. Continue following the instructions through to launching the game. Enjoy!
+
+#### Using an NDS Forwarder
+If you would instead like to be able to launch the game directly from the home screen without running TWiLight Menu++, you can use an NDS forwarder to do so.
+
+**Setup**:
+1. Follow steps 1-2 of the setup for TWiLight Menu++ instructions above.
+2. Install the [ndsForwarder](https://github.com/MechanicalDragon0687/ndsForwarder/releases) application either from Universal Updater or by following the instructions to install it manually on your SD card.
+3. Boot up your 3DS and run the Homebrew Launcher application, then launch NDS Forwarder Generator from that.
+4. Navigate to the /roms/nds/ folder and select the ROM you placed there. Select "Yes" at the prompt for whether you want to install the forwarder, and then select "OK" when the installation is complete.
+5. Press Start to exit the forwarder generator and then Home Button to return to the home menu. You will be shown the newly installed forwarder on your home screen and can then launch the game directly from that.
 
 ### Using a flash cartridge
 **Requirements:**
@@ -123,13 +125,15 @@ There are a few options for PC DS emulators, but the one we recommend is melonDS
 
 **Setup:**
 
-Simply [download melonDS](https://melonds.kuribo64.net/downloads.php) (**v0.9.5+**) from the project website for your platform (Windows, macOS, Linux) and save it somewhere easily accessible to your computer.
+Simply [download melonDS](https://melonds.kuribo64.net/downloads.php) (**v1.0.0+**) from the project website for your platform (Windows, macOS, or Linux) and save it somewhere easily accessible to your computer. (If you are using macOS, consider placing the melonDS.app folder in your /Applications directory for ease of access.)
+
+If you're running Linux, we also recommend the [official Flatpak](https://flathub.org/apps/net.kuribo64.melonDS) provided on Flathub, though that can sometimes lag behind the direct download releases.
 
 **Playing the game:**
 
-With melonDS setup, all you need to do in order to play the game is select "File"  "Open ROM" in the top menu bar and choose the ROM file you patched earlier.
+With melonDS setup, all you need to do in order to play the game is select "File" → "Open ROM" in the top menu bar and choose the ROM file you patched earlier. You can also simply drag and drop the ROM file directly on the opened emulator, or associate `.nds` files with melonDS to open them via double clicking.
 
-melonDS has a number of advanced features, such as configuring controllers and tweaking display settings. You can check out the [melonDS Website](https://melonds.kuribo64.net/) for more information.
+melonDS has a number of advanced features, such as configuring controllers and tweaking display settings. You can check out the [melonDS website](https://melonds.kuribo64.net/) for more information.
 
 #### Other PC emulators
 * [DeSmuME](https://desmume.org/)－Another popular PC emulator, but may have performance issues with certain games.
@@ -172,24 +176,21 @@ If you run into any emulation issues, exit the game and try launching it again w
 <div class="platform-filtered platform-ios">
 
 ### Emulate on iOS / iPadOS / tvOS
-The most user-friendly option for emulating on iOS is Delta Emulator. However, while it is easy to obtain from the App Store in non-EU countries, those in the EU have to take a few extra steps to obtain it.
+The most user-friendly option for emulating on iOS is Delta Emulator. In the past, Apple did not permit emulators officially on their store. However, times have changed and now you can simply download [Delta Emulator](https://faq.deltaemulator.com/) from the [App Store](https://apps.apple.com/us/app/delta-game-emulator/id1048524688).
 
 RetroArch is another alternative, which also has a native Apple TV app, although it can be confusing to setup.
 
 **Requirements:**
 * iOS / iPadOS Device (iPhone, iPad, iPod Touch)
-* Mac or Windows computer (to install Altstore if you live in an EU country)
 * Delta or RetroArch
 
 #### Play using Delta Emulator
 
 1. Transfer the patched ROM file onto your device. We recommend creating a specific 'NDS' folder to keep things organized.
-2. Download [Delta](https://apps.apple.com/us/app/delta-game-emulator/id1048524688) off the App Store (non-EU countries), or the follow [this guide](https://www.reddit.com/r/Delta_Emulator/wiki/guide/#wiki_altstore) to install Delta using Altstore (EU countries).
-3. Open the app, and add your ROMs to your library by tapping "+" in the top right corner of the screen. 
-4. Launch the patched *:guide-data* ROM file by tapping on it, and enjoy!
+2. Open the Delta, and add your ROMs to your library by tapping "+" in the top right corner of the screen. 
+3. Launch the patched *:guide-data* ROM file by tapping on it, and enjoy!
 
 #### Play using RetroArch
-
 
 1. Transfer the patched ROM file onto your device. We recommend creating a specific 'NDS' folder to keep things organized.
 2. Download [RetroArch](https://apps.apple.com/gb/app/retroarch/id6499539433) off the App Store.

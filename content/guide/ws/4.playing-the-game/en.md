@@ -34,7 +34,7 @@ To play the Multiplayer Mode, you will need two WonderSwan consoles, as well as 
 
 **InsideGadgets WS 8MB:**
 ::guide-notice
-The iG Cartridge only support SAM saves.
+The iG Cartridge only supports SRAM saves.
 ::
 
 1. Connect the cart to a GBxCart using the provided adapter.
