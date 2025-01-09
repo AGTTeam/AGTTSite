@@ -1,6 +1,6 @@
 ---
 title: Anime Game Translations Team
-description: The homepage of the Anime Game Translations Team
+description: The homepage of the Anime Game Translations Team. As the name implies, we create fan-translation patches for anime games!
 locale: en
 ---
 

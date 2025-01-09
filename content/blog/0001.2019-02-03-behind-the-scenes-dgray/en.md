@@ -42,7 +42,7 @@ images: [
     {url: '/images/blog/0001/182528492067_1.png', alt: 'A promotional poster for the game. The text at the bottom reads "scheduled for release in Spring 2007."'},
     {url: '/images/blog/0001/182528492067_2.png', alt: 'An unused background of a street view, most likely from the rewinding city.'},
     {url: '/images/blog/0001/182528492067_3.png', alt: 'Place names from unused locations. No corresponding map could be found.'},
-    {url: '/images/blog/0001/182528492067_4.png', alt: 'An unused concept for map travel.'},
+    {url: '/images/blog/0001/182528492067_4.png', alt: 'A compressed version of the travel map from Summon Night 2, a GBA game.'},
     {url: '/images/blog/0001/182528492067_5.png', alt: 'There were placeholder images for items numbered from 49 to 70, suggesting an extra level was planned.'},
     {url: '/images/blog/0001/182528492067_6.png', alt: 'A reference from the manga of Allen''s innocence, found in the battle image folder.'},
     {url: '/images/blog/0001/182528492067_7.png', alt: 'Placeholder sprites for General Cross, Bookman, an old lady and an unknown character who never made it into the game.'},

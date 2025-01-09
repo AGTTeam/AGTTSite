@@ -68,7 +68,7 @@ The first method uses a Wi-Fi hack to dump over File Transfer Protocol (FTP). Th
 
 ### Dumping with a Nintendo DSi
 
-To dump using a Nintendo DSi, you will need to install a Custom Firmware (CFW) onto the system known as Twilight Menu++ and Unlaunch to enable you to run Godmode9i, which lets you dump a cartridge to an `.nds` file.
+To dump using a Nintendo DSi, you will need to install a Custom Firmware (CFW) onto the system known as TWiLight Menu++ and Unlaunch to enable you to run Godmode9i, which lets you dump a cartridge to an `.nds` file.
 
 **Requirements:**
 * Nintendo DSi or Nintendo DSi XL console
@@ -80,13 +80,13 @@ To dump using a Nintendo DSi, you will need to install a Custom Firmware (CFW) o
 ::guide-notice
 Please take caution following these steps to avoid bricking your system.
 ::
-1. Follow [the steps on dsi.cfw.guide](https://dsi.cfw.guide/launching-the-exploit.html) to install Twilight Menu++ and Unlaunch onto your DSi.
+1. Follow [the steps on dsi.cfw.guide](https://dsi.cfw.guide/launching-the-exploit.html) to install TWiLight Menu++ and Unlaunch onto your DSi.
 2. [Download GodMode9i](https://github.com/DS-Homebrew/GodMode9i/releases) and extract the file using a utility such as 7Zip on Windows or The UnArchiver on macOS.
 3. Remove the SD card from your DSi and insert it into your computer.
 4. Place the extracted GodMode9.nds file anywhere on your SD card.
 5. Insert the SD card back into your DSi.
 6. Insert the *:guide-data* game cartridge into your DSi.
-7. Launch Twilight Menu++ as you were shown and run GodMode9i.
+7. Launch TWiLight Menu++ as you were shown and run GodMode9i.
 8. Select the "NDS GAMECARD" option.
 9. Press the A Button to select "yes" to dump your cartridge.
 10. When complete, you can turn off your DSi and remove the SD card from the system.
