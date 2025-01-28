@@ -116,11 +116,11 @@
                 "sha_checks": "true",
                 "required_rom_sha": "EF1C0BCD8DA25379EB46888959849C2011622F969E9B3967E6489E6838B8F88F",
                 "cheats": "true",
-                "mega_link": "https://mega.nz/file/mchGCZBA#-dLaRZwejRy_LhEcMzUlvoSVHgau5HlZ380v5Hl7ktE",
+                "mega_link": "https://mega.nz/file/PAwVFSrA#5aECc0q5uSZaEFWXRgz0U_Yms7wBIUAZhw7MhfPNKHg",
                 "available_patches": {
                     "en": [
                         {
-                            "version": "1.2",
+                            "version": "1.3",
                             "date": "Jul 29, 2022",
                             "lang": "en"
                         }
