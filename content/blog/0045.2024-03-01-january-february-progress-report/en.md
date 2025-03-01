@@ -1,5 +1,5 @@
 ---
-title: &title "January - Feburary Progress Report"
+title: &title "January - February Progress Report"
 description: &desc "And just like that, March is here! How has the new year been treating you? Here’s how we’ve been getting on…"
 locale: 'en'
 navigation:
@@ -23,7 +23,7 @@ head:
     content: 'article'
   - name: 'twitter:title'
     value: *title
-  - name: 'twitter:descripton'
+  - name: 'twitter:description'
     value: *desc
   - name: 'twitter:image'
     value: *img

@@ -8,3 +8,4 @@ node_modules
 dist
 *Patch-v*.xdelta
 *Hack-v*.xdelta
+desktop.ini
