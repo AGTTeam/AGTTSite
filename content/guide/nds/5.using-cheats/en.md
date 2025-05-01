@@ -11,7 +11,7 @@ To go along with our patches, we've created translated cheat files for some of o
 The file you'll need will depend on how you're playing the game.
 
 ::guide-notice
-The Cheat Databases we provide are based on [DeadSkullzJr's NDS(i) Cheat Database (2023/12/25)](https://gbatemp.net/threads/deadskullzjrs-nds-i-cheat-databases.488711/). If you have previously edited these files, your changes will be overwritten. If you would prefer to manually add cheats, see the "Manual" section below. (This does not apply to PC or Mobile users, with the exception of DraStic on Android.)
+The Cheat Databases we provide are based on [DeadSkullzJr's NDS(i) Cheat Database (2023/12/25)](https://gbatemp.net/threads/deadskullzjrs-nds-i-cheat-databases.488711/). If you have previously edited these files, your changes will be overwritten. If you would prefer to manually add cheats to an existing database, see the "Manual" section below.
 ::
 
 ::guide-conditional{game="gurren"}
@@ -239,14 +239,13 @@ filterSuffix: 'emulator'
 
 <div class="platform-filtered platform-android">
 
-### Using Cheats on DraStic
-1. Download the "usrcheat.dat" file and transfer it to the "DraStic/Cheats" folder (replace the file if there's one there already).
-2.  Open DraStic and load *:guide-data*.
-3.  Open the menu by pressing the up arrow or <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/ellipsis.svg" alt="three dots" width="11" height="11"> symbol at the bottom of the screen, then press "Menu".
-<img src="https://techwiser.com/wp-content/uploads/2021/08/Screenshot-2021-08-05-03.00.11-1.png" width=80% height=80%> 
-4. Select "Cheat Database" and tap on any cheats you wish to use.
-    * Take note of any cheats which tell you to press a button, or combination of buttons to use.
-5. Press the back button twice to return to your game.
+### Using Cheats on melonDS
+1.  Download the "cheat.xml" file and transfer it to your Android Device.
+2.  Open melonDS and go to Settings, then "Cheats".
+3.  Make sure "Enable Cheats" is on, then import the "cheat.xml" file.
+4.  Load *:guide-data*, and open the Pause Menu by pressing the back button. Then, go to "Cheats" and toggle the cheats you'd like to use. Take note of any cheats which tell you to press a button, or combination of buttons to use.
+	* If the list is empty, make sure that you have completed steps 1-3 correctly.
+5. Press the back button to return to your game.
 6. Your cheats should now be setup. Cheats without button requirements will be automatically activated. For button-activated cheats, simply press the button(s) specified in the cheat's description when you'd like to activate it.
 
 ###  Using Cheats on RetroArch
@@ -296,7 +295,7 @@ You can find cheat codes online, or download our *:guide-data \[MelonDS Cheats\]
 <div class="platform-filtered platform-manual">
 
 ## Add Cheats Manually
-This guide will walk you through manually editing your Cheat Database. You don't need to follow this guide if you are playing on PC or Mobile, with the exception of DraStic on Android.
+This guide will walk you through manually editing your Cheat Database. This is not usually necessary for most emulator users.
 
 ### Add Cheats using r4cee
 **Requirements:**
