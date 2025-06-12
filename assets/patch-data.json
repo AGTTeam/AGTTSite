@@ -428,12 +428,12 @@
                 "patch_prefix": "ShitoPatch",
                 "sha_checks": "true",
                 "required_rom_sha": "F638C48C81400A067697B6E21DFDB4551D2E68EC8A9C0E8D185BB15B024CC892",
-                "mega_link": "https://mega.nz/file/jVAURZSR#5TRQo-H0Rjw-0M9VuqoujEKbdUt7kda-f_Jm0yVsYck",
+                "mega_link": "https://mega.nz/file/KNBnHLjT#7I-cxXNCievpKCZMUYMGVTPngL5PD-Ml_sYJ9fQf_b0",
                 "available_patches": {
                     "en": [
                         {
-                            "version": "1.0",
-                            "date": "Mar 29, 2021",
+                            "version": "1.1",
+                            "date": "Apr 12, 2025",
                             "lang": "en"
                         }
                     ]
