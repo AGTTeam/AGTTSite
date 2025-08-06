@@ -3,7 +3,7 @@ title: &title "Neon Genesis Evangelion: Shito Ikusei Patch Released!"
 description: &desc "Neon Genesis Evangelion: Angel Raising Project (新世紀エヴァンゲリオン シト育成) patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
-  author: 'Phantom'
+  author: 'Haribeau'
   year: 2021
   month: 03
   day: 29

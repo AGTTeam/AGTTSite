@@ -1,14 +1,4 @@
 {
-    "mushishi": {
-        "id": "mushishi",
-        "title": "mushishi-title",
-        "original": "Mushishi: Amefuru Sato",
-        "year": "2008",
-        "tags": ["[platform-nds]", "[genre-sim]", "[status-proofreading]"],
-        "platforms": {
-            "nds": {}
-        }
-    },
     "successors": {
         "id": "successors",
         "title": "successors-title",
@@ -27,6 +17,34 @@
         "tags": ["[platform-ps2]", "[genre-action]", "[status-proofreading]"],
         "platforms": {
             "ps2": {}
+        }
+    },
+    "mushishi": {
+        "id": "mushishi",
+        "title": "mushishi-title",
+        "original": "Mushishi: Amefuru Sato",
+        "year": "2008",
+        "page": "/mushishi",
+        "tags": ["[platform-nds]", "[genre-sim]"],
+        "tool_repo": "MushishiTranslation",
+        "walkthrough_link": "https://gamefaqs.gamespot.com/ds/943553-mushishi-amefuru-sato/faqs/82054",		
+        "platforms": {
+            "nds": {
+                "data_repo": "MushishiData",
+                "patch_prefix": "MushishiPatch",
+                "sha_checks": "true",
+                "required_rom_sha": "9E68A7C13D0DBD48D44B95E98DE195E9B1933550C45420C91A194D0B72718A98",
+                "mega_link": "https://mega.nz/file/eUwVBCSK#L-uj78xApnJSHbM7atccbXUqe2LY1sLaqt2tuFBuhSg",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Aug 06, 2025",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
         }
     },
     "naruto": {
