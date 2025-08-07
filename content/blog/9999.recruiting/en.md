@@ -53,6 +53,5 @@ Or, if you are a Japanese translator looking to start a project but need some su
 ### Current Projects
 If you're interested in proofreading a project which is still being translated, you're welcome to message us and register your interest. We will then contact you once proofreading begins.
 
-* **\[NDS\] Mushishi: Amefuru Sato:** We're no longer looking for help with this project, thank you to everyone who applied!
 * **\[NDS\] Death Note: Successors to L:** We're delighted to have several people on the waiting list for proofreading, so are not currently looking for more help with this project. This may change in the future.
 * **\[PS2\] Fullmetal Alchemist 3: The Girl Who Succeeds God:** Applications for proofreading are welcome. 
