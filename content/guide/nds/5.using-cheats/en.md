@@ -11,7 +11,7 @@ To go along with our patches, we've created translated cheat files for some of o
 The file you'll need will depend on how you're playing the game.
 
 ::guide-notice
-The Cheat Databases we provide are based on [DeadSkullzJr's NDS(i) Cheat Database (2023/12/25)](https://gbatemp.net/threads/deadskullzjrs-nds-i-cheat-databases.488711/). If you have previously edited these files, your changes will be overwritten. If you would prefer to manually add cheats to an existing database, see the "Manual" section below.
+The Cheat Databases we provide are based on [DeadSkullzJr's NDS(i) Cheat Database (2025/08/12)](https://gbatemp.net/threads/deadskullzjrs-nds-i-cheat-databases.488711/). If you have previously edited these files, your changes will be overwritten. If you would prefer to manually add cheats to an existing database, see the "Manual" section below.
 ::
 
 ::guide-conditional{game="gurren"}
