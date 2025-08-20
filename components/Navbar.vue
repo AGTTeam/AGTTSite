@@ -30,7 +30,6 @@ nav {
     width: 100%;
     background-color: #00000000;
     backdrop-filter: blur(0.8rem);
-    filter: drop-shadow(2.4px 0 0 white) drop-shadow(0 2px 0 white) drop-shadow(-2.4px 0 0 white) drop-shadow(0 -2px 0 white) drop-shadow(0 0 0.05rem white);
     max-width: 80vw;
 }
 
@@ -39,6 +38,7 @@ nav .content {
     justify-content: space-between;
     width: 100%;
     padding-left: 0.75rem;
+    filter: drop-shadow(2.4px 0 0 white) drop-shadow(0 2px 0 white) drop-shadow(-2.4px 0 0 white) drop-shadow(0 -2px 0 white) drop-shadow(0 0 0.05rem white);
     padding-right: 0.75rem;
 }
 
