@@ -3,7 +3,7 @@ title: &title "Soul Eater: Monotone Princess English Patch Released!"
 description: &desc "Soul Eater: Monotone Princess (ソウルイーター モノトーンプリンセス) patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
-  author: 'Phantom'
+  author: 'Haribeau'
   year: 2021
   month: 10
   day: 31
@@ -23,7 +23,7 @@ head:
     content: 'article'
   - name: 'twitter:title'
     value: *title
-  - name: 'twitter:descripton'
+  - name: 'twitter:description'
     value: *desc
   - name: 'twitter:image'
     value: *img

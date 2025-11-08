@@ -23,7 +23,7 @@ head:
     content: 'article'
   - name: 'twitter:title'
     value: *title
-  - name: 'twitter:descripton'
+  - name: 'twitter:description'
     value: *desc
   - name: 'twitter:image'
     value: *img
@@ -44,14 +44,14 @@ A patch covering the ‘essentials’ was reportedly scheduled for release by [J
 
 ## \[NDS\] Chou Soujuu Mecha MG (Non-Anime)
 
-![Chou Soujuu Mecha MG screenshot](/images/blog/0004/187392247250_0.png)
+![Chou Soujuu Mecha MG screenshot](/images/blog/0004/187392247250_1.png)
 
 Continuing with non-anime games, I’m delighted to say that after 5 months of hiatus, work has begun on this project once again! Supper is bearing the brunt of proofreading, with 120 missions and a likely vast amount of typos to go through.
 
 
 ## \[NDS\] Tengen Toppa Gurren Lagann
 
-![Tengen Toppa Gurren Lagann screenshot](/images/blog/0004/187392247250_0.png)
+![Tengen Toppa Gurren Lagann screenshot](/images/blog/0004/187392247250_2.png)
 
 Illidan has been working tirelessly, creating new and updated scripts to get this patch into motion! There’s still a fair bit that I need to finish and touch up, but as it stands, this is likely to be the next release.
 

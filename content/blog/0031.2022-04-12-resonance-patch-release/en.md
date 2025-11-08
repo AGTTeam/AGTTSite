@@ -3,7 +3,7 @@ title: &title "Soul Eater: Battle Resonance English Patch Released!"
 description: &desc "Soul Eater: Battle Resonance (ソウルイーター バトルレゾナンス) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
-  author: 'Phantom'
+  author: 'Haribeau'
   year: 2022
   month: 04
   day: 12
@@ -23,7 +23,7 @@ head:
     content: 'article'
   - name: 'twitter:title'
     value: *title
-  - name: 'twitter:descripton'
+  - name: 'twitter:description'
     value: *desc
   - name: 'twitter:image'
     value: *img

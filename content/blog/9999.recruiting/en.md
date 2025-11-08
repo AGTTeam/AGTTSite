@@ -23,7 +23,7 @@ head:
     content: 'article'
   - name: 'twitter:title'
     value: *title
-  - name: 'twitter:descripton'
+  - name: 'twitter:description'
     value: *desc
   - name: 'twitter:image'
     value: *img
@@ -46,7 +46,6 @@ All of our projects have different demands, but these are the roles we most comm
 
 ### Future Translations
 We're currently looking for a lead translator for the following:
-* **\[NDS\] Kimi no Yusha**
 * **\[PSP\] Nendoroid Generation**
 
 Or, if you are a Japanese translator looking to start a project but need some support, please message us to discuss!
@@ -54,6 +53,5 @@ Or, if you are a Japanese translator looking to start a project but need some su
 ### Current Projects
 If you're interested in proofreading a project which is still being translated, you're welcome to message us and register your interest. We will then contact you once proofreading begins.
 
-* **\[NDS\] Mushishi: Amefuru Sato:** We're no longer looking for help with this project, thank you to everyone who applied!
-* **\[NDS\] Death Note: Successors to L:** Applications for proofreading are welcome.
-* **\[PS2\] Fullmetal Alchemist 3: The Girl Who Succeeds God:** Applications for proofreading are welcome. 
+* **\[NDS\] Death Note: Successors to L:** We're delighted to have several people on the waiting list for proofreading, so are not currently looking for more help with this project. This may change in the future.
+* **\[PS2\] Fullmetal Alchemist 3: The Girl Who Succeeds God:** We're delighted to have several people on the waiting list for proofreading, so are not currently looking for more help with this project. This may change in the future.

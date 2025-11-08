@@ -3,7 +3,7 @@ title: &title "Death Note: Kira Game English Patch Released!"
 description: &desc "Death Note: Kira Game (デスノート: キラゲーム) patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
-  author: 'Phantom'
+  author: 'Haribeau'
   year: 2022
   month: 02
   day: 16
@@ -23,7 +23,7 @@ head:
     content: 'article'
   - name: 'twitter:title'
     value: *title
-  - name: 'twitter:descripton'
+  - name: 'twitter:description'
     value: *desc
   - name: 'twitter:image'
     value: *img

@@ -11,7 +11,8 @@
 ## Changes to the game
 * Created custom font
 * Removed hiragana and katakana from the angel-naming screen and added custom glyphs and graphics
-* Changed the default angel name from "シト" (angel) to "Adam".
+* Changed the default angel name from "シト" (angel) to "Adam"
+* Fixed a bug found in the original game where a specific event flag was not set, preventing the event completion rate from reaching 100%
 
 ## Keep in touch
 Join our Discord Server to send us your questions, check out our latest projects or even lend us your skills to translate more anime games!

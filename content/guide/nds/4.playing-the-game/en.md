@@ -136,8 +136,8 @@ With melonDS setup, all you need to do in order to play the game is select "File
 melonDS has a number of advanced features, such as configuring controllers and tweaking display settings. You can check out the [melonDS website](https://melonds.kuribo64.net/) for more information.
 
 #### Other PC emulators
-* [DeSmuME](https://desmume.org/)－Another popular PC emulator, but may have performance issues with certain games.
-* [No$GBA](https://www.nogba.com/)－Not recommended due to severe general emulation accuracy issues. It's also infrequently updated and not very user-friendly.
+* [DeSmuME](https://desmume.org/) - Another popular PC emulator, but may have performance issues with certain games.
+* [No$GBA](https://www.nogba.com/) - Not recommended due to severe general emulation accuracy issues. It's also infrequently updated and not very user-friendly.
 
 </div>
 
@@ -145,18 +145,17 @@ melonDS has a number of advanced features, such as configuring controllers and t
 
 ### Emulate on Android
 
-The best DS emulator on Android is [DraStic](https://play.google.com/store/apps/details?id=com.dsemu.drastic), which has a great interface and is simple to install. Another alternative is [RetroArch](https://play.google.com/store/apps/details?id=com.retroarch) using the MelonDS emulation core.
+We recommend melonDS for Android, which is available as an [unofficial stand-alone port](https://play.google.com/store/apps/details?id=me.magnum.melonds), or as a core for [RetroArch](https://play.google.com/store/apps/details?id=com.retroarch).
 
 **Requirements:**
 * Android Device with the Google Play store
-* Drastic or RetroArch
 
-#### Play using DraStic Emulator
+#### Play using melonDS Emulator
 
 1. Transfer the patched ROM file onto your device. We recommend creating a specific 'NDS' folder to keep things organized.
-2. Download [DraStic](https://play.google.com/store/apps/details?id=com.dsemu.drastic) off the Google Play Store.
-3. Open the app, and select "load new game". 
-4. Navigate to the patched *:guide-data* ROM file, press "Start Game", and enjoy!
+2. Download [melonDS](https://play.google.com/store/apps/details?id=me.magnum.melonds) off the Google Play Store.
+3. Open the app. If this is your first time using it, follow the prompt to set the ROM directory to wherever your games are stored.
+4. Launch the patched *:guide-data* ROM file by tapping on it, and enjoy!
 
 #### Play using RetroArch Emulator
 
@@ -194,6 +193,8 @@ RetroArch is another alternative, which also has a native Apple TV app, although
 
 1. Transfer the patched ROM file onto your device. We recommend creating a specific 'NDS' folder to keep things organized.
 2. Download [RetroArch](https://apps.apple.com/gb/app/retroarch/id6499539433) off the App Store.
+    - If you get an error at this step saying that your version of Android is too new to support RetroArch, you will have to download the apk manually from their site. To do this, [go to their downloads page](https://retroarch.com/?page=platforms) and scroll to the "Android" section. Below "Google Play" and "F-Droid", click "Download" to download the apk and then attempt to launch it. You will have to set several permissions in order to install the apk from an "untrusted source" – enable these settings by following the instructions on your screen and then launch the apk again to install it to your phone.
+    - You might also consider downloading one of the nightly builds to get a more up-to-date version of the app.
 3. Open the app, tap "Online Updater", scroll down and download all of the updates.
 4. Scroll back to the top of the Online Updater menu, and go to "Core Downloader". Scroll down to the Nintendo DS Cores, and download the *Nintendo - DS (melonDS)*  and *Nintendo - DS (DeSmuME)* cores.
 5. From the Navigation Bar, select the <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/list.svg" alt="three lines" width="11" height="11"> icon which will take you to the Playlists Menu.
