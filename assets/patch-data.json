@@ -133,6 +133,9 @@
                 "patch_prefix": "KiraGamePatch",
                 "sha_checks": "true",
                 "required_rom_sha": "EF1C0BCD8DA25379EB46888959849C2011622F969E9B3967E6489E6838B8F88F",
+				"encrypted_rom_sha": "4EC0DBD3C96E70794A0DD6434718166996AC01F5C3123EE65BDC12382851A46D",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "kira_enc_to_dec.xdelta",
                 "cheats": "true",
                 "mega_link": "https://mega.nz/file/PAwVFSrA#5aECc0q5uSZaEFWXRgz0U_Yms7wBIUAZhw7MhfPNKHg",
                 "available_patches": {
