@@ -177,7 +177,7 @@ const notice = ref('rom-patcher-get-started');
 const noticeDict = {};
 
 // RomPatcher data variables
-let romFile, patchFile, patch, headerSize, romSha, isBadRom, repairPatchFile, repairPatch, patchData, platformData, platformName, loadingFile;
+let romFile, patchFile, patch, headerSize, romSha, isBadRom, isEncryptedRom, repairPatchFile, repairPatch, patchData, platformData, platformName, loadingFile;
 
 function setup(game, platform) {
     patchData = ALL_PATCH_DATA[game].platforms[platform];
@@ -248,6 +248,10 @@ function parsePatchFile(fileName, version) {
     return fetchFile(encodedUri);
 }
 
+function parseDecryptFile() {
+    showNotice('info', 'rom-patcher-encrypted-rom');
+    return fetchFile('/patches/' + patchData.decrypt_patch);
+}
 function parseRepairFile() {
     showNotice('info', 'rom-patcher-bad-rom');
     return fetchFile('/patches/' + patchData.repair_patch);
@@ -303,6 +307,11 @@ function saveRomFile(patchedRom) {
             showNotice('info', patchData.bad_rom_string)
         else
             showNotice('info', 'rom-patcher-bad-rom-warn')
+    } else if (isEncryptedRom) {
+        if (patchData.encrypted_rom_string != undefined)
+            showNotice('info', patchData.encrypted_rom_string)
+        else
+            showNotice('info', 'rom-patcher-encrypted-rom-warn')
     } else {
         showNotice('info', 'rom-patcher-success')
     }
@@ -355,7 +364,7 @@ export default {
             if (loadingFile)
                 return;
             let version = getSelectedVersion();
-            
+
             // if a rom file has not been selected, return with an error
             if (!romFile) {
                 showNotice('error', 'rom-patcher-choose-rom-first');
@@ -363,6 +372,7 @@ export default {
             }
 
             isBadRom = false;
+            isEncryptedRom = false;
             if (patchData.sha_checks) {
                 const SHA_CHECK_PROMISE = getRomSha(romFile).then(sha => {
                     romSha = sha.toUpperCase();
@@ -405,6 +415,40 @@ export default {
                                 showNotice('info', 'rom-patcher-repair-applied')
                             }).catch((error) => {
                                 showNotice('error', 'rom-patcher-repair-error', { error: error });
+                            });
+
+                            await REPAIR_ROM;
+                        }
+                    } else if (romSha === patchData.encrypted_rom_sha) {
+                        isEncryptedRom = true;
+                        if (!patchData.fix_encrypted_rom) {
+                            showNotice('error', 'rom-patcher-encrypted-rom-error');
+                            return;
+                        } else {
+                            const REPAIR_ROM = parseDecryptFile().then(repairArrayBuffer => {
+                                if (repairArrayBuffer == null)
+                                    return Promise.reject('');
+                                return new MarcFile(repairArrayBuffer);
+                            }).then(parsedRepairPatch => {
+                                repairPatchFile = parsedRepairPatch;
+                                repairPatchFile.littleEndian = false;
+                                repairPatchFile.fileName = patchData.decrypt_patch;
+
+                                let header = repairPatchFile.readString(6);
+                                if (header.startsWith(ZIP_MAGIC)) {
+                                    repairPatch = false;
+                                    ZIPManager.parseFile(repairPatchFile);
+                                } else {
+                                    repairPatch = parseVCDIFF(repairPatchFile);
+                                }
+                            }).then(() => {
+                                showNotice('info', 'rom-patcher-decrypting');
+                                return applyPatch(repairPatch, romFile, false, 'repaired');
+                            }).then(repairedRom => {
+                                romFile = repairedRom;
+                                showNotice('info', 'rom-patcher-decrypt-applied')
+                            }).catch((error) => {
+                                showNotice('error', 'rom-patcher-decrypt-error', { error: error });
                             });
 
                             await REPAIR_ROM;
