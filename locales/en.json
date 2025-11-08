@@ -208,6 +208,7 @@
     "rom-patcher-patch-failed-retrieve": "Failed to retrieve the patch file.",
     "rom-patcher-choose-rom-first": "Please choose a ROM first",
     "rom-patcher-bad-rom-warn": "The SHA-256 checksum of the ROM you selected matches that of a known bad ROM that contains corrupt header data. A repair was performed on your ROM before the English patch was applied.<br/>You do not need to do anything else.",
+    "rom-patcher-encrypted-rom-warn": "The SHA-256 checksum of the ROM you selected matches that of a known encrypted ROM. A repair was performed on your ROM before the English patch was applied.<br/>You do not need to do anything else.",
     "rom-patcher-naruto-rev1-warn": "The SHA-256 checksum of the ROM you selected matches that of the rev1 of the game which is not supported. The ROM was converted to rev0 before the English patch was applied.<br/>You do not need to do anything else.",
     "rom-patcher-success": "<b>Patch applied successfully!</b><br/>Enjoy the game!",
     "rom-patcher-bad-rom-error": "The SHA-256 hash of the ROM you have selected matches that of a known bad ROM circulated on the internet that contains corrupt graphics and invalid header data. This ROM is unable to be patched.",
