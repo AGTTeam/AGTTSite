@@ -502,7 +502,7 @@
                 "repair_patch": "mamoru-repair.xdelta",
                 "encrypted_rom_sha": "F532C6BC44199F9662C23050E3EA98444D440A9CB3530122E02527E44D603FD0",
                 "fix_encrypted_rom": "true",
-                "decrypt_patch": "gurren-enc-to-dec.xdelta",				
+                "decrypt_patch": "mamoru-enc-to-dec.xdelta",				
                 "cheats": "true",
                 "mega_link": "https://mega.nz/file/SUpRka7T#H3IBPYibqBbBsno9tp4_u9c6RLrhduO6U4yXDtvlqh0",
                 "available_patches": {
