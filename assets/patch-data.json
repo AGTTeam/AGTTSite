@@ -34,6 +34,9 @@
                 "patch_prefix": "MushishiPatch",
                 "sha_checks": "true",
                 "required_rom_sha": "9E68A7C13D0DBD48D44B95E98DE195E9B1933550C45420C91A194D0B72718A98",
+                "encrypted_rom_sha": "B22AEBA31D80EC0B4A139A63738CB07E2C4A5E99559FB24AC83138A364DCF828",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "mushi-enc-to-dec.xdelta",					
                 "mega_link": "https://mega.nz/file/eUwVBCSK#L-uj78xApnJSHbM7atccbXUqe2LY1sLaqt2tuFBuhSg",
                 "available_patches": {
                     "en": [
@@ -135,7 +138,7 @@
                 "required_rom_sha": "EF1C0BCD8DA25379EB46888959849C2011622F969E9B3967E6489E6838B8F88F",
 				"encrypted_rom_sha": "4EC0DBD3C96E70794A0DD6434718166996AC01F5C3123EE65BDC12382851A46D",
                 "fix_encrypted_rom": "true",
-                "decrypt_patch": "kira_enc_to_dec.xdelta",
+                "decrypt_patch": "kira-enc-to-dec.xdelta",
                 "cheats": "true",
                 "mega_link": "https://mega.nz/file/PAwVFSrA#5aECc0q5uSZaEFWXRgz0U_Yms7wBIUAZhw7MhfPNKHg",
                 "available_patches": {
@@ -165,6 +168,9 @@
                 "patch_prefix": "ProLoguePatch",
                 "sha_checks": "true",
                 "required_rom_sha": "470EC1A1954AD1518F5C6AB4616BDA9E4CCC1D90F06AD9F9BEF83E6A49EBC8F6",
+                "encrypted_rom_sha": "69DB4F71D914B775FA85324407F0BC82FFDE9FCBA906D74D5C617C69DFD44875",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "proLogue-enc-to-dec.xdelta",				
                 "cheats": "true",
                 "mega_link": "https://mega.nz/file/fJgnGABR#gPlWLaVvL1PfjcIEzD4OUAfT7KSD0cIXlndBFYQNCoY",
                 "available_patches": {
@@ -193,6 +199,9 @@
                 "patch_prefix": "HoloPatch",
                 "sha_checks": "true",
                 "required_rom_sha": "367D4CBA3CA4DA5FAAE132F31BB1ACB729B9E8910033799D77673A13D31CE2E7",
+                "encrypted_rom_sha": "6D181412E4A42DD9CA5D2356763932408638806305F3FD827F360BDB0D1F512A",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "holo-enc-to-dec.xdelta",					
                 "cheats": "true",
                 "mega_link": "https://mega.nz/file/KQBAHDSB#OcJzz6jWusA5M4tp5F9QP4ngfgCnRTvA2dcuhkhLdzU",
                 "available_patches": {
@@ -224,6 +233,9 @@
                 "bad_rom_sha": "3FA3D213BAC8D1CD10E2DCE034DACE807D8B62EABECBC8CAAC75B6A41DD3D95A",
                 "fix_bad_rom": "true",
                 "repair_patch": "holo2-repair.xdelta",
+                "encrypted_rom_sha": "6662021EE9A53875018BBCDCD18798CC6B527FAEADA82334BE93F52FFB0C8990",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "holo2-enc-to-dec.xdelta",				
                 "cheats": "true",
                 "mega_link": "https://mega.nz/file/WAYijDyD#FOfbix-6X5Uwan_DiVNHkRh4IpNBm6EuSoh_DY8vEnY",
                 "available_patches": {
@@ -282,6 +294,9 @@
                 "bad_rom_sha": "68F5D6B2B0BADBFD64FEBF97D50AB73E22D54AE0A55BA4EC2EA724B5FF877578",
                 "fix_bad_rom": "true",
                 "repair_patch": "vampire-repair.xdelta",
+                "encrypted_rom_sha": "3FE229CAAD63DD4F4F34C9F26A927094A3FADE291B217A0939169199135A144A",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "vampire-enc-to-dec.xdelta",					
                 "cheats": "true",
                 "mega_link": "https://mega.nz/file/fJQ2xRJY#X0qyMPGLT2Ur8YGtjeqerkEJKAmPrAhkv7mty84AZt4",
                 "available_patches": {
@@ -383,6 +398,9 @@
                 "bad_rom_sha": "A9F343FE7DDE1A20CBDCEEF03EE79FFDD1663A1A55961D9F99F7A402CAE93BE8",
                 "fix_bad_rom": "true",
                 "repair_patch": "medusa-repair.xdelta",
+                "encrypted_rom_sha": "EC0D3827CC5581F026AFE773520019D2D2DABC906E486FD69774CD7785CA17B8",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "medusa-enc-to-dec.xdelta",					
                 "cheats": "true",
                 "mega_link": "https://mega.nz/file/GJA2yRgB#jNJwGnNBCRS_qFG7lW4A8GgCxocLfCwT-PoD6uQbyRQ",
                 "drive_link": "https://drive.google.com/uc?export=download&id=17F0Ki79OH29AQW9fKDIAgkGBpHE75roT",
@@ -420,6 +438,9 @@
                 "patch_prefix": "GurrenPatch",
                 "sha_checks": "true",
                 "required_rom_sha": "60EB41F523BE98E8F78CD914FF340A4FF7110FA304B7E3500EBB4CA8C059D445",
+                "encrypted_rom_sha": "63C78714C4D9EFB89602507E86AAC10B6F443C9F75037403CC0D8A8D1F9FEA57",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "gurren-enc-to-dec.xdelta",				
                 "cheats": "true",
                 "mega_link": "https://mega.nz/file/rBBylBRK#rs9ffYpef5n8FQ4uFS_iUJBl1f7bjh0V2umBODB9jBI",
                 "available_patches": {
@@ -479,6 +500,9 @@
                 "bad_rom_sha": "A1FBAE58A0B9074D4B23F290DA7379CF3769ADCCAF3CBC95C34993FA32297AB7",
                 "fix_bad_rom": "true",
                 "repair_patch": "mamoru-repair.xdelta",
+                "encrypted_rom_sha": "F532C6BC44199F9662C23050E3EA98444D440A9CB3530122E02527E44D603FD0",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "gurren-enc-to-dec.xdelta",				
                 "cheats": "true",
                 "mega_link": "https://mega.nz/file/SUpRka7T#H3IBPYibqBbBsno9tp4_u9c6RLrhduO6U4yXDtvlqh0",
                 "available_patches": {
