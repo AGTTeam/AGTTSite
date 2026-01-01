@@ -1,6 +1,6 @@
 ---
 title: &title "Mushishi: Amefuru Sato English Patch Released!"
-description: &desc "Mushishi: Amefuru Sato (蟲師 〜天降る里〜) patch by the Anime Game Translations Team"
+description: &desc "Mushishi: Amefuru Sato (蟲師 〜天降る里〜) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
   author: 'ithyrial'

@@ -1,6 +1,6 @@
 ---
 title: &title "Death Note: Kira Game English Patch Released!"
-description: &desc "Death Note: Kira Game (デスノート: キラゲーム) patch by the Anime Game Translations Team"
+description: &desc "Death Note: Kira Game (デスノート: キラゲーム) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
   author: 'Haribeau'

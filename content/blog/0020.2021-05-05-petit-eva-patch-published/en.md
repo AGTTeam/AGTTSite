@@ -1,6 +1,6 @@
 ---
 title: &title "Petit Eva : Evangelion@Game Patch Published!"
-description: &desc "Puchi Eva 〜EVANGELION@GAME〜 (ぷちえゔぁ〜EVANGELION@GAME〜) by ScenikEight"
+description: &desc "Puchi Eva 〜EVANGELION@GAME〜 (ぷちえゔぁ〜EVANGELION@GAME〜) Patch by ScenikEight"
 locale: 'en'
 navigation:
   author: 'Phantom'

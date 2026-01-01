@@ -1,6 +1,6 @@
 ---
 title: &title "Naruto RPG 2 English Patch Released!"
-description: &desc "Naruto: Path of the Avenger / Naruto RPG 2: Chidori Vs Rasengan (ナルトRPG2 - 千鳥VS螺旋丸) patch by the Anime Game Translations Team"
+description: &desc "Naruto: Path of the Avenger / Naruto RPG 2: Chidori Vs Rasengan (ナルトRPG2 - 千鳥VS螺旋丸) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
   author: 'Ligudink'

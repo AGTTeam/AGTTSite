@@ -1,6 +1,6 @@
 ---
 title: &title "Vampire Knight DS English Patch Released!"
-description: &desc "Vampire Knight DS (ヴァンパイア騎士DS) patch by the Anime Game Translations Team"
+description: &desc "Vampire Knight DS (ヴァンパイア騎士DS) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
   author: 'Phantom'

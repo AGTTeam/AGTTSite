@@ -1,6 +1,6 @@
 ---
 title: &title "Spice and Wolf: The Wind that Spans the Sea English Patch Released!"
-description: &desc "Spice and Wolf: The Wind that Spans the Sea (狼と香辛料 海を渡る風) patch by the Anime Game Translations Team"
+description: &desc "Spice and Wolf: The Wind that Spans the Sea (狼と香辛料 海を渡る風) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
   author: 'Phantom'

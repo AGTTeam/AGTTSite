@@ -1,6 +1,6 @@
 ---
 title: &title "Soul Eater: Monotone Princess English Patch Released!"
-description: &desc "Soul Eater: Monotone Princess (ソウルイーター モノトーンプリンセス) patch by the Anime Game Translations Team"
+description: &desc "Soul Eater: Monotone Princess (ソウルイーター モノトーンプリンセス) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
   author: 'Haribeau'

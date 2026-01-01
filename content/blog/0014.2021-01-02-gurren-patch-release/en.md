@@ -1,6 +1,6 @@
 ---
 title: &title "Gurren Lagann Patch Released!"
-description: &desc "Tengen Toppa Gurren Lagann (天元突破グレンラガン) patch by the Anime Game Translations Team"
+description: &desc "Tengen Toppa Gurren Lagann (天元突破グレンラガン) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
   author: 'Phantom'

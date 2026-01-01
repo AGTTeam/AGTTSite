@@ -1,6 +1,6 @@
 ---
 title: &title "L - the ProLogue to Death Note: Spiraling Trap English Patch Released!"
-description: &desc "L - the ProLogue to Death Note: Spiraling Trap (-螺旋の罠-) patch by the Anime Game Translations Team"
+description: &desc "L - the ProLogue to Death Note: Spiraling Trap (-螺旋の罠-) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
   author: 'Phantom'

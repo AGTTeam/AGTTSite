@@ -1,6 +1,6 @@
 ---
 title: &title "Bakemonogatari Portable English Patch Released!"
-description: &desc "Bakemonogatari Portable (化物語ポータブル) patch by the Anime Game Translations Team"
+description: &desc "Bakemonogatari Portable (化物語ポータブル) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
   author: 'Phantom'

@@ -1,6 +1,6 @@
 ---
 title: &title "Fullmetal Alchemist: Sonata of Memories Patch Published!"
-description: &desc "Fullmetal Alchemist: Sonata of Memories (鋼の錬金術師 想い出の奏鳴曲) by Iredc"
+description: &desc "Fullmetal Alchemist: Sonata of Memories (鋼の錬金術師 想い出の奏鳴曲) Patch by Iredc"
 locale: 'en'
 navigation:
   author: 'Phantom'

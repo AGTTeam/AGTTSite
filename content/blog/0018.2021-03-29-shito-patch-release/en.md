@@ -1,6 +1,6 @@
 ---
 title: &title "Neon Genesis Evangelion: Shito Ikusei Patch Released!"
-description: &desc "Neon Genesis Evangelion: Angel Raising Project (新世紀エヴァンゲリオン シト育成) patch by the Anime Game Translations Team"
+description: &desc "Neon Genesis Evangelion: Angel Raising Project (新世紀エヴァンゲリオン シト育成) Patch by the Anime Game Translations Team"
 locale: 'en'
 navigation:
   author: 'Haribeau'
