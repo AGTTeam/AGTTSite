@@ -186,7 +186,7 @@ RetroArch is another alternative, which also has a native Apple TV app, although
 #### Play using Delta Emulator
 
 1. Transfer the patched ROM file onto your device. We recommend creating a specific 'NDS' folder to keep things organized.
-2. Open the Delta, and add your ROMs to your library by tapping "+" in the top right corner of the screen. 
+2. Open Delta, and add your ROMs to your library by tapping "+" in the top right corner of the screen. 
 3. Launch the patched *:guide-data* ROM file by tapping on it, and enjoy!
 
 #### Play using RetroArch
