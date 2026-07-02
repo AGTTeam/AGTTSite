@@ -32,6 +32,10 @@ const localePath = useLocalePath()
 const showModal = ref(false)
 const imageSource = ref(null)
 
+watch(showModal, (visible) => {
+    document.body.style.overflow = visible ? 'hidden' : 'auto'
+})
+
 onMounted(() => {
     window.addEventListener('click', function (event) {
         if (event.target.tagName == 'IMG') {
