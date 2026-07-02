@@ -1,20 +1,30 @@
 {
-    "successors": {
-        "id": "successors",
-        "title": "successors-title",
-        "original": "Death Note: L wo Tsugumono",
-        "year": "2007",
-        "tags": ["[platform-nds]", "[genre-strategy]", "[status-translation]"],
-        "platforms": {
-            "nds": {}
-        }
-    },
     "fma": {
         "id": "fma",
         "title": "fma-title",
         "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
         "year": "2005",
         "tags": ["[platform-ps2]", "[genre-action]", "[status-proofreading]"],
+        "platforms": {
+            "ps2": {}
+        }
+    },
+    "successors": {
+        "id": "successors",
+        "title": "successors-title",
+        "original": "Death Note: L wo Tsugumono",
+        "year": "2007",
+        "tags": ["[platform-nds]", "[genre-strategy]", "[status-proofreading]"],
+        "platforms": {
+            "nds": {}
+        }
+    },
+    "spacefish": {
+        "id": "spacefish",
+        "title": "spacefish-title",
+        "original": "Space Fishermen",
+        "year": "2002",
+        "tags": ["[platform-ps2]", "[non-anime]", "[status-translation]"],
         "platforms": {
             "ps2": {}
         }
