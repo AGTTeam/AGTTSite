@@ -7,7 +7,7 @@ navigation:
   year: 2026
   month: 07
   day: 01
-  tags: ['progress-report', 'fishermen', 'fma', 'successors']
+  tags: ['progress-report', 'spacefish', 'fma', 'successors']
   image: '0060/00_thumbnail.png'
 head:
   meta:
