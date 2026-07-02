@@ -1,5 +1,7 @@
 <template>
     <div v-if="notice" id="patcher-notice" v-html="$t(notice, noticeDict.value)"></div>
+    <img v-if="isPatching && patcherAnimation" :src="patcherAnimation"
+        class="patcher-animation" :alt="$t('rom-patcher-patching-rom', { patch: '' })" />
     <div class="patcher-menu">
         <div class="patcher-left">
             <div>
@@ -70,6 +72,14 @@
     color: black;
     padding: 0.5rem;
     border-radius: 0.5rem;
+}
+
+.patcher-animation {
+    display: block;
+    margin: 0.75rem auto 0;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .error-notice {
@@ -175,12 +185,25 @@ var localeVal = '';
 var optionVal = '';
 const notice = ref('rom-patcher-get-started');
 const noticeDict = {};
+const isPatching = ref(false);
+const patcherAnimation = ref(null);
+let patcherAnimationSrc = null;
+
+function pickPatcherAnimation() {
+    if (Array.isArray(patcherAnimationSrc)) {
+        if (patcherAnimationSrc.length === 0)
+            return null;
+        return patcherAnimationSrc[Math.floor(Math.random() * patcherAnimationSrc.length)];
+    }
+    return patcherAnimationSrc;
+}
 
 // RomPatcher data variables
 let romFile, patchFile, patch, headerSize, romSha, isBadRom, isEncryptedRom, repairPatchFile, repairPatch, patchData, platformData, platformName, loadingFile;
 
 function setup(game, platform) {
     patchData = ALL_PATCH_DATA[game].platforms[platform];
+    patcherAnimationSrc = ALL_PATCH_DATA[game].patcher_animation || null;
     platformData = ALL_PLATFORM_DATA[platform];
     platformName = platform;
 }
@@ -316,6 +339,7 @@ function saveRomFile(patchedRom) {
         showNotice('info', 'rom-patcher-success')
     }
 
+    isPatching.value = false;
     patchedRom.save();
 }
 
@@ -347,6 +371,9 @@ function hasHeader(romFile) {
 // Show the patcher status notice at the top of the patcher
 function showNotice(noticeType, noticeMessage, noticeVals = {}) {
     let patcherElement = document.getElementById('patcher-notice');
+    if (noticeType === 'error') {
+        isPatching.value = false;
+    }
     notice.value = noticeMessage;
     noticeDict.value = noticeVals;
     console.log(noticeMessage + ":" + JSON.stringify(noticeDict));
@@ -371,6 +398,8 @@ export default {
                 return;
             }
 
+            patcherAnimation.value = pickPatcherAnimation();
+            isPatching.value = true;
             isBadRom = false;
             isEncryptedRom = false;
             if (patchData.sha_checks) {
