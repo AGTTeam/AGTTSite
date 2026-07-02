@@ -38,12 +38,18 @@ export default {
     },
 
     i18n: {
+        bundle: {
+            optimizeTranslationDirective: false,
+        },
+        compilation: {
+            strictMessage: false,
+        },
         detectBrowserLanguage: {
             useCookie: false,
             redirectOn: 'root',
         },
         locales: [
-            { code: 'en', iso: 'en', file: 'locales/en.json', dir: 'ltr' },
+            { code: 'en', language: 'en', file: 'en.json', dir: 'ltr' },
         ],
         defaultLocale: 'en'
     },

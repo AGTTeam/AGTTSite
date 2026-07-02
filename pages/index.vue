@@ -36,9 +36,12 @@ const { locale, t } = useI18n()
 const localePath = useLocalePath()
 
 definePageMeta({
-    title: computed(() => t('index-title')),
-    description: computed(() => t('index-description')),
     layout: 'default'
+})
+
+useSeoMeta({
+    title: () => t('index-title'),
+    description: () => t('index-description'),
 })
 </script>
 
