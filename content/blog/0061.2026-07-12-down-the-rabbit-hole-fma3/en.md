@@ -102,7 +102,7 @@ https://jp.mercari.com/item/m81524527319
 https://jp.mercari.com/item/m54306971962<br>
 https://jp.mercari.com/item/m22288514848<br>
 https://magazine.jp.square-enix.com/top/comics/detail/9784757515703/<br>
-https://web.archive.org/web/20061018112833/http://gangan.square-enix.co.jp/hagaren/novels/gamenovels3.html
+[LN teaser on old Square Enix website](https://web.archive.org/web/20061018112833/http://gangan.square-enix.co.jp/hagaren/novels/gamenovels3.html)
 
 **Strategy Guide**:<br>
 https://jp.mercari.com/item/m57045291219<br>
