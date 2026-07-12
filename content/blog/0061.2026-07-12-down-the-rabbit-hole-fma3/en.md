@@ -111,8 +111,8 @@ https://paypayfleamarket.yahoo.co.jp/item/z429032638<br>
 https://jp.mercari.com/item/m71253801165
 
 **Thai-language strategy guide**:<br>
-https://shopee.co.th/%E0%B8%9A%E0%B8%97%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B9%80%E0%B8%81%E0%B8%A1-FULLMETAL-ALCHEMIST-3-PS2-%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A1-%E0%B9%80%E0%B8%89%E0%B8%A5%E0%B8%A2%E0%B9%80%E0%B8%81%E0%B8%A1-%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A1—i.58835200.13881533002<br>
-https://shopee.co.th/%F0%9F%A4%96%F0%9F%8E%AE%F0%9F%95%B9%F0%9F%8E%B2%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3%E0%B9%80%E0%B8%81%E0%B8%A1-Juiced2-thesim2-soul-cradle-Fullmetal-(t2930-t4189-t9300-t4184)-i.1258316308.26204945557<br>
+[Thai strategy guide listing 1](https://shopee.co.th/%E0%B8%9A%E0%B8%97%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B9%80%E0%B8%81%E0%B8%A1-FULLMETAL-ALCHEMIST-3-PS2-%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A1-%E0%B9%80%E0%B8%89%E0%B8%A5%E0%B8%A2%E0%B9%80%E0%B8%81%E0%B8%A1-%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A1—i.58835200.13881533002)<br>
+[Thai strategy guide listing 2](https://shopee.co.th/%F0%9F%A4%96%F0%9F%8E%AE%F0%9F%95%B9%F0%9F%8E%B2%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3%E0%B9%80%E0%B8%81%E0%B8%A1-Juiced2-thesim2-soul-cradle-Fullmetal-(t2930-t4189-t9300-t4184)-i.1258316308.26204945557)<br>
 https://www.ebay.com/itm/406890740988
 
 **Pre-order Booklet**:<br>
@@ -140,7 +140,7 @@ https://jp.mercari.com/item/m75541007918<br>
 https://www.sonymusic.co.jp/Music/Info/nanakitade/<br>
 https://www.amazon.com/Berry-Singles-Nana-Kitade/dp/B000VY11MG/<br>
 https://jp.mercari.com/shops/product/2JHrsCJbU6B7uLkiZV8zb5<br>
-https://www.discogs.com/release/6080046-Various-%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB-Fullmetal-Alchemist-The-Best<br>
+[Fullmetal Alchemist: The Best release details](https://www.discogs.com/release/6080046-Various-%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB-Fullmetal-Alchemist-The-Best)<br>
 https://auctions.yahoo.co.jp/jp/auction/o1176842041<br>
 https://www.nanakitade.jp/biography<br>
 
@@ -148,11 +148,11 @@ https://www.nanakitade.jp/biography<br>
 https://www.racjin.co.jp/radix/
 
 **Trading Card**:<br>
-https://www.ebay.com.au/itm/386782950633
+https://www.ebay.com.au/itm/386782950633<br>
 https://web.archive.org/web/20080922030007/http://www.carddas.com/hagane/battle/index.html
 
 **Other FMA game trading cards for scale**:<br>
-https://sites.google.com/view/gv-neo/%E4%BD%9C%E5%93%81%E5%88%A5/%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB<br>
+[Someone's scans of Gangan Versus Neo](https://sites.google.com/view/gv-neo/%E4%BD%9C%E5%93%81%E5%88%A5/%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB)<br>
 Many singles listings.
 
 **Animedia magazine spread**:<br>
@@ -175,10 +175,10 @@ https://jp.mercari.com/item/m44365954764<br>
 https://jp.mercari.com/item/m71955472671
 
 **Toxiccaves production art**:<br>
-https://toxiccaves.tumblr.com/post/648226193288675329/fullmetal-alchemist-3-kami-o-tsugu-shoujo<br>
-https://toxiccaves.tumblr.com/post/642074346004856832/original-layouts-from-end-cutscenes-of-fma-3-kami<br>
-https://toxiccaves.tumblr.com/post/649487693968015360/fma-and-the-broken-angel-genga<br>
-https://toxiccaves.tumblr.com/post/645233458881429504/elma-and-jack-crowley-lineart<br>
+[FMA3 character design sheets](https://toxiccaves.tumblr.com/post/648226193288675329/fullmetal-alchemist-3-kami-o-tsugu-shoujo)<br>
+[FMA3 ending layouts](https://toxiccaves.tumblr.com/post/642074346004856832/original-layouts-from-end-cutscenes-of-fma-3-kami)<br>
+[FMA2 sheets](https://toxiccaves.tumblr.com/post/649487693968015360/fma-and-the-broken-angel-genga)<br>
+[FMA1 sheets](https://toxiccaves.tumblr.com/post/645233458881429504/elma-and-jack-crowley-lineart)<br>
 
 **Standing website mention**:<br>
 https://www.hagaren.jp/old/
