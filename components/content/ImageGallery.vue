@@ -13,7 +13,7 @@
             <img v-for="(image, index) in images" :key="index.alt" :alt="image.alt" :src="image.url" :style="{ display: index === currentImage ? 'block' : 'none' }" />
             <div v-if="images[0].alt != undefined">
                 <br />
-                <span v-for="(image, index) in images" :style="{ display: index === currentImage ? 'block' : 'none' }">{{ image.alt }}</span>
+                <span v-for="(image, index) in images" :style="{ display: index === currentImage ? 'block' : 'none' }" v-html="image.alt"></span>
             </div>
         </div>
         <div class="buttons" v-if="navbottom">
@@ -71,6 +71,10 @@ button, input[type="submit"], input[type="reset"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.image span {
+    white-space: pre-line;
 }
 
 .gallery {
