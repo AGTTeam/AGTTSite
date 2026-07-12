@@ -80,7 +80,7 @@ images: [
 ----
 ::
 
-<br><br><br><br><br>
+<br><br>
 
 **LINKS TO THINGS MENTIONED. VISIT AT YOUR OWN RISK.**
 
