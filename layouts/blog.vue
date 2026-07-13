@@ -174,7 +174,8 @@ onMounted(() => {
     .blog {
         max-width: 100% !important;
         width: 90vw !important;
-        margin: 0.5rem 0;
+        margin: 0.5rem 0;	
+		overflow-wrap: break-word;
     }
 }
 </style>
