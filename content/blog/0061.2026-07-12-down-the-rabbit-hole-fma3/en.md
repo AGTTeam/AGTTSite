@@ -31,7 +31,7 @@ head:
     value: 'summary_large_image'
 ---
 
-Word is out. The FMA3 English patch is right around the corner. You no doubt have your imported copy close at hand. You're looking at the little pictures on the foldout manual/poster thingo, drinking in the plugs for the movie and the CD, and tilting the disc to get a good look at the mystery girl with the cake. It looks like everything you could ever hope to experience about this game fits in a 3.6 litre rectangle (or in a couple if the movie and CD appeal to you).
+Word is out. The FMA3 English patch is right around the corner. You no doubt have your imported copy close at hand. You're looking at the little pictures on the foldout manual/poster thingo, drinking in the plugs for the movie and the CD, and tilting the disc to get a good look at the mystery girl with the cake. It looks like everything you could ever hope to experience about this game fits in a 0.36 litre rectangle (or in a couple if the movie and CD appeal to you).
 
 You would be mistaken. Most merchanising attention went to the Conqueror of Shamballa movie released the same week, but there was still money to be had in printing game things on other things. Below is a rough primer on places where Fullmetal Alchemist 3 for Playstation 2 interacts with the broader physical Earth.
 
