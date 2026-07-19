@@ -157,7 +157,9 @@ if (AVAILABLE_PATCHES(patchLocale.value).length === 0) {
 }
 
 // Resolve libraries
-const LIBRARIES = ['/patcher/js/MarcFile.js', '/patcher/js/zip.js/inflate.js', '/patcher/js/crc.js',
+// MarcFile.js is a modified copy of the one in the /patcher submodule
+// (chunked >2GB file loading, onError callback, chunked Blob save)
+const LIBRARIES = ['/patcher-mods/MarcFile.js', '/patcher/js/zip.js/inflate.js', '/patcher/js/crc.js',
 '/patcher/js/formats/vcdiff.js', '/patcher/js/formats/zip.js', '/save-as/save-as.js'];
 for (let i = 0; i < LIBRARIES.length; i++) {
     let script = document.createElement('script');
@@ -180,6 +182,7 @@ const REPO_ORG = 'AGTTeam';
 const CORS_PROXY = 'https://cors.agtteam.net/';
 import ALL_PATCH_DATA from '/assets/patch-data.json';
 import ALL_PLATFORM_DATA from '/assets/platform-data.json';
+import { createSHA256 } from 'hash-wasm';
 
 var localeVal = '';
 var optionVal = '';
@@ -229,20 +232,22 @@ function _parseROM() {
     loadingFile = false;
 }
 
-function getRomSha(romFile) {
-    return window.crypto.subtle.digest('SHA-256', romFile._u8array.buffer)
-        .then(romHash => {
-            let hashBytes = new Uint8Array(romHash);
-            let hexString = '';
-            for (let i = 0; i < hashBytes.length; i++) {
-                hexString += padZeroes(hashBytes[i], 1);
-            }
-            return hexString;
-        })
-        .catch(function () {
-            showNotice('error', 'rom-patcher-sha-calc-failed');
-            return '';
-        });
+// WebCrypto's digest() has no streaming API and rejects multi-GB inputs,
+// so hash the ROM in chunks with hash-wasm instead
+async function getRomSha(romFile) {
+    try {
+        const hasher = await createSHA256();
+        const u8 = romFile._u8array;
+        const CHUNK_SIZE = 32 * 1024 * 1024;
+        for (let i = 0; i < u8.length; i += CHUNK_SIZE) {
+            hasher.update(u8.subarray(i, Math.min(i + CHUNK_SIZE, u8.length)));
+        }
+        return hasher.digest('hex');
+    } catch (error) {
+        console.error(error);
+        showNotice('error', 'rom-patcher-sha-calc-failed');
+        return '';
+    }
 }
 
 // Gets the name of the file needed to be fetched to patch
@@ -298,7 +303,6 @@ function applyPatch(patch, rom, validateChecksums, name) {
 
         // Patch the rom
         try {
-            patch.apply(rom, validateChecksums);
             return preparePatchedRom(rom, patch.apply(rom, validateChecksums), name);
         } catch (error) {
             console.error(error);
@@ -526,7 +530,16 @@ export default {
             try {
                 loadingFile = true;
                 showNotice('info', 'rom-patcher-loading-file');
-                romFile = new MarcFile(event.target, _parseROM);
+                romFile = new MarcFile(event.target, _parseROM, function (error) {
+                    const message = (error && error.message) ? error.message : String(error);
+                    if (/allocation failed/i.test(message)) {
+                        showNotice('error', 'rom-patcher-load-too-large');
+                    } else {
+                        showNotice('error', 'rom-patcher-load-error', { error: message });
+                    }
+                    romFile = null;
+                    loadingFile = false;
+                });
             } catch (error) {
                 showNotice('error', 'rom-patcher-invalid-rom-select', { extension: platformData.extension });
                 romFile = null;
