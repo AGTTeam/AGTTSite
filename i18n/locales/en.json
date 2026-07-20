@@ -84,6 +84,7 @@
     "kiragame-split-line1": "Death Note",
     "kiragame-split-line2": "Kira Game",
     "resonance-title": "Soul Eater: Battle Resonance",
+	"resonance-patch-name": "ResonancePatch-ps2",	
     "holo2-title": "Spice and Wolf: The Wind that Spans the Sea",
     "holo2-split-title": "\"Spice and Wolf\", \"The Wind that Spans the Sea\"",
     "holo2-split-line1": "Spice and Wolf",
@@ -106,7 +107,9 @@
     "successors-split-line1": "Death Note",
     "successors-split-line2": "Successors to L",
     "spacefish-title": "Space Fishermen",
+	"spacefish-patch-name": "SpaceFishPatch",
     "fma-title": "Fullmetal Alchemist 3: The Girl Who Succeeds God",
+	"fma-patch-name": "FMAKamiPatch",
 
     "blogs": "Archives",
     "back-to-blog": "Back to the Blog",

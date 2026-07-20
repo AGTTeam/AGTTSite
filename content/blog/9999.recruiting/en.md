@@ -49,9 +49,3 @@ We're currently looking for a lead translator for the following:
 * **\[PSP\] Nendoroid Generation**
 
 Or, if you are a Japanese translator looking to start a project but need some support, please message us to discuss!
-
-### Current Projects
-If you're interested in proofreading a project which is still being translated, you're welcome to message us and register your interest. We will then contact you once proofreading begins.
-
-* **\[NDS\] Death Note: Successors to L:** We're delighted to have several people on the waiting list for proofreading, so are not currently looking for more help with this project. This may change in the future.
-* **\[PS2\] Fullmetal Alchemist 3: The Girl Who Succeeds God:** We're delighted to have several people on the waiting list for proofreading, so are not currently looking for more help with this project. This may change in the future.

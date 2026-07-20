@@ -8,6 +8,8 @@ locale: en
 
 Please select your dumped _Bakemonogatari Portable_ `.iso` ROM file, choose the options you'd like to use, then click "Patch ROM" to apply the patch.
 
+This process may take a few minutes to complete.
+
 ### Compatibility Notes
 ::iconified-text
 ---

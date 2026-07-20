@@ -1,14 +1,4 @@
 {
-    "fma": {
-        "id": "fma",
-        "title": "fma-title",
-        "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
-        "year": "2005",
-        "tags": ["[platform-ps2]", "[genre-action]", "[status-proofreading]"],
-        "platforms": {
-            "ps2": {}
-        }
-    },
     "successors": {
         "id": "successors",
         "title": "successors-title",
@@ -29,6 +19,45 @@
             "ps2": {}
         }
     },
+    "fma": {
+        "id": "fma",
+        "title": "fma-title",
+        "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
+        "year": "2005",
+        "page": "/fma",		
+        "tags": ["[platform-ps2]", "[genre-action]"],
+        "tool_repo": "FmaKamiTranslation",
+		"patcher_animation": [
+            "/images/fma/loading/loading1.gif",
+            "/images/fma/loading/loading2.gif",
+            "/images/fma/loading/loading3.gif",
+            "/images/fma/loading/loading4.gif",
+            "/images/fma/loading/loading5.gif",
+            "/images/fma/loading/loading6.gif",
+            "/images/fma/loading/loading7.gif",
+			"/images/fma/loading/loading8.gif"
+        ],
+        "platforms": {
+            "ps2": {
+                "data_repo": "FMAKamiData",
+                "patch_prefix": "FmaKamiPatch",
+                "sha_checks": "true",
+                "required_rom_sha": "4159506E278237F12C9493293760F78465B1E12CC1B20E129BF16AFEDF45CC8D",
+                "cheats": "true",
+                "cheat_link": "https://drive.google.com/uc?export=download&id=1K9lzFBTxAC4JH1fdrta9iA355_cBCyU-",
+				"mega_link": "https://mega.nz/file/PUgU0a5a#ixuD2gDluCbx3yckpHkDGfSABuarDzkYBNaJAbieDEk",
+				"available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "July 21, 2026",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },	
     "mushishi": {
         "id": "mushishi",
         "title": "mushishi-title",
