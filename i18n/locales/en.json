@@ -231,11 +231,6 @@
     "rom-patcher-invalid-rom-select": "Invalid ROM selected. Please select a valid <code>{extension}</code> ROM file.",
     "rom-patcher-no-patches-available": "There are no patches available yet! Please come back soon!",
     "rom-patcher-loading-file": "Loading ROM file... Please wait.",
-    "rom-patcher-load-error": "Failed to load the ROM file: {error}",
-    "rom-patcher-load-too-large": "Your browser cannot fit a ROM this large in memory. Please try again in Firefox, which supports larger files.",
-    "rom-patcher-verifying-rom": "Verifying ROM file... {percent}%",
-    "rom-patcher-loading-file-percent": "Loading ROM file... {percent}%",
-    "rom-patcher-saving-rom": "Saving patched ROM... {percent}%",
     "rom-patcher-file-loaded": "ROM file has been loaded. Please click the \"Patch ROM\" button to proceed.",
     
     "click-to-filter": "Click to filter:"

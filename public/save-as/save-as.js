@@ -103,9 +103,7 @@ var saveAs = _global.saveAs || (
     } else {
       // Support blobs
       a.href = URL.createObjectURL(blob)
-      // multi-GB blobs can take minutes to finalize to disk; revoking the URL
-      // too early aborts the download, so scale the delay with blob size
-      setTimeout(function () { URL.revokeObjectURL(a.href) }, Math.max(4E4, blob.size / 1024)) // 40s minimum, ~1s per MB
+      setTimeout(function () { URL.revokeObjectURL(a.href) }, 4E4) // 40s
       setTimeout(function () { click(a) }, 0)
     }
   }
@@ -162,7 +160,7 @@ var saveAs = _global.saveAs || (
       if (popup) popup.location = url
       else location.href = url
       popup = null // reverse-tabnabbing #460
-      setTimeout(function () { URL.revokeObjectURL(url) }, Math.max(4E4, blob.size / 1024)) // 40s minimum, ~1s per MB
+      setTimeout(function () { URL.revokeObjectURL(url) }, 4E4) // 40s
     }
   }
 )

@@ -1,5 +1,5 @@
 <template>
-    <div v-if="notice" id="patcher-notice" v-html="$t(notice, noticeDict)"></div>
+    <div v-if="notice" id="patcher-notice" v-html="$t(notice, noticeDict.value)"></div>
     <img v-if="isPatching && patcherAnimation" :src="patcherAnimation"
         class="patcher-animation" :alt="$t('rom-patcher-patching-rom', { patch: '' })" />
     <div class="patcher-menu">
@@ -157,9 +157,8 @@ if (AVAILABLE_PATCHES(patchLocale.value).length === 0) {
 }
 
 // Resolve libraries
-// Loading, hashing and patching happen in /patcher-mods/worker_patch.js,
-// which pulls in the modified MarcFile.js and the submodule's vcdiff.js
-const LIBRARIES = ['/save-as/save-as.js'];
+const LIBRARIES = ['/patcher/js/MarcFile.js', '/patcher/js/zip.js/inflate.js', '/patcher/js/crc.js',
+'/patcher/js/formats/vcdiff.js', '/patcher/js/formats/zip.js', '/save-as/save-as.js'];
 for (let i = 0; i < LIBRARIES.length; i++) {
     let script = document.createElement('script');
     script.src = LIBRARIES[i];
@@ -167,10 +166,6 @@ for (let i = 0; i < LIBRARIES.length; i++) {
     script.async = false;
     document.head.appendChild(script);
 }
-
-// Warm up the download service worker now: one registered only at download
-// time can be too fresh to reliably intercept the navigation that follows
-getDownloadServiceWorker().catch(() => {});
 
 function getLanguageName(loc, languageCode) {
     const nameGenerator = new Intl.DisplayNames(loc, { type: 'language' });
@@ -189,7 +184,7 @@ import ALL_PLATFORM_DATA from '/assets/platform-data.json';
 var localeVal = '';
 var optionVal = '';
 const notice = ref('rom-patcher-get-started');
-const noticeDict = ref({});
+const noticeDict = {};
 const isPatching = ref(false);
 const patcherAnimation = ref(null);
 let patcherAnimationSrc = null;
@@ -204,45 +199,13 @@ function pickPatcherAnimation() {
 }
 
 // RomPatcher data variables
-let romLoaded, isBadRom, isEncryptedRom, patchData, platformData, platformName, loadingFile, patchWorker;
+let romFile, patchFile, patch, headerSize, romSha, isBadRom, isEncryptedRom, repairPatchFile, repairPatch, patchData, platformData, platformName, loadingFile;
 
 function setup(game, platform) {
     patchData = ALL_PATCH_DATA[game].platforms[platform];
     patcherAnimationSrc = ALL_PATCH_DATA[game].patcher_animation || null;
     platformData = ALL_PLATFORM_DATA[platform];
     platformName = platform;
-    romLoaded = false;
-    if (patchWorker)
-        patchWorker.postMessage({ action: 'reset' });
-}
-
-function getWorker() {
-    if (!patchWorker)
-        patchWorker = new Worker('/patcher-mods/worker_patch.js');
-    return patchWorker;
-}
-
-// Sends one request to the patch worker and resolves with its reply.
-// The UI only ever has one request in flight (loadingFile/isPatching guards).
-function workerRequest(message, transfer, onProgress) {
-    return new Promise((resolve, reject) => {
-        const worker = getWorker();
-        worker.onmessage = (event) => {
-            if (event.data.progress) {
-                if (onProgress)
-                    onProgress(event.data);
-                return;
-            }
-            if (event.data.success)
-                resolve(event.data);
-            else
-                reject(new Error(event.data.error));
-        };
-        worker.onerror = (event) => {
-            reject(new Error(event.message || 'Patch worker failed'));
-        };
-        worker.postMessage(message, transfer || []);
-    });
 }
 
 // Available patches
@@ -253,15 +216,33 @@ function AVAILABLE_PATCHES(locale) {
     return [ patchData.available_patches[locale].reverse()[0] ];
 }
 
-// Fetches a repair/decrypt patch and applies it in the worker, replacing
-// the worker's ROM with the result. Throws '' if a notice was already shown.
-async function applyRepairPatch(fetchPatch, noticeApplying, noticeApplied) {
-    const arrayBuffer = await fetchPatch(); // shows its own fetch notice
-    if (arrayBuffer == null)
-        throw ''; // fetchFile already showed an error notice
-    showNotice('info', noticeApplying);
-    await workerRequest({ action: 'apply', patchBuffer: arrayBuffer, validateChecksums: false, replaceRom: true }, [arrayBuffer]);
-    showNotice('info', noticeApplied);
+// Parse the ROM zip and header data
+function _parseROM() {
+    if (romFile.readString(4).startsWith(ZIP_MAGIC)) {
+        ZIPManager.parseFile(romFile);
+    } else {
+        if ((headerSize = canHaveFakeHeader(romFile))) {
+        } else if ((headerSize = hasHeader(romFile))) {
+        }
+    }
+    showNotice('info', 'rom-patcher-file-loaded');
+    loadingFile = false;
+}
+
+function getRomSha(romFile) {
+    return window.crypto.subtle.digest('SHA-256', romFile._u8array.buffer)
+        .then(romHash => {
+            let hashBytes = new Uint8Array(romHash);
+            let hexString = '';
+            for (let i = 0; i < hashBytes.length; i++) {
+                hexString += padZeroes(hashBytes[i], 1);
+            }
+            return hexString;
+        })
+        .catch(function () {
+            showNotice('error', 'rom-patcher-sha-calc-failed');
+            return '';
+        });
 }
 
 // Gets the name of the file needed to be fetched to patch
@@ -311,104 +292,39 @@ function fetchFile(encodedUri) {
         });
 }
 
-// Returns the active download service worker, registering it if needed.
-// It streams the patched ROM straight to the browser's download manager,
-// avoiding the multi-GB Blob + object URL downloads that fail intermittently.
-async function getDownloadServiceWorker() {
-    if (!('serviceWorker' in navigator))
-        return null;
-    const registration = await navigator.serviceWorker.register('/patcher-mods/sw_download.js', { scope: '/patcher-mods/' });
-    if (registration.active)
-        return registration.active;
-    const worker = registration.installing || registration.waiting;
-    await new Promise((resolve, reject) => {
-        const timer = setTimeout(() => reject(new Error('service worker activation timed out')), 10000);
-        worker.addEventListener('statechange', () => {
-            if (worker.state === 'activated') {
-                clearTimeout(timer);
-                resolve();
-            } else if (worker.state === 'redundant') {
-                clearTimeout(timer);
-                reject(new Error('service worker was discarded'));
-            }
-        });
-    });
-    return registration.active;
-}
+function applyPatch(patch, rom, validateChecksums, name) {
+    if (patch && rom) {
+        showNotice('info', 'rom-patcher-applying-patch');
 
-// Registers the download with the service worker, then navigates a hidden
-// iframe to it so the streamed response lands in the download manager
-let downloadIframe = null;
-async function startStreamDownload(serviceWorker, fileName, fileSize) {
-    const dataChannel = new MessageChannel();
-    const ackChannel = new MessageChannel();
-    const id = Date.now() + '-' + Math.floor(Math.random() * 1e9);
-    await new Promise((resolve, reject) => {
-        const timer = setTimeout(() => reject(new Error('service worker did not acknowledge the download')), 5000);
-        ackChannel.port1.onmessage = () => { clearTimeout(timer); resolve(); };
-        serviceWorker.postMessage({ action: 'prepare-download', id: id, fileName: fileName, fileSize: fileSize }, [dataChannel.port2, ackChannel.port2]);
-    });
-    // the iframe stays attached: the download manager may still re-request
-    // the URL after streaming finishes, so only the previous one is removed
-    if (downloadIframe)
-        downloadIframe.remove();
-    downloadIframe = document.createElement('iframe');
-    downloadIframe.style.display = 'none';
-    downloadIframe.src = '/patcher-mods/download?id=' + id;
-    document.body.appendChild(downloadIframe);
-    return { port: dataChannel.port1 };
-}
-
-// Saves the patched ROM held by the patch worker: big files are streamed
-// through the download service worker when possible, since multi-GB Blob
-// downloads fail intermittently; everything else uses the Blob download
-const STREAM_DOWNLOAD_THRESHOLD = 1024 * 1024 * 1024;
-async function downloadPatchedRom(fileName, fileSize) {
-    let serviceWorker = null;
-    let download = null;
-    try {
-        if (fileSize >= STREAM_DOWNLOAD_THRESHOLD) {
-            serviceWorker = await getDownloadServiceWorker();
-            if (serviceWorker)
-                download = await startStreamDownload(serviceWorker, fileName, fileSize);
-        }
-    } catch (error) {
-        console.error('Stream download unavailable, falling back to Blob download', error);
-    }
-
-    if (download) {
-        // ping the service worker during the download so the browser
-        // doesn't stop it for being idle mid-stream
-        const keepAlive = setInterval(() => serviceWorker.postMessage({ action: 'keepalive' }), 10000);
-        // if the browser never starts pulling data (e.g. the service worker
-        // failed to intercept the download), give up instead of hanging
-        let lastActivity = Date.now();
-        let watchdogTimer = null;
-        const watchdog = new Promise((resolve, reject) => {
-            watchdogTimer = setInterval(() => {
-                if (Date.now() - lastActivity > 30000)
-                    reject(new Error('The download did not start or stalled'));
-            }, 5000);
-        });
+        // Patch the rom
         try {
-            await Promise.race([watchdog, workerRequest({ action: 'save-stream', port: download.port }, [download.port], (progress) => {
-                lastActivity = Date.now();
-                showNotice('info', 'rom-patcher-saving-rom', { percent: Math.min(progress.percent, 100) });
-            })]);
-        } finally {
-            clearInterval(keepAlive);
-            clearInterval(watchdogTimer);
+            patch.apply(rom, validateChecksums);
+            return preparePatchedRom(rom, patch.apply(rom, validateChecksums), name);
+        } catch (error) {
+            console.error(error);
+            showNotice('error', 'rom-patcher-patch-error', { error: error.message });
         }
-        showPatchedNotice();
+
     } else {
-        const result = await workerRequest({ action: 'save-blob' });
-        showPatchedNotice();
-        saveAs(result.blob, fileName);
+        if (patch === undefined) {
+            showNotice('error', 'rom-patcher-patch-failed-retrieve');
+        } else {
+            showNotice('error', 'rom-patcher-choose-rom-first');
+        }
     }
+    return null;
 }
 
-// Show the appropriate success notice once the patched ROM has been saved
-function showPatchedNotice() {
+// Prepare the final patched ROM
+function preparePatchedRom(originalRom, patchedRom, name) {
+    patchedRom.fileName = originalRom.fileName.replace(/\.([^\\.]*?)$/, ' (' + name + ').$1');
+    // Change the mime type to avoid issues on mobile adding a .txt to the file extension
+    patchedRom.fileType = "data:attachment/plain";
+    return patchedRom;
+}
+
+// Prompt the user to save the patched ROM file
+function saveRomFile(patchedRom) {
     if (isBadRom) {
         if (patchData.bad_rom_string != undefined)
             showNotice('info', patchData.bad_rom_string)
@@ -424,6 +340,32 @@ function showPatchedNotice() {
     }
 
     isPatching.value = false;
+    patchedRom.save();
+}
+
+function canHaveFakeHeader(romFile) {
+    if (romFile.fileSize <= 0x600000) {
+        for (let i = 0; i < HEADERS_INFO.length; i++) {
+            if (HEADERS_INFO[i][0].test(romFile.fileName) && (romFile.fileSize % HEADERS_INFO[i][2] === 0)) {
+                return HEADERS_INFO[i][1];
+            }
+        }
+    }
+    return 0;
+}
+
+function hasHeader(romFile) {
+    if (romFile.fileSize <= 0x600200) {
+        if (romFile.fileSize % 1024 === 0)
+            return 0;
+
+        for (let i = 0; i < HEADERS_INFO.length; i++) {
+            if (HEADERS_INFO[i][0].test(romFile.fileName) && (romFile.fileSize - HEADERS_INFO[i][1]) % HEADERS_INFO[i][1] === 0) {
+                return HEADERS_INFO[i][1];
+            }
+        }
+    }
+    return 0;
 }
 
 // Show the patcher status notice at the top of the patcher
@@ -434,7 +376,7 @@ function showNotice(noticeType, noticeMessage, noticeVals = {}) {
     }
     notice.value = noticeMessage;
     noticeDict.value = noticeVals;
-    console.log(noticeMessage + ":" + JSON.stringify(noticeVals));
+    console.log(noticeMessage + ":" + JSON.stringify(noticeDict));
     patcherElement.classList = noticeType + '-notice';
 }
 
@@ -446,12 +388,12 @@ function getSelectedVersion() {
 export default {
     methods: {
         patchRom: async function () {
-            if (loadingFile || isPatching.value)
+            if (loadingFile)
                 return;
             let version = getSelectedVersion();
 
             // if a rom file has not been selected, return with an error
-            if (!romLoaded) {
+            if (!romFile) {
                 showNotice('error', 'rom-patcher-choose-rom-first');
                 return;
             }
@@ -461,44 +403,84 @@ export default {
             isBadRom = false;
             isEncryptedRom = false;
             if (patchData.sha_checks) {
-                let romSha;
-                try {
-                    showNotice('info', 'rom-patcher-verifying-rom', { percent: 0 });
-                    romSha = (await workerRequest({ action: 'sha' }, [], (progress) => {
-                        showNotice('info', 'rom-patcher-verifying-rom', { percent: Math.min(progress.percent, 100) });
-                    })).sha.toUpperCase();
-                } catch (error) {
-                    console.error(error);
-                    showNotice('error', 'rom-patcher-sha-calc-failed');
-                    return;
-                }
+                const SHA_CHECK_PROMISE = getRomSha(romFile).then(sha => {
+                    romSha = sha.toUpperCase();
+                });
+
+                await SHA_CHECK_PROMISE;
 
                 if (romSha !== patchData.required_rom_sha) {
+                    if (romSha === '') {
+                        showNotice('error', 'rom-patcher-sha-calc-failed');
+                        return;
+                    }
                     if (romSha === patchData.bad_rom_sha) {
                         isBadRom = true;
                         if (!patchData.fix_bad_rom) {
                             showNotice('error', 'rom-patcher-bad-rom-error');
                             return;
-                        }
-                        try {
-                            await applyRepairPatch(parseRepairFile, 'rom-patcher-repair', 'rom-patcher-repair-applied');
-                        } catch (error) {
-                            if (error !== '')
-                                showNotice('error', 'rom-patcher-repair-error', { error: (error && error.message) || String(error) });
-                            return;
+                        } else {
+                            const REPAIR_ROM = parseRepairFile().then(repairArrayBuffer => {
+                                if (repairArrayBuffer == null)
+                                    return Promise.reject('');
+                                return new MarcFile(repairArrayBuffer);
+                            }).then(parsedRepairPatch => {
+                                repairPatchFile = parsedRepairPatch;
+                                repairPatchFile.littleEndian = false;
+                                repairPatchFile.fileName = patchData.repair_patch;
+
+                                let header = repairPatchFile.readString(6);
+                                if (header.startsWith(ZIP_MAGIC)) {
+                                    repairPatch = false;
+                                    ZIPManager.parseFile(repairPatchFile);
+                                } else {
+                                    repairPatch = parseVCDIFF(repairPatchFile);
+                                }
+                            }).then(() => {
+                                showNotice('info', 'rom-patcher-repair');
+                                return applyPatch(repairPatch, romFile, false, 'repaired');
+                            }).then(repairedRom => {
+                                romFile = repairedRom;
+                                showNotice('info', 'rom-patcher-repair-applied')
+                            }).catch((error) => {
+                                showNotice('error', 'rom-patcher-repair-error', { error: error });
+                            });
+
+                            await REPAIR_ROM;
                         }
                     } else if (romSha === patchData.encrypted_rom_sha) {
                         isEncryptedRom = true;
                         if (!patchData.fix_encrypted_rom) {
                             showNotice('error', 'rom-patcher-encrypted-rom-error');
                             return;
-                        }
-                        try {
-                            await applyRepairPatch(parseDecryptFile, 'rom-patcher-decrypting', 'rom-patcher-decrypt-applied');
-                        } catch (error) {
-                            if (error !== '')
-                                showNotice('error', 'rom-patcher-decrypt-error', { error: (error && error.message) || String(error) });
-                            return;
+                        } else {
+                            const REPAIR_ROM = parseDecryptFile().then(repairArrayBuffer => {
+                                if (repairArrayBuffer == null)
+                                    return Promise.reject('');
+                                return new MarcFile(repairArrayBuffer);
+                            }).then(parsedRepairPatch => {
+                                repairPatchFile = parsedRepairPatch;
+                                repairPatchFile.littleEndian = false;
+                                repairPatchFile.fileName = patchData.decrypt_patch;
+
+                                let header = repairPatchFile.readString(6);
+                                if (header.startsWith(ZIP_MAGIC)) {
+                                    repairPatch = false;
+                                    ZIPManager.parseFile(repairPatchFile);
+                                } else {
+                                    repairPatch = parseVCDIFF(repairPatchFile);
+                                }
+                            }).then(() => {
+                                showNotice('info', 'rom-patcher-decrypting');
+                                return applyPatch(repairPatch, romFile, false, 'repaired');
+                            }).then(repairedRom => {
+                                romFile = repairedRom;
+                                showNotice('info', 'rom-patcher-decrypt-applied')
+                            }).catch((error) => {
+                                showNotice('error', 'rom-patcher-decrypt-error', { error: error });
+                            });
+
+                            await REPAIR_ROM;
                         }
                     } else {
                         showNotice('error', 'rom-patcher-invalid-rom-error');
@@ -506,62 +488,50 @@ export default {
                     }
                 }
             }
+            parsePatchFile(getFileName(version), version).then(arrayBuffer => {
+                if (arrayBuffer == null)
+                    return Promise.reject('');
+                return new MarcFile(arrayBuffer);
+            }).then(parsedFile => {
+                patchFile = parsedFile;
+                patchFile.littleEndian = false;
+                patchFile.fileName = getFileName(version);
 
-            const fileName = getFileName(version);
-            const arrayBuffer = await parsePatchFile(fileName, version); // shows its own fetch notice
-            if (arrayBuffer == null) {
-                showNotice('error', 'rom-patcher-patch-failed-retrieve');
-                return;
-            }
-
-            showNotice('info', 'rom-patcher-patching-rom', { patch: fileName });
-            let patchName = localeVal + optionVal + '-v' + version;
-            // This probably shouldn't be hardcoded
-            if (platformName == 'ndsjp') {
-                patchName = 'jp-hack-v' + version;
-            }
-            try {
-                const result = await workerRequest({ action: 'apply', patchBuffer: arrayBuffer, validateChecksums: false, patchName: patchName }, [arrayBuffer]);
-                await downloadPatchedRom(result.fileName, result.fileSize);
-            } catch (error) {
-                console.error(error);
-                showNotice('error', 'rom-patcher-patch-error', { error: (error && error.message) || String(error) });
-            }
+                let header = patchFile.readString(6);
+                if (header.startsWith(ZIP_MAGIC)) {
+                    patch = false;
+                    ZIPManager.parseFile(patchFile);
+                } else {
+                    patch = parseVCDIFF(patchFile);
+                }
+            }).then(() => {
+                showNotice('info', 'rom-patcher-patching-rom', { patch: getFileName(version) })
+                let patchName = localeVal + optionVal + '-v' + version;
+                // This probably shouldn't be hardcoded
+                if (platformName == 'ndsjp') {
+                    patchName = 'jp-hack-v' + version;
+                }
+                return applyPatch(patch, romFile, false, patchName);
+            }).then(patchFile => {
+                saveRomFile(patchFile);
+            }).catch((error) => {
+                if (typeof error === 'string' && error.startsWith('err-'))
+                    showNotice('error', error.substring(4));
+                else if (error != '')
+                    showNotice('error', 'rom-patcher-generic-error', { error: error });
+            });
+            return;
         },
         selectFile: async function (event) {
-            const file = event.target.files && event.target.files[0];
-            if (!file)
-                return;
-            loadingFile = true;
-            romLoaded = false;
-            showNotice('info', 'rom-patcher-loading-file');
             try {
-                // read the file here and stream transferred chunks to the worker:
-                // reading the File inside the worker stalls silently on Chrome
-                const CHUNK_SIZE = 128 * 1024 * 1024;
-                await workerRequest({ action: 'load-begin', fileName: file.name, fileSize: file.size });
-                for (let offset = 0; offset < file.size; offset += CHUNK_SIZE) {
-                    const chunk = await file.slice(offset, Math.min(offset + CHUNK_SIZE, file.size)).arrayBuffer();
-                    await workerRequest({ action: 'load-chunk', offset: offset, chunk: chunk }, [chunk]);
-                    showNotice('info', 'rom-patcher-loading-file-percent', { percent: Math.min(Math.floor((offset + CHUNK_SIZE) / file.size * 100), 100) });
-                }
-                const result = await workerRequest({ action: 'load-end' });
-                if (result.isZip) {
-                    showNotice('error', 'rom-patcher-invalid-rom-select', { extension: platformData.extension });
-                    return;
-                }
-                romLoaded = true;
-                showNotice('info', 'rom-patcher-file-loaded');
+                loadingFile = true;
+                showNotice('info', 'rom-patcher-loading-file');
+                romFile = new MarcFile(event.target, _parseROM);
             } catch (error) {
-                console.error(error);
-                const message = (error && error.message) ? error.message : String(error);
-                if (/allocation failed|out of memory/i.test(message)) {
-                    showNotice('error', 'rom-patcher-load-too-large');
-                } else {
-                    showNotice('error', 'rom-patcher-load-error', { error: message });
-                }
-            } finally {
+                showNotice('error', 'rom-patcher-invalid-rom-select', { extension: platformData.extension });
+                romFile = null;
                 loadingFile = false;
+                return;
             }
         }
     }
