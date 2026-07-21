@@ -17,8 +17,19 @@ const props = defineProps({
         type: Boolean,
         required: false,
         default: false
+    },
+    patcherEnabled: {
+        type: Boolean,
+        required: false,
+        default: false
+    },
+    patcherDisabled: {
+        type: Boolean,
+        required: false,
+        default: false
     }
 })
+const patcherIsDisabled = !!PATCH_DATA.platforms[route.params.platform]?.patcher_disabled;
 </script>
 
 <template>
@@ -29,6 +40,12 @@ const props = defineProps({
         <slot />
     </div>
     <div v-if="cheats && PATCH_DATA.platforms[route.params.platform].cheats != undefined">
+        <slot />
+    </div>
+    <div v-if="patcherEnabled && !patcherIsDisabled">
+        <slot />
+    </div>
+    <div v-if="patcherDisabled && patcherIsDisabled">
         <slot />
     </div>
 </template>
