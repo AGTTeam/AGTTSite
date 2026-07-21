@@ -8,6 +8,7 @@
 - **Proofreading**: KahnerC, SONICMAN69
 - **Graphics**: Phantom
 - **Font Identification**: Syko
+- **Special Thanks**: NarutoClassics
 ::
 
 ## Changes to the game
