@@ -42,6 +42,7 @@
                 "data_repo": "FMAKamiData",
                 "patch_prefix": "FmaKamiPatch",
                 "sha_checks": "true",
+                "patcher_disabled": "true",
                 "required_rom_sha": "4159506E278237F12C9493293760F78465B1E12CC1B20E129BF16AFEDF45CC8D",
                 "cheats": "true",
                 "cheat_link": "https://drive.google.com/uc?export=download&id=1K9lzFBTxAC4JH1fdrta9iA355_cBCyU-",

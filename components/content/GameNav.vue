@@ -23,7 +23,7 @@ const writePlatformName = platformNum > 1 && route.params.game != 'naruto';
                     <ButtonLink v-if="platformGuides.includes(platform)" :link="localePath('/' + route.params.game + '/guide/' + platform)" fullwidth type="top-piece" color="red" icon="fa6-solid:book">
                         {{ $t('setup-guide') }} <span v-if="writePlatformName">({{ $t('platform-' + platform) }})</span>
                     </ButtonLink>
-                    <ButtonLink v-if="data.available_patches != undefined" :link="localePath('/' + route.params.game + '/patch/' + platform)" fullwidth :type="platformGuides.includes(platform) ? 'mid-piece' : 'top-piece'" color="blue" icon="fa6-solid:file-import">
+                    <ButtonLink v-if="data.available_patches != undefined && !data.patcher_disabled" :link="localePath('/' + route.params.game + '/patch/' + platform)" fullwidth :type="platformGuides.includes(platform) ? 'mid-piece' : 'top-piece'" color="blue" icon="fa6-solid:file-import">
                         <span v-if="platform == 'ndsjp'">{{ $t(route.params.game + '-hack-rom-patcher') }}</span>
                         <span v-else>{{ $t('rom-patcher') }} <span v-if="writePlatformName">({{ $t('platform-' + platform) }})</span></span>
                     </ButtonLink>

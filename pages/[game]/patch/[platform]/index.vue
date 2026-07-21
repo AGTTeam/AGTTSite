@@ -5,7 +5,7 @@ definePageMeta({
     layout: "guide"
 })
 import ALL_PATCH_DATA from '/assets/patch-data.json';
-if (!(route.params.game in ALL_PATCH_DATA) || ALL_PATCH_DATA[route.params.game].page == undefined || ALL_PATCH_DATA[route.params.game].platforms[route.params.platform] == undefined) {
+if (!(route.params.game in ALL_PATCH_DATA) || ALL_PATCH_DATA[route.params.game].page == undefined || ALL_PATCH_DATA[route.params.game].platforms[route.params.platform] == undefined || ALL_PATCH_DATA[route.params.game].platforms[route.params.platform].patcher_disabled) {
     throw createError({
         statusCode: 404,
         statusMessage: 'Page Not Found'
