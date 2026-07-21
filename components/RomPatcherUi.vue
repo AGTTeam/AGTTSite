@@ -241,6 +241,8 @@ async function getRomSha(romFile) {
         const CHUNK_SIZE = 32 * 1024 * 1024;
         for (let i = 0; i < u8.length; i += CHUNK_SIZE) {
             hasher.update(u8.subarray(i, Math.min(i + CHUNK_SIZE, u8.length)));
+            // yield between chunks so the browser can paint and the tab stays responsive
+            await new Promise(resolve => setTimeout(resolve));
         }
         return hasher.digest('hex');
     } catch (error) {
@@ -297,9 +299,12 @@ function fetchFile(encodedUri) {
         });
 }
 
-function applyPatch(patch, rom, validateChecksums, name) {
+async function applyPatch(patch, rom, validateChecksums, name) {
     if (patch && rom) {
         showNotice('info', 'rom-patcher-applying-patch');
+        // give the browser a frame to paint the notice before the
+        // synchronous patch application blocks the main thread
+        await new Promise(resolve => setTimeout(resolve, 50));
 
         // Patch the rom
         try {

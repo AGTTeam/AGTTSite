@@ -1,5 +1,15 @@
 /* MODDED VERSION OF MarcFile.js v20181020 - Marc Robledo 2014-2018 - http://www.marcrobledo.com/license */
 
+function _allocLargeBuffer(byteLength){
+	try{
+		return new ArrayBuffer(byteLength);
+	}catch(e){
+		/* Chromium caps ArrayBuffer allocations just under 2GiB; a
+		   WebAssembly memory can reach 4GiB and is viewable from JS */
+		return new WebAssembly.Memory({initial: Math.ceil(byteLength/65536)}).buffer;
+	}
+}
+
 function MarcFile(source, onLoad, onError){
 	if(typeof source==='object' && source.files) /* get first file only if source is input with multiple files */
 		source=source.files[0];
@@ -23,7 +33,7 @@ function MarcFile(source, onLoad, onError){
 
 		var buffer;
 		try{
-			buffer=new ArrayBuffer(source.size);
+			buffer=_allocLargeBuffer(source.size);
 		}catch(error){
 			fail(error);
 			return;
@@ -32,8 +42,10 @@ function MarcFile(source, onLoad, onError){
 		var offset=0;
 		var readNextChunk=function(){
 			if(offset>=source.size){
-				marcFile._u8array=new Uint8Array(buffer);
-				marcFile._dataView=new DataView(buffer);
+				/* explicit length: a wasm-backed buffer is padded to a
+				   64KiB page multiple and the padding must stay hidden */
+				marcFile._u8array=new Uint8Array(buffer, 0, source.size);
+				marcFile._dataView=new DataView(buffer, 0, source.size);
 				if(onLoad)
 					onLoad.call();
 				return;
@@ -84,9 +96,9 @@ function MarcFile(source, onLoad, onError){
 		this.fileType='application/octet-stream';
 		this.fileSize=source;
 
-		var ab=new ArrayBuffer(source);
-		this._u8array=new Uint8Array(ab);
-		this._dataView=new DataView(ab);
+		var ab=_allocLargeBuffer(source);
+		this._u8array=new Uint8Array(ab, 0, source);
+		this._dataView=new DataView(ab, 0, source);
 
 		if(onLoad)
 			onLoad.call();
