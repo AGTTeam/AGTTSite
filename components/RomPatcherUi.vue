@@ -168,6 +168,10 @@ for (let i = 0; i < LIBRARIES.length; i++) {
     document.head.appendChild(script);
 }
 
+// Warm up the download service worker now: one registered only at download
+// time can be too fresh to reliably intercept the navigation that follows
+getDownloadServiceWorker().catch(() => {});
+
 function getLanguageName(loc, languageCode) {
     const nameGenerator = new Intl.DisplayNames(loc, { type: 'language' });
     const displayName = nameGenerator.of(languageCode);
@@ -307,8 +311,104 @@ function fetchFile(encodedUri) {
         });
 }
 
-// Prompt the user to save the patched ROM file
-function saveRomFile(blob, fileName) {
+// Returns the active download service worker, registering it if needed.
+// It streams the patched ROM straight to the browser's download manager,
+// avoiding the multi-GB Blob + object URL downloads that fail intermittently.
+async function getDownloadServiceWorker() {
+    if (!('serviceWorker' in navigator))
+        return null;
+    const registration = await navigator.serviceWorker.register('/patcher-mods/sw_download.js', { scope: '/patcher-mods/' });
+    if (registration.active)
+        return registration.active;
+    const worker = registration.installing || registration.waiting;
+    await new Promise((resolve, reject) => {
+        const timer = setTimeout(() => reject(new Error('service worker activation timed out')), 10000);
+        worker.addEventListener('statechange', () => {
+            if (worker.state === 'activated') {
+                clearTimeout(timer);
+                resolve();
+            } else if (worker.state === 'redundant') {
+                clearTimeout(timer);
+                reject(new Error('service worker was discarded'));
+            }
+        });
+    });
+    return registration.active;
+}
+
+// Registers the download with the service worker, then navigates a hidden
+// iframe to it so the streamed response lands in the download manager
+let downloadIframe = null;
+async function startStreamDownload(serviceWorker, fileName, fileSize) {
+    const dataChannel = new MessageChannel();
+    const ackChannel = new MessageChannel();
+    const id = Date.now() + '-' + Math.floor(Math.random() * 1e9);
+    await new Promise((resolve, reject) => {
+        const timer = setTimeout(() => reject(new Error('service worker did not acknowledge the download')), 5000);
+        ackChannel.port1.onmessage = () => { clearTimeout(timer); resolve(); };
+        serviceWorker.postMessage({ action: 'prepare-download', id: id, fileName: fileName, fileSize: fileSize }, [dataChannel.port2, ackChannel.port2]);
+    });
+    // the iframe stays attached: the download manager may still re-request
+    // the URL after streaming finishes, so only the previous one is removed
+    if (downloadIframe)
+        downloadIframe.remove();
+    downloadIframe = document.createElement('iframe');
+    downloadIframe.style.display = 'none';
+    downloadIframe.src = '/patcher-mods/download?id=' + id;
+    document.body.appendChild(downloadIframe);
+    return { port: dataChannel.port1 };
+}
+
+// Saves the patched ROM held by the patch worker: big files are streamed
+// through the download service worker when possible, since multi-GB Blob
+// downloads fail intermittently; everything else uses the Blob download
+const STREAM_DOWNLOAD_THRESHOLD = 1024 * 1024 * 1024;
+async function downloadPatchedRom(fileName, fileSize) {
+    let serviceWorker = null;
+    let download = null;
+    try {
+        if (fileSize >= STREAM_DOWNLOAD_THRESHOLD) {
+            serviceWorker = await getDownloadServiceWorker();
+            if (serviceWorker)
+                download = await startStreamDownload(serviceWorker, fileName, fileSize);
+        }
+    } catch (error) {
+        console.error('Stream download unavailable, falling back to Blob download', error);
+    }
+
+    if (download) {
+        // ping the service worker during the download so the browser
+        // doesn't stop it for being idle mid-stream
+        const keepAlive = setInterval(() => serviceWorker.postMessage({ action: 'keepalive' }), 10000);
+        // if the browser never starts pulling data (e.g. the service worker
+        // failed to intercept the download), give up instead of hanging
+        let lastActivity = Date.now();
+        let watchdogTimer = null;
+        const watchdog = new Promise((resolve, reject) => {
+            watchdogTimer = setInterval(() => {
+                if (Date.now() - lastActivity > 30000)
+                    reject(new Error('The download did not start or stalled'));
+            }, 5000);
+        });
+        try {
+            await Promise.race([watchdog, workerRequest({ action: 'save-stream', port: download.port }, [download.port], (progress) => {
+                lastActivity = Date.now();
+                showNotice('info', 'rom-patcher-saving-rom', { percent: Math.min(progress.percent, 100) });
+            })]);
+        } finally {
+            clearInterval(keepAlive);
+            clearInterval(watchdogTimer);
+        }
+        showPatchedNotice();
+    } else {
+        const result = await workerRequest({ action: 'save-blob' });
+        showPatchedNotice();
+        saveAs(result.blob, fileName);
+    }
+}
+
+// Show the appropriate success notice once the patched ROM has been saved
+function showPatchedNotice() {
     if (isBadRom) {
         if (patchData.bad_rom_string != undefined)
             showNotice('info', patchData.bad_rom_string)
@@ -324,7 +424,6 @@ function saveRomFile(blob, fileName) {
     }
 
     isPatching.value = false;
-    saveAs(blob, fileName);
 }
 
 // Show the patcher status notice at the top of the patcher
@@ -347,7 +446,7 @@ function getSelectedVersion() {
 export default {
     methods: {
         patchRom: async function () {
-            if (loadingFile)
+            if (loadingFile || isPatching.value)
                 return;
             let version = getSelectedVersion();
 
@@ -423,7 +522,7 @@ export default {
             }
             try {
                 const result = await workerRequest({ action: 'apply', patchBuffer: arrayBuffer, validateChecksums: false, patchName: patchName }, [arrayBuffer]);
-                saveRomFile(result.blob, result.fileName);
+                await downloadPatchedRom(result.fileName, result.fileSize);
             } catch (error) {
                 console.error(error);
                 showNotice('error', 'rom-patcher-patch-error', { error: (error && error.message) || String(error) });
