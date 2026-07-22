@@ -100,7 +100,7 @@ Be warned that because of the PS2's extremely slow USB read speeds, you will exp
 
 ## Play on Emulator
 
-The recommended emulator for PS2 games is [PCSX2](https://pcsx2.net/), which is available for Windows, macOS, and Linux. A fork of PCSX2, [AetherSX2](https://aethersx2.gitlab.io/), is also available for Android and iOS, however at the time of writing, most mobile devices are not powerful enough to support playing PS2 games smoothly, so we do not recommend it.
+The recommended emulator for PS2 games is [PCSX2](https://pcsx2.net/), which is available for Windows, macOS, and Linux. A fork of PCSX2, [ARMSX2](https://armsx2.net/), is also available for Android and iOS, however at the time of writing, many mobile devices are not powerful enough to support playing PS2 games smoothly, so your mileage may vary.
 
 ### Dumping BIOS
 
