@@ -23,5 +23,10 @@
         "name": "WonderSwan",
         "full_name": "WonderSwan",
         "extension": ".ws"
-    }
+    },
+    "gbc": {
+        "name": "GBC",
+        "full_name": "Game Boy Color",
+        "extension": ".gbc"
+    }	
 }

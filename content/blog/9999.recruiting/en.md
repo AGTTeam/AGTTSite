@@ -44,6 +44,12 @@ All of our projects have different demands, but these are the roles we most comm
 
 **Proofreaders:** Play the game once the translation is complete, and look out for any bugs, typos, or untranslated text. You should be prepared to commit the time to play the game all the way through at least once, and possibly multiple times. Japanese language skills are not required.
 
+### Current Projects
+
+* **\[NDS\] Kimi no Yusha:** We're currently looking for a graphics editor to help remove Japanese text from various images to prepare them for translation. 
+
+If you're interested in proofreading a project which is still being translated, you're welcome to message us and register your interest. We will then contact you once proofreading begins.
+
 ### Future Translations
 We're currently looking for a lead translator for the following:
 * **\[PSP\] Nendoroid Generation**

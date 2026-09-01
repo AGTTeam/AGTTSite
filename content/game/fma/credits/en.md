@@ -3,7 +3,7 @@
 
 ## Anime Game Translations Team
 ::two-column-list
-- **Hacking**: Illidan
+- **Hacking**: Illidan, renkin-jit
 - **Translation**: SONICMAN69, Iredc
 - **Proofreading**: KahnerC, SONICMAN69
 - **Graphics**: Phantom

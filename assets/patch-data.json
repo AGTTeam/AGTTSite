@@ -4,11 +4,21 @@
         "title": "successors-title",
         "original": "Death Note: L wo Tsugumono",
         "year": "2007",
-        "tags": ["[platform-nds]", "[genre-strategy]", "[status-proofreading]"],
+        "tags": ["[platform-nds]", "[genre-strategy]", "[status-coming-soon]"],
         "platforms": {
             "nds": {}
         }
     },
+    "hxhkindan": {
+        "id": "hxhkindan",
+        "title": "hxhkindan-title",
+        "original": "Hunter x Hunter: Kindan no Hihou",
+        "year": "2001",
+        "tags": ["[platform-gbc]", "[genre-action]", "[status-proofreading]"],
+        "platforms": {
+            "gbc": {}
+        }
+    },		
     "spacefish": {
         "id": "spacefish",
         "title": "spacefish-title",
@@ -19,6 +29,16 @@
             "ps2": {}
         }
     },
+    "kimi": {
+        "id": "kimi",
+        "title": "kimi-title",
+        "original": "Kimi no Yusha",
+        "year": "2008",
+        "tags": ["[platform-nds]", "[genre-rpg]", "[status-translation]"],
+        "platforms": {
+            "nds": {}
+        }
+    },		
     "fma": {
         "id": "fma",
         "title": "fma-title",
@@ -46,12 +66,12 @@
                 "required_rom_sha": "4159506E278237F12C9493293760F78465B1E12CC1B20E129BF16AFEDF45CC8D",
                 "cheats": "true",
                 "cheat_link": "https://drive.google.com/uc?export=download&id=1K9lzFBTxAC4JH1fdrta9iA355_cBCyU-",
-				"mega_link": "https://mega.nz/file/PUgU0a5a#ixuD2gDluCbx3yckpHkDGfSABuarDzkYBNaJAbieDEk",
+				"mega_link": "https://mega.nz/file/2VJizRqb#OYCd0rxfsCizoinJ9kTFP1qqeQD8kjGT_ZGIECzjAR0",
 				"available_patches": {
                     "en": [
                         {
-                            "version": "1.0",
-                            "date": "July 21, 2026",
+                            "version": "1.1",
+                            "date": "September 01, 2026",
                             "lang": "en"
                         }
                     ]
