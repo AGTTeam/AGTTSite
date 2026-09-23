@@ -45,7 +45,7 @@ It’s only your life on the line…
 *   [Gameplay Demo](https://youtu.be/L-JQmL0Bi1s)
 
 **Love Death Note?**  
-Why not also check out our English patch for the first DS game, the [Kira Game](/kiragame)? Or, if you’re a Japanese translator, please consider [getting in touch with us](https://discord.gg/UUF7Zbm) to help bring a patch for the second game, Successors to L, to reality!
+Why not also check out our translation patches for the first DS game, the [Kira Game](/kiragame), and the second, [Successors to L](/successors)?
 
 **Have any questions or issues?**  
 Please read the [Patch Guide](/prologue/guide/nds) before asking!

@@ -43,7 +43,7 @@ Calculate your way through 11 story chapters, and be sure to stock up on those a
 *   [Gameplay Demo](https://youtu.be/7sQBvrVN7Pk)
 
 **Love Death Note?**  
-Why not also check out our English patch for the third DS game, [Spiraling Trap](/prologue)? Or, if you’re a Japanese translator, please consider [getting in touch with us](https://discord.gg/UUF7Zbm) to help bring a patch for the second game, Successors to L, to reality!
+Why not also check out our translation patches for the second DS game, [Successors to L](/successors), and the third, [Spiraling Trap](/prologue)?
 
 **Have any questions or issues?**  
 Please read the [Patch Guide](/kiragame/guide/nds) before asking!

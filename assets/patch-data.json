@@ -1,14 +1,4 @@
 {
-    "successors": {
-        "id": "successors",
-        "title": "successors-title",
-        "original": "Death Note: L wo Tsugumono",
-        "year": "2007",
-        "tags": ["[platform-nds]", "[genre-strategy]", "[status-coming-soon]"],
-        "platforms": {
-            "nds": {}
-        }
-    },
     "hxhkindan": {
         "id": "hxhkindan",
         "title": "hxhkindan-title",
@@ -38,7 +28,58 @@
         "platforms": {
             "nds": {}
         }
-    },		
+    },	
+    "successors": {
+        "id": "successors",
+        "title": "successors-title",
+        "original": "Death Note: L wo Tsugumono",
+        "year": "2007",
+        "page": "/successors",		
+        "tags": ["[platform-nds]", "[genre-strategy]"],
+        "tool_repo": "LSuccessorsTranslation",	
+        "platforms": {
+            "nds": {
+                "data_repo": "LSuccessorsData",
+                "patch_prefix": "LSuccessorsPatch",
+                "sha_checks": "true",
+                "required_rom_sha": "5DEFD88EF777CD02E0C3DDF924491B902CE0CE61B28AFD247E8FF27B808A9807",
+                "encrypted_rom_sha": "30FFB235A6B0A0D001C0F6340642E1A0CD3E391FCDFA87C27C631ADE51FFEE38",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "successors-enc-to-dec.xdelta",
+				"cheats": "true",				
+                "mega_links": [
+                    {
+                        "name": "Sprite Recolors",
+                        "link": "https://mega.nz/file/aBYgTbpC#A1n-lkUBzy-Z55PRp7oGBWt5h8knxF3vv6z0p3bI1DU",
+                        "color": "sl-blue"
+                    },
+                    {
+                        "name": "Original Sprite Colors",
+                        "link": "https://mega.nz/file/jJIzAAaD#3DLbrLrZ88oURWNtMuFT1W8-3--8ph51_zL3OpBtCbY",
+                        "color": "sl-green"
+                    }
+                ],
+                "options": [
+                    {
+                        "name": "successors-sprites",
+                        "option1": "rec",
+                        "data1": "sprite-recolors",
+                        "option2": "org",
+                        "data2": "no-recolors"
+                    }
+                ],
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Sep 23, 2026",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+		}	
+	},	
     "fma": {
         "id": "fma",
         "title": "fma-title",
@@ -72,109 +113,6 @@
                         {
                             "version": "1.1",
                             "date": "September 01, 2026",
-                            "lang": "en"
-                        }
-                    ]
-                }
-            }
-        }
-    },	
-    "mushishi": {
-        "id": "mushishi",
-        "title": "mushishi-title",
-        "original": "Mushishi: Amefuru Sato",
-        "year": "2008",
-        "page": "/mushishi",
-        "tags": ["[platform-nds]", "[genre-sim]"],
-        "tool_repo": "MushishiTranslation",
-        "walkthrough_link": "https://gamefaqs.gamespot.com/ds/943553-mushishi-amefuru-sato/faqs/82054",		
-        "platforms": {
-            "nds": {
-                "data_repo": "MushishiData",
-                "patch_prefix": "MushishiPatch",
-                "sha_checks": "true",
-                "required_rom_sha": "9E68A7C13D0DBD48D44B95E98DE195E9B1933550C45420C91A194D0B72718A98",
-                "encrypted_rom_sha": "B22AEBA31D80EC0B4A139A63738CB07E2C4A5E99559FB24AC83138A364DCF828",
-                "fix_encrypted_rom": "true",
-                "decrypt_patch": "mushi-enc-to-dec.xdelta",					
-                "mega_link": "https://mega.nz/file/eUwVBCSK#L-uj78xApnJSHbM7atccbXUqe2LY1sLaqt2tuFBuhSg",
-                "available_patches": {
-                    "en": [
-                        {
-                            "version": "1.0",
-                            "date": "Aug 06, 2025",
-                            "lang": "en"
-                        }
-                    ]
-                }
-            }
-        }
-    },
-    "naruto": {
-        "id": "naruto",
-        "title": "naruto-title",
-        "original": "Naruto RPG 2: Chidori vs. Rasengan",
-        "year": "2005",
-        "page": "/naruto",
-        "tags": ["[platform-nds]", "[genre-rpg]"],
-        "tool_repo": "NarutoRPG2Translation",
-        "platforms": {
-            "nds": {
-                "data_repo": "NarutoRPG2Data",
-                "patch_prefix": "NarutoRPG2Patch",
-                "sha_checks": "true",
-                "required_rom_sha": "2AC129A624B282294A1BAF07EB27C46DF6BFC0BFE3DD400CF9D610A840F3A9B3",
-                "bad_rom_sha": "A83A6A1C8AC867072E09B4ED7D9695A706D9DF6D5FA4F2719E80200037847782",
-                "fix_bad_rom": "true",
-                "repair_patch": "naruto-rev1-to-rev0.xdelta",
-                "bad_rom_string": "rom-patcher-naruto-rev1-warn",
-                "cheats": "true",
-                "mega_links": [
-                    {
-                        "name": "English Dubbed Audio",
-                        "link": "https://mega.nz/file/vMhxnYRJ#jhL69qbHti7_NFse8zaLGEQsNYgvb2S2zWx6MdlvLSU",
-                        "color": "sl-blue"
-                    },
-                    {
-                        "name": "Original Japanese Audio",
-                        "link": "https://mega.nz/file/nNBRxIoS#i4p0nzTc_5pXeAeY5tgw9NJOpYer-T3KDzCQgKK10-Q",
-                        "color": "sl-green"
-                    }
-                ],
-                "options": [
-                    {
-                        "name": "naruto-audio",
-                        "option1": "en",
-                        "data1": "dubaudio",
-                        "option2": "jp",
-                        "data2": "jpaudio"
-                    }
-                ],
-                "available_patches": {
-                    "en": [
-                        {
-                            "version": "1.0",
-                            "date": "Sep 02, 2024",
-                            "lang": "en"
-                        }
-                    ]
-                }
-            },
-            "ndsjp": {
-                "data_repo": "NarutoRPG2Data",
-                "patch_prefix": "NarutoRPG2Hack",
-                "sha_checks": "true",
-                "required_rom_sha": "2AC129A624B282294A1BAF07EB27C46DF6BFC0BFE3DD400CF9D610A840F3A9B3",
-                "bad_rom_sha": "A83A6A1C8AC867072E09B4ED7D9695A706D9DF6D5FA4F2719E80200037847782",
-                "fix_bad_rom": "true",
-                "repair_patch": "naruto-rev1-to-rev0.xdelta",
-                "bad_rom_string": "rom-patcher-naruto-rev1-warn",
-                "mega_link": "https://mega.nz/file/yQxUSTxL#OsGPAD34S304SFZnhOi7GoxQkAVLfdZW4UTZunXM4uc",
-                "available_patches": {
-                    "en": [
-                        {
-                            "version": "1.0",
-                            "date": "Sep 02, 2024",
                             "lang": "en"
                         }
                     ]
@@ -244,7 +182,7 @@
                 }
             }
         }
-    },
+    },	
     "holo": {
         "id": "holo",
         "title": "holo-title",
@@ -330,6 +268,78 @@
                         {
                             "version": "1.0",
                             "date": "May 31, 2022",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "naruto": {
+        "id": "naruto",
+        "title": "naruto-title",
+        "original": "Naruto RPG 2: Chidori vs. Rasengan",
+        "year": "2005",
+        "page": "/naruto",
+        "tags": ["[platform-nds]", "[genre-rpg]"],
+        "tool_repo": "NarutoRPG2Translation",
+        "platforms": {
+            "nds": {
+                "data_repo": "NarutoRPG2Data",
+                "patch_prefix": "NarutoRPG2Patch",
+                "sha_checks": "true",
+                "required_rom_sha": "2AC129A624B282294A1BAF07EB27C46DF6BFC0BFE3DD400CF9D610A840F3A9B3",
+                "bad_rom_sha": "A83A6A1C8AC867072E09B4ED7D9695A706D9DF6D5FA4F2719E80200037847782",
+                "fix_bad_rom": "true",
+                "repair_patch": "naruto-rev1-to-rev0.xdelta",
+                "bad_rom_string": "rom-patcher-naruto-rev1-warn",
+                "cheats": "true",
+                "mega_links": [
+                    {
+                        "name": "English Dubbed Audio",
+                        "link": "https://mega.nz/file/vMhxnYRJ#jhL69qbHti7_NFse8zaLGEQsNYgvb2S2zWx6MdlvLSU",
+                        "color": "sl-blue"
+                    },
+                    {
+                        "name": "Original Japanese Audio",
+                        "link": "https://mega.nz/file/nNBRxIoS#i4p0nzTc_5pXeAeY5tgw9NJOpYer-T3KDzCQgKK10-Q",
+                        "color": "sl-green"
+                    }
+                ],
+                "options": [
+                    {
+                        "name": "naruto-audio",
+                        "option1": "en",
+                        "data1": "dubaudio",
+                        "option2": "jp",
+                        "data2": "jpaudio"
+                    }
+                ],
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Sep 02, 2024",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            },
+            "ndsjp": {
+                "data_repo": "NarutoRPG2Data",
+                "patch_prefix": "NarutoRPG2Hack",
+                "sha_checks": "true",
+                "required_rom_sha": "2AC129A624B282294A1BAF07EB27C46DF6BFC0BFE3DD400CF9D610A840F3A9B3",
+                "bad_rom_sha": "A83A6A1C8AC867072E09B4ED7D9695A706D9DF6D5FA4F2719E80200037847782",
+                "fix_bad_rom": "true",
+                "repair_patch": "naruto-rev1-to-rev0.xdelta",
+                "bad_rom_string": "rom-patcher-naruto-rev1-warn",
+                "mega_link": "https://mega.nz/file/yQxUSTxL#OsGPAD34S304SFZnhOi7GoxQkAVLfdZW4UTZunXM4uc",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Sep 02, 2024",
                             "lang": "en"
                         }
                     ]
@@ -476,6 +486,37 @@
             }
         }
     },
+    "mushishi": {
+        "id": "mushishi",
+        "title": "mushishi-title",
+        "original": "Mushishi: Amefuru Sato",
+        "year": "2008",
+        "page": "/mushishi",
+        "tags": ["[platform-nds]", "[genre-sim]"],
+        "tool_repo": "MushishiTranslation",
+        "walkthrough_link": "https://gamefaqs.gamespot.com/ds/943553-mushishi-amefuru-sato/faqs/82054",		
+        "platforms": {
+            "nds": {
+                "data_repo": "MushishiData",
+                "patch_prefix": "MushishiPatch",
+                "sha_checks": "true",
+                "required_rom_sha": "9E68A7C13D0DBD48D44B95E98DE195E9B1933550C45420C91A194D0B72718A98",
+                "encrypted_rom_sha": "B22AEBA31D80EC0B4A139A63738CB07E2C4A5E99559FB24AC83138A364DCF828",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "mushi-enc-to-dec.xdelta",					
+                "mega_link": "https://mega.nz/file/eUwVBCSK#L-uj78xApnJSHbM7atccbXUqe2LY1sLaqt2tuFBuhSg",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Aug 06, 2025",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },
     "gurren": {
         "id": "gurren",
         "title": "gurren-title",
@@ -514,7 +555,7 @@
                 }
             }
         }
-    },	
+    },		
     "shito": {
         "id": "shito",
         "title": "shito-title",
