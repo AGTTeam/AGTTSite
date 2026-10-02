@@ -176,8 +176,7 @@ function getLanguageName(loc, languageCode) {
 
 <script>
 // Patcher settings
-const REPO_ORG = 'AGTTeam';
-const CORS_PROXY = 'https://cors.agtteam.net/';
+const PATCH_HOST = 'https://r2.agtteam.net/';
 import ALL_PATCH_DATA from '/assets/patch-data.json';
 import ALL_PLATFORM_DATA from '/assets/platform-data.json';
 
@@ -199,9 +198,10 @@ function pickPatcherAnimation() {
 }
 
 // RomPatcher data variables
-let romFile, patchFile, patch, headerSize, romSha, isBadRom, isEncryptedRom, repairPatchFile, repairPatch, patchData, platformData, platformName, loadingFile;
+let romFile, patchFile, patch, headerSize, romSha, isBadRom, isEncryptedRom, repairPatchFile, repairPatch, patchData, platformData, platformName, gameId, loadingFile;
 
 function setup(game, platform) {
+    gameId = game;
     patchData = ALL_PATCH_DATA[game].platforms[platform];
     patcherAnimationSrc = ALL_PATCH_DATA[game].patcher_animation || null;
     platformData = ALL_PLATFORM_DATA[platform];
@@ -259,12 +259,12 @@ function getFileName(version) {
     return patchData.patch_prefix + '-v' + version + options + '.xdelta';
 }
 
-// Returns the versioned patch file with the given name from the GitHub org
-function parsePatchFile(fileName, version) {
+// Returns the versioned patch file with the given name from R2
+function parsePatchFile(fileName) {
     showNotice('info', 'rom-patcher-downloading-patch');
 
-    // Download from GitHub
-    let encodedUri = (CORS_PROXY + 'https://github.com/' + REPO_ORG + '/' + patchData.data_repo + '/releases/download/' + version + '/' + fileName);
+    // Download from R2
+    let encodedUri = PATCH_HOST + gameId + '/' + fileName;
     if (import.meta.dev) {
         encodedUri = '/patches/' + fileName;
     }
@@ -488,7 +488,7 @@ export default {
                     }
                 }
             }
-            parsePatchFile(getFileName(version), version).then(arrayBuffer => {
+            parsePatchFile(getFileName(version)).then(arrayBuffer => {
                 if (arrayBuffer == null)
                     return Promise.reject('');
                 return new MarcFile(arrayBuffer);
