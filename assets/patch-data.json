@@ -29,6 +29,43 @@
             "nds": {}
         }
     },	
+    "shugo": {
+        "id": "shugo",
+        "title": "shugo-title",
+        "original": "Shugo Chara! Norinori! Chara-nari Rhythm♪",
+        "year": "2009",
+        "page": "/shugo",
+        "tags": ["[platform-nds]", "[genre-rhythm-action]"],
+        "tool_repo": "ShugoTranslation",
+        "extras": [
+            {
+                "name": "Translated Boxart",
+                "link": "https://www.thecoverproject.net/view.php?game_id=21593",
+                "external": true
+            }
+        ],
+        "platforms": {
+            "nds": {
+                "data_repo": "ShugoData",
+                "patch_prefix": "ShugoPatch",
+                "sha_checks": "true",
+                "required_rom_sha": "D38F49D62FA678999A0425D262235F9C1377EE3472A2547303553398E50982E6",
+                "encrypted_rom_sha": "7A0D383BB85361BAC5204B9B73CA24E410AA8C3454D845E4C952CC683CC96939",
+                "fix_encrypted_rom": "true",
+                "decrypt_patch": "shugo-enc-to-dec.xdelta",				
+                "mega_link": "https://mega.nz/file/7QwnRQ7a#0jWZ6W5PSm9WP_Ae9gCIQ3SDRXdgqYSHPy7ofx5lOBc",
+                "available_patches": {
+                    "en": [
+                        {
+                            "version": "1.0",
+                            "date": "Oct 23, 2026",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },
     "successors": {
         "id": "successors",
         "title": "successors-title",
@@ -80,46 +117,6 @@
             }
 		}	
 	},	
-    "fma": {
-        "id": "fma",
-        "title": "fma-title",
-        "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
-        "year": "2005",
-        "page": "/fma",		
-        "tags": ["[platform-ps2]", "[genre-action]"],
-        "tool_repo": "FmaKamiTranslation",
-		"patcher_animation": [
-            "/images/fma/loading/loading1.gif",
-            "/images/fma/loading/loading2.gif",
-            "/images/fma/loading/loading3.gif",
-            "/images/fma/loading/loading4.gif",
-            "/images/fma/loading/loading5.gif",
-            "/images/fma/loading/loading6.gif",
-            "/images/fma/loading/loading7.gif",
-			"/images/fma/loading/loading8.gif"
-        ],
-        "platforms": {
-            "ps2": {
-                "data_repo": "FMAKamiData",
-                "patch_prefix": "FmaKamiPatch",
-                "sha_checks": "true",
-                "patcher_disabled": "true",
-                "required_rom_sha": "4159506E278237F12C9493293760F78465B1E12CC1B20E129BF16AFEDF45CC8D",
-                "cheats": "true",
-                "cheat_link": "https://drive.google.com/uc?export=download&id=1K9lzFBTxAC4JH1fdrta9iA355_cBCyU-",
-				"mega_link": "https://mega.nz/file/2VJizRqb#OYCd0rxfsCizoinJ9kTFP1qqeQD8kjGT_ZGIECzjAR0",
-				"available_patches": {
-                    "en": [
-                        {
-                            "version": "1.1",
-                            "date": "September 01, 2026",
-                            "lang": "en"
-                        }
-                    ]
-                }
-            }
-        }
-    },
     "kiragame": {
         "id": "kiragame",
         "title": "kiragame-title",
@@ -183,7 +180,47 @@
             }
         }
     },	
-    "holo": {
+    "fma": {
+        "id": "fma",
+        "title": "fma-title",
+        "original": "Fullmetal Alchemist 3: Kami wo Tsugu Shoujo",
+        "year": "2005",
+        "page": "/fma",		
+        "tags": ["[platform-ps2]", "[genre-action]"],
+        "tool_repo": "FmaKamiTranslation",
+		"patcher_animation": [
+            "/images/fma/loading/loading1.gif",
+            "/images/fma/loading/loading2.gif",
+            "/images/fma/loading/loading3.gif",
+            "/images/fma/loading/loading4.gif",
+            "/images/fma/loading/loading5.gif",
+            "/images/fma/loading/loading6.gif",
+            "/images/fma/loading/loading7.gif",
+			"/images/fma/loading/loading8.gif"
+        ],
+        "platforms": {
+            "ps2": {
+                "data_repo": "FMAKamiData",
+                "patch_prefix": "FmaKamiPatch",
+                "sha_checks": "true",
+                "patcher_disabled": "true",
+                "required_rom_sha": "4159506E278237F12C9493293760F78465B1E12CC1B20E129BF16AFEDF45CC8D",
+                "cheats": "true",
+                "cheat_link": "https://drive.google.com/uc?export=download&id=1K9lzFBTxAC4JH1fdrta9iA355_cBCyU-",
+				"mega_link": "https://mega.nz/file/2VJizRqb#OYCd0rxfsCizoinJ9kTFP1qqeQD8kjGT_ZGIECzjAR0",
+				"available_patches": {
+                    "en": [
+                        {
+                            "version": "1.1",
+                            "date": "September 01, 2026",
+                            "lang": "en"
+                        }
+                    ]
+                }
+            }
+        }
+    },    
+	"holo": {
         "id": "holo",
         "title": "holo-title",
         "original": "Ookami to Koushinryou: Boku to Holo no Ichinen",
